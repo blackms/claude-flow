@@ -272,7 +272,7 @@ export const LOCAL_WORKER_TYPES: LocalWorkerType[] = [
  */
 const MODEL_IDS: Record<ModelType, string> = {
   sonnet: 'claude-sonnet-4-20250514',
-  opus: 'claude-opus-4-20250514',
+  opus: 'claude-opus-4-6',
   haiku: 'claude-haiku-4-20250514',
 };
 
