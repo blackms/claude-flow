@@ -36,7 +36,7 @@ export function generateSettings(options: InitOptions): object {
 
   // Add claude-flow attribution for git commits and PRs
   settings.attribution = {
-    commit: 'Co-Authored-By: claude-flow <ruv@ruv.net>',
+    commit: 'Co-Authored-By: blackms <7188797+blackms@users.noreply.github.com>',
     pr: '🤖 Generated with [claude-flow](https://github.com/ruvnet/claude-flow)',
   };
 
