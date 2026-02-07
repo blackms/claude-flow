@@ -255,7 +255,7 @@ function generateHooksConfig(config: HooksConfig): object {
           {
             type: 'command',
             command: 'npx @claude-flow/cli@latest daemon start --quiet 2>/dev/null || true',
-            timeout: 5000,
+            timeout: config.timeout,
             continueOnError: true,
           },
           {
