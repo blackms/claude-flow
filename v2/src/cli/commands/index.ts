@@ -78,11 +78,8 @@ export function setupCommands(cli: CLI): void {
           },
         ],
         action: async (ctx: CommandContext) => {
-          const { initNeuralModule } = await import('../../scripts/init-neural.js');
-          await initNeuralModule({
-            force: ctx.flags.force as boolean,
-            targetDir: ctx.flags.target as string,
-          });
+          const { neuralCommand } = await import('../simple-commands/neural.js');
+          await neuralCommand(['init'], ctx.flags as Record<string, unknown>);
         },
       },
     ],
@@ -112,11 +109,8 @@ export function setupCommands(cli: CLI): void {
           },
         ],
         action: async (ctx: CommandContext) => {
-          const { initGoalModule } = await import('../../scripts/init-goal.js');
-          await initGoalModule({
-            force: ctx.flags.force as boolean,
-            targetDir: ctx.flags.target as string,
-          });
+          const { goalCommand } = await import('../simple-commands/goal.js');
+          await goalCommand(['init'], ctx.flags as Record<string, unknown>);
         },
       },
     ],
@@ -2888,4 +2882,3 @@ memory/sessions/
 ${new Date().toISOString()}
 `;
 }
-

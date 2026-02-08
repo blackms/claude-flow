@@ -10,7 +10,7 @@
   "scripts": {
     "preinstall": "node -e \"if(process.platform === 'win32' && process.env.npm_config_user_agent && process.env.npm_config_user_agent.includes('npm')) { console.warn('⚠️  Warning: On Windows, it is recommended to use pnpm to install this package to avoid potential native dependency build issues.'); console.warn('💡 Try: pnpm install or pnpx claude-flow@alpha'); }\"",
     "dev": "node --experimental-wasm-modules src/cli/main.ts",
-    "start": "node server.js",
+    "start": "node scripts/start-deprecated.js",
     "init:neural": "node scripts/init-neural.js",
     "init:goal": "node scripts/init-goal.js",
     "build": "npm run clean && npm run update-version && npm run build:esm && npm run build:cjs && npm run build:binary",
@@ -95,17 +95,8 @@
     "npm": ">=9.0.0"
   },
   "files": [
-    "cli.js",
+    "cli.mjs",
     "bin/claude-flow.js",
-    "bin/claude-flow",
-    "bin/claude-flow-dev",
-    "bin/claude-flow-pkg.js",
-    "bin/claude-flow-swarm",
-    "bin/claude-flow-swarm-background",
-    "bin/claude-flow-swarm-bg",
-    "bin/claude-flow-swarm-monitor",
-    "bin/claude-flow-swarm-ui",
-    "dist/",
     "src/",
     ".claude/",
     "docs/",
@@ -114,7 +105,7 @@
     "README.md",
     "LICENSE",
     "CHANGELOG.md",
-    "DOCKER_TEST_REPORT.md"
+    "DOCKER_TEST_CONFIRMATION.md"
   ],
   "dependencies": {
     "@anthropic-ai/claude-code": "^2.0.1",
