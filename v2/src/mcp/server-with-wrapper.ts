@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
- * MCP Server entry point that uses the wrapper by default
+ * @deprecated Internal MCP wrapper entrypoint.
+ * Not wired through the v2 package `bin`/`scripts` contract.
+ * Use `claude-flow mcp start` for supported startup.
  */
 
 import { ClaudeCodeMCPWrapper } from './claude-code-wrapper.js';
@@ -9,7 +11,12 @@ import { ClaudeCodeMCPWrapper } from './claude-code-wrapper.js';
 const useLegacy =
   process.env.CLAUDE_FLOW_LEGACY_MCP === 'true' || process.argv.includes('--legacy');
 
+const DEPRECATION_NOTICE =
+  '[DEPRECATED] src/mcp/server-with-wrapper.ts is an internal legacy entrypoint. Use `claude-flow mcp start` instead.';
+
 async function main() {
+  console.error(DEPRECATION_NOTICE);
+
   if (useLegacy) {
     console.error('Starting Claude-Flow MCP in legacy mode...');
     // Dynamically import the old server to avoid circular dependencies

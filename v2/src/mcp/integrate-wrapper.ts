@@ -5,9 +5,13 @@ import { StdioClientTransport } from '@modelcontextprotocol/sdk/client/stdio.js'
 import { ClaudeCodeMCPWrapper } from './claude-code-wrapper.js';
 
 /**
- * Integration script that connects the Claude-Flow MCP wrapper
- * to the Claude Code MCP server
+ * @deprecated Internal integration helper for legacy MCP wrapper experiments.
+ * Not wired through the v2 package `bin`/`scripts` contract.
+ * Use `claude-flow mcp start` for supported startup.
  */
+const DEPRECATION_NOTICE =
+  '[DEPRECATED] src/mcp/integrate-wrapper.ts is an internal legacy integration entrypoint. Use `claude-flow mcp start` instead.';
+
 export class MCPIntegration {
   private claudeCodeClient?: Client;
   private wrapper: ClaudeCodeMCPWrapper;
@@ -51,6 +55,8 @@ export class MCPIntegration {
   }
 
   async start(): Promise<void> {
+    console.error(DEPRECATION_NOTICE);
+
     // Connect to Claude Code MCP
     await this.connectToClaudeCode();
 
