@@ -300,7 +300,7 @@ export class VerificationMiddleware {
 
   async checkTestCoverage() {
     try {
-      const { stdout } = await execAsync('npm run coverage 2>&1 || true');
+      const { stdout } = await execAsync('npm run test:coverage 2>&1 || true');
       const match = stdout.match(/(\d+(\.\d+)?)\s*%/);
       const percentage = match ? parseFloat(match[1]) : 0;
       return { percentage };

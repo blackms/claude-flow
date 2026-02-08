@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.7.47] - 2026-02-08
+
+### Fixed
+- Package contract metadata now points to existing artifacts:
+  - `main` resolves via `cli.mjs` (ESM shim) instead of a missing path.
+  - `start` routes to `scripts/start-deprecated.js` with explicit deprecation guidance instead of `MODULE_NOT_FOUND`.
+  - `files[]` removes stale publish entries and now references existing paths only.
+- Verification and Docker test surfaces now use defined coverage scripts:
+  - `npm run coverage` -> `npm run test:coverage`
+  - `npm run test:features:coverage` -> `npm run test:coverage`
+
+### Changed
+- `neural init` and `goal init` script entrypoints are restored with working `scripts/init-*.js` targets.
+- v2 CLI init command wiring now points at existing simple-command handlers for `neural init` and `goal init`.
+
 ## [2.7.35] - 2025-11-13
 
 ### Added

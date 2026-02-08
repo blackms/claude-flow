@@ -17,7 +17,7 @@ COPY . .
 
 # Run tests
 RUN npm run typecheck
-RUN npm run test:features:coverage
+RUN npm run test:coverage
 RUN npm run build
 
 # Simulate npx execution
