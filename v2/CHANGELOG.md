@@ -20,6 +20,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `neural init` and `goal init` script entrypoints are restored with working `scripts/init-*.js` targets.
 - v2 CLI init command wiring now points at existing simple-command handlers for `neural init` and `goal init`.
 
+### Deprecated
+- Internal MCP wrapper entrypoints are now explicitly marked deprecated and are not part of the v2 public startup contract:
+  - `src/mcp/server-with-wrapper.ts`
+  - `src/mcp/server-wrapper-mode.ts`
+  - `src/mcp/integrate-wrapper.ts`
+- Supported MCP startup path remains: `claude-flow mcp start`.
+
 ## [2.7.35] - 2025-11-13
 
 ### Added

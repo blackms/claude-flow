@@ -2,7 +2,9 @@
 /**
  * Claude-Flow MCP Server - Wrapper Mode
  *
- * This version uses the Claude Code MCP wrapper approach instead of templates.
+ * @deprecated Internal MCP wrapper entrypoint.
+ * Not wired through the v2 package `bin`/`scripts` contract.
+ * Use `claude-flow mcp start` for supported startup.
  */
 
 import { ClaudeCodeMCPWrapper } from './claude-code-wrapper.js';
@@ -11,7 +13,12 @@ import { ClaudeCodeMCPWrapper } from './claude-code-wrapper.js';
 const isWrapperMode =
   process.env.CLAUDE_FLOW_WRAPPER_MODE === 'true' || process.argv.includes('--wrapper');
 
+const DEPRECATION_NOTICE =
+  '[DEPRECATED] src/mcp/server-wrapper-mode.ts is an internal legacy entrypoint. Use `claude-flow mcp start` instead.';
+
 async function main() {
+  console.error(DEPRECATION_NOTICE);
+
   if (isWrapperMode) {
     console.error('Starting Claude-Flow MCP in wrapper mode...');
     const wrapper = new ClaudeCodeMCPWrapper();

@@ -13,6 +13,17 @@ The MCP implementation provides:
 - **Performance Monitoring**: Real-time metrics, alerting, and optimization suggestions
 - **Orchestration Integration**: Seamless integration with Claude-Flow components
 
+## Entrypoint Contract (v2)
+
+- **Supported CLI startup path:** `claude-flow mcp start`
+- **Package wiring:** `bin/claude-flow.js` -> CLI command router
+- **Deprecated internal wrapper entrypoints (not package-wired):**
+  - `src/mcp/server-with-wrapper.ts`
+  - `src/mcp/server-wrapper-mode.ts`
+  - `src/mcp/integrate-wrapper.ts`
+
+These wrapper files are kept for deprecate-first compatibility and are not part of the supported public startup contract.
+
 ## Architecture
 
 ```
