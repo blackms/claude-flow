@@ -213,14 +213,14 @@ import * as ReasoningBank from 'agentic-flow/reasoningbank';
 - ✅ `tests/integration/mcp-pattern-persistence.test.js`
 - ✅ `tests/integration/agentdb/compatibility.test.js`
 
-**Validation Scripts (in agentic-flow):**
+**Validation Scripts (current v2 package):**
 ```bash
-npm run validate              # All validations
-npm run validate:sdk          # SDK validation
-npm run validate:claude-flow  # Claude-flow specific tests
-npm run test:memory          # Memory system tests
-npm run test:coordination    # Coordination tests
-npm run test:hybrid          # Hybrid system tests
+npm run typecheck         # Type safety checks
+npm run test              # Baseline test run
+npm run test:integration  # Integration coverage
+npm run test:coverage     # Coverage report
+npm run diagnostics       # Runtime diagnostics
+npm run health-check      # Health-check routine
 ```
 
 **Status:** ✅ Comprehensive test coverage
@@ -361,7 +361,7 @@ npm list agentic-flow
 **Step 3: Run Tests**
 ```bash
 npm run test:integration
-npm run validate:claude-flow  # If agentic-flow scripts are accessible
+npm run test:coverage
 ```
 
 **Step 4: Update Comments**

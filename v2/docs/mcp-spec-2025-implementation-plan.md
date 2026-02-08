@@ -1078,12 +1078,12 @@ jobs:
       - name: Publish to MCP Registry
         env:
           MCP_REGISTRY_API_KEY: ${{ secrets.MCP_REGISTRY_API_KEY }}
-        run: npm run registry:publish
+        run: echo "TODO: implement MCP registry publish client"
 
       - name: Update health check
         env:
           MCP_REGISTRY_API_KEY: ${{ secrets.MCP_REGISTRY_API_KEY }}
-        run: npm run registry:health
+        run: echo "TODO: implement MCP registry health check client"
 ```
 
 ---
@@ -1289,23 +1289,14 @@ describe('MCP Spec 2025 Compliance', () => {
 # Install dependencies
 npm install
 
-# Run async operation tests
-npm run test:async
+# Run available validation checks
+npm run typecheck
+npm run test:integration
+npm run test:coverage
 
-# Run registry integration tests
-npm run test:registry
-
-# Run full compliance suite
-npm run test:compliance
-
-# Publish to registry
-npm run registry:publish
-
-# Start server with async support
-npm run start:async
-
-# Monitor job queue
-npm run jobs:monitor
+# Development runtime and release flow
+npm run dev
+npm run publish:alpha
 ```
 
 ---
