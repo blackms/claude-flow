@@ -1,0 +1,590 @@
+### npm run build
+
+> claude-flow@3.1.0-alpha.1 build
+> tsc
+
+v3/@claude-flow/claims/src/application/index.ts(13,24): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/embeddings/vitest.config.ts(19,5): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'poolOptions' does not exist in type 'InlineConfig'.
+v3/@claude-flow/integration/src/sdk-bridge.ts(340,14): error TS2339: Property 'VERSION' does not exist on type 'typeof import("/Users/alessiorocchi/Projects/claude-flow/v3/node_modules/agentic-flow/dist/index")'.
+v3/@claude-flow/integration/src/sdk-bridge.ts(341,37): error TS2339: Property 'VERSION' does not exist on type 'typeof import("/Users/alessiorocchi/Projects/claude-flow/v3/node_modules/agentic-flow/dist/index")'.
+v3/@claude-flow/memory/examples/agentdb-example.ts(120,7): error TS2353: Object literal may only specify known properties, and 'dbPath' does not exist in type 'Partial<SQLiteBackendConfig>'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(176,39): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(177,32): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(179,40): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(180,33): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(196,9): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(198,21): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(199,22): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(224,80): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(233,89): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(234,37): error TS18047: 'safeFileType' is possibly 'null'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(442,31): error TS2339: Property 'PostToolCall' does not exist on type 'typeof HookEvent'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/hook-pattern-library.ts(446,8): error TS2339: Property 'when' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(10,31): error TS2300: Duplicate identifier 'ReasoningBank'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(11,36): error TS2300: Duplicate identifier 'SemanticCodeSearch'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(12,30): error TS2300: Duplicate identifier 'SONALearning'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(13,30): error TS2300: Duplicate identifier 'IntentRouter'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(14,34): error TS2300: Duplicate identifier 'MCPToolOptimizer'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(15,36): error TS2300: Duplicate identifier 'HookPatternLibrary'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(57,10): error TS2300: Duplicate identifier 'ReasoningBank'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(58,10): error TS2300: Duplicate identifier 'SemanticCodeSearch'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(59,10): error TS2300: Duplicate identifier 'SONALearning'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(60,10): error TS2300: Duplicate identifier 'IntentRouter'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(61,10): error TS2300: Duplicate identifier 'MCPToolOptimizer'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/index.ts(62,10): error TS2300: Duplicate identifier 'HookPatternLibrary'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/intent-router.ts(138,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/intent-router.ts(139,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/intent-router.ts(159,51): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/intent-router.ts(181,32): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/intent-router.ts(336,8): error TS2339: Property 'when' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(133,60): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(141,43): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(142,36): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(148,13): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(148,37): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(148,75): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(152,37): error TS2345: Argument of type 'ToolUsagePattern | undefined' is not assignable to parameter of type 'ToolUsagePattern'.
+  Type 'undefined' is not assignable to type 'ToolUsagePattern'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(162,48): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(162,91): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(164,14): error TS18048: 'pattern' is possibly 'undefined'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(164,34): error TS18048: 'pattern' is possibly 'undefined'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(165,14): error TS18048: 'pattern' is possibly 'undefined'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(165,53): error TS18048: 'pattern' is possibly 'undefined'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(167,38): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(170,5): error TS2322: Type 'ToolUsagePattern | undefined' is not assignable to type 'ToolUsagePattern'.
+  Type 'undefined' is not assignable to type 'ToolUsagePattern'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(174,63): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(207,54): error TS2345: Argument of type '(string | null)[]' is not assignable to parameter of type 'string[]'.
+  Type 'string | null' is not assignable to type 'string'.
+    Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(216,48): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(217,44): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(218,117): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(218,123): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(224,50): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(224,72): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(234,102): error TS2322: Type '(string | null)[]' is not assignable to type 'string[]'.
+  Type 'string | null' is not assignable to type 'string'.
+    Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(258,46): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(261,36): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(391,31): error TS2339: Property 'PostToolCall' does not exist on type 'typeof HookEvent'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(395,8): error TS2339: Property 'handle' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/mcp-tool-optimizer.ts(410,8): error TS2339: Property 'handle' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts(123,77): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts(128,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts(165,51): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts(183,69): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/reasoning-bank.ts(620,8): error TS2339: Property 'when' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(117,27): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(119,35): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(139,31): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(140,28): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(142,26): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(159,56): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(177,56): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(178,61): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(200,50): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/semantic-code-search.ts(472,8): error TS2339: Property 'when' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/shared/index.ts(7,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/shared/index.ts(8,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/shared/index.ts(9,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(136,53): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(140,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(141,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(142,7): error TS2322: Type 'string | null' is not assignable to type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(144,7): error TS2322: Type 'number | null' is not assignable to type 'number'.
+  Type 'null' is not assignable to type 'number'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(152,37): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(154,42): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(155,25): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(159,60): error TS2345: Argument of type 'number | null' is not assignable to parameter of type 'number'.
+  Type 'null' is not assignable to type 'number'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(164,11): error TS2722: Cannot invoke an object which is possibly 'undefined'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(188,58): error TS2345: Argument of type 'string | null' is not assignable to parameter of type 'string'.
+  Type 'null' is not assignable to type 'string'.
+v3/@claude-flow/plugins/examples/ruvector-plugins/sona-learning.ts(426,8): error TS2339: Property 'when' does not exist on type 'HookBuilder'.
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(96,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(110,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(343,7): error TS2322: Type 'Float32Array<ArrayBuffer>' is not assignable to type 'number[][] | Float32Array<ArrayBufferLike>[]'.
+  Type 'Float32Array<ArrayBuffer>' is missing the following properties from type 'Float32Array<ArrayBufferLike>[]': pop, push, concat, shift, and 5 more.
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(344,7): error TS2322: Type 'Float32Array<ArrayBuffer>' is not assignable to type 'number[][] | Float32Array<ArrayBufferLike>[]'.
+  Type 'Float32Array<ArrayBuffer>' is missing the following properties from type 'Float32Array<ArrayBufferLike>[]': pop, push, concat, shift, and 5 more.
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(345,7): error TS2322: Type 'Float32Array<ArrayBuffer>' is not assignable to type 'number[][] | Float32Array<ArrayBufferLike>[]'.
+  Type 'Float32Array<ArrayBuffer>' is missing the following properties from type 'Float32Array<ArrayBufferLike>[]': pop, push, concat, shift, and 5 more.
+v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts(389,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(22,8): error TS2305: Module '"../../src/integrations/ruvector/index.js"' has no exported member 'VectorRecord'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(81,55): error TS2345: Argument of type '{ connectionString: string; poolSize: number; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; poolSize: number; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(91,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(98,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(126,20): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(150,7): error TS2353: Object literal may only specify known properties, and 'includeDistance' does not exist in type 'VectorSearchOptions'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(153,40): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(161,42): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(174,39): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(188,18): error TS2339: Property 'update' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(199,37): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(222,18): error TS2339: Property 'insertBatch' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(233,32): error TS2339: Property 'getCollectionStats' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(245,18): error TS2339: Property 'delete' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(251,20): error TS2339: Property 'delete' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(256,37): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts(282,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(24,8): error TS2305: Module '"../../src/integrations/ruvector/gnn.js"' has no exported member 'GNNConfig'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(25,8): error TS2459: Module '"../../src/integrations/ruvector/gnn.js"' declares 'GraphData' locally, but it is not exported.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(26,8): error TS2305: Module '"../../src/integrations/ruvector/gnn.js"' has no exported member 'AdjacencyMatrix'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(216,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(221,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(267,64): error TS2554: Expected 1 arguments, but got 2.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(271,52): error TS2339: Property 'length' does not exist on type 'GNNOutput'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(295,64): error TS2554: Expected 1 arguments, but got 2.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(300,52): error TS2339: Property 'length' does not exist on type 'GNNOutput'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(303,39): error TS2339: Property 'getAttentionWeights' does not exist on type 'GATLayer'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(335,66): error TS2554: Expected 1 arguments, but got 2.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(442,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(451,20): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(472,41): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts(496,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(21,3): error TS2305: Module '"../../src/integrations/ruvector/hyperbolic.js"' has no exported member 'PoincareBall'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(22,3): error TS2305: Module '"../../src/integrations/ruvector/hyperbolic.js"' has no exported member 'PoincareEmbedding'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(23,8): error TS2724: '"../../src/integrations/ruvector/hyperbolic.js"' has no exported member named 'HyperbolicConfig'. Did you mean 'HyperbolicSpaceConfig'?
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(24,8): error TS2305: Module '"../../src/integrations/ruvector/hyperbolic.js"' has no exported member 'HierarchyNode'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(242,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(254,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(450,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(460,22): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(481,39): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts(552,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(18,8): error TS2305: Module '"../../src/integrations/ruvector/index.js"' has no exported member 'VectorRecord'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(332,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(337,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(610,20): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(624,20): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(637,20): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(650,41): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(655,38): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/quantization.ts(675,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/self-learning.ts(174,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/self-learning.ts(194,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/self-learning.ts(442,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(18,8): error TS2305: Module '"../../src/integrations/ruvector/index.js"' has no exported member 'VectorRecord'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(356,55): error TS2345: Argument of type '{ connectionString: string; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(363,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(370,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(385,20): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(416,36): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(439,38): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(466,42): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(500,36): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(503,43): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(527,38): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(545,44): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts(571,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(18,8): error TS2305: Module '"../../src/integrations/ruvector/index.js"' has no exported member 'VectorRecord'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(291,29): error TS2339: Property 'insertBatch' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(330,55): error TS2345: Argument of type '{ connectionString: string; poolSize: number; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; poolSize: number; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(336,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(344,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(408,32): error TS2339: Property 'getCollectionStats' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(428,18): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(436,20): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(467,36): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts(502,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(18,8): error TS2305: Module '"../../src/integrations/ruvector/index.js"' has no exported member 'VectorRecord'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(240,55): error TS2345: Argument of type '{ connectionString: string; poolSize: number; }' is not assignable to parameter of type 'RuVectorConfig'.
+  Type '{ connectionString: string; poolSize: number; }' is missing the following properties from type 'RuVectorConfig': host, port, database, user, password
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(248,18): error TS2339: Property 'connect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(257,18): error TS2339: Property 'createCollection' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(274,24): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(298,24): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(326,24): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(342,26): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(363,24): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(388,42): error TS2339: Property 'search' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(397,24): error TS2339: Property 'update' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(423,34): error TS2339: Property 'getCollectionStats' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(433,24): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(473,26): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(506,18): error TS2339: Property 'insert' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(514,36): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(527,38): error TS2339: Property 'get' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(532,22): error TS2339: Property 'update' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(558,32): error TS2339: Property 'getCollectionStats' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/examples/ruvector/transactions.ts(589,18): error TS2339: Property 'disconnect' does not exist on type 'RuVectorBridge'.
+v3/@claude-flow/plugins/src/integrations/index.ts(50,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/plugins/src/integrations/ruvector/index.ts(103,10): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/@claude-flow/providers/src/__tests__/quick-test.ts(248,20): error TS2345: Argument of type '{ provider: "anthropic"; apiKey: string; model: string; maxTokens: number; }' is not assignable to parameter of type 'never'.
+v3/@claude-flow/providers/src/__tests__/quick-test.ts(258,20): error TS2345: Argument of type 'any' is not assignable to parameter of type 'never'.
+v3/@claude-flow/security/__tests__/helpers/create-mock.ts(422,8): error TS2352: Conversion of type 'Function & Record<"mockReset", unknown>' to type 'MockInstance<Procedure>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Function & Record<"mockReset", unknown>' is missing the following properties from type 'MockInstance<Procedure>': getMockName, mockName, mock, mockClear, and 13 more.
+v3/@claude-flow/security/__tests__/helpers/create-mock.ts(434,8): error TS2352: Conversion of type 'Function & Record<"mockClear", unknown>' to type 'MockInstance<Procedure>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Function & Record<"mockClear", unknown>' is missing the following properties from type 'MockInstance<Procedure>': getMockName, mockName, mock, mockReset, and 13 more.
+v3/@claude-flow/security/__tests__/helpers/create-mock.ts(446,8): error TS2352: Conversion of type 'Function & Record<"mockRestore", unknown>' to type 'MockInstance<Procedure>' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Function & Record<"mockRestore", unknown>' is missing the following properties from type 'MockInstance<Procedure>': getMockName, mockName, mock, mockClear, and 13 more.
+v3/@claude-flow/security/__tests__/helpers/create-mock.ts(458,3): error TS2304: Cannot find name 'expect'.
+v3/@claude-flow/security/__tests__/helpers/create-mock.ts(468,3): error TS2304: Cannot find name 'expect'.
+v3/index.ts(146,3): error TS2300: Duplicate identifier 'IAgentRegistry'.
+v3/index.ts(156,3): error TS2300: Duplicate identifier 'IEventStore'.
+v3/index.ts(180,8): error TS2307: Cannot find module './core/interfaces/index.js' or its corresponding type declarations.
+v3/index.ts(182,34): error TS2307: Cannot find module './core/interfaces/event.interface.js' or its corresponding type declarations.
+v3/index.ts(214,8): error TS2307: Cannot find module './core/orchestrator/index.js' or its corresponding type declarations.
+v3/index.ts(217,58): error TS2307: Cannot find module './core/event-bus.js' or its corresponding type declarations.
+v3/index.ts(257,8): error TS2307: Cannot find module './core/config/index.js' or its corresponding type declarations.
+v3/index.ts(291,3): error TS2300: Duplicate identifier 'SwarmMessage'.
+v3/index.ts(332,8): error TS2307: Cannot find module './types/index.js' or its corresponding type declarations.
+v3/index.ts(338,8): error TS2307: Cannot find module './types/index.js' or its corresponding type declarations.
+v3/index.ts(375,3): error TS2300: Duplicate identifier 'SwarmMessage'.
+v3/index.ts(381,8): error TS2307: Cannot find module './shared/types' or its corresponding type declarations.
+v3/index.ts(387,8): error TS2307: Cannot find module './shared/types' or its corresponding type declarations.
+v3/index.ts(392,3): error TS2300: Duplicate identifier 'IEventStore'.
+v3/index.ts(395,8): error TS2307: Cannot find module './shared/events' or its corresponding type declarations.
+v3/index.ts(417,8): error TS2307: Cannot find module './shared/events' or its corresponding type declarations.
+v3/index.ts(421,3): error TS2300: Duplicate identifier 'IAgentRegistry'.
+v3/index.ts(423,8): error TS2307: Cannot find module './coordination/agent-registry' or its corresponding type declarations.
+v3/index.ts(428,8): error TS2307: Cannot find module './coordination/agent-registry' or its corresponding type declarations.
+v3/index.ts(435,8): error TS2307: Cannot find module './coordination/task-orchestrator' or its corresponding type declarations.
+v3/index.ts(440,8): error TS2307: Cannot find module './coordination/task-orchestrator' or its corresponding type declarations.
+v3/index.ts(445,8): error TS2307: Cannot find module './coordination/swarm-hub' or its corresponding type declarations.
+v3/index.ts(452,8): error TS2307: Cannot find module './coordination/swarm-hub' or its corresponding type declarations.
+v3/index.ts(502,43): error TS2307: Cannot find module './coordination/swarm-hub' or its corresponding type declarations.
+v3/index.ts(513,40): error TS2307: Cannot find module './coordination/swarm-hub' or its corresponding type declarations.
+v3/index.ts(575,32): error TS2307: Cannot find module './coordination/swarm-hub' or its corresponding type declarations.
+v3/index.ts(576,34): error TS2307: Cannot find module './shared/types' or its corresponding type declarations.
+v3/index.ts(577,56): error TS2307: Cannot find module './shared/types' or its corresponding type declarations.
+v3/mcp/connection-pool.ts(138,21): error TS2345: Argument of type 'Promise<ManagedConnection>' is not assignable to parameter of type 'Promise<void>'.
+  Type 'ManagedConnection' is not assignable to type 'void'.
+v3/mcp/index.ts(27,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(28,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(29,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(30,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(31,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(32,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(33,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(36,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(37,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(38,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(39,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(40,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(41,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(44,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(45,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(46,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(49,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(50,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(51,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(52,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(55,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(56,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(57,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(58,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(59,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(60,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(63,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(64,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(65,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(66,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(69,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(70,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(71,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(72,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(75,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(76,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(77,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(80,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(81,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(82,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(85,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(86,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(96,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(110,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(127,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(132,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(134,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(136,3): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/index.ts(164,19): error TS2304: Cannot find name 'MCPServerConfig'.
+v3/mcp/index.ts(165,12): error TS2304: Cannot find name 'ILogger'.
+v3/mcp/index.ts(166,12): error TS2304: Cannot find name 'MCPServer'.
+v3/mcp/index.ts(168,24): error TS2304: Cannot find name 'ILogger'.
+v3/mcp/index.ts(175,18): error TS2304: Cannot find name 'createMCPServer'.
+v3/mcp/server.ts(464,20): error TS2352: Conversion of type 'Record<string, unknown> | undefined' to type 'MCPInitializeParams' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Record<string, unknown>' is missing the following properties from type 'MCPInitializeParams': protocolVersion, capabilities, clientInfo
+v3/mcp/server.ts(727,7): error TS2322: Type '(input: { category?: string; }) => Promise<{ name: string; description: string; category?: string; tags?: string[]; deprecated?: boolean; }[]>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type '{ category?: string | undefined; }'.
+v3/mcp/tool-registry.ts(411,57): error TS2345: Argument of type '{ sessionId?: string | undefined; requestId?: RequestId; orchestrator?: unknown; swarmCoordinator?: unknown; agentManager?: unknown; resourceManager?: unknown; messageBus?: unknown; monitor?: unknown; metadata?: Record<string, unknown>; }' is not assignable to parameter of type 'ToolContext'.
+  Types of property 'sessionId' are incompatible.
+    Type 'string | undefined' is not assignable to type 'string'.
+      Type 'undefined' is not assignable to type 'string'.
+v3/mcp/tools/agent-tools.ts(168,9): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type '{ type: AgentType; name?: string | undefined; capabilities?: string[] | undefined; domain?: AgentDomain | undefined; agentNumber?: number | undefined; metadata?: Record<...> | undefined; }'.
+v3/mcp/tools/agent-tools.ts(215,40): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/agent-tools.ts(316,24): error TS2339: Property 'id' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(317,31): error TS2339: Property 'type' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(318,17): error TS2367: This comparison appears to be unintentional because the types 'AgentStatus | undefined' and '"active"' have no overlap.
+v3/mcp/tools/agent-tools.ts(320,31): error TS2339: Property 'createdAt' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(321,36): error TS2339: Property 'lastActivityAt' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(322,28): error TS2339: Property 'config' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(323,30): error TS2339: Property 'metadata' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/agent-tools.ts(329,48): error TS2339: Property 'tasksInProgress' does not exist on type 'AgentMetrics'.
+v3/mcp/tools/agent-tools.ts(332,39): error TS2339: Property 'uptime' does not exist on type 'AgentMetrics'.
+v3/mcp/tools/agent-tools.ts(337,38): error TS2339: Property 'history' does not exist on type '{ found: boolean; agentId: string; status?: AgentStatus | undefined; domain?: AgentDomain | undefined; workload?: number | undefined; health?: number | undefined; currentTask?: string | undefined; metrics?: AgentMetrics | undefined; }'.
+v3/mcp/tools/config-tools.ts(276,13): error TS2304: Cannot find name 'path'.
+v3/mcp/tools/federation-tools.ts(522,7): error TS2741: Property 'type' is missing in type '{ description: string; }' but required in type 'JSONSchema'.
+v3/mcp/tools/federation-tools.ts(551,7): error TS2741: Property 'type' is missing in type '{ description: string; }' but required in type 'JSONSchema'.
+v3/mcp/tools/memory-tools.ts(135,62): error TS2749: 'UnifiedMemoryService' refers to a value, but is being used as a type here. Did you mean 'typeof UnifiedMemoryService'?
+v3/mcp/tools/memory-tools.ts(185,62): error TS2749: 'UnifiedMemoryService' refers to a value, but is being used as a type here. Did you mean 'typeof UnifiedMemoryService'?
+v3/mcp/tools/memory-tools.ts(278,62): error TS2749: 'UnifiedMemoryService' refers to a value, but is being used as a type here. Did you mean 'typeof UnifiedMemoryService'?
+v3/mcp/tools/sona-tools.ts(32,36): error TS2307: Cannot find module 'agentic-flow/core' or its corresponding type declarations.
+v3/mcp/tools/sona-tools.ts(37,36): error TS2307: Cannot find module 'agentic-flow/core' or its corresponding type declarations.
+v3/mcp/tools/swarm-tools.ts(154,36): error TS2554: Expected 0 arguments, but got 1.
+v3/mcp/tools/swarm-tools.ts(172,37): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(175,9): error TS2322: Type 'SwarmId' is not assignable to type 'string'.
+v3/mcp/tools/swarm-tools.ts(213,35): error TS2339: Property 'type' does not exist on type 'TopologyType'.
+  Property 'type' does not exist on type '"hybrid"'.
+v3/mcp/tools/swarm-tools.ts(214,36): error TS2339: Property 'maxAgents' does not exist on type 'TopologyType'.
+  Property 'maxAgents' does not exist on type '"hybrid"'.
+v3/mcp/tools/swarm-tools.ts(215,31): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(217,36): error TS2339: Property 'consensus' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(218,35): error TS2339: Property 'consensus' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(221,29): error TS2339: Property 'state' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(225,9): error TS2322: Type 'SwarmId' is not assignable to type 'string'.
+v3/mcp/tools/swarm-tools.ts(226,24): error TS2339: Property 'state' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(227,24): error TS2339: Property 'state' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(228,24): error TS2339: Property 'state' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(229,24): error TS2339: Property 'state' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(235,32): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(251,36): error TS2339: Property 'activeTasks' does not exist on type 'CoordinatorMetrics'.
+v3/mcp/tools/swarm-tools.ts(252,40): error TS2551: Property 'averageTaskDuration' does not exist on type 'CoordinatorMetrics'. Did you mean 'avgTaskDurationMs'?
+v3/mcp/tools/swarm-tools.ts(253,31): error TS2339: Property 'throughput' does not exist on type 'CoordinatorMetrics'.
+v3/mcp/tools/swarm-tools.ts(254,31): error TS2339: Property 'successRate' does not exist on type 'CoordinatorMetrics'.
+v3/mcp/tools/swarm-tools.ts(255,39): error TS2339: Property 'createdAt' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(262,25): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(267,32): error TS2339: Property 'edges' does not exist on type 'TopologyType'.
+  Property 'edges' does not exist on type '"hybrid"'.
+v3/mcp/tools/swarm-tools.ts(268,32): error TS2339: Property 'depth' does not exist on type 'TopologyType'.
+  Property 'depth' does not exist on type '"hybrid"'.
+v3/mcp/tools/swarm-tools.ts(269,33): error TS2339: Property 'fanout' does not exist on type 'TopologyType'.
+  Property 'fanout' does not exist on type '"hybrid"'.
+v3/mcp/tools/swarm-tools.ts(315,43): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(332,13): error TS2353: Object literal may only specify known properties, and 'id' does not exist in type '{ type: AgentType; name?: string | undefined; capabilities?: string[] | undefined; domain?: AgentDomain | undefined; agentNumber?: number | undefined; metadata?: Record<...> | undefined; }'.
+v3/mcp/tools/swarm-tools.ts(343,45): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(355,9): error TS2322: Type 'SwarmId' is not assignable to type 'string'.
+v3/mcp/tools/swarm-tools.ts(358,36): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/swarm-tools.ts(359,36): error TS2339: Property 'agents' does not exist on type '{ swarmId: SwarmId; status: SwarmStatus; topology: TopologyType; domains: DomainStatus[]; metrics: CoordinatorMetrics; }'.
+v3/mcp/tools/v2-compat-tools.ts(69,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(103,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(132,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ monitoring: { duration: {}; interval: {}; }; recentEvents: never[]; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(173,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(199,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(225,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ agentId: string; metrics: {}; neuralNetworks: never[]; } | { neuralNetworks: never[]; agentId?: undefined; metrics?: undefined; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(267,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(296,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(329,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(365,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<unknown>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(427,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ modelLoaded: boolean; accuracy: number; trainingProgress: number; agent: unknown; system?: undefined; } | { ...; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(457,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ iterations: {}; agentId: unknown; trainingComplete: boolean; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(479,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ patterns: {}; filterType: {}; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(506,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ benchmarks: { name: string; value: number; unit: string; }[]; type: {}; iterations: {}; systemMetrics: unknown; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(537,3): error TS2322: Type '(input: Record<string, unknown>, context: ToolContext | undefined) => Promise<{ category: {}; features: { wasm: boolean; simd: boolean; memory: boolean; platform: Platform; }; }>' is not assignable to type 'ToolHandler<unknown, unknown>'.
+  Types of parameters 'input' and 'input' are incompatible.
+    Type 'unknown' is not assignable to type 'Record<string, unknown>'.
+v3/mcp/tools/v2-compat-tools.ts(543,22): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/mcp/transport/http.ts(611,5): error TS2322: Type 'ConnectionPool<{ transport: HttpTransport; }>' is not assignable to type 'ConnectionPool<{ transport: HttpTransport; id: string; }>'.
+  Types of property 'connections' are incompatible.
+    Type 'Map<string, PooledConnection<{ transport: HttpTransport; }>>' is not assignable to type 'Map<string, PooledConnection<{ transport: HttpTransport; id: string; }>>'.
+      Type 'PooledConnection<{ transport: HttpTransport; }>' is not assignable to type 'PooledConnection<{ transport: HttpTransport; id: string; }>'.
+        Property 'id' is missing in type '{ transport: HttpTransport; }' but required in type '{ transport: HttpTransport; id: string; }'.
+v3/mcp/transport/index.ts(27,26): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/transport/index.ts(28,25): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/transport/index.ts(29,30): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/mcp/transport/index.ts(108,9): error TS2416: Property 'getHealthStatus' in type 'InProcessTransport' is not assignable to the same property in base type 'ITransport'.
+  Type '() => Promise<{ healthy: boolean; metrics: { transport: string; }; }>' is not assignable to type '() => Promise<TransportHealthStatus>'.
+    Type 'Promise<{ healthy: boolean; metrics: { transport: string; }; }>' is not assignable to type 'Promise<TransportHealthStatus>'.
+      Type '{ healthy: boolean; metrics: { transport: string; }; }' is not assignable to type 'TransportHealthStatus'.
+        Types of property 'metrics' are incompatible.
+          Type '{ transport: string; }' is not assignable to type 'Record<string, number>'.
+            Property 'transport' is incompatible with index signature.
+              Type 'string' is not assignable to type 'number'.
+v3/mcp/transport/index.ts(122,3): error TS2322: Type 'InProcessTransport' is not assignable to type 'ITransport'.
+  The types returned by 'getHealthStatus()' are incompatible between these types.
+    Type 'Promise<{ healthy: boolean; metrics: { transport: string; }; }>' is not assignable to type 'Promise<TransportHealthStatus>'.
+      Type '{ healthy: boolean; metrics: { transport: string; }; }' is not assignable to type 'TransportHealthStatus'.
+        Types of property 'metrics' are incompatible.
+          Type '{ transport: string; }' is not assignable to type 'Record<string, number>'.
+            Property 'transport' is incompatible with index signature.
+              Type 'string' is not assignable to type 'number'.
+v3/plugins/agentic-qe/src/bridges/QEMemoryBridge.ts(179,26): error TS2339: Property 'schema' does not exist on type '{ readonly name: "aqe/v3/test-patterns"; readonly vectorDimension: 384; readonly hnswConfig: { readonly m: 16; readonly efConstruction: 200; readonly efSearch: 100; }; readonly schema: { readonly patternType: { ...; }; readonly language: { ...; }; readonly framework: { ...; }; readonly effectiveness: { ...; }; reado...'.
+  Property 'schema' does not exist on type '{ readonly name: "aqe/v3/code-knowledge"; readonly vectorDimension: 384; readonly hnswConfig: { readonly m: 24; readonly efConstruction: 300; readonly efSearch: 150; }; }'.
+v3/plugins/code-intelligence/src/bridges/gnn-bridge.ts(73,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/code-intelligence/src/bridges/mincut-bridge.ts(63,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/cognitive-kernel/tests/validate.ts(6,61): error TS2307: Cannot find module '../dist/mcp-tools.js' or its corresponding type declarations.
+v3/plugins/cognitive-kernel/tests/validate.ts(7,36): error TS2307: Cannot find module '../dist/types.js' or its corresponding type declarations.
+v3/plugins/financial-risk/src/mcp-tools.ts(606,25): error TS2345: Argument of type '{ id: string; regulation: "basel3"; severity: "critical"; description: string; affectedItems: string[]; remediation: string; }' is not assignable to parameter of type 'never'.
+v3/plugins/financial-risk/src/mcp-tools.ts(620,23): error TS2345: Argument of type '{ id: string; regulation: "aml"; severity: "warning"; description: string; affectedItems: string[]; remediation: string; }' is not assignable to parameter of type 'never'.
+v3/plugins/gastown-bridge/src/cache.ts(692,18): error TS2304: Cannot find name 'requestIdleCallback'.
+v3/plugins/gastown-bridge/src/cache.ts(693,9): error TS2304: Cannot find name 'requestIdleCallback'.
+v3/plugins/gastown-bridge/src/wasm-loader.ts(262,16): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm-loader.ts(268,35): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm-loader.ts(269,31): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm-loader.ts(270,30): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(20,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(30,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(35,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(81,14): error TS2304: Cannot find name 'window'.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(180,24): error TS2694: Namespace 'WebAssembly' has no exported member 'Imports'.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(182,24): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(183,26): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/gastown-bridge/src/wasm/loader.ts(187,52): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/healthcare-clinical/src/mcp-tools.ts(451,32): error TS2339: Property 'evidenceLevel' does not exist on type 'never'.
+v3/plugins/healthcare-clinical/src/mcp-tools.ts(488,19): error TS2345: Argument of type '{ id: string; title: string; authors: string[]; abstract: string; source: "pubmed" | "cochrane" | "uptodate" | "local"; publicationDate: string; evidenceLevel: "systematic-review" | "rct" | "cohort" | "case-control"; relevanceScore: number; pmid: string; }' is not assignable to parameter of type 'never'.
+v3/plugins/hyperbolic-reasoning/src/bridges/gnn-bridge.ts(117,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/hyperbolic-reasoning/src/bridges/gnn-bridge.ts(599,19): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/hyperbolic-reasoning/src/bridges/hyperbolic-bridge.ts(70,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/hyperbolic-reasoning/src/bridges/hyperbolic-bridge.ts(604,19): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/hyperbolic-reasoning/tests/validate.ts(6,65): error TS2307: Cannot find module '../dist/mcp-tools.js' or its corresponding type declarations.
+v3/plugins/hyperbolic-reasoning/tests/validate.ts(7,36): error TS2307: Cannot find module '../dist/types.js' or its corresponding type declarations.
+v3/plugins/legal-contracts/src/bridges/attention-bridge.ts(62,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/legal-contracts/src/bridges/dag-bridge.ts(57,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/neural-coordination/tests/validate.ts(6,64): error TS2307: Cannot find module '../dist/mcp-tools.js' or its corresponding type declarations.
+v3/plugins/neural-coordination/tests/validate.ts(7,36): error TS2307: Cannot find module '../dist/types.js' or its corresponding type declarations.
+v3/plugins/perf-optimizer/tests/validate.ts(6,59): error TS2307: Cannot find module '../dist/mcp-tools.js' or its corresponding type declarations.
+v3/plugins/perf-optimizer/tests/validate.ts(7,36): error TS2307: Cannot find module '../dist/types.js' or its corresponding type declarations.
+v3/plugins/prime-radiant/src/plugin.ts(127,35): error TS2307: Cannot find module 'prime-radiant-advanced-wasm' or its corresponding type declarations.
+v3/plugins/prime-radiant/src/types.ts(353,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(179,41): error TS2307: Cannot find module 'prime-radiant-advanced-wasm' or its corresponding type declarations.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(220,32): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(222,30): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(222,94): error TS2694: Namespace 'WebAssembly' has no exported member 'Imports'.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(238,41): error TS2307: Cannot find module 'prime-radiant-advanced-wasm' or its corresponding type declarations.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(261,18): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(263,30): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(270,34): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(271,32): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(271,96): error TS2694: Namespace 'WebAssembly' has no exported member 'Imports'.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(284,75): error TS2694: Namespace 'WebAssembly' has no exported member 'ImportValue'.
+v3/plugins/prime-radiant/src/wasm-bridge.ts(288,21): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/quantum-optimizer/src/bridges/dag-bridge.ts(79,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/quantum-optimizer/src/bridges/dag-bridge.ts(612,19): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/quantum-optimizer/src/bridges/exotic-bridge.ts(60,23): error TS2694: Namespace 'WebAssembly' has no exported member 'Memory'.
+v3/plugins/quantum-optimizer/src/bridges/exotic-bridge.ts(594,19): error TS2708: Cannot use namespace 'WebAssembly' as a value.
+v3/plugins/quantum-optimizer/tests/validate.ts(6,62): error TS2307: Cannot find module '../dist/mcp-tools.js' or its corresponding type declarations.
+v3/plugins/quantum-optimizer/tests/validate.ts(7,36): error TS2307: Cannot find module '../dist/types.js' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/attention.ts(61,39): error TS2307: Cannot find module '@ruvector/attention-wasm' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/cognitive.ts(97,39): error TS2307: Cannot find module '@ruvector/cognitum-gate-kernel' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/exotic.ts(91,39): error TS2307: Cannot find module '@ruvector/exotic-wasm' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/gnn.ts(64,39): error TS2307: Cannot find module '@ruvector/gnn-wasm' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/hnsw.ts(58,39): error TS2307: Cannot find module '@ruvector/micro-hnsw-wasm' or its corresponding type declarations.
+v3/plugins/ruvector-upstream/src/bridges/hyperbolic.ts(70,39): error TS2307: Cannot find module '@ruvector/hyperbolic-hnsw-wasm' or its corresponding type declarations.
+v3/plugins/teammate-plugin/src/semantic-router.ts(20,32): error TS2307: Cannot find module '@ruvnet/bmssp' or its corresponding type declarations.
+v3/plugins/teammate-plugin/src/topology-optimizer.ts(20,32): error TS2307: Cannot find module '@ruvnet/bmssp' or its corresponding type declarations.
+v3/src/infrastructure/mcp/tools/AgentTools.ts(81,40): error TS2352: Conversion of type 'Record<string, unknown>' to type 'AgentConfig' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Record<string, unknown>' is missing the following properties from type 'AgentConfig': id, type
+v3/src/infrastructure/mcp/tools/ConfigTools.ts(146,29): error TS2322: Type 'V3Config' is not assignable to type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'V3Config'.
+v3/src/infrastructure/mcp/tools/ConfigTools.ts(183,31): error TS2322: Type 'V3Config | undefined' is not assignable to type 'Record<string, unknown> | undefined'.
+  Type 'V3Config' is not assignable to type 'Record<string, unknown>'.
+    Index signature for type 'string' is missing in type 'V3Config'.
+v3/src/infrastructure/mcp/tools/ConfigTools.ts(185,29): error TS2322: Type 'V3Config' is not assignable to type 'Record<string, unknown>'.
+  Index signature for type 'string' is missing in type 'V3Config'.
+v3/src/infrastructure/mcp/tools/MemoryTools.ts(102,41): error TS2352: Conversion of type 'Record<string, unknown>' to type 'Memory' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Type 'Record<string, unknown>' is missing the following properties from type 'Memory': id, agentId, content, type, timestamp
+v3/src/infrastructure/plugins/ExtensionPoint.ts(46,10): error TS1205: Re-exporting a type when 'isolatedModules' is enabled requires using 'export type'.
+v3/src/task-execution/application/WorkflowEngine.ts(251,23): error TS2345: Argument of type 'Task[]' is not assignable to parameter of type 'never'.
+v3/src/task-execution/application/WorkflowEngine.ts(257,28): error TS2488: Type 'never' must have a '[Symbol.iterator]()' method that returns an iterator.
+v3/swarm.config.ts(16,8): error TS2307: Cannot find module './shared/types' or its corresponding type declarations.
+v3/swarm.config.ts(69,3): error TS2353: Object literal may only specify known properties, and 'topology' does not exist in type 'V3SwarmConfig'.
+v3/vitest.config.ts(85,5): error TS2769: No overload matches this call.
+  The last overload gave the following error.
+    Object literal may only specify known properties, and 'poolOptions' does not exist in type 'InlineConfig'.
+exit_code=0
+### dist/index.js existence after build
+missing

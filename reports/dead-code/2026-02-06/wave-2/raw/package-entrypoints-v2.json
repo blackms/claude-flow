@@ -1,0 +1,379 @@
+[
+  {
+    "file": "v2/docs/reasoningbank/models/safla/package.json",
+    "name": "safla-model-training",
+    "main": "train-safla.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "train",
+      "validate"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/05-swarm-apps/rest-api-advanced/package.json",
+    "name": "rest-api-advanced",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test",
+      "test:unit",
+      "test:integration",
+      "lint",
+      "lint:fix",
+      "docs",
+      "seed",
+      "seed:products",
+      "seed:orders"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/05-swarm-apps/rest-api/package.json",
+    "name": "rest-api-example",
+    "main": "src/server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test",
+      "test:watch",
+      "lint",
+      "format"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/05-swarm-apps/swarm-sample/package.json",
+    "name": "notes-cli",
+    "main": "notes.js",
+    "bin": {
+      "notes": "./notes.js"
+    },
+    "exports": null,
+    "scripts": [
+      "start",
+      "test",
+      "test:coverage"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/auth-service/package.json",
+    "name": "swarm-app",
+    "main": "app.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/blog-api/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/browser-dashboard/package.json",
+    "name": "claude-flow-browser-dashboard",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/calc-app-parallel/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/calc-app/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/chat-app-2/package.json",
+    "name": "swarm-app",
+    "main": "app.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/chat-app/package.json",
+    "name": "swarm-app",
+    "main": "app.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/hello-time/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/hello2/package.json",
+    "name": "hello-world-example",
+    "main": "index.js",
+    "bin": {
+      "hello2": "./index.js"
+    },
+    "exports": null,
+    "scripts": [
+      "start",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/md-convert/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/news-scraper/package.json",
+    "name": "app",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/parallel-2/package.json",
+    "name": "claude-flow-parallel-test",
+    "main": "parallel-test.ts",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "test",
+      "analyze",
+      "clean",
+      "test:full"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/rest-api-simple/package.json",
+    "name": "rest-api-simple",
+    "main": "index.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/examples/user-api/package.json",
+    "name": "rest-api",
+    "main": "server.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "start",
+      "dev",
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/package.json",
+    "name": "claude-flow",
+    "main": "cli.mjs",
+    "bin": {
+      "claude-flow": "bin/claude-flow.js"
+    },
+    "exports": null,
+    "scripts": [
+      "preinstall",
+      "dev",
+      "start",
+      "init:neural",
+      "init:goal",
+      "build",
+      "update-version",
+      "clean",
+      "build:esm",
+      "build:cjs",
+      "build:ts",
+      "build:binary",
+      "build:simple",
+      "typecheck",
+      "typecheck:watch",
+      "dev:build",
+      "test",
+      "test:watch",
+      "test:unit",
+      "test:integration",
+      "test:e2e",
+      "test:performance",
+      "test:cli",
+      "test:coverage",
+      "test:coverage:unit",
+      "test:coverage:integration",
+      "test:coverage:e2e",
+      "test:ci",
+      "test:debug",
+      "test:comprehensive",
+      "test:comprehensive:verbose",
+      "test:comprehensive:full",
+      "test:load",
+      "test:docker",
+      "test:npx",
+      "test:health",
+      "test:swarm",
+      "test:benchmark",
+      "lint",
+      "format",
+      "diagnostics",
+      "health-check",
+      "postinstall",
+      "prepublishOnly",
+      "publish:alpha",
+      "publish:major",
+      "publish:minor",
+      "publish:patch",
+      "prepack",
+      "postpack",
+      "prepare-publish"
+    ],
+    "files": [
+      "cli.js",
+      "bin/claude-flow.js",
+      "bin/claude-flow",
+      "bin/claude-flow-dev",
+      "bin/claude-flow-pkg.js",
+      "bin/claude-flow-swarm",
+      "bin/claude-flow-swarm-background",
+      "bin/claude-flow-swarm-bg",
+      "bin/claude-flow-swarm-monitor",
+      "bin/claude-flow-swarm-ui",
+      "dist/",
+      "src/",
+      ".claude/",
+      "docs/",
+      "docker-test/",
+      "scripts/",
+      "README.md",
+      "LICENSE",
+      "CHANGELOG.md",
+      "DOCKER_TEST_REPORT.md"
+    ]
+  },
+  {
+    "file": "v2/src/consciousness-symphony/package.json",
+    "name": "consciousness-symphony",
+    "main": "index.js",
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "test"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/src/migration/package.json",
+    "name": "@claude-flow/migration",
+    "main": "dist/index.js",
+    "bin": {
+      "claude-flow-migrate": "dist/index.js"
+    },
+    "exports": null,
+    "scripts": [
+      "build",
+      "test",
+      "test:watch",
+      "test:coverage",
+      "lint",
+      "clean",
+      "prepublishOnly"
+    ],
+    "files": null
+  },
+  {
+    "file": "v2/src/templates/claude-optimized/package.json",
+    "name": "claude-optimized-template",
+    "main": null,
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "install-template",
+      "validate",
+      "test",
+      "version",
+      "info"
+    ],
+    "files": [
+      ".claude/**/*",
+      "manifest.json",
+      "VERSION",
+      "CHANGELOG.md",
+      "README.md",
+      "install-template.js",
+      "validate-template.js"
+    ]
+  }
+]

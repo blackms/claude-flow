@@ -1,0 +1,28 @@
+.github/workflows/verification-pipeline.yml:54:        run: npm ci --legacy-peer-deps
+.github/workflows/verification-pipeline.yml:90:        run: npm ci --legacy-peer-deps
+.github/workflows/verification-pipeline.yml:143:        run: npm ci --legacy-peer-deps
+.github/workflows/verification-pipeline.yml:258:        run: npm ci --legacy-peer-deps
+.github/workflows/verification-pipeline.yml:324:        run: npm ci --legacy-peer-deps
+.github/workflows/v3-ci.yml:41:        run: pnpm install --frozen-lockfile
+.github/workflows/v3-ci.yml:45:        run: pnpm test
+.github/workflows/v3-ci.yml:76:        run: pnpm install --frozen-lockfile
+.github/workflows/v3-ci.yml:80:        run: pnpm typecheck
+.github/workflows/v3-ci.yml:110:        run: pnpm install --frozen-lockfile
+.github/workflows/v3-ci.yml:114:        run: pnpm build
+.github/workflows/v3-ci.yml:147:        run: pnpm install --frozen-lockfile
+.github/workflows/v3-ci.yml:151:        run: pnpm build
+.github/workflows/v3-ci.yml:155:        run: pnpm publish:alpha
+.github/workflows/ci.yml:31:        run: npm ci --legacy-peer-deps
+.github/workflows/ci.yml:40:        run: npm run lint
+.github/workflows/ci.yml:43:        run: npm run typecheck || echo "⚠️ Type checking skipped (TypeScript compiler crash)"
+.github/workflows/ci.yml:47:        run: npm outdated || true
+.github/workflows/ci.yml:73:        run: npm ci --legacy-peer-deps
+.github/workflows/ci.yml:76:        run: npm test || echo "⚠️ Some tests failed (Jest teardown issues - non-blocking)"
+.github/workflows/ci.yml:81:        run: npm run test:coverage || echo "⚠️ Coverage generation failed (non-blocking)"
+.github/workflows/rollback-manager.yml:187:        run: npm ci --legacy-peer-deps
+.github/workflows/rollback-manager.yml:427:        run: npm ci --legacy-peer-deps
+.github/workflows/integration-tests.yml:58:        run: npm ci --legacy-peer-deps
+.github/workflows/integration-tests.yml:163:        run: npm ci --legacy-peer-deps
+.github/workflows/integration-tests.yml:312:        run: npm ci --legacy-peer-deps
+.github/workflows/integration-tests.yml:434:        run: npm ci --legacy-peer-deps
+.github/workflows/integration-tests.yml:562:        run: npm ci --legacy-peer-deps

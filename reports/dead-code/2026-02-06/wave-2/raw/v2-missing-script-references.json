@@ -1,0 +1,623 @@
+{
+  "missing": [
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 218,
+      "script": "validate",
+      "text": "npm run validate              # All validations"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 219,
+      "script": "validate:sdk",
+      "text": "npm run validate:sdk          # SDK validation"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 220,
+      "script": "validate:claude-flow",
+      "text": "npm run validate:claude-flow  # Claude-flow specific tests"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 221,
+      "script": "test:memory",
+      "text": "npm run test:memory          # Memory system tests"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 222,
+      "script": "test:coordination",
+      "text": "npm run test:coordination    # Coordination tests"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 223,
+      "script": "test:hybrid",
+      "text": "npm run test:hybrid          # Hybrid system tests"
+    },
+    {
+      "file": "v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md",
+      "line": 364,
+      "script": "validate:claude-flow",
+      "text": "npm run validate:claude-flow  # If agentic-flow scripts are accessible"
+    },
+    {
+      "file": "v2/src/templates/claude-optimized/package.json",
+      "line": 11,
+      "script": "validate",
+      "text": "\"info\": \"echo 'Claude Optimized Template v1.0.0' && echo 'Files:' && node -e \\\"console.log(JSON.parse(require('fs').readFileSync('manifest.json')).files.length)\\\" && echo 'Run: npm run validate'\""
+    },
+    {
+      "file": "v2/scripts/install-arm64.js",
+      "line": 68,
+      "script": "build-release",
+      "text": "console.log('2. Manually rebuild: cd node_modules/better-sqlite3 && npm run build-release');"
+    },
+    {
+      "file": "v2/src/migration/README.md",
+      "line": 461,
+      "script": "build:migration",
+      "text": "npm run build:migration"
+    },
+    {
+      "file": "v2/src/swarm/prompt-copying-README.md",
+      "line": 287,
+      "script": "setup",
+      "text": "\"build\": \"npm run setup && npm run compile\","
+    },
+    {
+      "file": "v2/src/swarm/prompt-copying-README.md",
+      "line": 287,
+      "script": "compile",
+      "text": "\"build\": \"npm run setup && npm run compile\","
+    },
+    {
+      "file": "v2/src/swarm/prompt-copying-README.md",
+      "line": 492,
+      "script": "example:basic",
+      "text": "npm run example:basic"
+    },
+    {
+      "file": "v2/src/swarm/prompt-copying-README.md",
+      "line": 493,
+      "script": "example:enhanced",
+      "text": "npm run example:enhanced"
+    },
+    {
+      "file": "v2/src/swarm/prompt-copying-README.md",
+      "line": 494,
+      "script": "example:manager",
+      "text": "npm run example:manager"
+    },
+    {
+      "file": "v2/src/verification/README.md",
+      "line": 226,
+      "script": "test:security",
+      "text": "npm run test:security"
+    },
+    {
+      "file": "v2/src/verification/README.md",
+      "line": 231,
+      "script": "test:security:integration",
+      "text": "npm run test:security:integration"
+    },
+    {
+      "file": "v2/src/verification/README.md",
+      "line": 236,
+      "script": "test:security:load",
+      "text": "npm run test:security:load"
+    },
+    {
+      "file": "v2/src/verification/README.md",
+      "line": 241,
+      "script": "test:security:pentest",
+      "text": "npm run test:security:pentest"
+    },
+    {
+      "file": "v2/bin/verification-integration.js",
+      "line": 303,
+      "script": "coverage",
+      "text": "const { stdout } = await execAsync('npm run coverage 2>&1 || true');"
+    },
+    {
+      "file": "v2/bin/github/init.js",
+      "line": 266,
+      "script": "test:",
+      "text": "'Bash(npm run test:*)',"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1081,
+      "script": "registry:publish",
+      "text": "run: npm run registry:publish"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1086,
+      "script": "registry:health",
+      "text": "run: npm run registry:health"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1293,
+      "script": "test:async",
+      "text": "npm run test:async"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1296,
+      "script": "test:registry",
+      "text": "npm run test:registry"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1299,
+      "script": "test:compliance",
+      "text": "npm run test:compliance"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1302,
+      "script": "registry:publish",
+      "text": "npm run registry:publish"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1305,
+      "script": "start:async",
+      "text": "npm run start:async"
+    },
+    {
+      "file": "v2/docs/mcp-spec-2025-implementation-plan.md",
+      "line": 1308,
+      "script": "jobs:monitor",
+      "text": "npm run jobs:monitor"
+    },
+    {
+      "file": "v2/docs/LATEST_LIBRARIES_REVIEW.md",
+      "line": 812,
+      "script": "validate:claude-flow",
+      "text": "npm run validate:claude-flow"
+    },
+    {
+      "file": "v2/docker/Dockerfile.test",
+      "line": 20,
+      "script": "test:features:coverage",
+      "text": "RUN npm run test:features:coverage"
+    },
+    {
+      "file": "v2/tests/performance/README.md",
+      "line": 132,
+      "script": "benchmark:all",
+      "text": "npm run benchmark:all"
+    },
+    {
+      "file": "v2/docs/MEMORY_COMMAND_FIX.md",
+      "line": 75,
+      "script": "memory:stats",
+      "text": "npm run memory:stats  # if you add the script"
+    },
+    {
+      "file": "v2/docs/MEMORY_COMMAND_FIX.md",
+      "line": 118,
+      "script": "memory:stats",
+      "text": "npm run memory:stats"
+    },
+    {
+      "file": "v2/docs/MEMORY_COMMAND_FIX.md",
+      "line": 119,
+      "script": "memory:list",
+      "text": "npm run memory:list"
+    },
+    {
+      "file": "v2/docs/MEMORY_COMMAND_FIX.md",
+      "line": 120,
+      "script": "memory:query",
+      "text": "npm run memory:query -- \"search term\""
+    },
+    {
+      "file": "v2/bin/init/templates/enhanced-templates.js",
+      "line": 2217,
+      "script": "test:",
+      "text": "'Bash(npm run test:*)',"
+    },
+    {
+      "file": "v2/docs/development/DEVELOPMENT_WORKFLOW.md",
+      "line": 1023,
+      "script": "changelog",
+      "text": "npm run changelog"
+    },
+    {
+      "file": "v2/docs/reasoningbank/CLAUDE-CODE-INTEGRATION.md",
+      "line": 51,
+      "script": "test:",
+      "text": "\"Bash(npm run test:*)\","
+    },
+    {
+      "file": "v2/docs/reasoningbank/models/safla/TRAINING_SUMMARY.md",
+      "line": 318,
+      "script": "train",
+      "text": "npm run train"
+    },
+    {
+      "file": "v2/docs/reasoningbank/models/safla/TRAINING_SUMMARY.md",
+      "line": 321,
+      "script": "validate",
+      "text": "npm run validate"
+    },
+    {
+      "file": "v2/tests/README-AGENTDB-TESTS.md",
+      "line": 50,
+      "script": "test:agentdb",
+      "text": "npm run test:agentdb"
+    },
+    {
+      "file": "v2/tests/verification/test-pattern-fixes.js",
+      "line": 297,
+      "script": "start:mcp",
+      "text": "log('Try: npm run start:mcp (in another terminal)', 'yellow');"
+    },
+    {
+      "file": "v2/bin/init/templates/settings.json",
+      "line": 14,
+      "script": "test:",
+      "text": "\"Bash(npm run test:*)\","
+    },
+    {
+      "file": "v2/docs/integrations/epic-sdk/epic-sdk-integration.md",
+      "line": 1013,
+      "script": "migrate:v3",
+      "text": "npm run migrate:v3"
+    },
+    {
+      "file": "v2/docs/integrations/epic-sdk/epic-sdk-integration.md",
+      "line": 1024,
+      "script": "test:migration",
+      "text": "npm run test:migration"
+    },
+    {
+      "file": "v2/docs/integrations/epic-sdk/epic-sdk-integration.md",
+      "line": 1165,
+      "script": "test:migration",
+      "text": "await exec('npm run test:migration');"
+    },
+    {
+      "file": "v2/docs/integrations/epic-sdk/epic-sdk-integration.md",
+      "line": 1255,
+      "script": "rollback:v2",
+      "text": "npm run rollback:v2"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 288,
+      "script": "api",
+      "text": "command: npm run api"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 366,
+      "script": "api",
+      "text": "→ Result: Successfully killed shell: bash_2 (npm run api)"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 424,
+      "script": "build:production",
+      "text": "command: npm run build:production"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 465,
+      "script": "metrics:watch",
+      "text": "command: npm run metrics:watch"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 509,
+      "script": "serve",
+      "text": "npm run serve           # run_in_background: true"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 514,
+      "script": "watch",
+      "text": "npm run watch           # run_in_background: true"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 515,
+      "script": "build:watch",
+      "text": "npm run build:watch     # run_in_background: true"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 592,
+      "script": "build:production",
+      "text": "npm run build:production  # run_in_background: true"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 687,
+      "script": "api",
+      "text": "- `npm run api` - API development server"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 689,
+      "script": "watch",
+      "text": "- `npm run watch` - File watcher"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 710,
+      "script": "api",
+      "text": "3. Start 'npm run api' with run_in_background: true"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 781,
+      "script": "api",
+      "text": "- Backend: npm run api (background)"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 805,
+      "script": "api",
+      "text": "command: npm run api"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 819,
+      "script": "migrate",
+      "text": "command: npm run migrate"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 1021,
+      "script": "api",
+      "text": "bash_2: npm run api (backend)"
+    },
+    {
+      "file": "v2/docs/wiki/background-commands.md",
+      "line": 1094,
+      "script": "api",
+      "text": "--background \"npm run api\" \\"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/RELEASE-v1.7.0.md",
+      "line": 255,
+      "script": "bench:memory",
+      "text": "npm run bench:memory -- --agents 4"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/RELEASE-v1.7.0.md",
+      "line": 258,
+      "script": "bench:search",
+      "text": "npm run bench:search -- --vectors 100000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/RELEASE-v1.7.0.md",
+      "line": 261,
+      "script": "bench:batch",
+      "text": "npm run bench:batch -- --count 1000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/README.md",
+      "line": 164,
+      "script": "bench:memory",
+      "text": "npm run bench:memory -- --agents 4"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/README.md",
+      "line": 165,
+      "script": "bench:search",
+      "text": "npm run bench:search -- --vectors 100000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/README.md",
+      "line": 213,
+      "script": "bench:",
+      "text": "- [ ] Verify performance: `npm run bench:*`"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 218,
+      "script": "bench:memory",
+      "text": "npm run bench:memory -- --agents 4"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 219,
+      "script": "bench:search",
+      "text": "npm run bench:search -- --vectors 100000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 220,
+      "script": "bench:batch",
+      "text": "npm run bench:batch -- --count 1000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 227,
+      "script": "bench:memory",
+      "text": "npm run bench:memory -- --agents 4"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 228,
+      "script": "bench:search",
+      "text": "npm run bench:search -- --vectors 100000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 229,
+      "script": "bench:batch",
+      "text": "npm run bench:batch -- --count 1000"
+    },
+    {
+      "file": "v2/docs/integrations/agentic-flow/MIGRATION_v1.7.0.md",
+      "line": 373,
+      "script": "bench:",
+      "text": "- [ ] Benchmark performance (optional): `npm run bench:*`"
+    },
+    {
+      "file": "v2/docs/phase-1-2-implementation-summary.md",
+      "line": 539,
+      "script": "migrate-tools",
+      "text": "npm run migrate-tools"
+    },
+    {
+      "file": "v2/src/cli/simple-commands/github/init.js",
+      "line": 266,
+      "script": "test:",
+      "text": "'Bash(npm run test:*)',"
+    },
+    {
+      "file": "v2/docs/sdk/epic-sdk-integration.md",
+      "line": 1013,
+      "script": "migrate:v3",
+      "text": "npm run migrate:v3"
+    },
+    {
+      "file": "v2/docs/sdk/epic-sdk-integration.md",
+      "line": 1024,
+      "script": "test:migration",
+      "text": "npm run test:migration"
+    },
+    {
+      "file": "v2/docs/sdk/epic-sdk-integration.md",
+      "line": 1165,
+      "script": "test:migration",
+      "text": "await exec('npm run test:migration');"
+    },
+    {
+      "file": "v2/docs/sdk/epic-sdk-integration.md",
+      "line": 1255,
+      "script": "rollback:v2",
+      "text": "npm run rollback:v2"
+    },
+    {
+      "file": "v2/src/cli/simple-commands/verification-integration.js",
+      "line": 303,
+      "script": "coverage",
+      "text": "const { stdout } = await execAsync('npm run coverage 2>&1 || true');"
+    },
+    {
+      "file": "v2/examples/parallel-2/analyze-results.ts",
+      "line": 92,
+      "script": "test:parallel",
+      "text": "console.log(\"\\nMake sure to run the parallel test first: npm run test:parallel\");"
+    },
+    {
+      "file": "v2/examples/parallel-2/package.json",
+      "line": 10,
+      "script": "analyze",
+      "text": "\"test:full\": \"npm run clean && npm run test && npm run analyze\""
+    },
+    {
+      "file": "v2/src/cli/simple-commands/init/templates/enhanced-templates.js",
+      "line": 2217,
+      "script": "test:",
+      "text": "'Bash(npm run test:*)',"
+    },
+    {
+      "file": "v2/examples/parallel-2/README.md",
+      "line": 41,
+      "script": "analyze",
+      "text": "npm run analyze"
+    },
+    {
+      "file": "v2/examples/parallel-2/README.md",
+      "line": 51,
+      "script": "test:full",
+      "text": "npm run test:full"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README-PRODUCTS-ORDERS.md",
+      "line": 140,
+      "script": "seed",
+      "text": "npm run seed"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README-PRODUCTS-ORDERS.md",
+      "line": 143,
+      "script": "seed:products",
+      "text": "npm run seed:products"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README-PRODUCTS-ORDERS.md",
+      "line": 146,
+      "script": "seed:orders",
+      "text": "npm run seed:orders"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/scripts/quick-start.sh",
+      "line": 110,
+      "script": "seed",
+      "text": "npm run seed"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/scripts/quick-start.sh",
+      "line": 139,
+      "script": "seed",
+      "text": "echo \"  npm run seed    - Reseed database\""
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 195,
+      "script": "seed",
+      "text": "npm run seed"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 428,
+      "script": "lint:fix",
+      "text": "npm run lint:fix"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 467,
+      "script": "seed",
+      "text": "npm run seed"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 470,
+      "script": "seed:products",
+      "text": "npm run seed:products"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 471,
+      "script": "seed:orders",
+      "text": "npm run seed:orders"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/README.md",
+      "line": 474,
+      "script": "seed:clean",
+      "text": "npm run seed:clean"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/IMPLEMENTATION-SUMMARY.md",
+      "line": 123,
+      "script": "seed",
+      "text": "npm run seed"
+    },
+    {
+      "file": "v2/examples/05-swarm-apps/rest-api-advanced/docs/API.md",
+      "line": 59,
+      "script": "seed",
+      "text": "5. Run database seeders: `npm run seed`"
+    },
+    {
+      "file": "v2/src/cli/simple-commands/init/templates/settings.json",
+      "line": 14,
+      "script": "test:",
+      "text": "\"Bash(npm run test:*)\","
+    }
+  ],
+  "count": 103
+}

@@ -1,0 +1,8 @@
+### references to wrapper entrypoints in v2/src,v2/bin,v2/scripts,v2/docs
+/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/claude-code-wrapper.ts:829:    console.error('ℹ️  To use legacy mode, set CLAUDE_FLOW_LEGACY_MCP=true');
+/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/server-wrapper-mode.ts:12:  process.env.CLAUDE_FLOW_WRAPPER_MODE === 'true' || process.argv.includes('--wrapper');
+/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/server-with-wrapper.ts:10:  process.env.CLAUDE_FLOW_LEGACY_MCP === 'true' || process.argv.includes('--legacy');
+
+### references in package scripts/bin
+bin { 'claude-flow': 'bin/claude-flow.js' }
+scriptsWithWrapperRefs []

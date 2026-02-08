@@ -1,0 +1,60 @@
+flowchart TD
+  V2Pkg["v2/package.json"]
+  BinDispatcher["v2/bin/claude-flow.js"]
+  CLIMain["v2/src/cli/main.ts"]
+  CmdIndex["v2/src/cli/commands/index.ts"]
+  CmdRegistry["v2/src/cli/command-registry.js"]
+  InitNeural["missing: v2/scripts/init-neural.js"]
+  InitGoal["missing: v2/scripts/init-goal.js"]
+  MissingServer["missing: v2/server.js"]
+  DistMissing["missing: v2/dist/*"]
+
+  DockerTest["v2/docker/Dockerfile.test"]
+  MissingFeatCoverage["missing script: test:features:coverage"]
+  VerifyBin["v2/bin/verification-integration.js"]
+  VerifySrc["v2/src/cli/simple-commands/verification-integration.js"]
+  MissingCoverage["missing script: coverage"]
+
+  MCPIndex["v2/src/mcp/index.ts"]
+  ProgRegistry["v2/src/mcp/tool-registry-progressive.ts"]
+  ToolLoader["v2/src/mcp/tools/loader.ts"]
+  StatusTool["v2/src/mcp/tools/system/status.ts"]
+  TemplateTool["v2/src/mcp/tools/_template.ts"]
+  WrapperEntrypoints["v2/src/mcp/{server-with-wrapper,server-wrapper-mode,integrate-wrapper}.ts"]
+
+  JestCfg["v2/jest.config.js"]
+  MCPTests["v2/src/mcp/tests/mcp-integration.test.ts"]
+
+  DocsBlockA["docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md"]
+  DocsBlockB["docs/mcp-spec-2025-implementation-plan.md"]
+
+  V2Pkg --> BinDispatcher
+  V2Pkg --> CLIMain
+  V2Pkg --> MissingServer
+  V2Pkg --> InitNeural
+  V2Pkg --> InitGoal
+  V2Pkg --> DistMissing
+
+  CLIMain --> CmdIndex
+  CmdRegistry --> CmdIndex
+  CmdIndex -.imports.-> InitNeural
+  CmdIndex -.imports.-> InitGoal
+
+  DockerTest -.runs.-> MissingFeatCoverage
+  VerifyBin -.runs.-> MissingCoverage
+  VerifySrc -.runs.-> MissingCoverage
+
+  MCPIndex --> ProgRegistry
+  ProgRegistry --> ToolLoader
+  ToolLoader --> StatusTool
+  ToolLoader -.excludes _*.ts.-> TemplateTool
+
+  JestCfg --> MCPTests
+
+  DocsBlockA -.references missing scripts.-> MissingCoverage
+  DocsBlockB -.references missing scripts.-> MissingCoverage
+
+  WrapperOrphan["wrapper entrypoints have no script/bin wiring"]:::risk
+  WrapperEntrypoints -.candidate.-> WrapperOrphan
+
+  classDef risk fill:#ffe6e6,stroke:#b22222,color:#8b0000;

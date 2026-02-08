@@ -1,0 +1,14 @@
+validate	false
+validate:sdk	false
+validate:claude-flow	false
+test:memory	false
+test:coordination	false
+test:hybrid	false
+test:async	false
+test:registry	false
+test:compliance	false
+registry:publish	false
+start:async	false
+jobs:monitor	false
+coverage	false
+test:features:coverage	false

@@ -1,0 +1,23 @@
+config_type,key,file,line,symbol,context,usage_surface,note
+package_main,main,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,6,main,"\"main\": \"cli.mjs\"",runtime,configured main target is missing on disk
+npm_script,start,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,13,scripts.start,"\"start\": \"node server.js\"",runtime,server.js missing and command fails
+npm_script,init:neural,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,14,scripts.init:neural,"\"init:neural\": \"node scripts/init-neural.js\"",runtime,target file missing
+npm_script,init:goal,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,15,scripts.init:goal,"\"init:goal\": \"node scripts/init-goal.js\"",runtime,target file missing
+npm_script,diagnostics,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,51,scripts.diagnostics,"dynamic import './dist/monitoring/diagnostics.js'",runtime,dist missing in current package surface
+npm_script,health-check,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,52,scripts.health-check,"dynamic import './dist/monitoring/health-check.js'",runtime,dist missing in current package surface
+npm_script,test:coverage,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,34,scripts.test:coverage,"\"test:coverage\": jest --coverage",runtime,canonical coverage script exists
+npm_script,coverage,/Users/alessiorocchi/Projects/claude-flow/v2/bin/verification-integration.js,303,checkTestCoverage,"execAsync('npm run coverage 2>&1 || true')",runtime,invokes undefined alias instead of test:coverage
+npm_script,coverage,/Users/alessiorocchi/Projects/claude-flow/v2/src/cli/simple-commands/verification-integration.js,303,checkTestCoverage,"execAsync('npm run coverage 2>&1 || true')",runtime,duplicate undefined alias
+npm_script,test:features:coverage,/Users/alessiorocchi/Projects/claude-flow/v2/docker/Dockerfile.test,20,test stage,"RUN npm run test:features:coverage",ci_test,invokes undefined script
+package_files,dist/,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,108,files[dist],"\"dist/\" listed in files",publish,dist directory currently absent
+package_files,DOCKER_TEST_REPORT.md,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,117,files[DOCKER_TEST_REPORT.md],"\"DOCKER_TEST_REPORT.md\" listed in files",publish,file absent (DOCKER_TEST_CONFIRMATION.md exists)
+package_files,bin/claude-flow-swarm,/Users/alessiorocchi/Projects/claude-flow/v2/package.json,103,files[bin],"wrapper binaries listed in files",publish,several listed wrappers absent on disk
+cli_route,neural_init_import,/Users/alessiorocchi/Projects/claude-flow/v2/src/cli/commands/index.ts,81,setupCommands.neural.init,"await import('../../scripts/init-neural.js')",runtime,target missing; route fails if invoked
+cli_route,goal_init_import,/Users/alessiorocchi/Projects/claude-flow/v2/src/cli/commands/index.ts,115,setupCommands.goal.init,"await import('../../scripts/init-goal.js')",runtime,target missing; route fails if invoked
+cli_doc,neural_init_examples,/Users/alessiorocchi/Projects/claude-flow/v2/src/cli/command-registry.js,690,commandRegistry.neural.examples,"'neural init' examples",docs_runtime,public help still advertises init flow
+cli_doc,goal_init_examples,/Users/alessiorocchi/Projects/claude-flow/v2/src/cli/command-registry.js,709,commandRegistry.goal.examples,"'goal init' examples",docs_runtime,public help still advertises init flow
+env_var,CLAUDE_FLOW_LEGACY_MCP,/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/server-with-wrapper.ts,10,useLegacy,"process.env.CLAUDE_FLOW_LEGACY_MCP === 'true'",runtime_toggle,no package script/bin references found
+env_var,CLAUDE_FLOW_WRAPPER_MODE,/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/server-wrapper-mode.ts,12,isWrapperMode,"process.env.CLAUDE_FLOW_WRAPPER_MODE === 'true'",runtime_toggle,no package script/bin references found
+loader_rule,underscore_file_exclusion,/Users/alessiorocchi/Projects/claude-flow/v2/src/mcp/tools/loader.ts,102,validToolFiles,"(ext === '.ts' || ext === '.js') && !f.startsWith('_')",runtime_dynamic,protects template files from runtime loading
+doc_command,validate/test stubs,/Users/alessiorocchi/Projects/claude-flow/v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md,218,validation scripts block,"npm run validate* / test:* references",docs,all referenced scripts absent from v2 package scripts
+doc_command,mcp-spec async/reg scripts,/Users/alessiorocchi/Projects/claude-flow/v2/docs/mcp-spec-2025-implementation-plan.md,1293,mcp spec script block,"npm run test:async/test:registry/...",docs,all referenced scripts absent from v2 package scripts

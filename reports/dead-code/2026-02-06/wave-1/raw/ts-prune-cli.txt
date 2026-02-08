@@ -1,0 +1,716 @@
+v3/@claude-flow/cli/src/index.ts:32 - VERSION (used in module)
+v3/@claude-flow/cli/src/index.ts:34 - CLIOptions (used in module)
+v3/@claude-flow/cli/src/index.ts:44 - CLI (used in module)
+v3/@claude-flow/cli/src/index.ts:514 - CommandParser (used in module)
+v3/@claude-flow/cli/src/index.ts:514 - commandParser (used in module)
+v3/@claude-flow/cli/src/index.ts:517 - OutputFormatter (used in module)
+v3/@claude-flow/cli/src/index.ts:517 - output (used in module)
+v3/@claude-flow/cli/src/index.ts:517 - Progress
+v3/@claude-flow/cli/src/index.ts:517 - Spinner
+v3/@claude-flow/cli/src/index.ts:517 - VerbosityLevel
+v3/@claude-flow/cli/src/index.ts:527 - MCPServerManager
+v3/@claude-flow/cli/src/index.ts:528 - createMCPServerManager
+v3/@claude-flow/cli/src/index.ts:529 - getServerManager
+v3/@claude-flow/cli/src/index.ts:530 - startMCPServer
+v3/@claude-flow/cli/src/index.ts:531 - stopMCPServer
+v3/@claude-flow/cli/src/index.ts:532 - getMCPServerStatus
+v3/@claude-flow/cli/src/index.ts:533 - MCPServerOptions
+v3/@claude-flow/cli/src/index.ts:534 - MCPServerStatus
+v3/@claude-flow/cli/src/index.ts:539 - initializeMemoryDatabase
+v3/@claude-flow/cli/src/index.ts:540 - generateEmbedding
+v3/@claude-flow/cli/src/index.ts:541 - generateBatchEmbeddings
+v3/@claude-flow/cli/src/index.ts:542 - storeEntry
+v3/@claude-flow/cli/src/index.ts:543 - searchEntries
+v3/@claude-flow/cli/src/index.ts:544 - getHNSWIndex
+v3/@claude-flow/cli/src/index.ts:545 - addToHNSWIndex
+v3/@claude-flow/cli/src/index.ts:546 - searchHNSWIndex
+v3/@claude-flow/cli/src/index.ts:547 - getHNSWStatus
+v3/@claude-flow/cli/src/index.ts:548 - clearHNSWIndex
+v3/@claude-flow/cli/src/index.ts:549 - quantizeInt8
+v3/@claude-flow/cli/src/index.ts:550 - dequantizeInt8
+v3/@claude-flow/cli/src/index.ts:551 - quantizedCosineSim
+v3/@claude-flow/cli/src/index.ts:552 - getQuantizationStats
+v3/@claude-flow/cli/src/index.ts:554 - batchCosineSim
+v3/@claude-flow/cli/src/index.ts:555 - softmaxAttention
+v3/@claude-flow/cli/src/index.ts:556 - topKIndices
+v3/@claude-flow/cli/src/index.ts:557 - flashAttentionSearch
+v3/@claude-flow/cli/src/index.ts:558 - MemoryInitResult
+v3/@claude-flow/cli/src/index.ts:562 - initializeIntelligence
+v3/@claude-flow/cli/src/index.ts:563 - recordStep
+v3/@claude-flow/cli/src/index.ts:564 - recordTrajectory
+v3/@claude-flow/cli/src/index.ts:565 - findSimilarPatterns
+v3/@claude-flow/cli/src/index.ts:566 - getIntelligenceStats
+v3/@claude-flow/cli/src/index.ts:567 - getSonaCoordinator
+v3/@claude-flow/cli/src/index.ts:568 - getReasoningBank
+v3/@claude-flow/cli/src/index.ts:569 - clearIntelligence
+v3/@claude-flow/cli/src/index.ts:570 - benchmarkAdaptation
+v3/@claude-flow/cli/src/index.ts:572 - getAllPatterns
+v3/@claude-flow/cli/src/index.ts:573 - getPatternsByType
+v3/@claude-flow/cli/src/index.ts:574 - flushPatterns
+v3/@claude-flow/cli/src/index.ts:575 - deletePattern
+v3/@claude-flow/cli/src/index.ts:576 - clearAllPatterns
+v3/@claude-flow/cli/src/index.ts:577 - getNeuralDataDir
+v3/@claude-flow/cli/src/index.ts:578 - getPersistenceStatus
+v3/@claude-flow/cli/src/index.ts:579 - SonaConfig
+v3/@claude-flow/cli/src/index.ts:580 - TrajectoryStep
+v3/@claude-flow/cli/src/index.ts:581 - Pattern
+v3/@claude-flow/cli/src/index.ts:582 - IntelligenceStats
+v3/@claude-flow/cli/src/index.ts:587 - EWCConsolidator
+v3/@claude-flow/cli/src/index.ts:588 - getEWCConsolidator
+v3/@claude-flow/cli/src/index.ts:589 - resetEWCConsolidator
+v3/@claude-flow/cli/src/index.ts:590 - consolidatePatterns
+v3/@claude-flow/cli/src/index.ts:591 - recordPatternOutcome
+v3/@claude-flow/cli/src/index.ts:592 - getEWCStats
+v3/@claude-flow/cli/src/index.ts:593 - PatternWeights
+v3/@claude-flow/cli/src/index.ts:594 - EWCConfig
+v3/@claude-flow/cli/src/index.ts:595 - ConsolidationResult
+v3/@claude-flow/cli/src/index.ts:596 - EWCStats
+v3/@claude-flow/cli/src/index.ts:601 - SONAOptimizer
+v3/@claude-flow/cli/src/index.ts:602 - getSONAOptimizer
+v3/@claude-flow/cli/src/index.ts:603 - resetSONAOptimizer
+v3/@claude-flow/cli/src/index.ts:604 - processTrajectory
+v3/@claude-flow/cli/src/index.ts:605 - getSuggestion
+v3/@claude-flow/cli/src/index.ts:606 - getSONAStats
+v3/@claude-flow/cli/src/index.ts:607 - TrajectoryOutcome
+v3/@claude-flow/cli/src/index.ts:608 - LearnedPattern
+v3/@claude-flow/cli/src/index.ts:609 - RoutingSuggestion
+v3/@claude-flow/cli/src/index.ts:610 - SONAStats
+v3/@claude-flow/cli/src/index.ts:615 - ErrorHandler
+v3/@claude-flow/cli/src/index.ts:616 - withErrorHandling
+v3/@claude-flow/cli/src/index.ts:619 - ErrorContext
+v3/@claude-flow/cli/src/index.ts:620 - ErrorHandlerConfig
+v3/@claude-flow/cli/src/index.ts:624 - RateLimiter
+v3/@claude-flow/cli/src/index.ts:625 - createRateLimiter
+v3/@claude-flow/cli/src/index.ts:628 - RateLimiterConfig
+v3/@claude-flow/cli/src/index.ts:629 - RateLimitResult
+v3/@claude-flow/cli/src/index.ts:633 - withRetry
+v3/@claude-flow/cli/src/index.ts:634 - makeRetryable
+v3/@claude-flow/cli/src/index.ts:637 - RetryConfig
+v3/@claude-flow/cli/src/index.ts:638 - RetryResult
+v3/@claude-flow/cli/src/index.ts:639 - RetryStrategy
+v3/@claude-flow/cli/src/index.ts:643 - CircuitBreaker
+v3/@claude-flow/cli/src/index.ts:644 - getCircuitBreaker
+v3/@claude-flow/cli/src/index.ts:645 - getAllCircuitStats
+v3/@claude-flow/cli/src/index.ts:646 - resetAllCircuits
+v3/@claude-flow/cli/src/index.ts:649 - CircuitBreakerConfig
+v3/@claude-flow/cli/src/index.ts:650 - CircuitState
+v3/@claude-flow/cli/src/index.ts:654 - MonitoringHooks
+v3/@claude-flow/cli/src/index.ts:655 - createMonitor
+v3/@claude-flow/cli/src/index.ts:656 - getMonitor
+v3/@claude-flow/cli/src/index.ts:659 - MonitorConfig
+v3/@claude-flow/cli/src/index.ts:660 - MetricEvent
+v3/@claude-flow/cli/src/index.ts:661 - HealthStatus
+v3/@claude-flow/cli/src/index.ts:662 - PerformanceMetrics
+v3/@claude-flow/cli/src/index.ts:666 - default (used in module)
+v3/@claude-flow/cli/src/index.ts:10 - CommandContext (used in module)
+v3/@claude-flow/cli/src/index.ts:18 - ParsedFlags
+v3/@claude-flow/cli/src/index.ts:23 - Command
+v3/@claude-flow/cli/src/index.ts:34 - CommandOption
+v3/@claude-flow/cli/src/index.ts:45 - CommandExample
+v3/@claude-flow/cli/src/index.ts:50 - CommandAction
+v3/@claude-flow/cli/src/index.ts:52 - CommandResult
+v3/@claude-flow/cli/src/index.ts:63 - V3Config (used in module)
+v3/@claude-flow/cli/src/index.ts:86 - AgentConfig
+v3/@claude-flow/cli/src/index.ts:94 - ProviderConfig
+v3/@claude-flow/cli/src/index.ts:103 - SwarmConfig
+v3/@claude-flow/cli/src/index.ts:111 - MemoryConfig
+v3/@claude-flow/cli/src/index.ts:119 - MCPConfig
+v3/@claude-flow/cli/src/index.ts:127 - CLIPreferences
+v3/@claude-flow/cli/src/index.ts:135 - HooksConfig
+v3/@claude-flow/cli/src/index.ts:141 - HookDefinition
+v3/@claude-flow/cli/src/index.ts:153 - TableColumn
+v3/@claude-flow/cli/src/index.ts:161 - TableOptions
+v3/@claude-flow/cli/src/index.ts:170 - ProgressOptions
+v3/@claude-flow/cli/src/index.ts:180 - SpinnerOptions
+v3/@claude-flow/cli/src/index.ts:190 - SelectOption
+v3/@claude-flow/cli/src/index.ts:199 - SelectPromptOptions
+v3/@claude-flow/cli/src/index.ts:207 - ConfirmPromptOptions
+v3/@claude-flow/cli/src/index.ts:214 - InputPromptOptions
+v3/@claude-flow/cli/src/index.ts:222 - MultiSelectPromptOptions
+v3/@claude-flow/cli/src/index.ts:235 - CLIEventType
+v3/@claude-flow/cli/src/index.ts:246 - CLIEvent
+v3/@claude-flow/cli/src/index.ts:256 - CLIError (used in module)
+v3/@claude-flow/cli/src/index.ts:268 - ValidationError
+v3/@claude-flow/cli/src/index.ts:275 - ConfigError
+v3/@claude-flow/cli/src/index.ts:282 - CommandNotFoundError
+v3/@claude-flow/cli/src/index.ts:595 - promptManager
+v3/@claude-flow/cli/src/index.ts:597 - select
+v3/@claude-flow/cli/src/index.ts:600 - confirm
+v3/@claude-flow/cli/src/index.ts:603 - input
+v3/@claude-flow/cli/src/index.ts:606 - multiSelect
+v3/@claude-flow/cli/src/index.ts:609 - text
+v3/@claude-flow/cli/src/index.ts:612 - number
+v3/@claude-flow/cli/src/index.ts:615 - autocomplete
+v3/@claude-flow/cli/src/index.ts:191 - getConfigCommand
+v3/@claude-flow/cli/src/index.ts:192 - getMigrateCommand
+v3/@claude-flow/cli/src/index.ts:193 - getWorkflowCommand
+v3/@claude-flow/cli/src/index.ts:194 - getHiveMindCommand
+v3/@claude-flow/cli/src/index.ts:195 - getProcessCommand
+v3/@claude-flow/cli/src/index.ts:196 - getTaskCommand
+v3/@claude-flow/cli/src/index.ts:197 - getSessionCommand
+v3/@claude-flow/cli/src/index.ts:198 - getNeuralCommand
+v3/@claude-flow/cli/src/index.ts:199 - getSecurityCommand
+v3/@claude-flow/cli/src/index.ts:200 - getPerformanceCommand
+v3/@claude-flow/cli/src/index.ts:201 - getProvidersCommand
+v3/@claude-flow/cli/src/index.ts:202 - getPluginsCommand
+v3/@claude-flow/cli/src/index.ts:203 - getDeploymentCommand
+v3/@claude-flow/cli/src/index.ts:204 - getClaimsCommand
+v3/@claude-flow/cli/src/index.ts:205 - getEmbeddingsCommand
+v3/@claude-flow/cli/src/index.ts:206 - getCompletionsCommand
+v3/@claude-flow/cli/src/index.ts:207 - getAnalyzeCommand
+v3/@claude-flow/cli/src/index.ts:208 - getRouteCommand
+v3/@claude-flow/cli/src/index.ts:209 - getProgressCommand
+v3/@claude-flow/cli/src/index.ts:210 - getIssuesCommand
+v3/@claude-flow/cli/src/index.ts:211 - getRuvectorCommand
+v3/@claude-flow/cli/src/index.ts:212 - getGuidanceCommand
+v3/@claude-flow/cli/src/index.ts:310 - getCommand (used in module)
+v3/@claude-flow/cli/src/index.ts:317 - getCommandAsync (used in module)
+v3/@claude-flow/cli/src/index.ts:333 - hasCommand (used in module)
+v3/@claude-flow/cli/src/index.ts:340 - getCommandNames (used in module)
+v3/@claude-flow/cli/src/index.ts:352 - getUniqueCommands
+v3/@claude-flow/cli/src/index.ts:360 - loadAllCommands
+v3/@claude-flow/cli/src/index.ts:378 - setupCommands
+v3/@claude-flow/cli/src/index.ts:387 - setupAllCommands
+v3/@claude-flow/cli/src/index.ts:170 - initCommand
+v3/@claude-flow/cli/src/index.ts:171 - startCommand
+v3/@claude-flow/cli/src/index.ts:172 - statusCommand
+v3/@claude-flow/cli/src/index.ts:173 - taskCommand
+v3/@claude-flow/cli/src/index.ts:174 - sessionCommand
+v3/@claude-flow/cli/src/index.ts:175 - agentCommand
+v3/@claude-flow/cli/src/index.ts:176 - swarmCommand
+v3/@claude-flow/cli/src/index.ts:177 - memoryCommand
+v3/@claude-flow/cli/src/index.ts:178 - mcpCommand
+v3/@claude-flow/cli/src/index.ts:179 - hooksCommand
+v3/@claude-flow/cli/src/index.ts:180 - daemonCommand
+v3/@claude-flow/cli/src/index.ts:181 - doctorCommand
+v3/@claude-flow/cli/src/index.ts:182 - embeddingsCommand
+v3/@claude-flow/cli/src/index.ts:183 - neuralCommand
+v3/@claude-flow/cli/src/index.ts:184 - performanceCommand
+v3/@claude-flow/cli/src/index.ts:185 - securityCommand
+v3/@claude-flow/cli/src/index.ts:186 - ruvectorCommand
+v3/@claude-flow/cli/src/index.ts:187 - hiveMindCommand
+v3/@claude-flow/cli/src/index.ts:188 - guidanceCommand
+v3/@claude-flow/cli/src/index.ts:218 - commands (used in module)
+v3/@claude-flow/cli/src/index.ts:244 - commandsByCategory (used in module)
+v3/@claude-flow/cli/src/index.ts:294 - commandRegistry
+v3/@claude-flow/cli/src/mcp-server.ts:756 - default
+v3/@claude-flow/cli/src/parser.ts:8 - ParseResult (used in module)
+v3/@claude-flow/cli/src/parser.ts:15 - ParserOptions (used in module)
+v3/@claude-flow/cli/src/suggest.ts:11 - levenshteinDistance (used in module)
+v3/@claude-flow/cli/src/suggest.ts:50 - similarityScore (used in module)
+v3/@claude-flow/cli/src/suggest.ts:60 - findSimilar (used in module)
+v3/@claude-flow/cli/src/suggest.ts:100 - formatSuggestion (used in module)
+v3/@claude-flow/cli/src/suggest.ts:185 - getTypoCorrection (used in module)
+v3/@claude-flow/cli/src/suggest.ts:128 - COMMON_TYPOS (used in module)
+v3/@claude-flow/cli/src/suggest.ts:237 - default
+v3/@claude-flow/cli/src/commands/transfer-store.ts:18 - storeListCommand (used in module)
+v3/@claude-flow/cli/src/commands/transfer-store.ts:124 - storeSearchCommand (used in module)
+v3/@claude-flow/cli/src/commands/transfer-store.ts:205 - storeDownloadCommand (used in module)
+v3/@claude-flow/cli/src/commands/transfer-store.ts:287 - storePublishCommand (used in module)
+v3/@claude-flow/cli/src/commands/transfer-store.ts:372 - storeInfoCommand (used in module)
+v3/@claude-flow/cli/src/commands/transfer-store.ts:493 - default (used in module)
+v3/@claude-flow/cli/src/infrastructure/in-memory-repositories.ts:25 - InMemoryAgentRepository
+v3/@claude-flow/cli/src/infrastructure/in-memory-repositories.ts:157 - InMemoryTaskRepository
+v3/@claude-flow/cli/src/init/claudemd-generator.ts:517 - default
+v3/@claude-flow/cli/src/init/index.ts:9 - InitComponents
+v3/@claude-flow/cli/src/init/index.ts:10 - InitResult
+v3/@claude-flow/cli/src/init/index.ts:11 - HooksConfig
+v3/@claude-flow/cli/src/init/index.ts:12 - SkillsConfig
+v3/@claude-flow/cli/src/init/index.ts:13 - CommandsConfig
+v3/@claude-flow/cli/src/init/index.ts:14 - AgentsConfig
+v3/@claude-flow/cli/src/init/index.ts:15 - StatuslineConfig
+v3/@claude-flow/cli/src/init/index.ts:16 - MCPConfig
+v3/@claude-flow/cli/src/init/index.ts:17 - RuntimeConfig
+v3/@claude-flow/cli/src/init/index.ts:18 - EmbeddingsConfig
+v3/@claude-flow/cli/src/init/index.ts:19 - PlatformInfo
+v3/@claude-flow/cli/src/init/index.ts:23 - detectPlatform
+v3/@claude-flow/cli/src/init/index.ts:28 - generateSettings
+v3/@claude-flow/cli/src/init/index.ts:29 - generateSettingsJson
+v3/@claude-flow/cli/src/init/index.ts:33 - generateMCPConfig
+v3/@claude-flow/cli/src/init/index.ts:34 - generateMCPJson
+v3/@claude-flow/cli/src/init/index.ts:35 - generateMCPCommands
+v3/@claude-flow/cli/src/init/index.ts:39 - generateStatuslineScript
+v3/@claude-flow/cli/src/init/index.ts:40 - generateStatuslineHook
+v3/@claude-flow/cli/src/init/index.ts:44 - generatePreCommitHook
+v3/@claude-flow/cli/src/init/index.ts:45 - generatePostCommitHook
+v3/@claude-flow/cli/src/init/index.ts:46 - generateSessionManager
+v3/@claude-flow/cli/src/init/index.ts:47 - generateAgentRouter
+v3/@claude-flow/cli/src/init/index.ts:48 - generateMemoryHelper
+v3/@claude-flow/cli/src/init/index.ts:49 - generateHelpers
+v3/@claude-flow/cli/src/init/index.ts:50 - generateWindowsDaemonManager
+v3/@claude-flow/cli/src/init/index.ts:51 - generateWindowsBatchWrapper
+v3/@claude-flow/cli/src/init/index.ts:52 - generateCrossPlatformSessionManager
+v3/@claude-flow/cli/src/init/index.ts:56 - generateClaudeMd
+v3/@claude-flow/cli/src/init/index.ts:57 - generateMinimalClaudeMd
+v3/@claude-flow/cli/src/init/index.ts:58 - CLAUDE_MD_TEMPLATES
+v3/@claude-flow/cli/src/init/index.ts:62 - default
+v3/@claude-flow/cli/src/init/index.ts:63 - UpgradeResult
+v3/@claude-flow/cli/src/init/mcp-generator.ts:122 - getPlatformInstructions
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:22 - analyzeDiffTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:97 - diffRiskTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:139 - diffClassifyTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:180 - diffReviewersTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:228 - fileRiskTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:283 - diffStatsTool (used in module)
+v3/@claude-flow/cli/src/mcp-tools/analyze-tools.ts:346 - default (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:95 - tryImportOrInstall (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:123 - isPackageAvailable (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:135 - resetInstallAttempts (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:13 - AutoInstallOptions (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:142 - OPTIONAL_PACKAGES (used in module)
+v3/@claude-flow/cli/src/mcp-tools/auto-install.ts:157 - default
+v3/@claude-flow/cli/src/mcp-tools/browser-tools.ts:596 - default
+v3/@claude-flow/cli/src/mcp-tools/claims-tools.ts:872 - default (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:581 - hooksPreEdit (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:621 - hooksPostEdit (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:647 - hooksPreCommand (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:683 - hooksPostCommand (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:708 - hooksRoute (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:839 - hooksMetrics (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:882 - hooksList (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:930 - hooksPreTask (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1016 - hooksPostTask (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1050 - hooksExplain (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1107 - hooksPretrain (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1148 - hooksBuildAgents (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1219 - hooksTransfer (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1295 - hooksSessionStart (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1352 - hooksSessionEnd (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1403 - hooksSessionRestore (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1445 - hooksNotify (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1476 - hooksInit (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1517 - hooksIntelligence (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1622 - hooksIntelligenceReset (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1643 - hooksTrajectoryStart (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1683 - hooksTrajectoryStep (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1729 - hooksTrajectoryEnd (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1872 - hooksPatternStore (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:1932 - hooksPatternSearch (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2013 - hooksIntelligenceStats (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2190 - hooksIntelligenceLearn (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2265 - hooksIntelligenceAttention (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2637 - hooksWorkerList (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2686 - hooksWorkerDispatch (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2786 - hooksWorkerStatus (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2842 - hooksWorkerDetect (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2923 - hooksModelRoute (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:2967 - hooksModelOutcome (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:3000 - hooksModelStats (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:3044 - hooksWorkerCancel (used in module)
+v3/@claude-flow/cli/src/mcp-tools/hooks-tools.ts:3128 - default
+v3/@claude-flow/cli/src/mcp-tools/index.ts:7 - MCPTool
+v3/@claude-flow/cli/src/mcp-tools/index.ts:7 - MCPToolInputSchema
+v3/@claude-flow/cli/src/mcp-tools/index.ts:7 - MCPToolResult
+v3/@claude-flow/cli/src/mcp-tools/index.ts:8 - agentTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:9 - swarmTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:10 - memoryTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:11 - configTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:12 - hooksTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:13 - taskTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:14 - sessionTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:15 - hiveMindTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:16 - workflowTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:17 - coverageRouterTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:18 - analyzeTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:19 - progressTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:20 - transferTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:21 - securityTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:22 - embeddingsTools
+v3/@claude-flow/cli/src/mcp-tools/index.ts:23 - claimsTools
+v3/@claude-flow/cli/src/mcp-tools/progress-tools.ts:387 - default
+v3/@claude-flow/cli/src/mcp-tools/security-tools.ts:470 - default (used in module)
+v3/@claude-flow/cli/src/mcp-tools/transfer-tools.ts:408 - default
+v3/@claude-flow/cli/src/plugins/manager.ts:515 - resetPluginManager
+v3/@claude-flow/cli/src/plugins/manager.ts:30 - InstalledPluginsManifest (used in module)
+v3/@claude-flow/cli/src/plugins/manager.ts:36 - PluginManagerConfig (used in module)
+v3/@claude-flow/cli/src/plugins/manager.ts:54 - PluginManager (used in module)
+v3/@claude-flow/cli/src/production/circuit-breaker.ts:37 - CircuitStats (used in module)
+v3/@claude-flow/cli/src/production/circuit-breaker.ts:322 - default
+v3/@claude-flow/cli/src/production/error-handler.ts:35 - ErrorCategory (used in module)
+v3/@claude-flow/cli/src/production/error-handler.ts:47 - StructuredError (used in module)
+v3/@claude-flow/cli/src/production/error-handler.ts:398 - default
+v3/@claude-flow/cli/src/production/index.ts:14 - ErrorHandler
+v3/@claude-flow/cli/src/production/index.ts:14 - withErrorHandling
+v3/@claude-flow/cli/src/production/index.ts:15 - ErrorContext
+v3/@claude-flow/cli/src/production/index.ts:15 - ErrorHandlerConfig
+v3/@claude-flow/cli/src/production/index.ts:16 - RateLimiter
+v3/@claude-flow/cli/src/production/index.ts:16 - createRateLimiter
+v3/@claude-flow/cli/src/production/index.ts:17 - RateLimiterConfig
+v3/@claude-flow/cli/src/production/index.ts:17 - RateLimitResult
+v3/@claude-flow/cli/src/production/index.ts:18 - withRetry
+v3/@claude-flow/cli/src/production/index.ts:19 - RetryConfig
+v3/@claude-flow/cli/src/production/index.ts:19 - RetryResult
+v3/@claude-flow/cli/src/production/index.ts:19 - RetryStrategy
+v3/@claude-flow/cli/src/production/index.ts:20 - CircuitBreaker
+v3/@claude-flow/cli/src/production/index.ts:21 - CircuitBreakerConfig
+v3/@claude-flow/cli/src/production/index.ts:21 - CircuitState
+v3/@claude-flow/cli/src/production/index.ts:22 - MonitoringHooks
+v3/@claude-flow/cli/src/production/index.ts:22 - createMonitor
+v3/@claude-flow/cli/src/production/index.ts:23 - MonitorConfig
+v3/@claude-flow/cli/src/production/index.ts:23 - MetricEvent
+v3/@claude-flow/cli/src/production/monitoring.ts:18 - MetricType (used in module)
+v3/@claude-flow/cli/src/production/monitoring.ts:488 - default
+v3/@claude-flow/cli/src/production/rate-limiter.ts:282 - default
+v3/@claude-flow/cli/src/production/retry.ts:241 - Retryable
+v3/@claude-flow/cli/src/production/retry.ts:270 - default
+v3/@claude-flow/cli/src/runtime/headless.ts:351 - main (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:351 - runWorker (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:351 - runDaemon (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:351 - runBenchmarks (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:351 - showStatus (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:352 - HeadlessConfig (used in module)
+v3/@claude-flow/cli/src/runtime/headless.ts:352 - BenchmarkResults (used in module)
+v3/@claude-flow/cli/src/ruvector/coverage-tools.ts:173 - default
+v3/@claude-flow/cli/src/ruvector/index.ts:171 - getRuvectorVersion
+v3/@claude-flow/cli/src/ruvector/index.ts:16 - QLearningRouterConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:18 - MoERouter
+v3/@claude-flow/cli/src/ruvector/index.ts:19 - getMoERouter
+v3/@claude-flow/cli/src/ruvector/index.ts:20 - resetMoERouter
+v3/@claude-flow/cli/src/ruvector/index.ts:21 - createMoERouter
+v3/@claude-flow/cli/src/ruvector/index.ts:22 - EXPERT_NAMES
+v3/@claude-flow/cli/src/ruvector/index.ts:23 - NUM_EXPERTS
+v3/@claude-flow/cli/src/ruvector/index.ts:24 - INPUT_DIM (used in module)
+v3/@claude-flow/cli/src/ruvector/index.ts:25 - HIDDEN_DIM
+v3/@claude-flow/cli/src/ruvector/index.ts:26 - ExpertType
+v3/@claude-flow/cli/src/ruvector/index.ts:27 - MoERouterConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:28 - RoutingResult
+v3/@claude-flow/cli/src/ruvector/index.ts:29 - LoadBalanceStats
+v3/@claude-flow/cli/src/ruvector/index.ts:31 - ASTAnalyzer
+v3/@claude-flow/cli/src/ruvector/index.ts:31 - createASTAnalyzer
+v3/@claude-flow/cli/src/ruvector/index.ts:31 - ASTAnalysis
+v3/@claude-flow/cli/src/ruvector/index.ts:31 - ASTNode
+v3/@claude-flow/cli/src/ruvector/index.ts:31 - ASTAnalyzerConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:33 - DiffClassifier
+v3/@claude-flow/cli/src/ruvector/index.ts:34 - createDiffClassifier
+v3/@claude-flow/cli/src/ruvector/index.ts:36 - analyzeDiff
+v3/@claude-flow/cli/src/ruvector/index.ts:37 - analyzeDiffSync
+v3/@claude-flow/cli/src/ruvector/index.ts:38 - assessFileRisk
+v3/@claude-flow/cli/src/ruvector/index.ts:39 - assessOverallRisk
+v3/@claude-flow/cli/src/ruvector/index.ts:40 - classifyDiff
+v3/@claude-flow/cli/src/ruvector/index.ts:41 - suggestReviewers
+v3/@claude-flow/cli/src/ruvector/index.ts:42 - getGitDiffNumstat
+v3/@claude-flow/cli/src/ruvector/index.ts:43 - getGitDiffNumstatAsync
+v3/@claude-flow/cli/src/ruvector/index.ts:45 - clearDiffCache
+v3/@claude-flow/cli/src/ruvector/index.ts:46 - clearAllDiffCaches
+v3/@claude-flow/cli/src/ruvector/index.ts:48 - DiffClassification
+v3/@claude-flow/cli/src/ruvector/index.ts:49 - DiffHunk
+v3/@claude-flow/cli/src/ruvector/index.ts:50 - DiffChange
+v3/@claude-flow/cli/src/ruvector/index.ts:51 - FileDiff
+v3/@claude-flow/cli/src/ruvector/index.ts:52 - DiffAnalysis
+v3/@claude-flow/cli/src/ruvector/index.ts:53 - DiffClassifierConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:54 - DiffFile
+v3/@claude-flow/cli/src/ruvector/index.ts:55 - RiskLevel
+v3/@claude-flow/cli/src/ruvector/index.ts:56 - FileRisk
+v3/@claude-flow/cli/src/ruvector/index.ts:57 - OverallRisk
+v3/@claude-flow/cli/src/ruvector/index.ts:58 - DiffAnalysisResult
+v3/@claude-flow/cli/src/ruvector/index.ts:61 - CoverageRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:62 - createCoverageRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:64 - coverageRoute
+v3/@claude-flow/cli/src/ruvector/index.ts:65 - coverageSuggest
+v3/@claude-flow/cli/src/ruvector/index.ts:66 - coverageGaps
+v3/@claude-flow/cli/src/ruvector/index.ts:68 - clearCoverageCache
+v3/@claude-flow/cli/src/ruvector/index.ts:69 - getCoverageCacheStats
+v3/@claude-flow/cli/src/ruvector/index.ts:71 - CoverageRouterConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:72 - FileCoverage
+v3/@claude-flow/cli/src/ruvector/index.ts:73 - CoverageReport
+v3/@claude-flow/cli/src/ruvector/index.ts:74 - CoverageRouteResult
+v3/@claude-flow/cli/src/ruvector/index.ts:75 - CoverageSuggestResult
+v3/@claude-flow/cli/src/ruvector/index.ts:76 - CoverageGapsResult
+v3/@claude-flow/cli/src/ruvector/index.ts:77 - CoverageRouteOptions
+v3/@claude-flow/cli/src/ruvector/index.ts:78 - CoverageSuggestOptions
+v3/@claude-flow/cli/src/ruvector/index.ts:79 - CoverageGapsOptions
+v3/@claude-flow/cli/src/ruvector/index.ts:81 - coverageRouterTools
+v3/@claude-flow/cli/src/ruvector/index.ts:81 - hooksCoverageRoute
+v3/@claude-flow/cli/src/ruvector/index.ts:81 - hooksCoverageSuggest
+v3/@claude-flow/cli/src/ruvector/index.ts:81 - hooksCoverageGaps
+v3/@claude-flow/cli/src/ruvector/index.ts:83 - buildDependencyGraph
+v3/@claude-flow/cli/src/ruvector/index.ts:84 - analyzeGraph
+v3/@claude-flow/cli/src/ruvector/index.ts:85 - analyzeMinCutBoundaries
+v3/@claude-flow/cli/src/ruvector/index.ts:86 - analyzeModuleCommunities
+v3/@claude-flow/cli/src/ruvector/index.ts:87 - detectCircularDependencies
+v3/@claude-flow/cli/src/ruvector/index.ts:88 - exportToDot
+v3/@claude-flow/cli/src/ruvector/index.ts:89 - loadRuVector
+v3/@claude-flow/cli/src/ruvector/index.ts:90 - fallbackMinCut
+v3/@claude-flow/cli/src/ruvector/index.ts:91 - fallbackLouvain
+v3/@claude-flow/cli/src/ruvector/index.ts:93 - clearGraphCaches
+v3/@claude-flow/cli/src/ruvector/index.ts:94 - getGraphCacheStats
+v3/@claude-flow/cli/src/ruvector/index.ts:95 - GraphNode
+v3/@claude-flow/cli/src/ruvector/index.ts:96 - GraphEdge
+v3/@claude-flow/cli/src/ruvector/index.ts:97 - DependencyGraph
+v3/@claude-flow/cli/src/ruvector/index.ts:98 - MinCutBoundary
+v3/@claude-flow/cli/src/ruvector/index.ts:99 - ModuleCommunity
+v3/@claude-flow/cli/src/ruvector/index.ts:100 - CircularDependency
+v3/@claude-flow/cli/src/ruvector/index.ts:101 - GraphAnalysisResult
+v3/@claude-flow/cli/src/ruvector/index.ts:104 - FlashAttention
+v3/@claude-flow/cli/src/ruvector/index.ts:105 - getFlashAttention
+v3/@claude-flow/cli/src/ruvector/index.ts:106 - resetFlashAttention
+v3/@claude-flow/cli/src/ruvector/index.ts:107 - computeAttention
+v3/@claude-flow/cli/src/ruvector/index.ts:108 - benchmarkFlashAttention
+v3/@claude-flow/cli/src/ruvector/index.ts:109 - getFlashAttentionSpeedup
+v3/@claude-flow/cli/src/ruvector/index.ts:110 - FlashAttentionConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:111 - AttentionResult
+v3/@claude-flow/cli/src/ruvector/index.ts:112 - BenchmarkResult
+v3/@claude-flow/cli/src/ruvector/index.ts:115 - LoRAAdapter
+v3/@claude-flow/cli/src/ruvector/index.ts:116 - getLoRAAdapter
+v3/@claude-flow/cli/src/ruvector/index.ts:117 - resetLoRAAdapter
+v3/@claude-flow/cli/src/ruvector/index.ts:118 - createLoRAAdapter
+v3/@claude-flow/cli/src/ruvector/index.ts:119 - adaptEmbedding
+v3/@claude-flow/cli/src/ruvector/index.ts:120 - trainLoRA
+v3/@claude-flow/cli/src/ruvector/index.ts:121 - getLoRAStats
+v3/@claude-flow/cli/src/ruvector/index.ts:122 - DEFAULT_RANK
+v3/@claude-flow/cli/src/ruvector/index.ts:123 - DEFAULT_ALPHA
+v3/@claude-flow/cli/src/ruvector/index.ts:124 - LORA_INPUT_DIM
+v3/@claude-flow/cli/src/ruvector/index.ts:125 - LORA_OUTPUT_DIM
+v3/@claude-flow/cli/src/ruvector/index.ts:126 - LoRAConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:127 - LoRAWeights
+v3/@claude-flow/cli/src/ruvector/index.ts:128 - AdaptationResult
+v3/@claude-flow/cli/src/ruvector/index.ts:129 - LoRAStats
+v3/@claude-flow/cli/src/ruvector/index.ts:132 - ModelRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:133 - getModelRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:134 - resetModelRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:135 - createModelRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:136 - routeToModel
+v3/@claude-flow/cli/src/ruvector/index.ts:137 - routeToModelFull
+v3/@claude-flow/cli/src/ruvector/index.ts:138 - analyzeTaskComplexity
+v3/@claude-flow/cli/src/ruvector/index.ts:139 - getModelRouterStats
+v3/@claude-flow/cli/src/ruvector/index.ts:140 - recordModelOutcome
+v3/@claude-flow/cli/src/ruvector/index.ts:141 - MODEL_CAPABILITIES
+v3/@claude-flow/cli/src/ruvector/index.ts:142 - COMPLEXITY_INDICATORS
+v3/@claude-flow/cli/src/ruvector/index.ts:143 - ClaudeModel
+v3/@claude-flow/cli/src/ruvector/index.ts:144 - ModelRouterConfig
+v3/@claude-flow/cli/src/ruvector/index.ts:145 - ModelRoutingResult
+v3/@claude-flow/cli/src/ruvector/index.ts:146 - ComplexityAnalysis
+v3/@claude-flow/cli/src/ruvector/index.ts:149 - SemanticRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:150 - createSemanticRouter
+v3/@claude-flow/cli/src/ruvector/index.ts:151 - Intent
+v3/@claude-flow/cli/src/ruvector/index.ts:152 - RouteResult
+v3/@claude-flow/cli/src/ruvector/index.ts:153 - RouterConfig
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:145 - loadRuVector (used in module)
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:214 - isRuVectorAvailable
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:221 - isWASMAccelerated (used in module)
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:232 - createVectorDB (used in module)
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:250 - generateEmbedding (used in module)
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:265 - computeSimilarity
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:280 - getStatus
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:18 - VectorDB (used in module)
+v3/@claude-flow/cli/src/ruvector/vector-db.ts:26 - RuVectorModule (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:1110 - createGitHubSync
+v3/@claude-flow/cli/src/services/claim-service.ts:38 - StealReason (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:44 - IssueClaim (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:58 - StealableInfo (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:66 - ClaimResult (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:72 - StealResult (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:80 - AgentLoadInfo (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:91 - RebalanceResult (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:105 - WorkStealingConfig (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:116 - IssueFilters (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:127 - GitHubIssue (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:139 - GitHubSyncConfig (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:149 - GitHubSyncResult (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:178 - ClaimEventType (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:195 - ClaimEvent (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:208 - ClaimService (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:804 - GitHubSync (used in module)
+v3/@claude-flow/cli/src/services/claim-service.ts:1117 - default
+v3/@claude-flow/cli/src/services/index.ts:7 - WorkerDaemon
+v3/@claude-flow/cli/src/services/index.ts:8 - getDaemon
+v3/@claude-flow/cli/src/services/index.ts:9 - startDaemon
+v3/@claude-flow/cli/src/services/index.ts:10 - stopDaemon
+v3/@claude-flow/cli/src/services/index.ts:11 - WorkerType
+v3/@claude-flow/cli/src/services/index.ts:15 - HeadlessWorkerExecutor
+v3/@claude-flow/cli/src/services/index.ts:16 - HEADLESS_WORKER_TYPES
+v3/@claude-flow/cli/src/services/index.ts:17 - HEADLESS_WORKER_CONFIGS
+v3/@claude-flow/cli/src/services/index.ts:18 - LOCAL_WORKER_TYPES
+v3/@claude-flow/cli/src/services/index.ts:19 - LOCAL_WORKER_CONFIGS
+v3/@claude-flow/cli/src/services/index.ts:20 - ALL_WORKER_CONFIGS
+v3/@claude-flow/cli/src/services/index.ts:21 - isHeadlessWorker
+v3/@claude-flow/cli/src/services/index.ts:22 - isLocalWorker
+v3/@claude-flow/cli/src/services/index.ts:23 - getModelId
+v3/@claude-flow/cli/src/services/index.ts:24 - getWorkerConfig
+v3/@claude-flow/cli/src/services/index.ts:25 - HeadlessWorkerType
+v3/@claude-flow/cli/src/services/index.ts:26 - LocalWorkerType
+v3/@claude-flow/cli/src/services/index.ts:27 - HeadlessWorkerConfig
+v3/@claude-flow/cli/src/services/index.ts:28 - HeadlessExecutionResult
+v3/@claude-flow/cli/src/services/index.ts:29 - HeadlessExecutorConfig
+v3/@claude-flow/cli/src/services/index.ts:30 - HeadlessOptions
+v3/@claude-flow/cli/src/services/index.ts:31 - PoolStatus
+v3/@claude-flow/cli/src/services/index.ts:32 - SandboxMode
+v3/@claude-flow/cli/src/services/index.ts:33 - ModelType
+v3/@claude-flow/cli/src/services/index.ts:34 - OutputFormat
+v3/@claude-flow/cli/src/services/index.ts:35 - ExecutionMode
+v3/@claude-flow/cli/src/services/index.ts:36 - WorkerPriority
+v3/@claude-flow/cli/src/services/index.ts:37 - WorkerConfig
+v3/@claude-flow/cli/src/services/index.ts:42 - ContainerWorkerPool
+v3/@claude-flow/cli/src/services/index.ts:43 - ContainerInfo
+v3/@claude-flow/cli/src/services/index.ts:44 - ContainerPoolConfig
+v3/@claude-flow/cli/src/services/index.ts:45 - ContainerExecutionOptions
+v3/@claude-flow/cli/src/services/index.ts:46 - ContainerPoolStatus
+v3/@claude-flow/cli/src/services/index.ts:47 - ContainerState
+v3/@claude-flow/cli/src/services/index.ts:52 - WorkerQueue
+v3/@claude-flow/cli/src/services/index.ts:53 - QueueTask
+v3/@claude-flow/cli/src/services/index.ts:54 - WorkerQueueConfig
+v3/@claude-flow/cli/src/services/index.ts:55 - QueueStats
+v3/@claude-flow/cli/src/services/index.ts:56 - WorkerRegistration
+v3/@claude-flow/cli/src/services/index.ts:57 - TaskStatus
+v3/@claude-flow/cli/src/services/index.ts:61 - WorkerDaemonType
+v3/@claude-flow/cli/src/services/index.ts:62 - HeadlessWorkerExecutorType
+v3/@claude-flow/cli/src/services/index.ts:63 - ContainerWorkerPoolType
+v3/@claude-flow/cli/src/services/index.ts:64 - WorkerQueueType
+v3/@claude-flow/cli/src/transfer/index.ts:11 - createCFP
+v3/@claude-flow/cli/src/transfer/index.ts:12 - serializeToJson
+v3/@claude-flow/cli/src/transfer/index.ts:13 - serializeToBuffer
+v3/@claude-flow/cli/src/transfer/index.ts:14 - deserializeCFP
+v3/@claude-flow/cli/src/transfer/index.ts:15 - validateCFP
+v3/@claude-flow/cli/src/transfer/index.ts:16 - getFileExtension
+v3/@claude-flow/cli/src/transfer/index.ts:17 - detectFormat
+v3/@claude-flow/cli/src/transfer/index.ts:22 - detectPII
+v3/@claude-flow/cli/src/transfer/index.ts:23 - redactPII
+v3/@claude-flow/cli/src/transfer/index.ts:24 - anonymizeCFP
+v3/@claude-flow/cli/src/transfer/index.ts:25 - scanCFPForPII
+v3/@claude-flow/cli/src/transfer/index.ts:30 - exportPatterns
+v3/@claude-flow/cli/src/transfer/index.ts:31 - exportSeraphine
+v3/@claude-flow/cli/src/transfer/index.ts:32 - quickExport
+v3/@claude-flow/cli/src/transfer/index.ts:33 - quickExportToIPFS
+v3/@claude-flow/cli/src/transfer/index.ts:38 - uploadToIPFS
+v3/@claude-flow/cli/src/transfer/index.ts:39 - pinContent
+v3/@claude-flow/cli/src/transfer/index.ts:40 - unpinContent
+v3/@claude-flow/cli/src/transfer/index.ts:41 - checkContent
+v3/@claude-flow/cli/src/transfer/index.ts:42 - getGatewayURL
+v3/@claude-flow/cli/src/transfer/index.ts:43 - getIPNSURL
+v3/@claude-flow/cli/src/transfer/index.ts:48 - SERAPHINE_VERSION
+v3/@claude-flow/cli/src/transfer/index.ts:49 - SERAPHINE_METADATA
+v3/@claude-flow/cli/src/transfer/index.ts:50 - SERAPHINE_ROUTING_PATTERNS
+v3/@claude-flow/cli/src/transfer/index.ts:51 - SERAPHINE_COMPLEXITY_PATTERNS
+v3/@claude-flow/cli/src/transfer/index.ts:52 - SERAPHINE_COVERAGE_PATTERNS
+v3/@claude-flow/cli/src/transfer/index.ts:53 - SERAPHINE_TRAJECTORY_PATTERNS
+v3/@claude-flow/cli/src/transfer/index.ts:54 - SERAPHINE_CUSTOM_PATTERNS
+v3/@claude-flow/cli/src/transfer/index.ts:55 - createSeraphinePatterns
+v3/@claude-flow/cli/src/transfer/index.ts:56 - createSeraphineGenesis
+v3/@claude-flow/cli/src/transfer/index.ts:57 - getSeraphineInfo
+v3/@claude-flow/cli/src/transfer/index.ts:63 - PatternEntry
+v3/@claude-flow/cli/src/transfer/index.ts:64 - PatternAuthor
+v3/@claude-flow/cli/src/transfer/index.ts:65 - PatternCategory
+v3/@claude-flow/cli/src/transfer/index.ts:66 - PatternRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:68 - SearchResult
+v3/@claude-flow/cli/src/transfer/index.ts:69 - PublishOptions
+v3/@claude-flow/cli/src/transfer/index.ts:70 - PublishResult
+v3/@claude-flow/cli/src/transfer/index.ts:71 - DownloadOptions
+v3/@claude-flow/cli/src/transfer/index.ts:72 - DownloadResult
+v3/@claude-flow/cli/src/transfer/index.ts:73 - KnownRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:74 - StoreConfig
+v3/@claude-flow/cli/src/transfer/index.ts:75 - DiscoveryResult
+v3/@claude-flow/cli/src/transfer/index.ts:76 - IPNSResolution
+v3/@claude-flow/cli/src/transfer/index.ts:77 - DownloadProgressCallback
+v3/@claude-flow/cli/src/transfer/index.ts:78 - ContributionRequest
+v3/@claude-flow/cli/src/transfer/index.ts:81 - REGISTRY_VERSION
+v3/@claude-flow/cli/src/transfer/index.ts:82 - BOOTSTRAP_REGISTRIES
+v3/@claude-flow/cli/src/transfer/index.ts:83 - DEFAULT_STORE_CONFIG
+v3/@claude-flow/cli/src/transfer/index.ts:84 - createRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:85 - getDefaultCategories
+v3/@claude-flow/cli/src/transfer/index.ts:86 - addPatternToRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:87 - removePatternFromRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:88 - serializeRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:89 - deserializeRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:90 - signRegistry
+v3/@claude-flow/cli/src/transfer/index.ts:91 - verifyRegistrySignature
+v3/@claude-flow/cli/src/transfer/index.ts:92 - mergeRegistries
+v3/@claude-flow/cli/src/transfer/index.ts:93 - generatePatternId
+v3/@claude-flow/cli/src/transfer/index.ts:96 - PatternDiscovery
+v3/@claude-flow/cli/src/transfer/index.ts:101 - getFeaturedPatterns
+v3/@claude-flow/cli/src/transfer/index.ts:102 - getTrendingPatterns
+v3/@claude-flow/cli/src/transfer/index.ts:103 - getNewestPatterns
+v3/@claude-flow/cli/src/transfer/index.ts:104 - getPatternById
+v3/@claude-flow/cli/src/transfer/index.ts:105 - getPatternByName
+v3/@claude-flow/cli/src/transfer/index.ts:106 - getPatternsByAuthor
+v3/@claude-flow/cli/src/transfer/index.ts:107 - getPatternsByCategory
+v3/@claude-flow/cli/src/transfer/index.ts:108 - getSimilarPatterns
+v3/@claude-flow/cli/src/transfer/index.ts:109 - getCategoryStats
+v3/@claude-flow/cli/src/transfer/index.ts:110 - getTagCloud
+v3/@claude-flow/cli/src/transfer/index.ts:111 - getSearchSuggestions
+v3/@claude-flow/cli/src/transfer/index.ts:114 - PatternDownloader
+v3/@claude-flow/cli/src/transfer/index.ts:115 - batchDownload
+v3/@claude-flow/cli/src/transfer/index.ts:119 - PatternPublisher
+v3/@claude-flow/cli/src/transfer/index.ts:120 - submitContribution
+v3/@claude-flow/cli/src/transfer/index.ts:121 - checkContributionStatus
+v3/@claude-flow/cli/src/transfer/index.ts:123 - quickPublish
+v3/@claude-flow/cli/src/transfer/index.ts:126 - PatternStore
+v3/@claude-flow/cli/src/transfer/index.ts:7 - AnonymizationLevel
+v3/@claude-flow/cli/src/transfer/index.ts:10 - SerializationFormat
+v3/@claude-flow/cli/src/transfer/index.ts:13 - PatternType
+v3/@claude-flow/cli/src/transfer/index.ts:16 - ImportStrategy
+v3/@claude-flow/cli/src/transfer/index.ts:19 - ConflictResolution
+v3/@claude-flow/cli/src/transfer/index.ts:22 - TrustLevel
+v3/@claude-flow/cli/src/transfer/index.ts:25 - PinningService
+v3/@claude-flow/cli/src/transfer/index.ts:30 - PatternMetadata
+v3/@claude-flow/cli/src/transfer/index.ts:46 - AnonymizedAuthor
+v3/@claude-flow/cli/src/transfer/index.ts:55 - AnonymizationRecord
+v3/@claude-flow/cli/src/transfer/index.ts:67 - RoutingPattern
+v3/@claude-flow/cli/src/transfer/index.ts:80 - ComplexityPattern
+v3/@claude-flow/cli/src/transfer/index.ts:91 - CoveragePattern
+v3/@claude-flow/cli/src/transfer/index.ts:101 - TrajectoryPattern
+v3/@claude-flow/cli/src/transfer/index.ts:112 - CustomPattern
+v3/@claude-flow/cli/src/transfer/index.ts:122 - PatternCollection
+v3/@claude-flow/cli/src/transfer/index.ts:133 - PatternStatistics
+v3/@claude-flow/cli/src/transfer/index.ts:143 - PatternSignature
+v3/@claude-flow/cli/src/transfer/index.ts:152 - IPFSMetadata
+v3/@claude-flow/cli/src/transfer/index.ts:162 - CFPFormat
+v3/@claude-flow/cli/src/transfer/index.ts:191 - ExportOptions
+v3/@claude-flow/cli/src/transfer/index.ts:210 - ImportOptions
+v3/@claude-flow/cli/src/transfer/index.ts:224 - ExportResult
+v3/@claude-flow/cli/src/transfer/index.ts:238 - ImportResult
+v3/@claude-flow/cli/src/transfer/index.ts:250 - IPFSConfig
+v3/@claude-flow/cli/src/transfer/index.ts:264 - PIIDetectionResult
+v3/@claude-flow/cli/src/transfer/index.ts:279 - VerificationResult
+v3/@claude-flow/cli/src/update/index.ts:13 - checkForUpdates (used in module)
+v3/@claude-flow/cli/src/update/index.ts:14 - checkSinglePackage
+v3/@claude-flow/cli/src/update/index.ts:15 - getInstalledVersion (used in module)
+v3/@claude-flow/cli/src/update/index.ts:16 - DEFAULT_CONFIG (used in module)
+v3/@claude-flow/cli/src/update/index.ts:19 - UpdateCheckResult (used in module)
+v3/@claude-flow/cli/src/update/index.ts:19 - UpdateConfig
+v3/@claude-flow/cli/src/update/index.ts:22 - shouldCheckForUpdates
+v3/@claude-flow/cli/src/update/index.ts:23 - recordCheck
+v3/@claude-flow/cli/src/update/index.ts:24 - getCachedVersions
+v3/@claude-flow/cli/src/update/index.ts:25 - clearCache
+v3/@claude-flow/cli/src/update/index.ts:26 - loadState
+v3/@claude-flow/cli/src/update/index.ts:29 - RateLimitState
+v3/@claude-flow/cli/src/update/index.ts:31 - validateUpdate
+v3/@claude-flow/cli/src/update/index.ts:31 - validateBulkUpdate
+v3/@claude-flow/cli/src/update/index.ts:33 - ValidationResult
+v3/@claude-flow/cli/src/update/index.ts:36 - executeUpdate
+v3/@claude-flow/cli/src/update/index.ts:37 - executeMultipleUpdates (used in module)
+v3/@claude-flow/cli/src/update/index.ts:38 - rollbackUpdate
+v3/@claude-flow/cli/src/update/index.ts:39 - getUpdateHistory
+v3/@claude-flow/cli/src/update/index.ts:40 - clearHistory
+v3/@claude-flow/cli/src/update/index.ts:41 - loadHistory
+v3/@claude-flow/cli/src/update/index.ts:44 - UpdateHistoryEntry
+v3/@claude-flow/cli/src/update/index.ts:44 - UpdateExecutionResult
+v3/@claude-flow/cli/src/update/rate-limiter.ts:58 - saveState (used in module)
+v3/@claude-flow/swarm/src/domain/entities/agent.ts:41 - AgentProps (used in module)
+v3/@claude-flow/swarm/src/domain/entities/task.ts:32 - TaskProps (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/backup.ts:805 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts:520 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/import.ts:400 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/init.ts:478 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/migrate.ts:523 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/optimize.ts:574 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/setup.ts:783 - default (used in module)
+v3/@claude-flow/cli/src/commands/ruvector/status.ts:477 - default (used in module)
+v3/@claude-flow/cli/src/plugins/store/discovery.ts:57 - LIVE_REGISTRY_CID (used in module)
+v3/@claude-flow/cli/src/plugins/store/discovery.ts:64 - MODEL_REGISTRY_CID
+v3/@claude-flow/cli/src/transfer/ipfs/upload.ts:488 - hasIPFSCredentials
+v3/@claude-flow/cli/src/transfer/ipfs/upload.ts:495 - getIPFSServiceStatus
+v3/@claude-flow/cli/src/transfer/ipfs/upload.ts:15 - IPFSUploadOptions (used in module)
+v3/@claude-flow/cli/src/transfer/ipfs/upload.ts:28 - IPFSUploadResult (used in module)
+v3/@claude-flow/cli/src/transfer/ipfs/upload.ts:543 - checkLocalIPFSNode (used in module)
+v3/@claude-flow/cli/src/transfer/storage/index.ts:39 - getGCSConfig
+v3/@claude-flow/cli/src/transfer/storage/index.ts:54 - isGCloudAvailable
+v3/@claude-flow/cli/src/transfer/storage/index.ts:66 - isGCloudAuthenticated
+v3/@claude-flow/cli/src/transfer/storage/index.ts:86 - uploadToGCS
+v3/@claude-flow/cli/src/transfer/storage/index.ts:172 - downloadFromGCS
+v3/@claude-flow/cli/src/transfer/storage/index.ts:210 - existsInGCS
+v3/@claude-flow/cli/src/transfer/storage/index.ts:231 - listGCSObjects
+v3/@claude-flow/cli/src/transfer/storage/index.ts:262 - deleteFromGCS
+v3/@claude-flow/cli/src/transfer/storage/index.ts:283 - getGCSStatus
+v3/@claude-flow/cli/src/transfer/storage/index.ts:319 - hasGCSCredentials
+v3/@claude-flow/cli/src/transfer/storage/index.ts:17 - GCSConfig
+v3/@claude-flow/cli/src/transfer/storage/index.ts:27 - GCSUploadResult

@@ -1,0 +1,110 @@
+[
+  {
+    "type": "main",
+    "key": "main",
+    "value": "cli.mjs",
+    "exists": false
+  },
+  {
+    "type": "bin",
+    "key": "claude-flow",
+    "value": "bin/claude-flow.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "preinstall",
+    "value": "-e",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "dev",
+    "value": "--experimental-wasm-modules",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "start",
+    "value": "server.js",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "init:neural",
+    "value": "scripts/init-neural.js",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "init:goal",
+    "value": "scripts/init-goal.js",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "update-version",
+    "value": "scripts/update-bin-version.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:comprehensive",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:comprehensive:verbose",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:comprehensive:full",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:load",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:docker",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "test:npx",
+    "value": "scripts/test-comprehensive.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "diagnostics",
+    "value": "-e",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "health-check",
+    "value": "-e",
+    "exists": false
+  },
+  {
+    "type": "script_target",
+    "key": "postinstall",
+    "value": "scripts/install-arm64.js",
+    "exists": true
+  },
+  {
+    "type": "script_target",
+    "key": "prepare-publish",
+    "value": "scripts/prepare-publish.js",
+    "exists": true
+  }
+]

@@ -1,0 +1,97 @@
+### test-mcp-server.sh (no MCP server)
+cmd=MCP_SERVER_HOST=127.0.0.1 MCP_SERVER_PORT=65533 bash tests/docker-regression/scripts/test-mcp-server.sh
+=== MCP SERVER TEST SUITE ===
+
+── Server Connectivity ──
+  Testing: MCP port check... ✓ PASSED
+  Testing: Server health... ✓ PASSED
+
+── MCP Protocol ──
+  Testing: MCP initialize... ✓ PASSED
+
+── Coordination Tools ──
+  Testing: swarm_init tool... ✓ PASSED
+  Testing: agent_spawn tool... ✓ PASSED
+  Testing: task_orchestrate tool... ✓ PASSED
+
+── Monitoring Tools ──
+  Testing: swarm_status tool... ✓ PASSED
+  Testing: agent_list tool... ✓ PASSED
+  Testing: agent_metrics tool... ✓ PASSED
+  Testing: task_status tool... ✓ PASSED
+  Testing: task_results tool... ✓ PASSED
+
+── Memory & Neural Tools ──
+  Testing: memory_usage tool... ✓ PASSED
+  Testing: neural_status tool... ✓ PASSED
+  Testing: neural_train tool... ✓ PASSED
+  Testing: neural_patterns tool... ✓ PASSED
+
+── GitHub Integration Tools ──
+  Testing: github_swarm tool... ✓ PASSED
+  Testing: repo_analyze tool... ✓ PASSED
+  Testing: pr_enhance tool... ✓ PASSED
+  Testing: issue_triage tool... ✓ PASSED
+  Testing: code_review tool... ✓ PASSED
+
+── Worker Tools (V3) ──
+  Testing: worker/run tool... ✓ PASSED
+  Testing: worker/status tool... ✓ PASSED
+  Testing: worker/alerts tool... ✓ PASSED
+  Testing: worker/history tool... ✓ PASSED
+  Testing: worker/statusline tool... ✓ PASSED
+  Testing: worker/run-all tool... ✓ PASSED
+  Testing: worker/start tool... ✓ PASSED
+  Testing: worker/stop tool... ✓ PASSED
+
+=== MCP Server Summary ===
+Total: 28 | Passed: 28 | Failed: 0
+exit_code=0
+
+### test-cli-commands.sh
+cmd=bash tests/docker-regression/scripts/test-cli-commands.sh
+=== CLI COMMANDS TEST SUITE ===
+
+── Basic CLI Commands ──
+  Testing: Version check... ✓ PASSED
+  Testing: Help command... ✓ PASSED
+  Testing: List agents... ✓ PASSED
+
+── Init Commands ──
+  Testing: Init project... ✓ PASSED
+  Testing: Init with topology... ✓ PASSED
+
+── Agent Commands ──
+  Testing: Agent list... ✓ PASSED
+  Testing: Agent info coder... ✓ PASSED
+  Testing: Agent info tester... ✓ PASSED
+  Testing: Agent info reviewer... ✓ PASSED
+
+── Swarm Commands ──
+  Testing: Swarm init hierarchical... ✓ PASSED
+  Testing: Swarm init mesh... ✓ PASSED
+  Testing: Swarm status... ✓ PASSED
+
+── Hooks Commands ──
+  Testing: Hooks list... ✓ PASSED
+  Testing: Hooks metrics... ✓ PASSED
+  Testing: Hooks route test... ✓ PASSED
+  Testing: Hooks pre-edit... ✓ PASSED
+  Testing: Hooks pretrain... ✓ PASSED
+
+── MCP Commands ──
+  Testing: MCP status... ✓ PASSED
+  Testing: MCP tools list... ✓ PASSED
+
+── Memory Commands ──
+  Testing: Memory status... ✓ PASSED
+  Testing: Memory stats... ✓ PASSED
+
+── Config Commands ──
+  Testing: Config show... ✓ PASSED
+  Testing: Config get mode... ✓ PASSED
+
+=== CLI Commands Summary ===
+Total: 23 | Passed: 23 | Failed: 0
+exit_code=0
+

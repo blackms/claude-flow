@@ -1,0 +1,13 @@
+Processed 78 files (579ms) 
+
+events/event-store.test.ts
+events/example-usage.ts
+hooks/example-usage.ts
+hooks/hooks.test.ts
+hooks/verify-exports.test.ts
+mcp/index.ts
+plugins/index.ts
+types/index.ts
+utils/secure-logger.d.ts
+utils/secure-logger.ts
+

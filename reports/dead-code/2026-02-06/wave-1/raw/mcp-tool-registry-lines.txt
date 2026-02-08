@@ -1,0 +1,456 @@
+v3/mcp/tools/config-tools.d.ts:4: * MCP tools for configuration management:
+v3/mcp/tools/config-tools.d.ts:26://# sourceMappingURL=config-tools.d.ts.map
+v3/mcp/tools/index.ts:4: * Exports all MCP tools and provides a getAllTools() function
+v3/mcp/tools/index.ts:25:import { agentTools } from './agent-tools.js';
+v3/mcp/tools/index.ts:26:import { swarmTools } from './swarm-tools.js';
+v3/mcp/tools/index.ts:27:import { memoryTools } from './memory-tools.js';
+v3/mcp/tools/index.ts:28:import { configTools } from './config-tools.js';
+v3/mcp/tools/index.ts:29:import { hooksTools } from './hooks-tools.js';
+v3/mcp/tools/index.ts:30:import { taskTools } from './task-tools.js';
+v3/mcp/tools/index.ts:31:import { systemTools } from './system-tools.js';
+v3/mcp/tools/index.ts:32:import { sessionTools } from './session-tools.js';
+v3/mcp/tools/index.ts:33:import { workerTools } from './worker-tools.js';
+v3/mcp/tools/index.ts:34:import { sonaTools } from './sona-tools.js';
+v3/mcp/tools/index.ts:35:import { federationTools } from './federation-tools.js';
+v3/mcp/tools/index.ts:36:import { v2CompatTools, getV2Tool, mapV2ToV3ToolName } from './v2-compat-tools.js';
+v3/mcp/tools/index.ts:42:// Agent tools
+v3/mcp/tools/index.ts:49:} from './agent-tools.js';
+v3/mcp/tools/index.ts:51:// Swarm tools
+v3/mcp/tools/index.ts:57:} from './swarm-tools.js';
+v3/mcp/tools/index.ts:59:// Memory tools
+v3/mcp/tools/index.ts:65:} from './memory-tools.js';
+v3/mcp/tools/index.ts:67:// Config tools
+v3/mcp/tools/index.ts:73:} from './config-tools.js';
+v3/mcp/tools/index.ts:75:// Hooks tools
+v3/mcp/tools/index.ts:87:} from './hooks-tools.js';
+v3/mcp/tools/index.ts:89:// Task tools
+v3/mcp/tools/index.ts:100:} from './task-tools.js';
+v3/mcp/tools/index.ts:102:// System tools
+v3/mcp/tools/index.ts:109:} from './system-tools.js';
+v3/mcp/tools/index.ts:111:// Session tools
+v3/mcp/tools/index.ts:117:} from './session-tools.js';
+v3/mcp/tools/index.ts:119:// Worker tools (agentic-flow@alpha compatible)
+v3/mcp/tools/index.ts:130:} from './worker-tools.js';
+v3/mcp/tools/index.ts:132:// SONA tools (Self-Optimizing Neural Architecture)
+v3/mcp/tools/index.ts:135:} from './sona-tools.js';
+v3/mcp/tools/index.ts:137:// Federation tools (Ephemeral Agent Coordination)
+v3/mcp/tools/index.ts:143:  registerSwarmTool,
+v3/mcp/tools/index.ts:148:} from './federation-tools.js';
+v3/mcp/tools/index.ts:150:// V2 Compatibility tools (backward compatibility with V2 MCP naming)
+v3/mcp/tools/index.ts:170:} from './v2-compat-tools.js';
+v3/mcp/tools/index.ts:177: * Get all MCP tools
+v3/mcp/tools/index.ts:179: * Returns all available MCP tools in a single array for convenient
+v3/mcp/tools/index.ts:182: * @returns Array of all MCP tools
+v3/mcp/tools/index.ts:186: * import { getAllTools } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:188: * const tools = getAllTools();
+v3/mcp/tools/index.ts:189: * server.registerTools(tools);
+v3/mcp/tools/index.ts:207:  // Include V2 compatibility tools if requested (default: true for backward compatibility)
+v3/mcp/tools/index.ts:216: * Get only V3 tools (excludes V2 compatibility tools)
+v3/mcp/tools/index.ts:223: * Get tools by category
+v3/mcp/tools/index.ts:225: * Returns all tools belonging to a specific category.
+v3/mcp/tools/index.ts:228: * @returns Array of tools in the specified category
+v3/mcp/tools/index.ts:232: * import { getToolsByCategory } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:253: * import { getToolByName } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:261:export function getToolByName(name: string): MCPTool | undefined {
+v3/mcp/tools/index.ts:267: * Get tools by tag
+v3/mcp/tools/index.ts:269: * Returns all tools that have a specific tag.
+v3/mcp/tools/index.ts:272: * @returns Array of tools with the specified tag
+v3/mcp/tools/index.ts:276: * import { getToolsByTag } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:290: * Returns statistics about the available tools.
+v3/mcp/tools/index.ts:296: * import { getToolStats } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:299: * console.log(`Total tools: ${stats.total}`);
+v3/mcp/tools/index.ts:329:    // Count cacheable tools
+v3/mcp/tools/index.ts:334:    // Count deprecated tools
+v3/mcp/tools/index.ts:353: * Checks if all tools have valid schemas and handlers.
+v3/mcp/tools/index.ts:359: * import { validateToolRegistration } from './mcp/tools/index.js';
+v3/mcp/tools/memory-tools.d.ts:4: * MCP tools for memory operations:
+v3/mcp/tools/memory-tools.d.ts:27://# sourceMappingURL=memory-tools.d.ts.map
+v3/mcp/tools/memory-tools.ts:4: * MCP tools for memory operations:
+v3/mcp/tools/memory-tools.ts:372:export const storeMemoryTool: MCPTool = {
+v3/mcp/tools/memory-tools.ts:373:  name: 'memory/store',
+v3/mcp/tools/memory-tools.ts:429:export const searchMemoryTool: MCPTool = {
+v3/mcp/tools/memory-tools.ts:430:  name: 'memory/search',
+v3/mcp/tools/memory-tools.ts:496:export const listMemoryTool: MCPTool = {
+v3/mcp/tools/memory-tools.ts:497:  name: 'memory/list',
+v3/mcp/tools/memory-tools.ts:564:export const memoryTools: MCPTool[] = [
+v3/mcp/tools/agent-tools.ts:4: * MCP tools for agent lifecycle operations:
+v3/mcp/tools/agent-tools.ts:362:export const spawnAgentTool: MCPTool = {
+v3/mcp/tools/agent-tools.ts:363:  name: 'agent/spawn',
+v3/mcp/tools/agent-tools.ts:407:export const listAgentsTool: MCPTool = {
+v3/mcp/tools/agent-tools.ts:408:  name: 'agent/list',
+v3/mcp/tools/agent-tools.ts:449:export const terminateAgentTool: MCPTool = {
+v3/mcp/tools/agent-tools.ts:450:  name: 'agent/terminate',
+v3/mcp/tools/agent-tools.ts:483:export const agentStatusTool: MCPTool = {
+v3/mcp/tools/agent-tools.ts:484:  name: 'agent/status',
+v3/mcp/tools/agent-tools.ts:521:export const agentTools: MCPTool[] = [
+v3/mcp/tools/index.d.ts:4: * Exports all MCP tools and provides a getAllTools() function
+v3/mcp/tools/index.d.ts:22:import { getV2Tool, mapV2ToV3ToolName } from './v2-compat-tools.js';
+v3/mcp/tools/index.d.ts:23:export { spawnAgentTool, listAgentsTool, terminateAgentTool, agentStatusTool, agentTools, } from './agent-tools.js';
+v3/mcp/tools/index.d.ts:24:export { initSwarmTool, swarmStatusTool, scaleSwarmTool, swarmTools, } from './swarm-tools.js';
+v3/mcp/tools/index.d.ts:25:export { storeMemoryTool, searchMemoryTool, listMemoryTool, memoryTools, } from './memory-tools.js';
+v3/mcp/tools/index.d.ts:26:export { loadConfigTool, saveConfigTool, validateConfigTool, configTools, } from './config-tools.js';
+v3/mcp/tools/index.d.ts:27:export { preEditTool, postEditTool, preCommandTool, postCommandTool, routeTool, explainTool, pretrainTool, metricsTool, listHooksTool, hooksTools, } from './hooks-tools.js';
+v3/mcp/tools/index.d.ts:28:export { createTaskTool, listTasksTool, taskStatusTool, cancelTaskTool, assignTaskTool, updateTaskTool, taskDependenciesTool, taskResultsTool, taskTools, } from './task-tools.js';
+v3/mcp/tools/index.d.ts:29:export { systemStatusTool, systemMetricsTool, systemHealthTool, systemInfoTool, systemTools, } from './system-tools.js';
+v3/mcp/tools/index.d.ts:30:export { saveSessionTool, restoreSessionTool, listSessionsTool, sessionTools, } from './session-tools.js';
+v3/mcp/tools/index.d.ts:31:export { dispatchWorkerTool, workerStatusTool, cancelWorkerTool, triggersTool, detectTriggersTool, workerResultsTool, workerStatsTool, workerContextTool, workerTools, } from './worker-tools.js';
+v3/mcp/tools/index.d.ts:32:export { sonaTools, } from './sona-tools.js';
+v3/mcp/tools/index.d.ts:33:export { federationStatusTool, spawnEphemeralTool, terminateEphemeralTool, listEphemeralTool, registerSwarmTool, broadcastTool, proposeTool, voteTool, federationTools, } from './federation-tools.js';
+v3/mcp/tools/index.d.ts:34:export { v2CompatTools, getV2Tool, mapV2ToV3ToolName, swarmInitTool as v2SwarmInitTool, swarmStatusV2Tool, swarmMonitorTool, agentSpawnTool as v2AgentSpawnTool, agentListTool as v2AgentListTool, agentMetricsTool, taskOrchestrateTool, taskStatusV2Tool, taskResultsV2Tool, memoryUsageTool, neuralStatusTool, neuralTrainTool, neuralPatternsTool, benchmarkRunTool, featuresDetectTool, } from './v2-compat-tools.js';
+v3/mcp/tools/index.d.ts:36: * Get all MCP tools
+v3/mcp/tools/index.d.ts:38: * Returns all available MCP tools in a single array for convenient
+v3/mcp/tools/index.d.ts:41: * @returns Array of all MCP tools
+v3/mcp/tools/index.d.ts:45: * import { getAllTools } from './mcp/tools/index.js';
+v3/mcp/tools/index.d.ts:47: * const tools = getAllTools();
+v3/mcp/tools/index.d.ts:48: * server.registerTools(tools);
+v3/mcp/tools/index.d.ts:53: * Get only V3 tools (excludes V2 compatibility tools)
+v3/mcp/tools/index.d.ts:57: * Get tools by category
+v3/mcp/tools/index.d.ts:59: * Returns all tools belonging to a specific category.
+v3/mcp/tools/index.d.ts:62: * @returns Array of tools in the specified category
+v3/mcp/tools/index.d.ts:66: * import { getToolsByCategory } from './mcp/tools/index.js';
+v3/mcp/tools/index.d.ts:83: * import { getToolByName } from './mcp/tools/index.js';
+v3/mcp/tools/index.d.ts:91:export declare function getToolByName(name: string): MCPTool | undefined;
+v3/mcp/tools/index.d.ts:93: * Get tools by tag
+v3/mcp/tools/index.d.ts:95: * Returns all tools that have a specific tag.
+v3/mcp/tools/index.d.ts:98: * @returns Array of tools with the specified tag
+v3/mcp/tools/index.d.ts:102: * import { getToolsByTag } from './mcp/tools/index.js';
+v3/mcp/tools/index.d.ts:112: * Returns statistics about the available tools.
+v3/mcp/tools/index.d.ts:118: * import { getToolStats } from './mcp/tools/index.js';
+v3/mcp/tools/index.d.ts:121: * console.log(`Total tools: ${stats.total}`);
+v3/mcp/tools/index.d.ts:136: * Checks if all tools have valid schemas and handlers.
+v3/mcp/tools/index.d.ts:142: * import { validateToolRegistration } from './mcp/tools/index.js';
+v3/mcp/tools/federation-tools.ts:4: * MCP tools for federation hub and ephemeral agent management:
+v3/mcp/tools/federation-tools.ts:9: * - federation/register-swarm - Register swarm with federation
+v3/mcp/tools/federation-tools.ts:68:const registerSwarmSchema = z.object({
+v3/mcp/tools/federation-tools.ts:71:  name: z.string()
+v3/mcp/tools/federation-tools.ts:116:    name: string;
+v3/mcp/tools/federation-tools.ts:169:      name: s.name,
+v3/mcp/tools/federation-tools.ts:252:  input: z.infer<typeof registerSwarmSchema>,
+v3/mcp/tools/federation-tools.ts:254:): Promise<{ registered: boolean; swarmId: string }> {
+v3/mcp/tools/federation-tools.ts:257:  hub.registerSwarm({
+v3/mcp/tools/federation-tools.ts:259:    name: input.name,
+v3/mcp/tools/federation-tools.ts:268:    registered: true,
+v3/mcp/tools/federation-tools.ts:342:export const federationStatusTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:343:  name: 'federation/status',
+v3/mcp/tools/federation-tools.ts:359:export const spawnEphemeralTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:360:  name: 'federation/spawn-ephemeral',
+v3/mcp/tools/federation-tools.ts:413:export const terminateEphemeralTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:414:  name: 'federation/terminate-ephemeral',
+v3/mcp/tools/federation-tools.ts:439:export const listEphemeralTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:440:  name: 'federation/list-ephemeral',
+v3/mcp/tools/federation-tools.ts:472:export const registerSwarmTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:473:  name: 'federation/register-swarm',
+v3/mcp/tools/federation-tools.ts:482:      name: {
+v3/mcp/tools/federation-tools.ts:504:    const validated = registerSwarmSchema.parse(input);
+v3/mcp/tools/federation-tools.ts:508:  tags: ['federation', 'swarm', 'register'],
+v3/mcp/tools/federation-tools.ts:512:export const broadcastTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:513:  name: 'federation/broadcast',
+v3/mcp/tools/federation-tools.ts:537:export const proposeTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:538:  name: 'federation/propose',
+v3/mcp/tools/federation-tools.ts:571:export const voteTool: MCPTool = {
+v3/mcp/tools/federation-tools.ts:572:  name: 'federation/vote',
+v3/mcp/tools/federation-tools.ts:605:export const federationTools: MCPTool[] = [
+v3/mcp/tools/federation-tools.ts:610:  registerSwarmTool,
+v3/mcp/tools/hooks-tools.d.ts:4: * MCP tools for hooks system operations:
+v3/mcp/tools/hooks-tools.d.ts:13: * - hooks/list - List registered hooks
+v3/mcp/tools/hooks-tools.d.ts:57://# sourceMappingURL=hooks-tools.d.ts.map
+v3/mcp/tools/sona-tools.d.ts:4: * MCP tools for Self-Optimizing Neural Architecture (SONA) integration:
+v3/mcp/tools/sona-tools.d.ts:30://# sourceMappingURL=sona-tools.d.ts.map
+v3/mcp/tools/v2-compat-tools.d.ts:86: * All V2 compatibility tools
+v3/mcp/tools/v2-compat-tools.d.ts:98://# sourceMappingURL=v2-compat-tools.d.ts.map
+v3/mcp/tools/federation-tools.d.ts:4: * MCP tools for federation hub and ephemeral agent management:
+v3/mcp/tools/federation-tools.d.ts:9: * - federation/register-swarm - Register swarm with federation
+v3/mcp/tools/federation-tools.d.ts:22:export declare const registerSwarmTool: MCPTool;
+v3/mcp/tools/federation-tools.d.ts:28://# sourceMappingURL=federation-tools.d.ts.map
+v3/mcp/tools/agent-tools.d.ts:4: * MCP tools for agent lifecycle operations:
+v3/mcp/tools/agent-tools.d.ts:31://# sourceMappingURL=agent-tools.d.ts.map
+v3/mcp/tools/task-tools.ts:4: * MCP tools for task management operations:
+v3/mcp/tools/task-tools.ts:171:    name: string;
+v3/mcp/tools/task-tools.ts:870:export const createTaskTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:871:  name: 'tasks/create',
+v3/mcp/tools/task-tools.ts:934:export const listTasksTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:935:  name: 'tasks/list',
+v3/mcp/tools/task-tools.ts:1001:export const taskStatusTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1002:  name: 'tasks/status',
+v3/mcp/tools/task-tools.ts:1038:export const cancelTaskTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1039:  name: 'tasks/cancel',
+v3/mcp/tools/task-tools.ts:1072:export const assignTaskTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1073:  name: 'tasks/assign',
+v3/mcp/tools/task-tools.ts:1106:export const updateTaskTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1107:  name: 'tasks/update',
+v3/mcp/tools/task-tools.ts:1151:export const taskDependenciesTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1152:  name: 'tasks/dependencies',
+v3/mcp/tools/task-tools.ts:1186:export const taskResultsTool: MCPTool = {
+v3/mcp/tools/task-tools.ts:1187:  name: 'tasks/results',
+v3/mcp/tools/task-tools.ts:1225:export const taskTools: MCPTool[] = [
+v3/mcp/tools/index.ts:4: * Exports all MCP tools and provides a getAllTools() function
+v3/mcp/tools/index.ts:25:import { agentTools } from './agent-tools.js';
+v3/mcp/tools/index.ts:26:import { swarmTools } from './swarm-tools.js';
+v3/mcp/tools/index.ts:27:import { memoryTools } from './memory-tools.js';
+v3/mcp/tools/index.ts:28:import { configTools } from './config-tools.js';
+v3/mcp/tools/index.ts:29:import { hooksTools } from './hooks-tools.js';
+v3/mcp/tools/index.ts:30:import { taskTools } from './task-tools.js';
+v3/mcp/tools/index.ts:31:import { systemTools } from './system-tools.js';
+v3/mcp/tools/index.ts:32:import { sessionTools } from './session-tools.js';
+v3/mcp/tools/index.ts:33:import { workerTools } from './worker-tools.js';
+v3/mcp/tools/index.ts:34:import { sonaTools } from './sona-tools.js';
+v3/mcp/tools/index.ts:35:import { federationTools } from './federation-tools.js';
+v3/mcp/tools/index.ts:36:import { v2CompatTools, getV2Tool, mapV2ToV3ToolName } from './v2-compat-tools.js';
+v3/mcp/tools/index.ts:42:// Agent tools
+v3/mcp/tools/index.ts:49:} from './agent-tools.js';
+v3/mcp/tools/index.ts:51:// Swarm tools
+v3/mcp/tools/index.ts:57:} from './swarm-tools.js';
+v3/mcp/tools/index.ts:59:// Memory tools
+v3/mcp/tools/index.ts:65:} from './memory-tools.js';
+v3/mcp/tools/index.ts:67:// Config tools
+v3/mcp/tools/index.ts:73:} from './config-tools.js';
+v3/mcp/tools/index.ts:75:// Hooks tools
+v3/mcp/tools/index.ts:87:} from './hooks-tools.js';
+v3/mcp/tools/index.ts:89:// Task tools
+v3/mcp/tools/index.ts:100:} from './task-tools.js';
+v3/mcp/tools/index.ts:102:// System tools
+v3/mcp/tools/index.ts:109:} from './system-tools.js';
+v3/mcp/tools/index.ts:111:// Session tools
+v3/mcp/tools/index.ts:117:} from './session-tools.js';
+v3/mcp/tools/index.ts:119:// Worker tools (agentic-flow@alpha compatible)
+v3/mcp/tools/index.ts:130:} from './worker-tools.js';
+v3/mcp/tools/index.ts:132:// SONA tools (Self-Optimizing Neural Architecture)
+v3/mcp/tools/index.ts:135:} from './sona-tools.js';
+v3/mcp/tools/index.ts:137:// Federation tools (Ephemeral Agent Coordination)
+v3/mcp/tools/index.ts:143:  registerSwarmTool,
+v3/mcp/tools/index.ts:148:} from './federation-tools.js';
+v3/mcp/tools/index.ts:150:// V2 Compatibility tools (backward compatibility with V2 MCP naming)
+v3/mcp/tools/index.ts:170:} from './v2-compat-tools.js';
+v3/mcp/tools/index.ts:177: * Get all MCP tools
+v3/mcp/tools/index.ts:179: * Returns all available MCP tools in a single array for convenient
+v3/mcp/tools/index.ts:182: * @returns Array of all MCP tools
+v3/mcp/tools/index.ts:186: * import { getAllTools } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:188: * const tools = getAllTools();
+v3/mcp/tools/index.ts:189: * server.registerTools(tools);
+v3/mcp/tools/index.ts:207:  // Include V2 compatibility tools if requested (default: true for backward compatibility)
+v3/mcp/tools/index.ts:216: * Get only V3 tools (excludes V2 compatibility tools)
+v3/mcp/tools/index.ts:223: * Get tools by category
+v3/mcp/tools/index.ts:225: * Returns all tools belonging to a specific category.
+v3/mcp/tools/index.ts:228: * @returns Array of tools in the specified category
+v3/mcp/tools/index.ts:232: * import { getToolsByCategory } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:253: * import { getToolByName } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:261:export function getToolByName(name: string): MCPTool | undefined {
+v3/mcp/tools/index.ts:267: * Get tools by tag
+v3/mcp/tools/index.ts:269: * Returns all tools that have a specific tag.
+v3/mcp/tools/index.ts:272: * @returns Array of tools with the specified tag
+v3/mcp/tools/index.ts:276: * import { getToolsByTag } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:290: * Returns statistics about the available tools.
+v3/mcp/tools/index.ts:296: * import { getToolStats } from './mcp/tools/index.js';
+v3/mcp/tools/index.ts:299: * console.log(`Total tools: ${stats.total}`);
+v3/mcp/tools/index.ts:329:    // Count cacheable tools
+v3/mcp/tools/index.ts:334:    // Count deprecated tools
+v3/mcp/tools/index.ts:353: * Checks if all tools have valid schemas and handlers.
+v3/mcp/tools/index.ts:359: * import { validateToolRegistration } from './mcp/tools/index.js';
+v3/mcp/tools/task-tools.d.ts:4: * MCP tools for task management operations:
+v3/mcp/tools/task-tools.d.ts:51://# sourceMappingURL=task-tools.d.ts.map
+v3/mcp/tools/hooks-tools.ts:4: * MCP tools for hooks system operations:
+v3/mcp/tools/hooks-tools.ts:13: * - hooks/list - List registered hooks
+v3/mcp/tools/hooks-tools.ts:291:  name: string;
+v3/mcp/tools/hooks-tools.ts:927: * List registered hooks
+v3/mcp/tools/hooks-tools.ts:938:      name: 'pre-edit-validation',
+v3/mcp/tools/hooks-tools.ts:947:      name: 'post-edit-learning',
+v3/mcp/tools/hooks-tools.ts:956:      name: 'pre-command-safety',
+v3/mcp/tools/hooks-tools.ts:965:      name: 'post-command-recording',
+v3/mcp/tools/hooks-tools.ts:974:      name: 'intelligent-routing',
+v3/mcp/tools/hooks-tools.ts:1018:export const preEditTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1019:  name: 'hooks/pre-edit',
+v3/mcp/tools/hooks-tools.ts:1059:export const postEditTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1060:  name: 'hooks/post-edit',
+v3/mcp/tools/hooks-tools.ts:1103:export const preCommandTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1104:  name: 'hooks/pre-command',
+v3/mcp/tools/hooks-tools.ts:1142:export const postCommandTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1143:  name: 'hooks/post-command',
+v3/mcp/tools/hooks-tools.ts:1194:export const routeTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1195:  name: 'hooks/route',
+v3/mcp/tools/hooks-tools.ts:1240:export const explainTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1241:  name: 'hooks/explain',
+v3/mcp/tools/hooks-tools.ts:1276:export const pretrainTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1277:  name: 'hooks/pretrain',
+v3/mcp/tools/hooks-tools.ts:1322:export const metricsTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1323:  name: 'hooks/metrics',
+v3/mcp/tools/hooks-tools.ts:1367:export const listHooksTool: MCPTool = {
+v3/mcp/tools/hooks-tools.ts:1368:  name: 'hooks/list',
+v3/mcp/tools/hooks-tools.ts:1369:  description: 'List all registered hooks with filtering and metadata',
+v3/mcp/tools/hooks-tools.ts:1406:export const hooksTools: MCPTool[] = [
+v3/mcp/tools/config-tools.ts:4: * MCP tools for configuration management:
+v3/mcp/tools/config-tools.ts:480:export const loadConfigTool: MCPTool = {
+v3/mcp/tools/config-tools.ts:481:  name: 'config/load',
+v3/mcp/tools/config-tools.ts:522:export const saveConfigTool: MCPTool = {
+v3/mcp/tools/config-tools.ts:523:  name: 'config/save',
+v3/mcp/tools/config-tools.ts:568:export const validateConfigTool: MCPTool = {
+v3/mcp/tools/config-tools.ts:569:  name: 'config/validate',
+v3/mcp/tools/config-tools.ts:605:export const configTools: MCPTool[] = [
+v3/mcp/tools/session-tools.ts:4: * MCP tools for session management:
+v3/mcp/tools/session-tools.ts:33:  name: z.string().min(1).max(100).optional()
+v3/mcp/tools/session-tools.ts:123:  name: string;
+v3/mcp/tools/session-tools.ts:138:  name: string;
+v3/mcp/tools/session-tools.ts:162:  name: string;
+v3/mcp/tools/session-tools.ts:568:      name: data.name,
+v3/mcp/tools/session-tools.ts:599:          name: data.name,
+v3/mcp/tools/session-tools.ts:674:export const saveSessionTool: MCPTool = {
+v3/mcp/tools/session-tools.ts:675:  name: 'session/save',
+v3/mcp/tools/session-tools.ts:680:      name: {
+v3/mcp/tools/session-tools.ts:734:export const restoreSessionTool: MCPTool = {
+v3/mcp/tools/session-tools.ts:735:  name: 'session/restore',
+v3/mcp/tools/session-tools.ts:784:export const listSessionsTool: MCPTool = {
+v3/mcp/tools/session-tools.ts:785:  name: 'session/list',
+v3/mcp/tools/session-tools.ts:842:export const sessionTools: MCPTool[] = [
+v3/mcp/tools/swarm-tools.ts:4: * MCP tools for swarm coordination operations:
+v3/mcp/tools/swarm-tools.ts:388:export const initSwarmTool: MCPTool = {
+v3/mcp/tools/swarm-tools.ts:389:  name: 'swarm/init',
+v3/mcp/tools/swarm-tools.ts:446:export const swarmStatusTool: MCPTool = {
+v3/mcp/tools/swarm-tools.ts:447:  name: 'swarm/status',
+v3/mcp/tools/swarm-tools.ts:483:export const scaleSwarmTool: MCPTool = {
+v3/mcp/tools/swarm-tools.ts:484:  name: 'swarm/scale',
+v3/mcp/tools/swarm-tools.ts:526:export const swarmTools: MCPTool[] = [
+v3/mcp/tools/system-tools.d.ts:4: * MCP tools for system operations:
+v3/mcp/tools/system-tools.d.ts:31://# sourceMappingURL=system-tools.d.ts.map
+v3/mcp/tools/swarm-tools.d.ts:4: * MCP tools for swarm coordination operations:
+v3/mcp/tools/swarm-tools.d.ts:26://# sourceMappingURL=swarm-tools.d.ts.map
+v3/mcp/tools/worker-tools.d.ts:4: * MCP tools for background worker management (agentic-flow@alpha compatible):
+v3/mcp/tools/worker-tools.d.ts:28://# sourceMappingURL=worker-tools.d.ts.map
+v3/mcp/tools/system-tools.ts:4: * MCP tools for system operations:
+v3/mcp/tools/system-tools.ts:65:  name: string;
+v3/mcp/tools/system-tools.ts:111:  name: string;
+v3/mcp/tools/system-tools.ts:144:    name: string;
+v3/mcp/tools/system-tools.ts:153:  name: string;
+v3/mcp/tools/system-tools.ts:158:  hostname: string;
+v3/mcp/tools/system-tools.ts:168:    tools: number;
+v3/mcp/tools/system-tools.ts:212:    name: 'mcp-server',
+v3/mcp/tools/system-tools.ts:224:        name: 'orchestrator',
+v3/mcp/tools/system-tools.ts:231:        name: 'orchestrator',
+v3/mcp/tools/system-tools.ts:245:        name: 'swarm-coordinator',
+v3/mcp/tools/system-tools.ts:253:        name: 'swarm-coordinator',
+v3/mcp/tools/system-tools.ts:268:        name: 'memory-service',
+v3/mcp/tools/system-tools.ts:275:        name: 'memory-service',
+v3/mcp/tools/system-tools.ts:389:        name: 'agent_count',
+v3/mcp/tools/system-tools.ts:397:        name: 'agent_utilization',
+v3/mcp/tools/system-tools.ts:426:        name: 'tasks_per_minute',
+v3/mcp/tools/system-tools.ts:434:        name: 'task_success_rate',
+v3/mcp/tools/system-tools.ts:442:        name: 'avg_task_duration',
+v3/mcp/tools/system-tools.ts:459:        name: 'heap_used',
+v3/mcp/tools/system-tools.ts:467:        name: 'rss',
+v3/mcp/tools/system-tools.ts:475:        name: 'system_memory_usage',
+v3/mcp/tools/system-tools.ts:489:        name: 'swarm_throughput',
+v3/mcp/tools/system-tools.ts:497:        name: 'coordination_latency',
+v3/mcp/tools/system-tools.ts:505:        name: 'message_queue_depth',
+v3/mcp/tools/system-tools.ts:531:    { name: 'process', check: () => process.pid > 0 },
+v3/mcp/tools/system-tools.ts:532:    { name: 'memory', check: () => {
+v3/mcp/tools/system-tools.ts:536:    { name: 'event-loop', check: () => true }, // Event loop is running if we're here
+v3/mcp/tools/system-tools.ts:574:          name: 'orchestrator',
+v3/mcp/tools/system-tools.ts:580:          name: 'orchestrator',
+v3/mcp/tools/system-tools.ts:600:          name: 'swarm-coordinator',
+v3/mcp/tools/system-tools.ts:606:          name: 'swarm-coordinator',
+v3/mcp/tools/system-tools.ts:627:          name: 'memory-service',
+v3/mcp/tools/system-tools.ts:633:          name: 'memory-service',
+v3/mcp/tools/system-tools.ts:672:    name: 'claude-flow',
+v3/mcp/tools/system-tools.ts:677:    hostname: os.hostname(),
+v3/mcp/tools/system-tools.ts:729:      tools: 22, // Current V3 tool count
+v3/mcp/tools/system-tools.ts:745:export const systemStatusTool: MCPTool = {
+v3/mcp/tools/system-tools.ts:746:  name: 'system/status',
+v3/mcp/tools/system-tools.ts:787:export const systemMetricsTool: MCPTool = {
+v3/mcp/tools/system-tools.ts:788:  name: 'system/metrics',
+v3/mcp/tools/system-tools.ts:829:export const systemHealthTool: MCPTool = {
+v3/mcp/tools/system-tools.ts:830:  name: 'system/health',
+v3/mcp/tools/system-tools.ts:866:export const systemInfoTool: MCPTool = {
+v3/mcp/tools/system-tools.ts:867:  name: 'system/info',
+v3/mcp/tools/system-tools.ts:904:export const systemTools: MCPTool[] = [
+v3/mcp/tools/sona-tools.ts:4: * MCP tools for Self-Optimizing Neural Architecture (SONA) integration:
+v3/mcp/tools/sona-tools.ts:93:  name: string;
+v3/mcp/tools/sona-tools.ts:247:        name: 'Default',
+v3/mcp/tools/sona-tools.ts:259:        name: 'Fast',
+v3/mcp/tools/sona-tools.ts:271:        name: 'Accurate',
+v3/mcp/tools/sona-tools.ts:283:        name: 'Memory Efficient',
+v3/mcp/tools/sona-tools.ts:718:  profiles: Array<{ id: string; name: string; mode: string; isActive: boolean }>;
+v3/mcp/tools/sona-tools.ts:724:    name: p.name,
+v3/mcp/tools/sona-tools.ts:793:export const sonaTools: MCPTool[] = [
+v3/mcp/tools/sona-tools.ts:795:    name: 'sona/trajectory/begin',
+v3/mcp/tools/sona-tools.ts:810:    name: 'sona/trajectory/step',
+v3/mcp/tools/sona-tools.ts:829:    name: 'sona/trajectory/context',
+v3/mcp/tools/sona-tools.ts:845:    name: 'sona/trajectory/end',
+v3/mcp/tools/sona-tools.ts:862:    name: 'sona/trajectory/list',
+v3/mcp/tools/sona-tools.ts:880:    name: 'sona/pattern/find',
+v3/mcp/tools/sona-tools.ts:898:    name: 'sona/lora/apply-micro',
+v3/mcp/tools/sona-tools.ts:915:    name: 'sona/lora/apply-base',
+v3/mcp/tools/sona-tools.ts:932:    name: 'sona/force-learn',
+v3/mcp/tools/sona-tools.ts:941:    name: 'sona/stats',
+v3/mcp/tools/sona-tools.ts:952:    name: 'sona/profile/get',
+v3/mcp/tools/sona-tools.ts:966:    name: 'sona/profile/list',
+v3/mcp/tools/sona-tools.ts:977:    name: 'sona/enabled',
+v3/mcp/tools/sona-tools.ts:992:    name: 'sona/benchmark',
+v3/mcp/tools/session-tools.d.ts:4: * MCP tools for session management:
+v3/mcp/tools/session-tools.d.ts:26://# sourceMappingURL=session-tools.d.ts.map
+v3/mcp/tools/v2-compat-tools.ts:27:import { initSwarmTool, swarmStatusTool } from './swarm-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:28:import { spawnAgentTool, listAgentsTool, agentStatusTool } from './agent-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:29:import { createTaskTool, taskStatusTool, taskResultsTool, listTasksTool } from './task-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:30:import { storeMemoryTool, searchMemoryTool, listMemoryTool } from './memory-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:31:import { systemStatusTool, systemMetricsTool, systemInfoTool } from './system-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:32:import { pretrainTool, metricsTool } from './hooks-tools.js';
+v3/mcp/tools/v2-compat-tools.ts:42:export const swarmInitTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:43:  name: 'swarm_init',
+v3/mcp/tools/v2-compat-tools.ts:93:export const swarmStatusV2Tool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:94:  name: 'swarm_status',
+v3/mcp/tools/v2-compat-tools.ts:122:export const swarmMonitorTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:123:  name: 'swarm_monitor',
+v3/mcp/tools/v2-compat-tools.ts:161:export const agentSpawnTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:162:  name: 'agent_spawn',
+v3/mcp/tools/v2-compat-tools.ts:168:      name: { type: 'string', description: 'Custom agent name' },
+v3/mcp/tools/v2-compat-tools.ts:190:export const agentListTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:191:  name: 'agent_list',
+v3/mcp/tools/v2-compat-tools.ts:215:export const agentMetricsTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:216:  name: 'agent_metrics',
+v3/mcp/tools/v2-compat-tools.ts:254:export const taskOrchestrateTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:255:  name: 'task_orchestrate',
+v3/mcp/tools/v2-compat-tools.ts:270:      name: task,
+v3/mcp/tools/v2-compat-tools.ts:286:export const taskStatusV2Tool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:287:  name: 'task_status',
+v3/mcp/tools/v2-compat-tools.ts:318:export const taskResultsV2Tool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:319:  name: 'task_results',
+v3/mcp/tools/v2-compat-tools.ts:351:export const memoryUsageTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:352:  name: 'memory_usage',
+v3/mcp/tools/v2-compat-tools.ts:418:export const neuralStatusTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:419:  name: 'neural_status',
+v3/mcp/tools/v2-compat-tools.ts:447:export const neuralTrainTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:448:  name: 'neural_train',
+v3/mcp/tools/v2-compat-tools.ts:470:export const neuralPatternsTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:471:  name: 'neural_patterns',
+v3/mcp/tools/v2-compat-tools.ts:496:export const benchmarkRunTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:497:  name: 'benchmark_run',
+v3/mcp/tools/v2-compat-tools.ts:510:        { name: 'cpu', value: Math.random() * 100, unit: 'ms' },
+v3/mcp/tools/v2-compat-tools.ts:511:        { name: 'memory', value: Math.random() * 512, unit: 'MB' },
+v3/mcp/tools/v2-compat-tools.ts:512:        { name: 'network', value: Math.random() * 50, unit: 'ms' },
+v3/mcp/tools/v2-compat-tools.ts:528:export const featuresDetectTool: MCPTool = {
+v3/mcp/tools/v2-compat-tools.ts:529:  name: 'features_detect',
+v3/mcp/tools/v2-compat-tools.ts:561: * All V2 compatibility tools
+v3/mcp/tools/v2-compat-tools.ts:563:export const v2CompatTools: MCPTool[] = [
+v3/mcp/tools/v2-compat-tools.ts:564:  // Swarm tools
+v3/mcp/tools/v2-compat-tools.ts:568:  // Agent tools
+v3/mcp/tools/v2-compat-tools.ts:572:  // Task tools
+v3/mcp/tools/v2-compat-tools.ts:576:  // Memory tools
+v3/mcp/tools/v2-compat-tools.ts:578:  // Neural tools
+v3/mcp/tools/v2-compat-tools.ts:582:  // System tools
+v3/mcp/tools/worker-tools.ts:4: * MCP tools for background worker management (agentic-flow@alpha compatible):
+v3/mcp/tools/worker-tools.ts:119:    name: WorkerTrigger;
+v3/mcp/tools/worker-tools.ts:265:    name: name as WorkerTrigger,
+v3/mcp/tools/worker-tools.ts:388:export const dispatchWorkerTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:389:  name: 'worker/dispatch',
+v3/mcp/tools/worker-tools.ts:438:export const workerStatusTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:439:  name: 'worker/status',
+v3/mcp/tools/worker-tools.ts:462:export const cancelWorkerTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:463:  name: 'worker/cancel',
+v3/mcp/tools/worker-tools.ts:484:export const triggersTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:485:  name: 'worker/triggers',
+v3/mcp/tools/worker-tools.ts:501:export const detectTriggersTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:502:  name: 'worker/detect',
+v3/mcp/tools/worker-tools.ts:523:export const workerResultsTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:524:  name: 'worker/results',
+v3/mcp/tools/worker-tools.ts:565:export const workerStatsTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:566:  name: 'worker/stats',
+v3/mcp/tools/worker-tools.ts:582:export const workerContextTool: MCPTool = {
+v3/mcp/tools/worker-tools.ts:583:  name: 'worker/context',
+v3/mcp/tools/worker-tools.ts:610:export const workerTools: MCPTool[] = [

@@ -1,0 +1,25 @@
+v2/pnpm-lock.yaml:5768:      shebang-command: 2.0.0
+v2/docker/docker-compose.hive-mind.yml:42:    command: ["npx", "ruv-swarm", "mcp", "start", "--port", "8081"]
+v2/docker/docker-compose.hive-mind.yml:117:    command:
+v2/docker/docker-compose.hive-mind.yml:155:    command: redis-server --appendonly yes
+v2/docker/docker-compose.hive-mind.yml:191:    command: ["/app/scripts/backup.sh"]
+v2/docker/docker-test/docker-compose.test.yml:19:    command: >
+v2/docker/docker-test/docker-compose.test.yml:45:    command: >
+v2/docker/docker-test/docker-compose.test.yml:71:    command: >
+v2/docker/docker-test/docker-compose.test.yml:94:    command: >
+v2/tests/docker/docker-compose.test.yml:14:    command: sh -c "sleep infinity"
+v2/tests/docker/docker-compose.yml:14:    command: >
+v2/examples/litellm/docker-compose.yml:143:    command: redis-server --appendonly yes --maxmemory 2gb --maxmemory-policy allkeys-lru
+v2/examples/litellm/docker-compose.yml:161:    command:
+v2/examples/litellm/docker-compose.yml:199:    command: -config.file=/etc/loki/local-config.yaml
+v2/examples/litellm/docker-compose.yml:213:    command: -config.file=/etc/promtail/config.yml
+v2/tests/docker/tests/docker/tests/docker/docker-compose.yml:9:    command: >
+v2/examples/litellm/docker-compose.basic.yml:16:    command: --config /app/config.yaml --port 4000 --host 0.0.0.0
+v2/examples/05-swarm-apps/rest-api-advanced/docker-compose.yml:28:    command: npm run dev
+v2/examples/05-swarm-apps/rest-api-advanced/docker-compose.yml:46:    command: mongod --auth
+v2/examples/05-swarm-apps/rest-api-advanced/docker-compose.yml:59:    command: redis-server --appendonly yes --requirepass password123
+v2/examples/05-swarm-apps/rest-api-advanced/docker-compose.yml:115:    command:
+v2/benchmark/config/non_interactive_defaults.yaml:40:  dry_run: false   # Set to true to simulate without executing
+v2/benchmark/hive-mind-benchmarks/docker/docker-compose.yml:26:    command: >
+v2/benchmark/hive-mind-benchmarks/docker/docker-compose.yml:42:    command:
+v2/benchmark/hive-mind-benchmarks/docker/docker-compose.yml:75:    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru

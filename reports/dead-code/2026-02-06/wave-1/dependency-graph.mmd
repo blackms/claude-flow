@@ -1,0 +1,49 @@
+flowchart TD
+  RootPkg["root package.json"]
+  RootScripts["root scripts"]
+  Workflows[".github/workflows"]
+  V3Pkg["v3/package.json"]
+  CLIPkg["v3/@claude-flow/cli"]
+  CLIRegistry["cli/src/commands/index.ts"]
+  MCPTools["v3/mcp/tools/index.ts"]
+  Plugins["v3/plugins/*"]
+  Shared["v3/@claude-flow/shared"]
+  Hooks["v3/@claude-flow/hooks"]
+  Neural["v3/@claude-flow/neural"]
+  DockerReg["tests/docker-regression"]
+  Runner["run-all-tests.sh"]
+  PlaceholderMCP["test-mcp-server.sh"]
+  PlaceholderCLI["test-cli-commands.sh"]
+
+  RootPkg --> RootScripts
+  RootPkg --> CLIPkg
+  Workflows --> RootScripts
+  Workflows --> V3Pkg
+  V3Pkg --> CLIPkg
+  V3Pkg --> Shared
+  V3Pkg --> Hooks
+  V3Pkg --> Neural
+  V3Pkg --> Plugins
+  CLIRegistry --> CLIPkg
+  MCPTools --> Shared
+  MCPTools --> Hooks
+  MCPTools --> Neural
+  MCPTools --> Plugins
+
+  DockerReg --> Runner
+  Runner --> PlaceholderMCP
+  Runner --> PlaceholderCLI
+
+  MissingRootTypecheck["missing root script: typecheck"]:::risk
+  MissingRootCoverage["missing root script: test:coverage"]:::risk
+  MissingRootFormat["missing root script: format"]:::risk
+  MissingRootPerf["missing root script: test:performance"]:::risk
+  MissingV3Publish["missing v3 script: publish:alpha"]:::risk
+
+  Workflows -.calls.-> MissingRootTypecheck
+  Workflows -.calls.-> MissingRootCoverage
+  Workflows -.calls.-> MissingRootFormat
+  Workflows -.calls.-> MissingRootPerf
+  Workflows -.calls.-> MissingV3Publish
+
+  classDef risk fill:#ffe6e6,stroke:#b22222,color:#8b0000;

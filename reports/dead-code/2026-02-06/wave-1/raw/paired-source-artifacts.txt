@@ -1,0 +1,33 @@
+# paired TS/JS/DTS files under v3/@claude-flow/neural/src
+TS=v3/@claude-flow/neural/src/algorithms/a2c.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/curiosity.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/decision-transformer.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/dqn.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/index.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/ppo.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/q-learning.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/algorithms/sarsa.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/index.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/balanced.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/batch.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/edge.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/index.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/real-time.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/modes/research.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/pattern-learner.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/reasoning-bank.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/sona-integration.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/sona-manager.ts JS=yes DTS=yes
+TS=v3/@claude-flow/neural/src/types.ts JS=yes DTS=yes
+
+# package export surface
+6:  "main": "dist/index.js",
+7:  "types": "dist/index.d.ts",
+8:  "exports": {
+
+# references to neural/src/*.js outside package
+./v3/tsconfig.vitest-temp.json:46:        "./@claude-flow/neural/src"
+./v3/index.ts:83:export * as neural from './@claude-flow/neural/src/index.js';
+./v3/tsconfig.json:12:      "@claude-flow/neural": ["./@claude-flow/neural/src"],
+./v3/mcp/tools/hooks-tools.ts:26:} from '../../@claude-flow/neural/src/index.js';
+./v3/mcp/tools/hooks-tools.js:19:import { createReasoningBank, } from '../../@claude-flow/neural/src/index.js';

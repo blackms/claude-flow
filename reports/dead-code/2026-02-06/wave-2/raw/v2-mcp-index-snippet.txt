@@ -1,0 +1,360 @@
+     1	/**
+     2	 * MCP (Model Context Protocol) Module
+     3	 * Export all MCP components for easy integration
+     4	 */
+     5	
+     6	// Phase 6: In-Process MCP Server (10-100x performance improvement)
+     7	export { InProcessMCPServer, createInProcessServer } from './in-process-server.js';
+     8	export type { InProcessServerConfig, ToolCallMetrics } from './in-process-server.js';
+     9	
+    10	export {
+    11	  ClaudeFlowToolRegistry,
+    12	  createToolRegistry,
+    13	  createClaudeFlowSdkServer,
+    14	} from './tool-registry.js';
+    15	export type { ToolRegistryConfig } from './tool-registry.js';
+    16	
+    17	export {
+    18	  SDKIntegration,
+    19	  initializeSDKIntegration,
+    20	  getSDKIntegration,
+    21	  createInProcessQuery,
+    22	  getInProcessServerConfig,
+    23	  measurePerformance,
+    24	} from './sdk-integration.js';
+    25	export type { SDKIntegrationConfig } from './sdk-integration.js';
+    26	
+    27	// Core MCP Server
+    28	export { MCPServer, type IMCPServer } from './server.js';
+    29	
+    30	// MCP 2025-11 Server and Components
+    31	export { MCP2025Server, type MCP2025ServerConfig } from './server-mcp-2025.js';
+    32	export {
+    33	  MCPServerFactory,
+    34	  createMCPServer,
+    35	  isMCP2025Available,
+    36	  getServerCapabilities,
+    37	  type MCPFeatureFlags,
+    38	  type ExtendedMCPConfig,
+    39	} from './server-factory.js';
+    40	
+    41	// MCP 2025-11 Protocol Components
+    42	export {
+    43	  VersionNegotiator,
+    44	  BackwardCompatibilityAdapter,
+    45	  type MCPHandshake,
+    46	  type MCPVersion,
+    47	  type MCPCapability,
+    48	  type NegotiationResult as MCP2025NegotiationResult,
+    49	} from './protocol/version-negotiation.js';
+    50	
+    51	// MCP 2025-11 Async Job Management
+    52	export {
+    53	  MCPAsyncJobManager,
+    54	  type MCPToolRequest,
+    55	  type MCPJobHandle,
+    56	  type MCPJobResult,
+    57	  type AsyncJob,
+    58	  type JobStatus,
+    59	} from './async/job-manager-mcp25.js';
+    60	
+    61	// MCP 2025-11 Registry Integration
+    62	export {
+    63	  MCPRegistryClient,
+    64	  type RegistryConfig,
+    65	  type ServerRegistryEntry,
+    66	} from './registry/mcp-registry-client-2025.js';
+    67	
+    68	// MCP 2025-11 Schema Validation
+    69	export {
+    70	  SchemaValidator,
+    71	  upgradeToolSchema,
+    72	  type ValidationResult,
+    73	} from './validation/schema-validator-2025.js';
+    74	
+    75	// Progressive Tool Registry (Phase 1 & 2)
+    76	export {
+    77	  ProgressiveToolRegistry,
+    78	  createProgressiveToolRegistry,
+    79	  createProgressiveClaudeFlowSdkServer,
+    80	  type ProgressiveToolRegistryConfig,
+    81	} from './tool-registry-progressive.js';
+    82	
+    83	// Dynamic Tool Loader (Phase 1)
+    84	export {
+    85	  DynamicToolLoader,
+    86	  type ToolMetadata,
+    87	  type ToolSearchQuery,
+    88	} from './tools/loader.js';
+    89	
+    90	// Lifecycle Management
+    91	export {
+    92	  MCPLifecycleManager,
+    93	  LifecycleState,
+    94	  type LifecycleEvent,
+    95	  type HealthCheckResult,
+    96	  type LifecycleManagerConfig,
+    97	} from './lifecycle-manager.js';
+    98	
+    99	// Tool Registry and Management
+   100	export {
+   101	  ToolRegistry,
+   102	  type ToolCapability,
+   103	  type ToolMetrics,
+   104	  type ToolDiscoveryQuery,
+   105	} from './tools.js';
+   106	
+   107	// Protocol Management
+   108	export {
+   109	  MCPProtocolManager,
+   110	  type ProtocolVersionInfo,
+   111	  type CompatibilityResult,
+   112	  type NegotiationResult,
+   113	} from './protocol-manager.js';
+   114	
+   115	// Authentication and Authorization
+   116	export {
+   117	  AuthManager,
+   118	  type IAuthManager,
+   119	  type AuthContext,
+   120	  type AuthResult,
+   121	  type TokenInfo,
+   122	  type TokenGenerationOptions,
+   123	  type AuthSession,
+   124	  Permissions,
+   125	} from './auth.js';
+   126	
+   127	// Performance Monitoring
+   128	export {
+   129	  MCPPerformanceMonitor,
+   130	  type PerformanceMetrics,
+   131	  type RequestMetrics,
+   132	  type AlertRule,
+   133	  type Alert,
+   134	  type OptimizationSuggestion,
+   135	} from './performance-monitor.js';
+   136	
+   137	// Orchestration Integration
+   138	export {
+   139	  MCPOrchestrationIntegration,
+   140	  type OrchestrationComponents,
+   141	  type MCPOrchestrationConfig,
+   142	  type IntegrationStatus,
+   143	} from './orchestration-integration.js';
+   144	
+   145	// Transport Implementations
+   146	export { type ITransport } from './transports/base.js';
+   147	export { StdioTransport } from './transports/stdio.js';
+   148	export { HttpTransport } from './transports/http.js';
+   149	
+   150	// Request Routing
+   151	export { RequestRouter } from './router.js';
+   152	
+   153	// Session Management
+   154	export { SessionManager, type ISessionManager } from './session-manager.js';
+   155	
+   156	// Load Balancing
+   157	export { LoadBalancer, type ILoadBalancer, RequestQueue } from './load-balancer.js';
+   158	
+   159	// Tool Implementations
+   160	export { createClaudeFlowTools, type ClaudeFlowToolContext } from './claude-flow-tools.js';
+   161	export { createSwarmTools, type SwarmToolContext } from './swarm-tools.js';
+   162	
+   163	/**
+   164	 * MCP Integration Factory
+   165	 * Provides a simple way to create a complete MCP integration
+   166	 */
+   167	export class MCPIntegrationFactory {
+   168	  /**
+   169	   * Create a complete MCP integration with all components
+   170	   */
+   171	  static async createIntegration(config: {
+   172	    mcpConfig: import('../utils/types.js').MCPConfig;
+   173	    orchestrationConfig?: Partial<MCPOrchestrationConfig>;
+   174	    components?: Partial<OrchestrationComponents>;
+   175	    logger: import('../core/logger.js').ILogger;
+   176	  }): Promise<MCPOrchestrationIntegration> {
+   177	    const { mcpConfig, orchestrationConfig = {}, components = {}, logger } = config;
+   178	
+   179	    const integration = new MCPOrchestrationIntegration(
+   180	      mcpConfig,
+   181	      {
+   182	        enabledIntegrations: {
+   183	          orchestrator: true,
+   184	          swarm: true,
+   185	          agents: true,
+   186	          resources: true,
+   187	          memory: true,
+   188	          monitoring: true,
+   189	          terminals: true,
+   190	        },
+   191	        autoStart: true,
+   192	        healthCheckInterval: 30000,
+   193	        reconnectAttempts: 3,
+   194	        reconnectDelay: 5000,
+   195	        enableMetrics: true,
+   196	        enableAlerts: true,
+   197	        ...orchestrationConfig,
+   198	      },
+   199	      components,
+   200	      logger,
+   201	    );
+   202	
+   203	    return integration;
+   204	  }
+   205	
+   206	  /**
+   207	   * Create a standalone MCP server (without orchestration integration)
+   208	   */
+   209	  static async createStandaloneServer(config: {
+   210	    mcpConfig: import('../utils/types.js').MCPConfig;
+   211	    logger: import('../core/logger.js').ILogger;
+   212	    enableLifecycleManagement?: boolean;
+   213	    enablePerformanceMonitoring?: boolean;
+   214	  }): Promise<{
+   215	    server: MCPServer;
+   216	    lifecycleManager?: MCPLifecycleManager;
+   217	    performanceMonitor?: MCPPerformanceMonitor;
+   218	  }> {
+   219	    const {
+   220	      mcpConfig,
+   221	      logger,
+   222	      enableLifecycleManagement = true,
+   223	      enablePerformanceMonitoring = true,
+   224	    } = config;
+   225	
+   226	    const eventBus = new (await import('node:events')).EventEmitter();
+   227	    const server = new MCPServer(mcpConfig, eventBus, logger);
+   228	
+   229	    let lifecycleManager: MCPLifecycleManager | undefined;
+   230	    let performanceMonitor: MCPPerformanceMonitor | undefined;
+   231	
+   232	    if (enableLifecycleManagement) {
+   233	      lifecycleManager = new MCPLifecycleManager(mcpConfig, logger, () => server);
+   234	    }
+   235	
+   236	    if (enablePerformanceMonitoring) {
+   237	      performanceMonitor = new MCPPerformanceMonitor(logger);
+   238	    }
+   239	
+   240	    return {
+   241	      server,
+   242	      lifecycleManager,
+   243	      performanceMonitor,
+   244	    };
+   245	  }
+   246	
+   247	  /**
+   248	   * Create a development/testing MCP setup
+   249	   */
+   250	  static async createDevelopmentSetup(logger: import('../core/logger.js').ILogger): Promise<{
+   251	    server: MCPServer;
+   252	    lifecycleManager: MCPLifecycleManager;
+   253	    performanceMonitor: MCPPerformanceMonitor;
+   254	    protocolManager: MCPProtocolManager;
+   255	  }> {
+   256	    const mcpConfig: import('../utils/types.js').MCPConfig = {
+   257	      transport: 'stdio',
+   258	      enableMetrics: true,
+   259	      auth: {
+   260	        enabled: false,
+   261	        method: 'token',
+   262	      },
+   263	    };
+   264	
+   265	    const { server, lifecycleManager, performanceMonitor } = await this.createStandaloneServer({
+   266	      mcpConfig,
+   267	      logger,
+   268	      enableLifecycleManagement: true,
+   269	      enablePerformanceMonitoring: true,
+   270	    });
+   271	
+   272	    const protocolManager = new MCPProtocolManager(logger);
+   273	
+   274	    return {
+   275	      server,
+   276	      lifecycleManager: lifecycleManager!,
+   277	      performanceMonitor: performanceMonitor!,
+   278	      protocolManager,
+   279	    };
+   280	  }
+   281	}
+   282	
+   283	/**
+   284	 * Default MCP configuration for common use cases
+   285	 */
+   286	export const DefaultMCPConfigs = {
+   287	  /**
+   288	   * Development configuration with stdio transport
+   289	   */
+   290	  development: {
+   291	    transport: 'stdio' as const,
+   292	    enableMetrics: true,
+   293	    auth: {
+   294	      enabled: false,
+   295	      method: 'token' as const,
+   296	    },
+   297	  },
+   298	
+   299	  /**
+   300	   * Production configuration with HTTP transport and authentication
+   301	   */
+   302	  production: {
+   303	    transport: 'http' as const,
+   304	    host: '0.0.0.0',
+   305	    port: 3000,
+   306	    tlsEnabled: true,
+   307	    enableMetrics: true,
+   308	    auth: {
+   309	      enabled: true,
+   310	      method: 'token' as const,
+   311	    },
+   312	    loadBalancer: {
+   313	      enabled: true,
+   314	      maxRequestsPerSecond: 100,
+   315	      maxConcurrentRequests: 50,
+   316	    },
+   317	    sessionTimeout: 3600000, // 1 hour
+   318	    maxSessions: 1000,
+   319	  },
+   320	
+   321	  /**
+   322	   * Testing configuration with minimal features
+   323	   */
+   324	  testing: {
+   325	    transport: 'stdio' as const,
+   326	    enableMetrics: false,
+   327	    auth: {
+   328	      enabled: false,
+   329	      method: 'token' as const,
+   330	    },
+   331	  },
+   332	} as const;
+   333	
+   334	/**
+   335	 * MCP Utility Functions
+   336	 */
+   337	export const MCPUtils = {
+   338	  /**
+   339	   * Validate MCP protocol version
+   340	   */
+   341	  isValidProtocolVersion(version: import('../utils/types.js').MCPProtocolVersion): boolean {
+   342	    return (
+   343	      typeof version.major === 'number' &&
+   344	      typeof version.minor === 'number' &&
+   345	      typeof version.patch === 'number' &&
+   346	      version.major > 0
+   347	    );
+   348	  },
+   349	
+   350	  /**
+   351	   * Compare two protocol versions
+   352	   */
+   353	  compareVersions(
+   354	    a: import('../utils/types.js').MCPProtocolVersion,
+   355	    b: import('../utils/types.js').MCPProtocolVersion,
+   356	  ): number {
+   357	    if (a.major !== b.major) return a.major - b.major;
+   358	    if (a.minor !== b.minor) return a.minor - b.minor;
+   359	    return a.patch - b.patch;
+   360	  },

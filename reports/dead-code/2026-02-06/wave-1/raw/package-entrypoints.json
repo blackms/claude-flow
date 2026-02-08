@@ -1,0 +1,1173 @@
+[
+  {
+    "file": "package.json",
+    "name": "claude-flow",
+    "main": "dist/index.js",
+    "bin": {
+      "claude-flow": "./v3/@claude-flow/cli/bin/cli.js"
+    },
+    "exports": null,
+    "scripts": [
+      "dev",
+      "build",
+      "build:ts",
+      "test",
+      "test:ui",
+      "test:security",
+      "lint",
+      "security:audit",
+      "security:fix",
+      "security:test",
+      "v3:domains",
+      "v3:swarm",
+      "v3:security"
+    ]
+  },
+  {
+    "file": "v3/package.json",
+    "name": "@claude-flow/v3-monorepo",
+    "main": null,
+    "bin": null,
+    "exports": null,
+    "scripts": [
+      "build",
+      "test",
+      "test:unit",
+      "test:integration",
+      "test:integration:watch",
+      "test:integration:memory",
+      "test:integration:swarm",
+      "test:integration:mcp",
+      "test:integration:plugin",
+      "test:integration:workflow",
+      "test:coverage",
+      "test:coverage:integration",
+      "test:security",
+      "test:memory",
+      "test:swarm",
+      "bench",
+      "bench:attention",
+      "typecheck",
+      "clean",
+      "publish:dry",
+      "publish:v3alpha",
+      "version:patch",
+      "version:minor",
+      "version:major",
+      "bun:install",
+      "bun:build",
+      "bun:test",
+      "bun:dev",
+      "bun:publish:dry",
+      "bun:publish:v3alpha"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/aidefence/package.json",
+    "name": "@claude-flow/aidefence",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./detection": {
+        "import": "./dist/domain/services/threat-detection-service.js",
+        "types": "./dist/domain/services/threat-detection-service.d.ts"
+      },
+      "./learning": {
+        "import": "./dist/domain/services/threat-learning-service.js",
+        "types": "./dist/domain/services/threat-learning-service.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "prepublishOnly",
+      "test",
+      "test:unit",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/browser/package.json",
+    "name": "@claude-flow/browser",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./mcp-tools": "./dist/mcp-tools/index.js",
+      "./skill": "./dist/skill/index.js",
+      "./agent": "./dist/agent/index.js"
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "test",
+      "test:watch",
+      "test:e2e",
+      "lint",
+      "typecheck",
+      "postinstall"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/claims/package.json",
+    "name": "@claude-flow/claims",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "require": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./api": {
+        "import": "./dist/api/index.js",
+        "require": "./dist/api/index.js",
+        "types": "./dist/api/index.d.ts"
+      },
+      "./api/mcp-tools": {
+        "import": "./dist/api/mcp-tools.js",
+        "require": "./dist/api/mcp-tools.js",
+        "types": "./dist/api/mcp-tools.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "test:coverage",
+      "lint",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/cli/package.json",
+    "name": "@claude-flow/cli",
+    "main": "dist/src/index.js",
+    "bin": {
+      "cli": "./bin/cli.js",
+      "claude-flow": "./bin/cli.js",
+      "claude-flow-mcp": "./bin/mcp-server.js"
+    },
+    "exports": {
+      ".": {
+        "types": "./dist/src/index.d.ts",
+        "import": "./dist/src/index.js"
+      },
+      "./ruvector": {
+        "types": "./dist/src/ruvector/index.d.ts",
+        "import": "./dist/src/ruvector/index.js"
+      },
+      "./ruvector/*": {
+        "types": "./dist/src/ruvector/*.d.ts",
+        "import": "./dist/src/ruvector/*.js"
+      },
+      "./mcp-tools": {
+        "types": "./dist/src/mcp-tools/index.d.ts",
+        "import": "./dist/src/mcp-tools/index.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "test",
+      "test:plugin-store",
+      "test:pattern-store",
+      "prepublishOnly",
+      "release",
+      "publish:all"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/deployment/package.json",
+    "name": "@claude-flow/deployment",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js"
+    },
+    "scripts": [
+      "build",
+      "test",
+      "release"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/embeddings/package.json",
+    "name": "@claude-flow/embeddings",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.js",
+        "import": "./dist/index.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "test",
+      "test:watch",
+      "lint",
+      "clean"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/guidance/package.json",
+    "name": "@claude-flow/guidance",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      },
+      "./compiler": {
+        "types": "./dist/compiler.d.ts",
+        "import": "./dist/compiler.js"
+      },
+      "./retriever": {
+        "types": "./dist/retriever.d.ts",
+        "import": "./dist/retriever.js"
+      },
+      "./gates": {
+        "types": "./dist/gates.d.ts",
+        "import": "./dist/gates.js"
+      },
+      "./hooks": {
+        "types": "./dist/hooks.d.ts",
+        "import": "./dist/hooks.js"
+      },
+      "./ledger": {
+        "types": "./dist/ledger.d.ts",
+        "import": "./dist/ledger.js"
+      },
+      "./optimizer": {
+        "types": "./dist/optimizer.d.ts",
+        "import": "./dist/optimizer.js"
+      },
+      "./headless": {
+        "types": "./dist/headless.d.ts",
+        "import": "./dist/headless.js"
+      },
+      "./persistence": {
+        "types": "./dist/persistence.d.ts",
+        "import": "./dist/persistence.js"
+      },
+      "./gateway": {
+        "types": "./dist/gateway.d.ts",
+        "import": "./dist/gateway.js"
+      },
+      "./manifest-validator": {
+        "types": "./dist/manifest-validator.d.ts",
+        "import": "./dist/manifest-validator.js"
+      },
+      "./proof": {
+        "types": "./dist/proof.d.ts",
+        "import": "./dist/proof.js"
+      },
+      "./memory-gate": {
+        "types": "./dist/memory-gate.d.ts",
+        "import": "./dist/memory-gate.js"
+      },
+      "./coherence": {
+        "types": "./dist/coherence.d.ts",
+        "import": "./dist/coherence.js"
+      },
+      "./artifacts": {
+        "types": "./dist/artifacts.d.ts",
+        "import": "./dist/artifacts.js"
+      },
+      "./capabilities": {
+        "types": "./dist/capabilities.d.ts",
+        "import": "./dist/capabilities.js"
+      },
+      "./evolution": {
+        "types": "./dist/evolution.d.ts",
+        "import": "./dist/evolution.js"
+      },
+      "./conformance-kit": {
+        "types": "./dist/conformance-kit.d.ts",
+        "import": "./dist/conformance-kit.js"
+      },
+      "./ruvbot-integration": {
+        "types": "./dist/ruvbot-integration.d.ts",
+        "import": "./dist/ruvbot-integration.js"
+      },
+      "./trust": {
+        "types": "./dist/trust.d.ts",
+        "import": "./dist/trust.js"
+      },
+      "./truth-anchors": {
+        "types": "./dist/truth-anchors.d.ts",
+        "import": "./dist/truth-anchors.js"
+      },
+      "./uncertainty": {
+        "types": "./dist/uncertainty.d.ts",
+        "import": "./dist/uncertainty.js"
+      },
+      "./temporal": {
+        "types": "./dist/temporal.d.ts",
+        "import": "./dist/temporal.js"
+      },
+      "./authority": {
+        "types": "./dist/authority.d.ts",
+        "import": "./dist/authority.js"
+      },
+      "./adversarial": {
+        "types": "./dist/adversarial.d.ts",
+        "import": "./dist/adversarial.js"
+      },
+      "./meta-governance": {
+        "types": "./dist/meta-governance.d.ts",
+        "import": "./dist/meta-governance.js"
+      },
+      "./continue-gate": {
+        "types": "./dist/continue-gate.d.ts",
+        "import": "./dist/continue-gate.js"
+      },
+      "./wasm-kernel": {
+        "types": "./dist/wasm-kernel.d.ts",
+        "import": "./dist/wasm-kernel.js"
+      },
+      "./generators": {
+        "types": "./dist/generators.d.ts",
+        "import": "./dist/generators.js"
+      },
+      "./analyzer": {
+        "types": "./dist/analyzer.d.ts",
+        "import": "./dist/analyzer.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "test",
+      "test:watch",
+      "test:coverage",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/hooks/package.json",
+    "name": "@claude-flow/hooks",
+    "main": "./dist/index.js",
+    "bin": {
+      "hooks-daemon": "./bin/hooks-daemon.js",
+      "statusline": "./bin/statusline.js",
+      "claude-flow-hooks": "./dist/cli/guidance-cli.js",
+      "guidance": "./dist/cli/guidance-cli.js"
+    },
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.js",
+        "import": "./dist/index.js"
+      },
+      "./registry": {
+        "types": "./dist/registry/index.d.js",
+        "import": "./dist/registry/index.js"
+      },
+      "./executor": {
+        "types": "./dist/executor/index.d.js",
+        "import": "./dist/executor/index.js"
+      },
+      "./daemons": {
+        "types": "./dist/daemons/index.d.js",
+        "import": "./dist/daemons/index.js"
+      },
+      "./statusline": {
+        "types": "./dist/statusline/index.d.js",
+        "import": "./dist/statusline/index.js"
+      },
+      "./mcp": {
+        "types": "./dist/mcp/index.d.js",
+        "import": "./dist/mcp/index.js"
+      },
+      "./reasoningbank": {
+        "types": "./dist/reasoningbank/index.d.js",
+        "import": "./dist/reasoningbank/index.js"
+      },
+      "./guidance": {
+        "types": "./dist/reasoningbank/guidance-provider.d.js",
+        "import": "./dist/reasoningbank/guidance-provider.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "test",
+      "test:watch",
+      "test:coverage",
+      "lint",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/integration/package.json",
+    "name": "@claude-flow/integration",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./token-optimizer": "./dist/token-optimizer.js",
+      "./*": "./dist/*.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/mcp/package.json",
+    "name": "@claude-flow/mcp",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./dist/*.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/memory/package.json",
+    "name": "@claude-flow/memory",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./dist/*.js"
+    },
+    "scripts": [
+      "test",
+      "bench",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/neural/package.json",
+    "name": "@claude-flow/neural",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/performance/package.json",
+    "name": "@claude-flow/performance",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./benchmarks/*": "./benchmarks/*.js"
+    },
+    "scripts": [
+      "bench",
+      "bench:attention",
+      "bench:startup",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/plugins/package.json",
+    "name": "@claude-flow/plugins",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.js",
+        "import": "./dist/index.js"
+      },
+      "./sdk": {
+        "types": "./dist/sdk/index.d.js",
+        "import": "./dist/sdk/index.js"
+      },
+      "./workers": {
+        "types": "./dist/workers/index.d.js",
+        "import": "./dist/workers/index.js"
+      },
+      "./hooks": {
+        "types": "./dist/hooks/index.d.js",
+        "import": "./dist/hooks/index.js"
+      },
+      "./providers": {
+        "types": "./dist/providers/index.d.js",
+        "import": "./dist/providers/index.js"
+      },
+      "./examples/ruvector": {
+        "types": "./dist/examples/ruvector-plugins/index.d.js",
+        "import": "./dist/examples/ruvector-plugins/index.js"
+      },
+      "./examples/plugin-creator": {
+        "types": "./dist/examples/plugin-creator/index.d.js",
+        "import": "./dist/examples/plugin-creator/index.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "test",
+      "test:watch",
+      "lint",
+      "clean"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/providers/package.json",
+    "name": "@claude-flow/providers",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.js",
+        "import": "./dist/index.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "test",
+      "test:watch",
+      "test:integration",
+      "test:coverage",
+      "test:quick",
+      "clean",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/security/package.json",
+    "name": "@claude-flow/security",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./dist/*.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/shared/package.json",
+    "name": "@claude-flow/shared",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./types": "./dist/types/index.js",
+      "./core": "./dist/core/index.js",
+      "./events": "./dist/events/index.js",
+      "./hooks": "./dist/hooks/index.js",
+      "./mcp": "./dist/mcp/index.js",
+      "./security": "./dist/security/index.js",
+      "./resilience": "./dist/resilience/index.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/swarm/package.json",
+    "name": "@claude-flow/swarm",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": "./dist/index.js",
+      "./*": "./dist/*.js"
+    },
+    "scripts": [
+      "test",
+      "build"
+    ]
+  },
+  {
+    "file": "v3/@claude-flow/testing/package.json",
+    "name": "@claude-flow/testing",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.js",
+        "import": "./dist/index.js"
+      },
+      "./helpers": {
+        "types": "./dist/helpers/index.d.js",
+        "import": "./dist/helpers/index.js"
+      },
+      "./fixtures": {
+        "types": "./dist/fixtures/index.d.js",
+        "import": "./dist/fixtures/index.js"
+      },
+      "./mocks": {
+        "types": "./dist/mocks/index.d.js",
+        "import": "./dist/mocks/index.js"
+      },
+      "./setup": {
+        "types": "./dist/setup.d.js",
+        "import": "./dist/setup.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "test",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/plugins/agentic-qe/package.json",
+    "name": "@claude-flow/plugin-agentic-qe",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "import": "./dist/index.js"
+      }
+    },
+    "scripts": [
+      "build",
+      "build:watch",
+      "clean",
+      "type-check",
+      "lint",
+      "test",
+      "test:watch"
+    ]
+  },
+  {
+    "file": "v3/plugins/code-intelligence/package.json",
+    "name": "@claude-flow/plugin-code-intelligence",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/cognitive-kernel/package.json",
+    "name": "@claude-flow/plugin-cognitive-kernel",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/financial-risk/package.json",
+    "name": "@claude-flow/plugin-financial-risk",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges/economy": {
+        "import": "./dist/bridges/economy-bridge.js",
+        "types": "./dist/bridges/economy-bridge.d.ts"
+      },
+      "./bridges/sparse": {
+        "import": "./dist/bridges/sparse-bridge.js",
+        "types": "./dist/bridges/sparse-bridge.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "typecheck",
+      "test",
+      "test:watch",
+      "lint",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/gastown-bridge/package.json",
+    "name": "@claude-flow/plugin-gastown-bridge",
+    "main": "./dist/index.cjs",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.mjs",
+        "require": "./dist/index.cjs",
+        "types": "./dist/index.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges.mjs",
+        "require": "./dist/bridges.cjs",
+        "types": "./dist/bridges.d.ts"
+      },
+      "./formula": {
+        "import": "./dist/formula.mjs",
+        "require": "./dist/formula.cjs",
+        "types": "./dist/formula.d.ts"
+      },
+      "./convoy": {
+        "import": "./dist/convoy.mjs",
+        "require": "./dist/convoy.cjs",
+        "types": "./dist/convoy.d.ts"
+      },
+      "./wasm": {
+        "import": "./dist/wasm-loader.mjs",
+        "types": "./dist/wasm-loader.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "build:wasm",
+      "build:all",
+      "build:analyze",
+      "clean",
+      "typecheck",
+      "test",
+      "test:wasm",
+      "benchmark",
+      "size",
+      "size:why",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/healthcare-clinical/package.json",
+    "name": "@claude-flow/plugin-healthcare-clinical",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges/hnsw": {
+        "import": "./dist/bridges/hnsw-bridge.js",
+        "types": "./dist/bridges/hnsw-bridge.d.ts"
+      },
+      "./bridges/gnn": {
+        "import": "./dist/bridges/gnn-bridge.js",
+        "types": "./dist/bridges/gnn-bridge.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "typecheck",
+      "test",
+      "test:watch",
+      "lint",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/hyperbolic-reasoning/package.json",
+    "name": "@claude-flow/plugin-hyperbolic-reasoning",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges/hyperbolic": {
+        "import": "./dist/bridges/hyperbolic-bridge.js",
+        "types": "./dist/bridges/hyperbolic-bridge.d.ts"
+      },
+      "./bridges/gnn": {
+        "import": "./dist/bridges/gnn-bridge.js",
+        "types": "./dist/bridges/gnn-bridge.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "typecheck",
+      "test",
+      "test:watch",
+      "lint",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/legal-contracts/package.json",
+    "name": "@claude-flow/plugin-legal-contracts",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/neural-coordination/package.json",
+    "name": "@claude-flow/plugin-neural-coordination",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/perf-optimizer/package.json",
+    "name": "@claude-flow/plugin-perf-optimizer",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/prime-radiant/package.json",
+    "name": "@claude-flow/plugin-prime-radiant",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/tools/index.js",
+        "types": "./dist/tools/index.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "typecheck",
+      "test",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/quantum-optimizer/package.json",
+    "name": "@claude-flow/plugin-quantum-optimizer",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges/exotic": {
+        "import": "./dist/bridges/exotic-bridge.js",
+        "types": "./dist/bridges/exotic-bridge.d.ts"
+      },
+      "./bridges/dag": {
+        "import": "./dist/bridges/dag-bridge.js",
+        "types": "./dist/bridges/dag-bridge.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "clean",
+      "typecheck",
+      "test",
+      "test:watch",
+      "lint",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/ruvector-upstream/package.json",
+    "name": "@claude-flow/ruvector-upstream",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./hnsw": {
+        "import": "./dist/bridges/hnsw.js",
+        "types": "./dist/bridges/hnsw.d.ts"
+      },
+      "./attention": {
+        "import": "./dist/bridges/attention.js",
+        "types": "./dist/bridges/attention.d.ts"
+      },
+      "./gnn": {
+        "import": "./dist/bridges/gnn.js",
+        "types": "./dist/bridges/gnn.d.ts"
+      },
+      "./hyperbolic": {
+        "import": "./dist/bridges/hyperbolic.js",
+        "types": "./dist/bridges/hyperbolic.d.ts"
+      },
+      "./learning": {
+        "import": "./dist/bridges/learning.js",
+        "types": "./dist/bridges/learning.d.ts"
+      },
+      "./exotic": {
+        "import": "./dist/bridges/exotic.js",
+        "types": "./dist/bridges/exotic.d.ts"
+      },
+      "./cognitive": {
+        "import": "./dist/bridges/cognitive.js",
+        "types": "./dist/bridges/cognitive.d.ts"
+      },
+      "./sona": {
+        "import": "./dist/bridges/sona.js",
+        "types": "./dist/bridges/sona.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "typecheck"
+    ]
+  },
+  {
+    "file": "v3/plugins/teammate-plugin/package.json",
+    "name": "@claude-flow/teammate-plugin",
+    "main": "dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./bridge": {
+        "import": "./dist/teammate-bridge.js",
+        "types": "./dist/teammate-bridge.d.ts"
+      },
+      "./mcp": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./topology": {
+        "import": "./dist/topology-optimizer.js",
+        "types": "./dist/topology-optimizer.d.ts"
+      },
+      "./semantic": {
+        "import": "./dist/semantic-router.js",
+        "types": "./dist/semantic-router.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "test",
+      "test:watch",
+      "test:coverage",
+      "lint",
+      "clean",
+      "prepublishOnly"
+    ]
+  },
+  {
+    "file": "v3/plugins/test-intelligence/package.json",
+    "name": "@claude-flow/plugin-test-intelligence",
+    "main": "./dist/index.js",
+    "bin": null,
+    "exports": {
+      ".": {
+        "import": "./dist/index.js",
+        "types": "./dist/index.d.ts"
+      },
+      "./tools": {
+        "import": "./dist/mcp-tools.js",
+        "types": "./dist/mcp-tools.d.ts"
+      },
+      "./bridges": {
+        "import": "./dist/bridges/index.js",
+        "types": "./dist/bridges/index.d.ts"
+      },
+      "./types": {
+        "import": "./dist/types.js",
+        "types": "./dist/types.d.ts"
+      }
+    },
+    "scripts": [
+      "build",
+      "dev",
+      "clean",
+      "test",
+      "test:watch",
+      "lint",
+      "typecheck",
+      "prepublishOnly"
+    ]
+  }
+]

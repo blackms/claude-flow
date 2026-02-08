@@ -1,0 +1,276 @@
+### pattern: v3:domains
+./package.json:51:    "v3:domains": "npm run build:domains",
+./reports/dead-code/2026-02-06/wave-1/raw/root-scripts.txt:11:v3:domains
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:63:npm error   npm run v3:domains # run the "v3:domains" package script
+./reports/dead-code/2026-02-06/wave-1/raw/package-entrypoints.json:21:      "v3:domains",
+
+### pattern: build:domains
+./README.md:133:- Root scripts include stale entries (`src/index.ts`, `build:domains`, `start:swarm`) not present in this workspace.
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:58:### root build:domains
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:59:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run build:domains
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:60:npm error Missing script: "build:domains"
+./package.json:51:    "v3:domains": "npm run build:domains",
+
+### pattern: v3:swarm
+./reports/dead-code/2026-02-06/wave-1/raw/package-entrypoints.json:22:      "v3:swarm",
+./reports/dead-code/2026-02-06/wave-1/raw/root-scripts.txt:12:v3:swarm
+./package.json:52:    "v3:swarm": "npm run start:swarm",
+
+### pattern: start:swarm
+./README.md:133:- Root scripts include stale entries (`src/index.ts`, `build:domains`, `start:swarm`) not present in this workspace.
+./package.json:52:    "v3:swarm": "npm run start:swarm",
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:70:### root start:swarm
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:71:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run start:swarm
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:72:npm error Missing script: "start:swarm"
+
+### pattern: npm run typecheck
+./reports/dead-code/2026-02-06/wave-1/raw/workflow-run-lines.txt:17:.github/workflows/ci.yml:43:        run: npm run typecheck || echo "⚠️ Type checking skipped (TypeScript compiler crash)"
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:2:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run typecheck
+./v2/docker/regression-test.Dockerfile:166:run_test "Integration" "Type check" "cd /app && npm run typecheck"
+./v2/docker/Dockerfile.test:19:RUN npm run typecheck
+./v2/bin/verification-hooks.js:91:      const result = execSync('npm run typecheck 2>&1 || true', { encoding: 'utf8' });
+./v2/docker/docker-test/docker-compose.test.yml:24:        npm run typecheck &&
+./v2/docker/docker-test/docker-compose.test.yml:50:        npm run typecheck &&
+./v2/docker/docker-test/docker-compose.test.yml:76:        npm run typecheck &&
+./v2/src/cli/simple-commands/verification-hooks.js:91:      const result = execSync('npm run typecheck 2>&1 || true', { encoding: 'utf8' });
+./v3/vitest.config.ts:96:    // Use separate `npm run typecheck` for type validation
+./v2/docs/github-workflows-analysis-report.md:41:- ❌ **Line 42**: `npm run typecheck` - Calls script that exists in package.json
+./v2/docs/github-workflows-analysis-report.md:812:npm run typecheck
+./v3/implementation/migration/v3-migration-roadmap.md:206:npm run typecheck         # No TypeScript errors
+./v3/implementation/migration/v3-migration-roadmap.md:496:        run: npm run typecheck:v3
+./v2/bin/pair.js:179:        const { stdout: tsErrors } = await execAsync('(npm run typecheck) 2>&1 || true');
+./v2/bin/pair.js:278:        command: '(npm run typecheck) 2>&1 || true',
+./v2/bin/pair.js:541:      console.log('  2. Fix TypeScript errors: Check npm run typecheck output');
+./v2/docs/WORKFLOW_FIXES.md:186:npm run typecheck
+./v3/plugins/cognitive-kernel/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/bin/init/templates/CLAUDE.md:78:- `npm run typecheck`: Run TypeScript type checking
+./v2/src/cli/simple-commands/pair.js:179:        const { stdout: tsErrors } = await execAsync('(npm run typecheck) 2>&1 || true');
+./v2/src/cli/simple-commands/pair.js:278:        command: '(npm run typecheck) 2>&1 || true',
+./v2/src/cli/simple-commands/pair.js:541:      console.log('  2. Fix TypeScript errors: Check npm run typecheck output');
+./v2/CLAUDE.md:69:- `npm run typecheck` - Type checking
+./v2/bin/verification.js:119:          const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v2/bin/verification.js:143:          const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v3/plugins/healthcare-clinical/package.json:47:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/bin/verification-integration.js:254:      const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v2/docs/architecture/workflow-optimization-implementation-guide.md:176:          npm run typecheck &
+./v2/docs/architecture/workflow-optimization-implementation-guide.md:270:      - run: npm run typecheck
+./v2/src/cli/simple-commands/verification.js:119:          const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v2/src/cli/simple-commands/verification.js:143:          const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v2/docs/architecture/github-workflows-optimization-strategy.md:77:        npm run typecheck &
+./v2/docs/architecture/github-workflows-optimization-strategy.md:389:      - run: npm run typecheck
+./v2/docs/architecture/github-workflows-optimization-strategy.md:393:          TS_ERRORS=$(npm run typecheck 2>&1 | grep -c "error" || echo 0)
+./v2/docs/architecture/github-workflows-optimization-strategy.md:407:- `code-accuracy-scoring` - Duplicates `npm run lint` and `npm run typecheck`
+./v2/docs/architecture/github-workflows-optimization-strategy.md:426:    npm run typecheck       # Must pass
+./v2/docs/architecture/github-workflows-optimization-strategy.md:905:          npm run typecheck &
+./v2/bin/init/templates/CLAUDE.md.optimized:50:- `npm run typecheck` - Type checking
+./v2/docs/workflow-fixes-action-plan.md:312:npm run typecheck
+./v3/plugins/hyperbolic-reasoning/package.json:47:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/bin/init/templates/claude-md.js:155:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/bin/init/templates/claude-md.js:320:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/bin/init/templates/claude-md.js:721:- \`npm run typecheck\` - Type checking
+./v2/src/cli/simple-commands/verification-integration.js:254:      const { stdout } = await execAsync('npm run typecheck 2>&1 || true');
+./v2/src/cli/simple-cli.js:3197:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/bin/init/templates/verification-claude-md.js:249:- \`npm run typecheck\`: Type check with validation
+./v3/implementation/security/SECURITY_FIXES_CHECKLIST.md:680:npm run typecheck
+./v3/plugins/perf-optimizer/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/src/cli/init/sparc-environment.ts:148:- \`npm run typecheck\`: Type check YOUR TypeScript code
+./v2/docs/RELEASE_NOTES_v2.7.15.md:278:**Workaround:** Use `npm run build:esm` (SWC) instead of `npm run typecheck`
+./v2/docs/TOOL_VALIDATION_REPORT.md:280:npm run typecheck      # TypeScript validation (v5.9.2)
+./v2/docs/regression-analysis-phase-1-2.md:136:✅ npm run typecheck      # Type checking passes
+./v2/docs/regression-analysis-phase-1-2.md:457:✅ npm run typecheck            # Type checking passes
+./v2/src/cli/simple-commands/init/templates/CLAUDE.md:78:- `npm run typecheck`: Run TypeScript type checking
+./v2/docs/RELEASE_NOTES_v2.7.33.md:390:✅ npm run typecheck - TypeScript internal error (non-blocking)
+./v2/docs/development/DEPLOYMENT.md:969:      run: npm run typecheck
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:776:        run: npm run typecheck
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1268:npm run typecheck
+./v3/plugins/code-intelligence/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/docs/development/build-analysis-report.md:159:- ✅ `npm run typecheck` completes without errors
+./v2/docs/agentdb/PUBLISHING_CHECKLIST.md:9:- [x] Type checking passes (`npm run typecheck`)
+./v2/docs/agentdb/PUBLISHING_CHECKLIST.md:232:npm run typecheck
+./v2/docs/BRANCH_REVIEW_SUMMARY.md:148:⚠️  npm run typecheck - TypeScript Internal Error (Non-blocking)
+./v2/src/cli/simple-commands/init/templates/CLAUDE.md.optimized:50:- `npm run typecheck` - Type checking
+./v2/src/cli/simple-commands/init/templates/claude-md.js:155:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/src/cli/simple-commands/init/templates/claude-md.js:320:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/src/cli/simple-commands/init/templates/claude-md.js:695:- \`npm run typecheck\` - Type checking
+./v2/src/cli/simple-commands/init/templates/verification-claude-md.js:249:- \`npm run typecheck\`: Type check with validation
+./v3/plugins/test-intelligence/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/CHANGELOG.md:1682:  - Real verification system running `npm run typecheck`, `lint`, and `build`
+./v3/plugins/financial-risk/package.json:47:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v2/src/cli/simple-cli.ts:3072:- \`npm run typecheck\`: Run TypeScript type checking
+./v2/src/cli/commands/index.ts:2591:- \`npm run typecheck\`: Run TypeScript type checking
+./v3/plugins/neural-coordination/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v3/plugins/legal-contracts/package.json:40:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+./v3/plugins/quantum-optimizer/package.json:47:    "prepublishOnly": "npm run clean && npm run build && npm run typecheck"
+
+### pattern: npm run test:coverage
+./reports/dead-code/2026-02-06/wave-1/raw/workflow-run-lines.txt:21:.github/workflows/ci.yml:81:        run: npm run test:coverage || echo "⚠️ Coverage generation failed (non-blocking)"
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:11:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:coverage
+./v2/docs/reports/releases/PRE_RELEASE_FIXES_REPORT.md:74:- `npm run test:coverage` - Coverage report
+./v2/docs/github-workflows-analysis-report.md:124:  run: npm run test:coverage
+./v2/tests/README-AGENTDB-TESTS.md:76:npm run test:coverage -- tests/unit/memory/agentdb/ tests/integration/agentdb/
+./v2/tests/README-AGENTDB-TESTS.md:434:npm run test:coverage
+./v2/docs/architecture/workflow-optimization-implementation-guide.md:192:      - run: npm run test:coverage
+./v2/tests/run-agentdb-tests.sh:95:npm run test:coverage -- tests/unit/memory/agentdb/ tests/integration/agentdb/
+./v2/docs/architecture/github-workflows-optimization-strategy.md:427:    npm run test:coverage   # Must have >80% coverage
+./v2/docs/architecture/github-workflows-optimization-strategy.md:933:        run: npm run test:coverage
+./v2/tests/test-coverage-report.js:203:      const coverageOutput = execSync('npm run test:coverage -- --coverageDirectory=coverage/init', {
+./v2/docs/development/DEPLOYMENT.md:972:      run: npm run test:coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:283:npm run test:coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:585:npm run test:coverage      # Generate coverage report
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:586:npm run test:coverage:unit # Unit test coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:606:npm run test:coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:609:npm run test:coverage:unit        # Unit test coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:610:npm run test:coverage:integration # Integration coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:611:npm run test:coverage:e2e         # E2E coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:794:        run: npm run test:coverage
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:855:      run: npm run test:coverage
+./v2/docs/TOOL_VALIDATION_REPORT.md:317:npm run test:coverage        # With coverage report
+./v2/examples/rest-api-simple/implementation-plan.md:153:npm run test:coverage
+./v2/examples/05-swarm-apps/rest-api-advanced/README.md:401:npm run test:coverage
+./v2/examples/05-swarm-apps/swarm-sample/README.md:143:npm run test:coverage
+./v2/examples/05-swarm-apps/rest-api-advanced/IMPLEMENTATION-SUMMARY.md:146:npm run test:coverage
+./v2/examples/03-demos/create-swarm-sample.sh:728:npm run test:coverage
+./v3/__tests__/integration/QUICK_START.md:40:npm run test:coverage:integration
+./v3/__tests__/integration/QUICK_START.md:119:npm run test:coverage:integration
+./v3/__tests__/integration/QUICK_START.md:220:npm run test:coverage:integration
+./v3/__tests__/integration/QUICK_START.md:226:npm run test:coverage:integration
+./v3/__tests__/integration/QUICK_START.md:255:npm run test:coverage:integration     # With coverage
+./v3/__tests__/integration/README.md:150:npm run test:coverage -- v3/__tests__/integration
+./v3/__tests__/integration/README.md:220:npm run test:coverage -- v3/__tests__/integration --reporter=html
+./v3/__tests__/integration/TEST_SUMMARY.md:150:npm run test:coverage:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:162:npm run test:coverage:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:264:  run: npm run test:coverage:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:286:6. Verify coverage with `npm run test:coverage:integration`
+./v3/__tests__/integration/TEST_SUMMARY.md:299:npm run test:coverage:integration
+./v3/plugins/teammate-plugin/README.md:599:npm run test:coverage
+./v3/@claude-flow/guidance/README.md:1075:npm run test:coverage   # with coverage
+
+### pattern: npm run format
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:20:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run format
+./v2/examples/05-swarm-apps/rest-api/README.md:209:npm run format
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:871:        npm run format
+
+### pattern: npm run test:unit
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:29:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:unit
+./v2/docs/reports/releases/PRE_RELEASE_FIXES_REPORT.md:69:- `npm run test:unit` - Unit tests only
+./v2/docs/WORKFLOW_FIXES.md:50:- ✅ All test commands now work (`npm test`, `npm run test:unit`, etc.)
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:294:npm run test:unit -- src/memory/__tests__/agentdb-adapter.test.js
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:295:npm run test:unit -- src/memory/__tests__/agentdb-backend.test.js
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:296:npm run test:unit -- src/memory/__tests__/legacy-bridge.test.js
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:578:npm run test:unit          # Unit tests only
+./v2/docs/TOOL_VALIDATION_REPORT.md:313:npm run test:unit            # Unit tests only
+./v2/docs/regression-analysis-phase-1-2.md:142:✅ npm run test:unit      # Unit tests
+./v2/docs/regression-analysis-phase-1-2.md:453:✅ npm run test:unit            # Unit tests pass
+./v2/docs/agentdb/agentdb-integration-summary.md:186:npm run test:unit -- src/memory/__tests__/
+./v2/examples/05-swarm-apps/rest-api-advanced/README.md:391:npm run test:unit
+
+### pattern: npm run test:integration
+./README.md:85:npm run test:integration:mcp
+./README.md:86:npm run test:integration:plugin
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:41:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:integration
+./v3/__tests__/integration/QUICK_START.md:21:npm run test:integration
+./v3/__tests__/integration/QUICK_START.md:26:npm run test:integration:memory      # Memory integration
+./v3/__tests__/integration/QUICK_START.md:27:npm run test:integration:swarm       # Swarm coordination
+./v3/__tests__/integration/QUICK_START.md:28:npm run test:integration:mcp         # MCP tools
+./v3/__tests__/integration/QUICK_START.md:29:npm run test:integration:plugin      # Plugin system
+./v3/__tests__/integration/QUICK_START.md:30:npm run test:integration:workflow    # Full workflows
+./v3/__tests__/integration/QUICK_START.md:35:npm run test:integration:watch
+./v3/__tests__/integration/QUICK_START.md:109:DEBUG=claude-flow:* npm run test:integration
+./v3/__tests__/integration/QUICK_START.md:208:npm run test:integration
+./v3/__tests__/integration/QUICK_START.md:214:npm run test:integration:watch
+./v3/__tests__/integration/QUICK_START.md:252:npm run test:integration              # Run all
+./v3/__tests__/integration/QUICK_START.md:253:npm run test:integration:watch        # Watch mode
+./v3/__tests__/integration/QUICK_START.md:254:npm run test:integration:memory       # Memory only
+./v3/__tests__/integration/QUICK_START.md:258:DEBUG=* npm run test:integration      # Verbose logs
+./v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md:363:npm run test:integration
+./v2/docs/AGENTIC_FLOW_INTEGRATION_REVIEW.md:476:   npm run test:integration
+./v3/__tests__/integration/README.md:136:npm run test:integration
+./v3/__tests__/integration/README.md:210:DEBUG=claude-flow:* npm run test:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:137:npm run test:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:140:npm run test:integration:memory      # Memory tests
+./v3/__tests__/integration/TEST_SUMMARY.md:141:npm run test:integration:swarm       # Swarm tests
+./v3/__tests__/integration/TEST_SUMMARY.md:142:npm run test:integration:mcp         # MCP tests
+./v3/__tests__/integration/TEST_SUMMARY.md:143:npm run test:integration:plugin      # Plugin tests
+./v3/__tests__/integration/TEST_SUMMARY.md:144:npm run test:integration:workflow    # Workflow tests
+./v3/__tests__/integration/TEST_SUMMARY.md:147:npm run test:integration:watch
+./v3/__tests__/integration/TEST_SUMMARY.md:159:DEBUG=claude-flow:* npm run test:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:261:  run: npm run test:integration
+./v3/__tests__/integration/TEST_SUMMARY.md:285:5. Run `npm run test:integration:watch`
+./v3/__tests__/integration/TEST_SUMMARY.md:291:3. Or use `DEBUG=* npm run test:integration`
+./v3/__tests__/integration/TEST_SUMMARY.md:296:npm run test:integration
+./v2/src/migration/README.md:471:npm run test:integration
+./v2/docs/reports/releases/PRE_RELEASE_FIXES_REPORT.md:70:- `npm run test:integration` - Integration tests
+./v2/docs/github-workflows-analysis-report.md:647:    npm run test:integration -- --testPathPattern=agent-communication \
+./v2/docs/github-workflows-analysis-report.md:755:   npm run test:integration
+./v2/bin/sparc-modes/debug.js:65:     npm run test:integration
+./v2/src/swarm/prompt-copying-README.md:443:npm run test:integration
+./v2/src/verification/architecture.md:561:        run: npm run test:integration
+./v2/docs/LATEST_LIBRARIES_REVIEW.md:558:npm run test:integration
+./v2/docs/LATEST_LIBRARIES_REVIEW.md:811:   npm run test:integration
+./v2/docs/agentdb/agentdb-integration-summary.md:187:npm run test:integration -- agentdb
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:301:npm run test:integration -- agentdb
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:302:npm run test:integration -- migration
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:579:npm run test:integration   # Integration tests
+./v2/docs/TOOL_VALIDATION_REPORT.md:314:npm run test:integration     # Integration tests only
+./v2/docs/architecture/README.md:336:run: npm run test:integration -- swarm
+./v2/src/cli/simple-commands/sparc-modes/debug.js:65:     npm run test:integration
+./v2/docs/architecture/workflow-optimization-implementation-guide.md:41:        run: npm run test:integration -- ${{ matrix.suite }}
+./v2/docs/architecture/workflow-optimization-implementation-guide.md:396:npm run test:integration
+./v2/docs/regression-analysis-phase-1-2.md:143:✅ npm run test:integration  # Integration tests
+./v2/docs/regression-analysis-phase-1-2.md:454:✅ npm run test:integration     # Integration tests pass
+./v2/docs/architecture/workflow-architecture-diagram.md:213:│        │  npm run test:integration│ ← Uses real CLI!            │
+./v2/docs/architecture/github-workflows-optimization-strategy.md:221:            command: "npm run test:integration -- swarm"
+./v2/docs/architecture/github-workflows-optimization-strategy.md:223:            command: "npm run test:integration -- coordination"
+./v2/docs/architecture/github-workflows-optimization-strategy.md:225:            command: "npm run test:integration -- memory"
+./v2/docs/architecture/github-workflows-optimization-strategy.md:256:- **Implementation:** Use existing `npm run test:integration` scripts
+./v2/docs/architecture/github-workflows-optimization-strategy.md:1001:        run: npm run test:integration -- ${{ matrix.test-suite }}
+./v2/docs/integrations/agentic-flow/README.md:158:npm run test:integration
+./v2/examples/05-swarm-apps/rest-api-advanced/README.md:396:npm run test:integration
+
+### pattern: npm run test:performance
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:50:cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:performance
+./v2/src/swarm/prompt-copying-README.md:449:npm run test:performance
+./v2/docs/reports/releases/PRE_RELEASE_FIXES_REPORT.md:72:- `npm run test:performance` - Performance tests
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:307:npm run test:performance -- vector-search
+./v2/docs/development/AGENT1_COMPLETION_REPORT.md:308:npm run test:performance -- hnsw-benchmark
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:581:npm run test:performance   # Performance tests
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1199:npm run test:performance
+./v2/docs/TOOL_VALIDATION_REPORT.md:316:npm run test:performance     # Performance tests only
+
+### pattern: publish:alpha
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:79:### v3 publish:alpha via npm
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:80:cwd=/Users/alessiorocchi/Projects/claude-flow/v3 cmd=npm run publish:alpha
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:81:npm error Missing script: "publish:alpha"
+./reports/dead-code/2026-02-06/wave-1/raw/workflow-run-lines.txt:14:.github/workflows/v3-ci.yml:155:        run: pnpm publish:alpha
+./v2/package.json:55:    "publish:alpha": "npm publish --tag alpha",
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:973:npm run publish:alpha
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:981:npm run publish:alpha  # Alpha release
+
+### pattern: publish:v3alpha
+./reports/dead-code/2026-02-06/wave-1/raw/package-entrypoints.json:53:      "publish:v3alpha",
+./reports/dead-code/2026-02-06/wave-1/raw/package-entrypoints.json:62:      "bun:publish:v3alpha"
+./reports/dead-code/2026-02-06/wave-1/raw/missing-script-checks.txt:85:npm error   npm run publish:v3alpha # run the "publish:v3alpha" package script
+./reports/dead-code/2026-02-06/wave-1/raw/v3-scripts.txt:21:publish:v3alpha
+./reports/dead-code/2026-02-06/wave-1/raw/v3-scripts.txt:30:bun:publish:v3alpha
+./v3/package.json:32:    "publish:v3alpha": "pnpm --filter claude-flow publish --tag v3alpha --no-git-checks",
+./v3/package.json:41:    "bun:publish:v3alpha": "cd claude-flow && bun publish --tag v3alpha"
+
+### pattern: dist/cli/main.js
+./v2/docs/github-workflows-analysis-report.md:622:    node dist/cli/main.js --version
+./v2/docs/development/DEPLOYMENT.md:591:CMD ["node", "dist/cli/main.js", "server"]
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:69:    "build:binary": "pkg dist/cli/main.js --targets node20-linux-x64,node20-macos-x64,node20-win-x64 --output bin/claude-flow",
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1241:node --prof dist/cli/main.js swarm "complex task"
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1245:node --trace-gc dist/cli/main.js swarm "memory intensive"
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1246:node --expose-gc --inspect dist/cli/main.js
+./v2/docs/development/DEVELOPMENT_WORKFLOW.md:1249:node --heapsnapshot-signal=SIGUSR2 dist/cli/main.js
+
+### pattern: test-mcp-server.sh
+./tests/docker-regression/README.md:47:│   ├── test-mcp-server.sh
+./tests/docker-regression/Makefile:46:	bash scripts/test-mcp-server.sh
+./tests/docker-regression/scripts/run-all-tests.sh:126:if bash "${SCRIPT_DIR}/test-mcp-server.sh"; then
+
+### pattern: test-cli-commands.sh
+./tests/docker-regression/Makefile:43:	bash scripts/test-cli-commands.sh
+./tests/docker-regression/README.md:46:│   ├── test-cli-commands.sh
+./tests/docker-regression/scripts/run-all-tests.sh:114:if bash "${SCRIPT_DIR}/test-cli-commands.sh"; then
+

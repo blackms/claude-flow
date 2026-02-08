@@ -1,0 +1,8 @@
+Processed 19 files (425ms) 
+
+__tests__/guidance-provider.test.ts
+__tests__/reasoningbank.test.ts
+cli/guidance-cli.ts
+index.ts
+llm/index.ts
+

@@ -1,0 +1,101 @@
+### root typecheck
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run typecheck
+npm error Missing script: "typecheck"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_032Z-debug-0.log
+exit_code=1
+
+### root test:coverage
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:coverage
+npm error Missing script: "test:coverage"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_167Z-debug-0.log
+exit_code=1
+
+### root format
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run format
+npm error Missing script: "format"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_270Z-debug-0.log
+exit_code=1
+
+### root test:unit
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:unit
+npm error Missing script: "test:unit"
+npm error
+npm error Did you mean this?
+npm error   npm run test:ui # run the "test:ui" package script
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_370Z-debug-0.log
+exit_code=1
+
+### root test:integration
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:integration
+npm error Missing script: "test:integration"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_478Z-debug-0.log
+exit_code=1
+
+### root test:performance
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run test:performance
+npm error Missing script: "test:performance"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_582Z-debug-0.log
+exit_code=1
+
+### root build:domains
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run build:domains
+npm error Missing script: "build:domains"
+npm error
+npm error Did you mean this?
+npm error   npm run v3:domains # run the "v3:domains" package script
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_679Z-debug-0.log
+exit_code=1
+
+### root start:swarm
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=npm run start:swarm
+npm error Missing script: "start:swarm"
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_792Z-debug-0.log
+exit_code=1
+
+### v3 publish:alpha via npm
+cwd=/Users/alessiorocchi/Projects/claude-flow/v3 cmd=npm run publish:alpha
+npm error Missing script: "publish:alpha"
+npm error
+npm error Did you mean one of these?
+npm error   npm run publish:dry # run the "publish:dry" package script
+npm error   npm run publish:v3alpha # run the "publish:v3alpha" package script
+npm error
+npm error To see a list of scripts, run:
+npm error   npm run
+npm error A complete log of this run can be found in: /Users/alessiorocchi/.npm/_logs/2026-02-06T22_44_28_894Z-debug-0.log
+exit_code=1
+
+### root main file exists
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=test -f dist/index.js && echo exists || echo missing
+missing
+exit_code=0
+
+### root dev target exists
+cwd=/Users/alessiorocchi/Projects/claude-flow cmd=test -f src/index.ts && echo exists || echo missing
+missing
+exit_code=0
+

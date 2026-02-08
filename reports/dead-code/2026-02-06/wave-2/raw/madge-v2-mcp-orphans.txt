@@ -1,0 +1,10 @@
+Processed 51 files (510ms) (9 warnings)
+
+index.ts
+integrate-wrapper.ts
+server-with-wrapper.ts
+server-wrapper-mode.ts
+tests/mcp-integration.test.ts
+tools/_template.ts
+tools/system/status.ts
+

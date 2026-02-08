@@ -1,0 +1,104 @@
+v3/@claude-flow/neural/src/index.ts:341 - createNeuralLearningSystem (used in module)
+v3/@claude-flow/neural/src/index.ts:21 - SONAMode (used in module)
+v3/@claude-flow/neural/src/index.ts:22 - SONAModeConfig
+v3/@claude-flow/neural/src/index.ts:23 - ModeOptimizations
+v3/@claude-flow/neural/src/index.ts:26 - Trajectory
+v3/@claude-flow/neural/src/index.ts:27 - TrajectoryStep
+v3/@claude-flow/neural/src/index.ts:28 - TrajectoryVerdict
+v3/@claude-flow/neural/src/index.ts:29 - DistilledMemory
+v3/@claude-flow/neural/src/index.ts:32 - Pattern
+v3/@claude-flow/neural/src/index.ts:33 - PatternMatch (used in module)
+v3/@claude-flow/neural/src/index.ts:34 - PatternEvolution
+v3/@claude-flow/neural/src/index.ts:37 - RLAlgorithm
+v3/@claude-flow/neural/src/index.ts:38 - RLConfig
+v3/@claude-flow/neural/src/index.ts:39 - PPOConfig
+v3/@claude-flow/neural/src/index.ts:40 - DQNConfig
+v3/@claude-flow/neural/src/index.ts:41 - DecisionTransformerConfig
+v3/@claude-flow/neural/src/index.ts:42 - CuriosityConfig
+v3/@claude-flow/neural/src/index.ts:45 - LoRAConfig
+v3/@claude-flow/neural/src/index.ts:46 - LoRAWeights
+v3/@claude-flow/neural/src/index.ts:49 - EWCConfig
+v3/@claude-flow/neural/src/index.ts:50 - EWCState
+v3/@claude-flow/neural/src/index.ts:53 - NeuralStats (used in module)
+v3/@claude-flow/neural/src/index.ts:56 - NeuralEvent
+v3/@claude-flow/neural/src/index.ts:57 - NeuralEventListener (used in module)
+v3/@claude-flow/neural/src/index.ts:65 - SONAManager (used in module)
+v3/@claude-flow/neural/src/index.ts:66 - createSONAManager (used in module)
+v3/@claude-flow/neural/src/index.ts:67 - getModeConfig
+v3/@claude-flow/neural/src/index.ts:68 - getModeOptimizations
+v3/@claude-flow/neural/src/index.ts:75 - ModeImplementation
+v3/@claude-flow/neural/src/index.ts:78 - BaseModeImplementation
+v3/@claude-flow/neural/src/index.ts:79 - RealTimeMode
+v3/@claude-flow/neural/src/index.ts:80 - BalancedMode
+v3/@claude-flow/neural/src/index.ts:81 - ResearchMode
+v3/@claude-flow/neural/src/index.ts:82 - EdgeMode
+v3/@claude-flow/neural/src/index.ts:83 - BatchMode
+v3/@claude-flow/neural/src/index.ts:91 - SONALearningEngine (used in module)
+v3/@claude-flow/neural/src/index.ts:92 - createSONALearningEngine (used in module)
+v3/@claude-flow/neural/src/index.ts:96 - Context
+v3/@claude-flow/neural/src/index.ts:97 - AdaptedBehavior
+v3/@claude-flow/neural/src/index.ts:98 - SONAStats
+v3/@claude-flow/neural/src/index.ts:99 - JsLearnedPattern
+v3/@claude-flow/neural/src/index.ts:100 - JsSonaConfig
+v3/@claude-flow/neural/src/index.ts:108 - ReasoningBank (used in module)
+v3/@claude-flow/neural/src/index.ts:109 - createReasoningBank (used in module)
+v3/@claude-flow/neural/src/index.ts:110 - createInitializedReasoningBank
+v3/@claude-flow/neural/src/index.ts:114 - ReasoningBankConfig
+v3/@claude-flow/neural/src/index.ts:115 - RetrievalResult (used in module)
+v3/@claude-flow/neural/src/index.ts:116 - ConsolidationResult
+v3/@claude-flow/neural/src/index.ts:124 - PatternLearner (used in module)
+v3/@claude-flow/neural/src/index.ts:125 - createPatternLearner (used in module)
+v3/@claude-flow/neural/src/index.ts:128 - PatternLearnerConfig
+v3/@claude-flow/neural/src/index.ts:136 - PPOAlgorithm
+v3/@claude-flow/neural/src/index.ts:137 - createPPO
+v3/@claude-flow/neural/src/index.ts:138 - DEFAULT_PPO_CONFIG
+v3/@claude-flow/neural/src/index.ts:141 - DQNAlgorithm
+v3/@claude-flow/neural/src/index.ts:142 - createDQN
+v3/@claude-flow/neural/src/index.ts:143 - DEFAULT_DQN_CONFIG
+v3/@claude-flow/neural/src/index.ts:146 - A2CAlgorithm
+v3/@claude-flow/neural/src/index.ts:147 - createA2C
+v3/@claude-flow/neural/src/index.ts:148 - DEFAULT_A2C_CONFIG
+v3/@claude-flow/neural/src/index.ts:151 - DecisionTransformer
+v3/@claude-flow/neural/src/index.ts:152 - createDecisionTransformer
+v3/@claude-flow/neural/src/index.ts:153 - DEFAULT_DT_CONFIG
+v3/@claude-flow/neural/src/index.ts:156 - QLearning
+v3/@claude-flow/neural/src/index.ts:157 - createQLearning
+v3/@claude-flow/neural/src/index.ts:158 - DEFAULT_QLEARNING_CONFIG
+v3/@claude-flow/neural/src/index.ts:161 - SARSAAlgorithm
+v3/@claude-flow/neural/src/index.ts:162 - createSARSA
+v3/@claude-flow/neural/src/index.ts:163 - DEFAULT_SARSA_CONFIG
+v3/@claude-flow/neural/src/index.ts:166 - CuriosityModule
+v3/@claude-flow/neural/src/index.ts:167 - createCuriosity
+v3/@claude-flow/neural/src/index.ts:168 - DEFAULT_CURIOSITY_CONFIG
+v3/@claude-flow/neural/src/index.ts:171 - createAlgorithm
+v3/@claude-flow/neural/src/index.ts:172 - getDefaultConfig
+v3/@claude-flow/neural/src/index.ts:176 - A2CConfig
+v3/@claude-flow/neural/src/index.ts:177 - QLearningConfig
+v3/@claude-flow/neural/src/index.ts:178 - SARSAConfig
+v3/@claude-flow/neural/src/index.ts:194 - NeuralLearningSystem (used in module)
+v3/@claude-flow/neural/src/index.ts:349 - default
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:682 - createReasoningBankAdapter
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:691 - createDefaultReasoningBankAdapter
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:36 - ReasoningBankPattern (used in module)
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:66 - ReasoningBankVerdict (used in module)
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:76 - ConsolidationResult (used in module)
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:87 - ReasoningBankConfig (used in module)
+v3/@claude-flow/neural/src/reasoningbank-adapter.ts:132 - ReasoningBankAdapter (used in module)
+v3/@claude-flow/neural/src/types.ts:586 - LearningMode
+v3/@claude-flow/neural/src/types.ts:587 - ModeConfig
+v3/@claude-flow/neural/src/types.ts:588 - LearnedPattern
+v3/@claude-flow/neural/src/types.ts:589 - PatternSearchResult
+v3/@claude-flow/neural/src/algorithms/index.ts:13 - PPOConfig
+v3/@claude-flow/neural/src/algorithms/index.ts:21 - DQNConfig
+v3/@claude-flow/neural/src/algorithms/index.ts:37 - DecisionTransformerConfig
+v3/@claude-flow/neural/src/algorithms/index.ts:61 - CuriosityConfig
+v3/@claude-flow/neural/src/application/index.ts:8 - NeuralApplicationService
+v3/@claude-flow/neural/src/application/index.ts:9 - TrainingSessionResult
+v3/@claude-flow/neural/src/application/index.ts:10 - NeuralMetrics
+v3/@claude-flow/neural/src/domain/index.ts:8 - Pattern
+v3/@claude-flow/neural/src/domain/index.ts:9 - PatternType
+v3/@claude-flow/neural/src/domain/index.ts:10 - PatternProps
+v3/@claude-flow/neural/src/domain/index.ts:14 - LearningDomainService
+v3/@claude-flow/neural/src/domain/index.ts:15 - Trajectory
+v3/@claude-flow/neural/src/domain/index.ts:16 - LearningResult
+v3/@claude-flow/neural/src/domain/index.ts:17 - RouteRecommendation

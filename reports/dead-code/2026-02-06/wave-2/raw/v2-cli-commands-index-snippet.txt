@@ -1,0 +1,360 @@
+     1	import chalk from 'chalk';
+     2	import { getErrorMessage } from '../../utils/error-handler.js';
+     3	import { CLI, success, error, warning, info, VERSION } from '../cli-core.js';
+     4	import type { Command, CommandContext } from '../cli-core.js';
+     5	import colors from 'chalk';
+     6	const { bold, blue, yellow } = colors;
+     7	import { Orchestrator } from '../../core/orchestrator-fixed.js';
+     8	import { ConfigManager } from '../../core/config.js';
+     9	import type { MemoryManager } from '../../memory/manager.js';
+    10	import { EventBus } from '../../core/event-bus.js';
+    11	import { Logger } from '../../core/logger.js';
+    12	import { JsonPersistenceManager } from '../../core/json-persistence.js';
+    13	import { swarmAction } from './swarm.js';
+    14	import { SimpleMemoryManager } from './memory.js';
+    15	import { sparcAction } from './sparc.js';
+    16	import { createMigrateCommand } from './migrate.js';
+    17	import { enterpriseCommands } from './enterprise.js';
+    18	import { createFlowNexusClaudeMd } from '../simple-commands/init/templates/claude-md.js';
+    19	
+    20	// Import enhanced orchestration commands
+    21	import { startCommand } from './start.js';
+    22	import { statusCommand } from './status.js';
+    23	import { monitorCommand } from './monitor.js';
+    24	import { sessionCommand } from './session.js';
+    25	
+    26	let orchestrator: Orchestrator | null = null;
+    27	let configManager: ConfigManager | null = null;
+    28	let persistence: JsonPersistenceManager | null = null;
+    29	
+    30	async function getPersistence(): Promise<JsonPersistenceManager> {
+    31	  if (!persistence) {
+    32	    persistence = new JsonPersistenceManager();
+    33	    await persistence.initialize();
+    34	  }
+    35	  return persistence;
+    36	}
+    37	
+    38	async function getOrchestrator(): Promise<Orchestrator> {
+    39	  if (!orchestrator) {
+    40	    const config = await getConfigManager();
+    41	    const eventBus = EventBus.getInstance();
+    42	    const logger = new Logger({ level: 'info', format: 'text', destination: 'console' });
+    43	    orchestrator = new Orchestrator(config, eventBus, logger);
+    44	  }
+    45	  return orchestrator;
+    46	}
+    47	
+    48	async function getConfigManager(): Promise<ConfigManager> {
+    49	  if (!configManager) {
+    50	    configManager = ConfigManager.getInstance();
+    51	    await configManager.load();
+    52	  }
+    53	  return configManager;
+    54	}
+    55	
+    56	export function setupCommands(cli: CLI): void {
+    57	  // Neural init command
+    58	  cli.command({
+    59	    name: 'neural',
+    60	    description: 'Neural module management',
+    61	    subcommands: [
+    62	      {
+    63	        name: 'init',
+    64	        description: 'Initialize SAFLA neural module',
+    65	        options: [
+    66	          {
+    67	            name: 'force',
+    68	            short: 'f',
+    69	            description: 'Overwrite existing module',
+    70	            type: 'boolean',
+    71	          },
+    72	          {
+    73	            name: 'target',
+    74	            short: 't',
+    75	            description: 'Target directory',
+    76	            type: 'string',
+    77	            defaultValue: '.claude/agents/neural',
+    78	          },
+    79	        ],
+    80	        action: async (ctx: CommandContext) => {
+    81	          const { initNeuralModule } = await import('../../scripts/init-neural.js');
+    82	          await initNeuralModule({
+    83	            force: ctx.flags.force as boolean,
+    84	            targetDir: ctx.flags.target as string,
+    85	          });
+    86	        },
+    87	      },
+    88	    ],
+    89	  });
+    90	
+    91	  // Goal init command
+    92	  cli.command({
+    93	    name: 'goal',
+    94	    description: 'Goal module management',
+    95	    subcommands: [
+    96	      {
+    97	        name: 'init',
+    98	        description: 'Initialize GOAP goal module',
+    99	        options: [
+   100	          {
+   101	            name: 'force',
+   102	            short: 'f',
+   103	            description: 'Overwrite existing module',
+   104	            type: 'boolean',
+   105	          },
+   106	          {
+   107	            name: 'target',
+   108	            short: 't',
+   109	            description: 'Target directory',
+   110	            type: 'string',
+   111	            defaultValue: '.claude/agents/goal',
+   112	          },
+   113	        ],
+   114	        action: async (ctx: CommandContext) => {
+   115	          const { initGoalModule } = await import('../../scripts/init-goal.js');
+   116	          await initGoalModule({
+   117	            force: ctx.flags.force as boolean,
+   118	            targetDir: ctx.flags.target as string,
+   119	          });
+   120	        },
+   121	      },
+   122	    ],
+   123	  });
+   124	
+   125	  // Init command
+   126	  cli.command({
+   127	    name: 'init',
+   128	    description: 'Initialize Claude Code integration files',
+   129	    options: [
+   130	      {
+   131	        name: 'force',
+   132	        short: 'f',
+   133	        description: 'Overwrite existing files',
+   134	        type: 'boolean',
+   135	      },
+   136	      {
+   137	        name: 'minimal',
+   138	        short: 'm',
+   139	        description: 'Create minimal configuration files',
+   140	        type: 'boolean',
+   141	      },
+   142	      {
+   143	        name: 'flow-nexus',
+   144	        description: 'Initialize with Flow Nexus commands, agents, and CLAUDE.md only',
+   145	        type: 'boolean',
+   146	      },
+   147	    ],
+   148	    action: async (ctx: CommandContext) => {
+   149	      try {
+   150	        success('Initializing Claude Code integration files...');
+   151	
+   152	        const force = (ctx.flags.force as boolean) || (ctx.flags.f as boolean);
+   153	        const minimal = (ctx.flags.minimal as boolean) || (ctx.flags.m as boolean);
+   154	        const flowNexus = ctx.flags['flow-nexus'] as boolean;
+   155	
+   156	        // Handle Flow Nexus minimal init
+   157	        if (flowNexus) {
+   158	          success('Initializing Flow Nexus minimal setup...');
+   159	          
+   160	          // Create Flow Nexus CLAUDE.md with integrated section
+   161	          const flowNexusClaudeMd = createFlowNexusClaudeMd();
+   162	          const { writeFile, mkdir } = await import('fs/promises');
+   163	          await writeFile('CLAUDE.md', flowNexusClaudeMd);
+   164	          console.log('  ✓ Created CLAUDE.md with Flow Nexus integration');
+   165	          
+   166	          // Create .claude/commands/flow-nexus directory and copy commands
+   167	          await mkdir('.claude/commands/flow-nexus', { recursive: true });
+   168	          
+   169	          // Create .claude/agents/flow-nexus directory and copy agents
+   170	          await mkdir('.claude/agents/flow-nexus', { recursive: true });
+   171	          
+   172	          success('Flow Nexus initialization complete!');
+   173	          console.log('📚 Created: CLAUDE.md with Flow Nexus documentation');
+   174	          console.log('📁 Created: .claude/commands/flow-nexus/ directory structure');  
+   175	          console.log('🤖 Created: .claude/agents/flow-nexus/ directory structure');
+   176	          console.log('💡 Use MCP Flow Nexus tools in Claude Code for full functionality');
+   177	          return;
+   178	        }
+   179	
+   180	        // Check if files already exist for full init
+   181	        const files = ['CLAUDE.md', 'memory-bank.md', 'coordination.md'];
+   182	        const existingFiles = [];
+   183	
+   184	        for (const file of files) {
+   185	          const { access } = await import('fs/promises');
+   186	          const exists = await access(file)
+   187	            .then(() => true)
+   188	            .catch(() => false);
+   189	          if (exists) {
+   190	            existingFiles.push(file);
+   191	          }
+   192	        }
+   193	
+   194	        if (existingFiles.length > 0 && !force) {
+   195	          warning(`The following files already exist: ${existingFiles.join(', ')}`);
+   196	          console.log('Use --force to overwrite existing files');
+   197	          return;
+   198	        }
+   199	
+   200	        // Create CLAUDE.md
+   201	        const claudeMd = minimal ? createMinimalClaudeMd() : createFullClaudeMd();
+   202	        const { writeFile } = await import('fs/promises');
+   203	        await writeFile('CLAUDE.md', claudeMd);
+   204	        console.log('  ✓ Created CLAUDE.md');
+   205	
+   206	        // Create memory-bank.md
+   207	        const memoryBankMd = minimal ? createMinimalMemoryBankMd() : createFullMemoryBankMd();
+   208	        await writeFile('memory-bank.md', memoryBankMd);
+   209	        console.log('  ✓ Created memory-bank.md');
+   210	
+   211	        // Create coordination.md
+   212	        const coordinationMd = minimal ? createMinimalCoordinationMd() : createFullCoordinationMd();
+   213	        await writeFile('coordination.md', coordinationMd);
+   214	        console.log('  ✓ Created coordination.md');
+   215	
+   216	        // Create directory structure
+   217	        const directories = [
+   218	          'memory',
+   219	          'memory/agents',
+   220	          'memory/sessions',
+   221	          'coordination',
+   222	          'coordination/memory_bank',
+   223	          'coordination/subtasks',
+   224	          'coordination/orchestration',
+   225	        ];
+   226	
+   227	        // Ensure memory directory exists for SQLite database
+   228	        if (!directories.includes('memory')) {
+   229	          directories.unshift('memory');
+   230	        }
+   231	
+   232	        const { mkdir } = await import('fs/promises');
+   233	        for (const dir of directories) {
+   234	          try {
+   235	            await mkdir(dir, { recursive: true });
+   236	            console.log(`  ✓ Created ${dir}/ directory`);
+   237	          } catch (err) {
+   238	            if ((err as any).code !== 'EEXIST') {
+   239	              throw err;
+   240	            }
+   241	          }
+   242	        }
+   243	
+   244	        // Create placeholder files for memory directories
+   245	        const agentsReadme = createAgentsReadme();
+   246	        await writeFile('memory/agents/README.md', agentsReadme);
+   247	        console.log('  ✓ Created memory/agents/README.md');
+   248	
+   249	        const sessionsReadme = createSessionsReadme();
+   250	        await writeFile('memory/sessions/README.md', sessionsReadme);
+   251	        console.log('  ✓ Created memory/sessions/README.md');
+   252	
+   253	        // Initialize the persistence database
+   254	        const initialData = {
+   255	          agents: [],
+   256	          tasks: [],
+   257	          lastUpdated: Date.now(),
+   258	        };
+   259	        await writeFile('memory/claude-flow-data.json', JSON.stringify(initialData, null, 2));
+   260	        console.log('  ✓ Created memory/claude-flow-data.json (persistence database)');
+   261	
+   262	        success('Claude Code integration files initialized successfully!');
+   263	        console.log('\nNext steps:');
+   264	        console.log('1. Review and customize the generated files for your project');
+   265	        console.log("2. Run 'npx claude-flow start' to begin the orchestration system");
+   266	        console.log("3. Use 'claude --dangerously-skip-permissions' for unattended operation");
+   267	        console.log('\nNote: Persistence database initialized at memory/claude-flow-data.json');
+   268	      } catch (err) {
+   269	        error(`Failed to initialize files: ${(err as Error).message}`);
+   270	      }
+   271	    },
+   272	  });
+   273	
+   274	  // Start command
+   275	  cli.command({
+   276	    name: 'start',
+   277	    description: 'Start the orchestration system',
+   278	    options: [
+   279	      {
+   280	        name: 'daemon',
+   281	        short: 'd',
+   282	        description: 'Run as daemon in background',
+   283	        type: 'boolean',
+   284	      },
+   285	      {
+   286	        name: 'port',
+   287	        short: 'p',
+   288	        description: 'MCP server port',
+   289	        type: 'number',
+   290	        default: 3000,
+   291	      },
+   292	    ],
+   293	    action: async (ctx: CommandContext) => {
+   294	      success('Starting Claude-Flow orchestration system...');
+   295	
+   296	      try {
+   297	        const orch = await getOrchestrator();
+   298	        await orch.start();
+   299	
+   300	        success('System started successfully!');
+   301	        info('Components initialized:');
+   302	        console.log('   ✓ Event Bus');
+   303	        console.log('   ✓ Orchestrator Engine');
+   304	        console.log('   ✓ Memory Manager');
+   305	        console.log('   ✓ Terminal Pool');
+   306	        console.log('   ✓ MCP Server');
+   307	        console.log('   ✓ Coordination Manager');
+   308	
+   309	        if (!ctx.flags.daemon) {
+   310	          info('Press Ctrl+C to stop the system');
+   311	          // Keep the process running until interrupted
+   312	          const controller = new AbortController();
+   313	
+   314	          const shutdown = () => {
+   315	            console.log('\nShutting down...');
+   316	            controller.abort();
+   317	          };
+   318	
+   319	          process.on('SIGINT', shutdown);
+   320	          process.on('SIGTERM', shutdown);
+   321	
+   322	          try {
+   323	            await new Promise<void>((resolve) => {
+   324	              controller.signal.addEventListener('abort', () => resolve());
+   325	            });
+   326	          } finally {
+   327	            process.off('SIGINT', shutdown);
+   328	            process.off('SIGTERM', shutdown);
+   329	          }
+   330	        }
+   331	      } catch (err) {
+   332	        error(`Failed to start system: ${(err as Error).message}`);
+   333	        process.exit(1);
+   334	      }
+   335	    },
+   336	  });
+   337	
+   338	  // Task command
+   339	  cli.command({
+   340	    name: 'task',
+   341	    description: 'Manage tasks',
+   342	    aliases: ['tasks'],
+   343	    action: async (ctx: CommandContext) => {
+   344	      const subcommand = ctx.args[0];
+   345	
+   346	      switch (subcommand) {
+   347	        case 'create': {
+   348	          const type = ctx.args[1] || 'general';
+   349	          const description = ctx.args.slice(2).join(' ') || 'No description';
+   350	
+   351	          try {
+   352	            const persist = await getPersistence();
+   353	            const taskId = `task-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`;
+   354	
+   355	            // Save to persistence directly
+   356	            await persist.saveTask({
+   357	              id: taskId,
+   358	              type,
+   359	              description,
+   360	              status: 'pending',

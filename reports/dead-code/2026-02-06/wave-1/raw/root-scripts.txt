@@ -1,0 +1,13 @@
+dev
+build
+build:ts
+test
+test:ui
+test:security
+lint
+security:audit
+security:fix
+security:test
+v3:domains
+v3:swarm
+v3:security

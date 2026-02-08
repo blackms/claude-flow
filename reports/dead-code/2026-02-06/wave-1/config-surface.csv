@@ -1,0 +1,1104 @@
+config_type,key,file,line,symbol,context,usage_surface,note
+cli_option,--action,v3/@claude-flow/cli/src/commands/claims.ts,283,roles,"{ name: 'action', short: 'a', type: 'string', description: 'Action: list, create, delete, show', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/claims.ts,339,policies,"{ name: 'action', short: 'a', type: 'string', description: 'Action: list, create, delete', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/deployment.ts,207,environments,"{ name: 'action', short: 'a', type: 'string', description: 'Action: list, create, delete', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/embeddings.ts,406,collections,"{ name: 'action', short: 'a', type: 'string', description: 'Action: list, stats', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/embeddings.ts,524,index,"{ name: 'action', short: 'a', type: 'string', description: 'Action: build, rebuild, status, optimize', default: 'status' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/embeddings.ts,955,hyperbolic,"{ name: 'action', short: 'a', type: 'string', description: 'Action: convert, distance, centroid', default: 'convert' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/embeddings.ts,1305,cache,"{ name: 'action', short: 'a', type: 'string', description: 'Action: stats, clear, persist', default: 'stats' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/hive-mind.ts,1119,consensus,"{ name: 'action', short: 'a', description: 'Consensus action', type: 'string', choices: ['propose', 'vote', 'status', 'list'], default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/hive-mind.ts,1169,memory,"{ name: 'action', short: 'a', description: 'Memory action', type: 'string', choices: ['get', 'set', 'delete', 'list'], default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/neural.ts,557,patterns,"{ name: 'action', short: 'a', type: 'string', description: 'Action: analyze, learn, predict, list', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/process.ts,52,daemon,"name: 'action',",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/process.ts,380,workers,"name: 'action',",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/security.ts,339,audit,"{ name: 'action', short: 'a', type: 'string', description: 'Action: log, list, export, clear', default: 'list' },",runtime,declared in command options[]
+cli_option,--action,v3/@claude-flow/cli/src/commands/security.ts,379,secrets,"{ name: 'action', short: 'a', type: 'string', description: 'Action: scan, list, rotate', default: 'scan' },",runtime,declared in command options[]
+cli_option,--activate,v3/@claude-flow/cli/src/commands/session.ts,632,import,"name: 'activate',",runtime,declared in command options[]
+cli_option,--active,v3/@claude-flow/cli/src/commands/hooks.ts,2194,list,"{ name: 'active', short: 'a', type: 'boolean', description: 'Show active worker instances' },",runtime,declared in command options[]
+cli_option,--active,v3/@claude-flow/cli/src/commands/providers.ts,17,list,"{ name: 'active', short: 'a', type: 'boolean', description: 'Show only active providers' },",runtime,declared in command options[]
+cli_option,--active,v3/@claude-flow/cli/src/commands/session.ts,55,list,"name: 'active',",runtime,declared in command options[]
+cli_option,--add,v3/@claude-flow/cli/src/commands/config.ts,236,providers,"name: 'add',",runtime,declared in command options[]
+cli_option,--add-missing,v3/@claude-flow/cli/src/commands/init.ts,682,upgrade,"name: 'add-missing',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/hooks.ts,655,explain,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/hooks.ts,1631,post-task,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/issues.ts,105,claim,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/issues.ts,170,release,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/issues.ts,370,steal,"{ name: 'agent', short: 'a', type: 'string', description: 'Steal as agent', required: true },",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/issues.ts,412,load,"{ name: 'agent', short: 'a', type: 'string', description: 'Specific agent ID' },",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/route.ts,93,task,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/route.ts,392,feedback,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/route.ts,837,route,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/task.ts,254,list,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent,v3/@claude-flow/cli/src/commands/task.ts,589,assign,"name: 'agent',",runtime,declared in command options[]
+cli_option,--agent-id,v3/@claude-flow/cli/src/commands/hive-mind.ts,1079,join,"{ name: 'agent-id', short: 'a', description: 'Agent ID to join', type: 'string' },",runtime,declared in command options[]
+cli_option,--agentdb,v3/@claude-flow/cli/src/commands/init.ts,562,skills,"{ name: 'agentdb', description: 'Install AgentDB skills', type: 'boolean', default: false },",runtime,declared in command options[]
+cli_option,--agents,v3/@claude-flow/cli/src/commands/hooks.ts,3815,token-optimize,"{ name: 'agents', short: 'A', type: 'number', description: 'Agent count for optimal config', default: '6' },",runtime,declared in command options[]
+cli_option,--agents,v3/@claude-flow/cli/src/commands/swarm.ts,614,scale,"name: 'agents',",runtime,declared in command options[]
+cli_option,--agents,v3/@claude-flow/cli/src/commands/swarm.ts,669,coordinate,"name: 'agents',",runtime,declared in command options[]
+cli_option,--agents-only,v3/@claude-flow/cli/src/commands/session.ts,294,restore,"name: 'agents-only',",runtime,declared in command options[]
+cli_option,--aggressive,v3/@claude-flow/cli/src/commands/hive-mind.ts,999,optimize-memory,"name: 'aggressive',",runtime,declared in command options[]
+cli_option,--alerts,v3/@claude-flow/cli/src/commands/process.ts,237,monitor,"name: 'alerts',",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/agent.ts,173,list,"name: 'all',",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/hooks.ts,2389,status,"{ name: 'all', short: 'a', type: 'boolean', description: 'Include completed workers' },",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/init.ts,560,skills,"{ name: 'all', description: 'Install all skills', type: 'boolean', default: false },",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/init.ts,616,hooks,"{ name: 'all', description: 'Enable all hooks', type: 'boolean', default: true },",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/providers.ts,102,test,"{ name: 'all', short: 'a', type: 'boolean', description: 'Test all configured providers' },",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/session.ts,62,list,"name: 'all',",runtime,declared in command options[]
+cli_option,--all,v3/@claude-flow/cli/src/commands/task.ts,267,list,"name: 'all',",runtime,declared in command options[]
+cli_option,--analyze,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,45,optimize,"name: 'analyze',",runtime,declared in command options[]
+cli_option,--anonymize,v3/@claude-flow/cli/src/commands/transfer-store.ts,298,publish,"{ name: 'anonymize', short: 'a', type: 'string', description: 'Anonymization level', default: 'strict' },",runtime,declared in command options[]
+cli_option,--apply,v3/@claude-flow/cli/src/commands/guidance.ts,344,optimize,"{ name: 'apply', short: 'a', type: 'boolean', description: 'Apply optimizations to the file', default: 'false' },",runtime,declared in command options[]
+cli_option,--apply,v3/@claude-flow/cli/src/commands/issues.ts,469,rebalance,"{ name: 'apply', type: 'boolean', default: false, description: 'Apply changes' },",runtime,declared in command options[]
+cli_option,--apply,v3/@claude-flow/cli/src/commands/performance.ts,530,optimize,"{ name: 'apply', short: 'a', type: 'boolean', description: 'Apply recommended optimizations' },",runtime,declared in command options[]
+cli_option,--apply,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,52,optimize,"name: 'apply',",runtime,declared in command options[]
+cli_option,--assign,v3/@claude-flow/cli/src/commands/task.ts,96,create,"name: 'assign',",runtime,declared in command options[]
+cli_option,--auto-configure,v3/@claude-flow/cli/src/commands/hooks.ts,3766,session-start,"name: 'auto-configure',",runtime,declared in command options[]
+cli_option,--auto-dispatch,v3/@claude-flow/cli/src/commands/hooks.ts,2504,detect,"{ name: 'auto-dispatch', short: 'a', type: 'boolean', description: 'Automatically dispatch detected workers' },",runtime,declared in command options[]
+cli_option,--auto-scale,v3/@claude-flow/cli/src/commands/agent.ts,549,pool,"name: 'auto-scale',",runtime,declared in command options[]
+cli_option,--auto-scale,v3/@claude-flow/cli/src/commands/swarm.ts,206,init,"name: 'auto-scale',",runtime,declared in command options[]
+cli_option,--auto-spawn,v3/@claude-flow/cli/src/commands/hooks.ts,1460,pre-task,"name: 'auto-spawn',",runtime,declared in command options[]
+cli_option,--auto-tools,v3/@claude-flow/cli/src/commands/agent.ts,73,spawn,"name: 'auto-tools',",runtime,declared in command options[]
+cli_option,--available,v3/@claude-flow/cli/src/commands/plugins.ts,30,list,"{ name: 'available', short: 'a', type: 'boolean', description: 'Show available plugins from registry' },",runtime,declared in command options[]
+cli_option,--backend,v3/@claude-flow/cli/src/commands/memory.ts,653,configure,"name: 'backend',",runtime,declared in command options[]
+cli_option,--backend,v3/@claude-flow/cli/src/commands/memory.ts,1196,init,"name: 'backend',",runtime,declared in command options[]
+cli_option,--background,v3/@claude-flow/cli/src/commands/daemon.ts,21,start,"{ name: 'background', short: 'b', type: 'boolean', description: 'Run daemon in background (detached process)', default: true },",runtime,declared in command options[]
+cli_option,--background,v3/@claude-flow/cli/src/commands/embeddings.ts,1437,warmup,"{ name: 'background', short: 'b', type: 'boolean', description: 'Run warmup in background daemon', default: 'false' },",runtime,declared in command options[]
+cli_option,--backup,v3/@claude-flow/cli/src/commands/migrate.ts,96,run,"name: 'backup',",runtime,declared in command options[]
+cli_option,--backup-id,v3/@claude-flow/cli/src/commands/migrate.ts,243,rollback,"name: 'backup-id',",runtime,declared in command options[]
+cli_option,--batch-size,v3/@claude-flow/cli/src/commands/embeddings.ts,1525,benchmark,"{ name: 'batch-size', short: 'b', type: 'number', description: 'Batch size for batch test', default: '5' },",runtime,declared in command options[]
+cli_option,--batch-size,v3/@claude-flow/cli/src/commands/neural.ts,21,train,"{ name: 'batch-size', short: 'b', type: 'number', description: 'Batch size', default: '32' },",runtime,declared in command options[]
+cli_option,--batch-size,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,97,benchmark,"name: 'batch-size',",runtime,declared in command options[]
+cli_option,--batch-size,v3/@claude-flow/cli/src/commands/ruvector/import.ts,125,import,"name: 'batch-size',",runtime,declared in command options[]
+cli_option,--bits,v3/@claude-flow/cli/src/commands/memory.ts,899,compress,"name: 'bits',",runtime,declared in command options[]
+cli_option,--build-hnsw,v3/@claude-flow/cli/src/commands/memory.ts,268,search,"name: 'build-hnsw',",runtime,declared in command options[]
+cli_option,--cache-size,v3/@claude-flow/cli/src/commands/embeddings.ts,663,init,"{ name: 'cache-size', type: 'string', description: 'LRU cache entries', default: '256' },",runtime,declared in command options[]
+cli_option,--cache-size,v3/@claude-flow/cli/src/commands/memory.ts,665,configure,"name: 'cache-size',",runtime,declared in command options[]
+cli_option,--capability,v3/@claude-flow/cli/src/commands/providers.ts,140,models,"{ name: 'capability', short: 'c', type: 'string', description: 'Filter by capability: chat, completion, embedding' },",runtime,declared in command options[]
+cli_option,--categories,v3/@claude-flow/cli/src/commands/transfer-store.ts,295,publish,"{ name: 'categories', short: 'c', type: 'string', description: 'Categories (comma-separated)', required: true },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/hooks.ts,1073,metrics,"name: 'category',",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/mcp.ts,370,tools,"name: 'category',",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/neural.ts,1158,list,"{ name: 'category', type: 'string', description: 'Filter by category (security, quality, performance, etc.)' },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/neural.ts,1303,import,"{ name: 'category', type: 'string', description: 'Only import patterns from specific category' },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/plugins.ts,31,list,"{ name: 'category', short: 'c', type: 'string', description: 'Filter by category' },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/plugins.ts,733,search,"{ name: 'category', short: 'c', type: 'string', description: 'Filter by category' },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/transfer-store.ts,24,list,"{ name: 'category', short: 'c', type: 'string', description: 'Filter by category' },",runtime,declared in command options[]
+cli_option,--category,v3/@claude-flow/cli/src/commands/transfer-store.ts,129,search,"{ name: 'category', short: 'c', type: 'string', description: 'Filter by category' },",runtime,declared in command options[]
+cli_option,--check,v3/@claude-flow/cli/src/commands/embeddings.ts,914,normalize,"{ name: 'check', short: 'c', type: 'boolean', description: 'Check if already normalized' },",runtime,declared in command options[]
+cli_option,--check,v3/@claude-flow/cli/src/commands/security.ts,241,cve,"{ name: 'check', short: 'c', type: 'string', description: 'Check specific CVE ID' },",runtime,declared in command options[]
+cli_option,--cid,v3/@claude-flow/cli/src/commands/neural.ts,1160,list,"{ name: 'cid', type: 'string', description: 'Custom registry CID (default: official registry)' },",runtime,declared in command options[]
+cli_option,--cid,v3/@claude-flow/cli/src/commands/neural.ts,1299,import,"{ name: 'cid', short: 'c', type: 'string', description: 'IPFS CID to import from' },",runtime,declared in command options[]
+cli_option,--claim,v3/@claude-flow/cli/src/commands/claims.ts,57,check,"{ name: 'claim', short: 'c', type: 'string', description: 'Claim to check', required: true },",runtime,declared in command options[]
+cli_option,--claim,v3/@claude-flow/cli/src/commands/claims.ts,201,grant,"{ name: 'claim', short: 'c', type: 'string', description: 'Claim to grant', required: true },",runtime,declared in command options[]
+cli_option,--claim,v3/@claude-flow/cli/src/commands/claims.ts,250,revoke,"{ name: 'claim', short: 'c', type: 'string', description: 'Claim to revoke', required: true },",runtime,declared in command options[]
+cli_option,--classify,v3/@claude-flow/cli/src/commands/analyze.ts,56,diff,"name: 'classify',",runtime,declared in command options[]
+cli_option,--claude,v3/@claude-flow/cli/src/commands/hive-mind.ts,533,spawn,"name: 'claude',",runtime,declared in command options[]
+cli_option,--clean,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,408,,"name: 'clean',",runtime,declared in command options[]
+cli_option,--cleanup,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,103,benchmark,"name: 'cleanup',",runtime,declared in command options[]
+cli_option,--clear,v3/@claude-flow/cli/src/commands/update.ts,219,history,"{ name: 'clear', description: 'Clear history', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--collection,v3/@claude-flow/cli/src/commands/embeddings.ts,116,search,"{ name: 'collection', short: 'c', type: 'string', description: 'Namespace to search', default: 'default' },",runtime,declared in command options[]
+cli_option,--collection,v3/@claude-flow/cli/src/commands/embeddings.ts,525,index,"{ name: 'collection', short: 'c', type: 'string', description: 'Collection/namespace name' },",runtime,declared in command options[]
+cli_option,--command,v3/@claude-flow/cli/src/commands/guidance.ts,192,gates,"{ name: 'command', short: 'c', type: 'string', description: 'Command to evaluate' },",runtime,declared in command options[]
+cli_option,--command,v3/@claude-flow/cli/src/commands/hooks.ts,283,pre-command,"name: 'command',",runtime,declared in command options[]
+cli_option,--command,v3/@claude-flow/cli/src/commands/hooks.ts,399,post-command,"name: 'command',",runtime,declared in command options[]
+cli_option,--compact,v3/@claude-flow/cli/src/commands/hooks.ts,3278,statusline,"name: 'compact',",runtime,declared in command options[]
+cli_option,--complexity,v3/@claude-flow/cli/src/commands/analyze.ts,397,ast,"name: 'complexity',",runtime,declared in command options[]
+cli_option,--component,v3/@claude-flow/cli/src/commands/doctor.ts,432,doctor,"name: 'component',",runtime,declared in command options[]
+cli_option,--component,v3/@claude-flow/cli/src/commands/performance.ts,338,metrics,"{ name: 'component', short: 'c', type: 'string', description: 'Component to filter' },",runtime,declared in command options[]
+cli_option,--component,v3/@claude-flow/cli/src/commands/performance.ts,578,bottleneck,"{ name: 'component', short: 'c', type: 'string', description: 'Component to analyze' },",runtime,declared in command options[]
+cli_option,--components,v3/@claude-flow/cli/src/commands/process.ts,225,monitor,"name: 'components',",runtime,declared in command options[]
+cli_option,--compress,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,65,,"name: 'compress',",runtime,declared in command options[]
+cli_option,--compress,v3/@claude-flow/cli/src/commands/session.ts,521,export,"name: 'compress',",runtime,declared in command options[]
+cli_option,--config-a,v3/@claude-flow/cli/src/commands/guidance.ts,461,ab-test,"{ name: 'config-a', short: 'a', type: 'string', description: 'Path to Config A (baseline CLAUDE.md). Defaults to no guidance.' },",runtime,declared in command options[]
+cli_option,--config-b,v3/@claude-flow/cli/src/commands/guidance.ts,462,ab-test,"{ name: 'config-b', short: 'b', type: 'string', description: 'Path to Config B (candidate CLAUDE.md)', default: './CLAUDE.md' },",runtime,declared in command options[]
+cli_option,--config-format,v3/@claude-flow/cli/src/commands/hooks.ts,962,build-agents,"name: 'config-format',",runtime,declared in command options[]
+cli_option,--consensus,v3/@claude-flow/cli/src/commands/hive-mind.ts,382,init,"name: 'consensus',",runtime,declared in command options[]
+cli_option,--consolidation-interval,v3/@claude-flow/cli/src/commands/embeddings.ts,1073,neural,"{ name: 'consolidation-interval', type: 'string', description: 'Memory consolidation interval (ms)', default: '60000' },",runtime,declared in command options[]
+cli_option,--container,v3/@claude-flow/cli/src/commands/ruvector/import.ts,165,import,"name: 'container',",runtime,declared in command options[]
+cli_option,--content,v3/@claude-flow/cli/src/commands/guidance.ts,193,gates,"{ name: 'content', type: 'string', description: 'Content to check for secrets' },",runtime,declared in command options[]
+cli_option,--context,v3/@claude-flow/cli/src/commands/hooks.ts,50,pre-edit,"name: 'context',",runtime,declared in command options[]
+cli_option,--context,v3/@claude-flow/cli/src/commands/hooks.ts,503,route,"name: 'context',",runtime,declared in command options[]
+cli_option,--context,v3/@claude-flow/cli/src/commands/hooks.ts,2298,dispatch,"{ name: 'context', short: 'c', type: 'string', description: 'Context for the worker (file path, topic)' },",runtime,declared in command options[]
+cli_option,--context,v3/@claude-flow/cli/src/commands/hooks.ts,3969,model-route,"{ name: 'context', short: 'c', type: 'string', description: 'Additional context' },",runtime,declared in command options[]
+cli_option,--context-size,v3/@claude-flow/cli/src/commands/guidance.ts,345,optimize,"{ name: 'context-size', short: 's', type: 'string', description: 'Target context size: compact, standard, full', default: 'standard' },",runtime,declared in command options[]
+cli_option,--contrastive,v3/@claude-flow/cli/src/commands/neural.ts,27,train,"{ name: 'contrastive', type: 'boolean', description: 'Use contrastive learning (InfoNCE)', default: 'true' },",runtime,declared in command options[]
+cli_option,--core,v3/@claude-flow/cli/src/commands/init.ts,561,skills,"{ name: 'core', description: 'Install core skills', type: 'boolean', default: true },",runtime,declared in command options[]
+cli_option,--count,v3/@claude-flow/cli/src/commands/hive-mind.ts,503,spawn,"name: 'count',",runtime,declared in command options[]
+cli_option,--count,v3/@claude-flow/cli/src/commands/process.ts,393,workers,"name: 'count',",runtime,declared in command options[]
+cli_option,--critical-only,v3/@claude-flow/cli/src/commands/hooks.ts,2942,coverage-gaps,"name: 'critical-only',",runtime,declared in command options[]
+cli_option,--curriculum,v3/@claude-flow/cli/src/commands/neural.ts,28,train,"{ name: 'curriculum', type: 'boolean', description: 'Enable curriculum learning', default: 'false' },",runtime,declared in command options[]
+cli_option,--curvature,v3/@claude-flow/cli/src/commands/embeddings.ts,661,init,"{ name: 'curvature', short: 'c', type: 'string', description: 'Poincaré ball curvature (use --curvature=-1 for negative)', default: '-1' },",runtime,declared in command options[]
+cli_option,--curvature,v3/@claude-flow/cli/src/commands/embeddings.ts,956,hyperbolic,"{ name: 'curvature', short: 'c', type: 'number', description: 'Hyperbolic curvature', default: '-1' },",runtime,declared in command options[]
+cli_option,--daemon,v3/@claude-flow/cli/src/commands/mcp.ts,84,start,"name: 'daemon',",runtime,declared in command options[]
+cli_option,--daemon,v3/@claude-flow/cli/src/commands/start.ts,439,start,"name: 'daemon',",runtime,declared in command options[]
+cli_option,--dangerously-skip-permissions,v3/@claude-flow/cli/src/commands/hive-mind.ts,545,spawn,"name: 'dangerously-skip-permissions',",runtime,declared in command options[]
+cli_option,--data,v3/@claude-flow/cli/src/commands/neural.ts,18,train,"{ name: 'data', short: 'd', type: 'string', description: 'Training data file or inline JSON' },",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,92,,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,434,,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,740,backup,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,123,benchmark,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/import.ts,146,import,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/index.ts,62,ruvector,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/init.ts,55,init,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,227,migrate,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,90,optimize,"name: 'database',",runtime,declared in command options[]
+cli_option,--database,v3/@claude-flow/cli/src/commands/ruvector/status.ts,70,status,"name: 'database',",runtime,declared in command options[]
+cli_option,--db-path,v3/@claude-flow/cli/src/commands/embeddings.ts,119,search,"{ name: 'db-path', type: 'string', description: 'Database path', default: '.swarm/memory.db' },",runtime,declared in command options[]
+cli_option,--db-path,v3/@claude-flow/cli/src/commands/embeddings.ts,408,collections,"{ name: 'db-path', type: 'string', description: 'Database path', default: '.swarm/memory.db' },",runtime,declared in command options[]
+cli_option,--db-path,v3/@claude-flow/cli/src/commands/embeddings.ts,1306,cache,"{ name: 'db-path', type: 'string', description: 'SQLite database path', default: '.cache/embeddings.db' },",runtime,declared in command options[]
+cli_option,--decay-rate,v3/@claude-flow/cli/src/commands/embeddings.ts,1072,neural,"{ name: 'decay-rate', type: 'string', description: 'Memory decay rate (hippocampal dynamics)', default: '0.01' },",runtime,declared in command options[]
+cli_option,--dependencies,v3/@claude-flow/cli/src/commands/task.ts,112,create,"name: 'dependencies',",runtime,declared in command options[]
+cli_option,--deployment,v3/@claude-flow/cli/src/commands/deployment.ts,243,logs,"{ name: 'deployment', short: 'd', type: 'string', description: 'Deployment ID' },",runtime,declared in command options[]
+cli_option,--depth,v3/@claude-flow/cli/src/commands/analyze.ts,1693,dependencies,"name: 'depth',",runtime,declared in command options[]
+cli_option,--depth,v3/@claude-flow/cli/src/commands/hooks.ts,785,pretrain,"name: 'depth',",runtime,declared in command options[]
+cli_option,--depth,v3/@claude-flow/cli/src/commands/performance.ts,579,bottleneck,"{ name: 'depth', short: 'd', type: 'string', description: 'Analysis depth: quick, full', default: 'quick' },",runtime,declared in command options[]
+cli_option,--depth,v3/@claude-flow/cli/src/commands/security.ts,17,scan,"{ name: 'depth', short: 'd', type: 'string', description: 'Scan depth: quick, standard, deep', default: 'standard' },",runtime,declared in command options[]
+cli_option,--description,v3/@claude-flow/cli/src/commands/hive-mind.ts,891,task,"name: 'description',",runtime,declared in command options[]
+cli_option,--description,v3/@claude-flow/cli/src/commands/hooks.ts,1453,pre-task,"name: 'description',",runtime,declared in command options[]
+cli_option,--description,v3/@claude-flow/cli/src/commands/session.ts,161,save,"name: 'description',",runtime,declared in command options[]
+cli_option,--description,v3/@claude-flow/cli/src/commands/task.ts,82,create,"name: 'description',",runtime,declared in command options[]
+cli_option,--description,v3/@claude-flow/cli/src/commands/transfer-store.ts,294,publish,"{ name: 'description', short: 'd', type: 'string', description: 'Pattern description', required: true },",runtime,declared in command options[]
+cli_option,--detach,v3/@claude-flow/cli/src/commands/process.ts,77,daemon,"name: 'detach',",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/agent.ts,633,health,"name: 'detailed',",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/hive-mind.ts,716,status,"name: 'detailed',",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/hooks.ts,3071,progress,"name: 'detailed',",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/hooks.ts,4108,model-stats,"{ name: 'detailed', short: 'd', type: 'boolean', description: 'Show detailed breakdown' },",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/progress.ts,26,check,"name: 'detailed',",runtime,declared in command options[]
+cli_option,--detailed,v3/@claude-flow/cli/src/commands/progress.ts,239,progress,"name: 'detailed',",runtime,declared in command options[]
+cli_option,--dev,v3/@claude-flow/cli/src/commands/plugins.ts,209,install,"{ name: 'dev', short: 'd', type: 'boolean', description: 'Install as dev dependency' },",runtime,declared in command options[]
+cli_option,--dim,v3/@claude-flow/cli/src/commands/neural.ts,22,train,"{ name: 'dim', type: 'number', description: 'Embedding dimension (max 256)', default: '256' },",runtime,declared in command options[]
+cli_option,--dim,v3/@claude-flow/cli/src/commands/neural.ts,1524,benchmark,"{ name: 'dim', short: 'd', type: 'number', description: 'Embedding dimension (max 256)', default: '256' },",runtime,declared in command options[]
+cli_option,--dimension,v3/@claude-flow/cli/src/commands/benchmark.ts,92,neural,"{ name: 'dimension', short: 'd', type: 'number', description: 'Embedding dimension', default: '384' },",runtime,declared in command options[]
+cli_option,--dimensions,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,61,benchmark,"name: 'dimensions',",runtime,declared in command options[]
+cli_option,--dimensions,v3/@claude-flow/cli/src/commands/ruvector/init.ts,94,init,"name: 'dimensions',",runtime,declared in command options[]
+cli_option,--disable,v3/@claude-flow/cli/src/commands/config.ts,253,providers,"name: 'disable',",runtime,declared in command options[]
+cli_option,--disable,v3/@claude-flow/cli/src/commands/daemon.ts,562,enable,"{ name: 'disable', short: 'd', type: 'boolean', description: 'Disable instead of enable' },",runtime,declared in command options[]
+cli_option,--disable,v3/@claude-flow/cli/src/commands/mcp.ts,491,toggle,"name: 'disable',",runtime,declared in command options[]
+cli_option,--disable,v3/@claude-flow/cli/src/commands/plugins.ts,378,toggle,"{ name: 'disable', short: 'd', type: 'boolean', description: 'Disable the plugin' },",runtime,declared in command options[]
+cli_option,--domains,v3/@claude-flow/cli/src/commands/swarm.ts,675,coordinate,"name: 'domains',",runtime,declared in command options[]
+cli_option,--down,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,190,migrate,"name: 'down',",runtime,declared in command options[]
+cli_option,--download,v3/@claude-flow/cli/src/commands/embeddings.ts,662,init,"{ name: 'download', short: 'd', type: 'boolean', description: 'Download model during init', default: 'true' },",runtime,declared in command options[]
+cli_option,--download,v3/@claude-flow/cli/src/commands/embeddings.ts,1230,models,"{ name: 'download', short: 'd', type: 'string', description: 'Model ID to download' },",runtime,declared in command options[]
+cli_option,--drift-threshold,v3/@claude-flow/cli/src/commands/embeddings.ts,1071,neural,"{ name: 'drift-threshold', type: 'string', description: 'Semantic drift detection threshold', default: '0.3' },",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/deployment.ts,18,deploy,"{ name: 'dry-run', short: 'd', type: 'boolean', description: 'Simulate deployment without changes' },",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/hive-mind.ts,557,spawn,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/hooks.ts,290,pre-command,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/issues.ts,468,rebalance,"{ name: 'dry-run', type: 'boolean', default: true, description: 'Preview only' },",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/memory.ts,734,cleanup,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/migrate.ts,90,run,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/performance.ts,531,optimize,"{ name: 'dry-run', short: 'd', type: 'boolean', description: 'Show changes without applying' },",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,414,,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,201,migrate,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/update.ts,138,all,"{ name: 'dry-run', description: 'Show what would be updated', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--dry-run,v3/@claude-flow/cli/src/commands/workflow.ts,67,run,"name: 'dry-run',",runtime,declared in command options[]
+cli_option,--duration,v3/@claude-flow/cli/src/commands/hooks.ts,420,post-command,"name: 'duration',",runtime,declared in command options[]
+cli_option,--duration,v3/@claude-flow/cli/src/commands/performance.ts,255,profile,"{ name: 'duration', short: 'd', type: 'number', description: 'Duration in seconds', default: '30' },",runtime,declared in command options[]
+cli_option,--ef-construction,v3/@claude-flow/cli/src/commands/embeddings.ts,526,index,"{ name: 'ef-construction', type: 'number', description: 'HNSW ef_construction parameter', default: '200' },",runtime,declared in command options[]
+cli_option,--embedding-model,v3/@claude-flow/cli/src/commands/hooks.ts,805,pretrain,"name: 'embedding-model',",runtime,declared in command options[]
+cli_option,--embedding-model,v3/@claude-flow/cli/src/commands/init.ts,858,init,"name: 'embedding-model',",runtime,declared in command options[]
+cli_option,--embedding-provider,v3/@claude-flow/cli/src/commands/hooks.ts,1934,intelligence,"name: 'embedding-provider',",runtime,declared in command options[]
+cli_option,--enable,v3/@claude-flow/cli/src/commands/config.ts,248,providers,"name: 'enable',",runtime,declared in command options[]
+cli_option,--enable,v3/@claude-flow/cli/src/commands/mcp.ts,485,toggle,"name: 'enable',",runtime,declared in command options[]
+cli_option,--enable,v3/@claude-flow/cli/src/commands/plugins.ts,377,toggle,"{ name: 'enable', short: 'e', type: 'boolean', description: 'Enable the plugin' },",runtime,declared in command options[]
+cli_option,--enable-hnsw,v3/@claude-flow/cli/src/commands/hooks.ts,1907,intelligence,"name: 'enable-hnsw',",runtime,declared in command options[]
+cli_option,--enable-moe,v3/@claude-flow/cli/src/commands/hooks.ts,1901,intelligence,"name: 'enable-moe',",runtime,declared in command options[]
+cli_option,--enable-sona,v3/@claude-flow/cli/src/commands/hooks.ts,1895,intelligence,"name: 'enable-sona',",runtime,declared in command options[]
+cli_option,--enabled,v3/@claude-flow/cli/src/commands/hooks.ts,1368,list,"name: 'enabled',",runtime,declared in command options[]
+cli_option,--enabled,v3/@claude-flow/cli/src/commands/mcp.ts,377,tools,"name: 'enabled',",runtime,declared in command options[]
+cli_option,--endpoint,v3/@claude-flow/cli/src/commands/providers.ts,59,configure,"{ name: 'endpoint', short: 'e', type: 'string', description: 'Custom endpoint URL' },",runtime,declared in command options[]
+cli_option,--env,v3/@claude-flow/cli/src/commands/deployment.ts,16,deploy,"{ name: 'env', short: 'e', type: 'string', description: 'Environment: dev, staging, prod', default: 'staging' },",runtime,declared in command options[]
+cli_option,--env,v3/@claude-flow/cli/src/commands/deployment.ts,77,status,"{ name: 'env', short: 'e', type: 'string', description: 'Specific environment to check' },",runtime,declared in command options[]
+cli_option,--env,v3/@claude-flow/cli/src/commands/deployment.ts,114,rollback,"{ name: 'env', short: 'e', type: 'string', description: 'Environment to rollback', required: true },",runtime,declared in command options[]
+cli_option,--env,v3/@claude-flow/cli/src/commands/deployment.ts,165,history,"{ name: 'env', short: 'e', type: 'string', description: 'Filter by environment' },",runtime,declared in command options[]
+cli_option,--env,v3/@claude-flow/cli/src/commands/deployment.ts,244,logs,"{ name: 'env', short: 'e', type: 'string', description: 'Environment' },",runtime,declared in command options[]
+cli_option,--epochs,v3/@claude-flow/cli/src/commands/neural.ts,17,train,"{ name: 'epochs', short: 'e', type: 'number', description: 'Number of training epochs', default: '50' },",runtime,declared in command options[]
+cli_option,--exclude,v3/@claude-flow/cli/src/commands/analyze.ts,1686,dependencies,"name: 'exclude',",runtime,declared in command options[]
+cli_option,--exit-code,v3/@claude-flow/cli/src/commands/hooks.ts,413,post-command,"name: 'exit-code',",runtime,declared in command options[]
+cli_option,--expired-only,v3/@claude-flow/cli/src/commands/memory.ts,747,cleanup,"name: 'expired-only',",runtime,declared in command options[]
+cli_option,--expires,v3/@claude-flow/cli/src/commands/claims.ts,205,grant,"{ name: 'expires', short: 'e', type: 'string', description: 'Expiration time (e.g., 24h, 7d)' },",runtime,declared in command options[]
+cli_option,--explore,v3/@claude-flow/cli/src/commands/route.ts,99,task,"name: 'explore',",runtime,declared in command options[]
+cli_option,--export,v3/@claude-flow/cli/src/commands/security.ts,300,threats,"{ name: 'export', short: 'e', type: 'string', description: 'Export format: json, md, html' },",runtime,declared in command options[]
+cli_option,--external,v3/@claude-flow/cli/src/commands/analyze.ts,1023,imports,"name: 'external',",runtime,declared in command options[]
+cli_option,--feature,v3/@claude-flow/cli/src/commands/embeddings.ts,1069,neural,"{ name: 'feature', short: 'f', type: 'string', description: 'Feature: drift, memory, swarm, coherence, all', default: 'all' },",runtime,declared in command options[]
+cli_option,--featured,v3/@claude-flow/cli/src/commands/plugins.ts,34,list,"{ name: 'featured', short: 'f', type: 'boolean', description: 'Show featured plugins' },",runtime,declared in command options[]
+cli_option,--featured,v3/@claude-flow/cli/src/commands/transfer-store.ts,25,list,"{ name: 'featured', short: 'f', type: 'boolean', description: 'Show featured patterns' },",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/config.ts,384,import,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/embeddings.ts,852,chunk,"{ name: 'file', short: 'f', type: 'string', description: 'File to chunk (instead of text)' },",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/hooks.ts,36,pre-edit,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/hooks.ts,163,post-edit,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/neural.ts,1300,import,"{ name: 'file', short: 'f', type: 'string', description: 'Local file to import' },",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/route.ts,509,export,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/route.ts,547,import,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/security.ts,428,defend,"{ name: 'file', short: 'f', type: 'string', description: 'File to scan for threats' },",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/workflow.ts,36,run,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/workflow.ts,201,validate,"name: 'file',",runtime,declared in command options[]
+cli_option,--file,v3/@claude-flow/cli/src/commands/workflow.ts,613,template,"{ name: 'file', short: 'f', description: 'Workflow file to save as template', type: 'string' }",runtime,declared in command options[]
+cli_option,--file-types,v3/@claude-flow/cli/src/commands/hooks.ts,812,pretrain,"name: 'file-types',",runtime,declared in command options[]
+cli_option,--filter,v3/@claude-flow/cli/src/commands/hooks.ts,1215,from-project,"name: 'filter',",runtime,declared in command options[]
+cli_option,--filter,v3/@claude-flow/cli/src/commands/security.ts,341,audit,"{ name: 'filter', short: 'f', type: 'string', description: 'Filter by event type' },",runtime,declared in command options[]
+cli_option,--fix,v3/@claude-flow/cli/src/commands/doctor.ts,418,doctor,"name: 'fix',",runtime,declared in command options[]
+cli_option,--fix,v3/@claude-flow/cli/src/commands/migrate.ts,183,verify,"name: 'fix',",runtime,declared in command options[]
+cli_option,--fix,v3/@claude-flow/cli/src/commands/security.ts,20,scan,"{ name: 'fix', short: 'f', type: 'boolean', description: 'Auto-fix vulnerabilities where possible' },",runtime,declared in command options[]
+cli_option,--flash,v3/@claude-flow/cli/src/commands/neural.ts,24,train,"{ name: 'flash', type: 'boolean', description: 'Enable Flash Attention (2.49x-7.47x speedup)', default: 'true' },",runtime,declared in command options[]
+cli_option,--focus,v3/@claude-flow/cli/src/commands/hooks.ts,955,build-agents,"name: 'focus',",runtime,declared in command options[]
+cli_option,--follow,v3/@claude-flow/cli/src/commands/agent.ts,784,logs,"name: 'follow',",runtime,declared in command options[]
+cli_option,--follow,v3/@claude-flow/cli/src/commands/deployment.ts,245,logs,"{ name: 'follow', short: 'f', type: 'boolean', description: 'Follow log output' },",runtime,declared in command options[]
+cli_option,--follow,v3/@claude-flow/cli/src/commands/mcp.ts,662,logs,"name: 'follow',",runtime,declared in command options[]
+cli_option,--follow,v3/@claude-flow/cli/src/commands/process.ts,566,logs,"name: 'follow',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/agent.ts,364,stop,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/config.ts,17,init,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/config.ts,301,reset,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/deployment.ts,19,deploy,"{ name: 'force', short: 'f', type: 'boolean', description: 'Force deployment without checks' },",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/embeddings.ts,664,init,"{ name: 'force', short: 'f', type: 'boolean', description: 'Overwrite existing configuration', default: 'false' },",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/hive-mind.ts,1203,shutdown,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/init.ts,808,init,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/mcp.ts,91,start,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/mcp.ts,229,stop,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/mcp.ts,719,restart,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/memory.ts,505,delete,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/memory.ts,766,cleanup,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/memory.ts,1209,init,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/migrate.ts,102,run,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/migrate.ts,248,rollback,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/plugins.ts,322,uninstall,"{ name: 'force', short: 'f', type: 'boolean', description: 'Force uninstall without confirmation' },",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/route.ts,468,reset,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/ruvector/init.ts,87,init,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,207,migrate,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/ruvector/setup.ts,680,setup,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/session.ts,281,restore,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/session.ts,441,delete,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/start.ts,280,stop,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/start.ts,367,restart,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/swarm.ts,559,stop,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/task.ts,517,cancel,"name: 'force',",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/update.ts,58,check,"{ name: 'force', description: 'Force check (ignore rate limit)', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--force,v3/@claude-flow/cli/src/commands/workflow.ts,475,stop,"name: 'force',",runtime,declared in command options[]
+cli_option,--foreground,v3/@claude-flow/cli/src/commands/daemon.ts,22,start,"{ name: 'foreground', short: 'f', type: 'boolean', description: 'Run daemon in foreground (blocks terminal)' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,69,diff,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,310,code,"{ name: 'format', short: 'f', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,411,ast,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,672,complexity,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,852,symbols,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1009,imports,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1288,deps,"{ name: 'format', short: 'f', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1348,boundaries,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1516,modules,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1671,dependencies,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,1870,circular,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/analyze.ts,2044,analyze,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/config.ts,349,export,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/memory.ts,1041,export,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/neural.ts,667,predict,"{ name: 'format', short: 'f', type: 'string', description: 'Output format: json, table', default: 'table' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/neural.ts,1159,list,"{ name: 'format', short: 'f', type: 'string', description: 'Output format: table, json, simple', default: 'table' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/performance.ts,337,metrics,"{ name: 'format', short: 'f', type: 'string', description: 'Output format: text, json, prometheus', default: 'text' },",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/process.ts,218,monitor,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,57,,"name: 'format',",runtime,declared in command options[]
+cli_option,--format,v3/@claude-flow/cli/src/commands/session.ts,507,export,"name: 'format',",runtime,declared in command options[]
+cli_option,--framework,v3/@claude-flow/cli/src/commands/transfer-store.ts,131,search,"{ name: 'framework', short: 'f', type: 'string', description: 'Filter by framework' },",runtime,declared in command options[]
+cli_option,--framework,v3/@claude-flow/cli/src/commands/transfer-store.ts,300,publish,"{ name: 'framework', type: 'string', description: 'Primary framework' },",runtime,declared in command options[]
+cli_option,--from,v3/@claude-flow/cli/src/commands/hive-mind.ts,1150,broadcast,"{ name: 'from', short: 'f', description: 'Sender agent ID', type: 'string' }",runtime,declared in command options[]
+cli_option,--from,v3/@claude-flow/cli/src/commands/issues.ts,229,handoff,"{ name: 'from', description: 'Current owner', type: 'string' },",runtime,declared in command options[]
+cli_option,--from-memory,v3/@claude-flow/cli/src/commands/ruvector/import.ts,113,import,"name: 'from-memory',",runtime,declared in command options[]
+cli_option,--full,v3/@claude-flow/cli/src/commands/embeddings.ts,1526,benchmark,"{ name: 'full', short: 'f', type: 'boolean', description: 'Run full benchmark suite', default: 'false' },",runtime,declared in command options[]
+cli_option,--full,v3/@claude-flow/cli/src/commands/init.ts,822,init,"name: 'full',",runtime,declared in command options[]
+cli_option,--gaps,v3/@claude-flow/cli/src/commands/route.ts,614,coverage,"name: 'gaps',",runtime,declared in command options[]
+cli_option,--github,v3/@claude-flow/cli/src/commands/init.ts,563,skills,"{ name: 'github', description: 'Install GitHub skills', type: 'boolean', default: false },",runtime,declared in command options[]
+cli_option,--global,v3/@claude-flow/cli/src/commands/plugins.ts,208,install,"{ name: 'global', short: 'g', type: 'boolean', description: 'Install globally' },",runtime,declared in command options[]
+cli_option,--grep,v3/@claude-flow/cli/src/commands/process.ts,584,logs,"name: 'grep',",runtime,declared in command options[]
+cli_option,--group-by-agent,v3/@claude-flow/cli/src/commands/hooks.ts,2936,coverage-gaps,"name: 'group-by-agent',",runtime,declared in command options[]
+cli_option,--headless,v3/@claude-flow/cli/src/commands/daemon.ts,23,start,"{ name: 'headless', type: 'boolean', description: 'Enable headless worker execution (E2B sandbox)' },",runtime,declared in command options[]
+cli_option,--headless,v3/@claude-flow/cli/src/commands/daemon.ts,511,trigger,"{ name: 'headless', type: 'boolean', description: 'Run triggered worker in headless mode (E2B sandbox)' },",runtime,declared in command options[]
+cli_option,--health-check,v3/@claude-flow/cli/src/commands/status.ts,717,status,"name: 'health-check',",runtime,declared in command options[]
+cli_option,--help,v3/@claude-flow/cli/src/commands/process.ts,665,process,"name: 'help',",runtime,declared in command options[]
+cli_option,--hnsw-ef,v3/@claude-flow/cli/src/commands/memory.ts,676,configure,"name: 'hnsw-ef',",runtime,declared in command options[]
+cli_option,--hnsw-m,v3/@claude-flow/cli/src/commands/memory.ts,670,configure,"name: 'hnsw-m',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/mcp.ts,63,start,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,78,,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,420,,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,726,backup,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,109,benchmark,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/import.ts,132,import,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/index.ts,48,ruvector,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/init.ts,41,init,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,213,migrate,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,76,optimize,"name: 'host',",runtime,declared in command options[]
+cli_option,--host,v3/@claude-flow/cli/src/commands/ruvector/status.ts,56,status,"name: 'host',",runtime,declared in command options[]
+cli_option,--hyperbolic,v3/@claude-flow/cli/src/commands/embeddings.ts,660,init,"{ name: 'hyperbolic', type: 'boolean', description: 'Enable hyperbolic (Poincaré ball) embeddings', default: 'true' },",runtime,declared in command options[]
+cli_option,--hyperbolic,v3/@claude-flow/cli/src/commands/neural.ts,26,train,"{ name: 'hyperbolic', type: 'boolean', description: 'Enable hyperbolic attention for hierarchical patterns', default: 'false' },",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/agent.ts,267,status,"name: 'id',",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/agent.ts,627,health,"name: 'id',",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/agent.ts,763,logs,"name: 'id',",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/hooks.ts,2388,status,"{ name: 'id', type: 'string', description: 'Specific worker ID to check' },",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/hooks.ts,2597,cancel,"{ name: 'id', type: 'string', description: 'Worker ID to cancel', required: true },",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/process.ts,399,workers,"name: 'id',",runtime,declared in command options[]
+cli_option,--id,v3/@claude-flow/cli/src/commands/task.ts,356,status,"name: 'id',",runtime,declared in command options[]
+cli_option,--ignore,v3/@claude-flow/cli/src/commands/security.ts,381,secrets,"{ name: 'ignore', short: 'i', type: 'string', description: 'Patterns to ignore' },",runtime,declared in command options[]
+cli_option,--import,v3/@claude-flow/cli/src/commands/transfer-store.ts,213,download,"{ name: 'import', short: 'i', type: 'boolean', description: 'Import after download' },",runtime,declared in command options[]
+cli_option,--include,v3/@claude-flow/cli/src/commands/analyze.ts,1679,dependencies,"name: 'include',",runtime,declared in command options[]
+cli_option,--include-agents,v3/@claude-flow/cli/src/commands/session.ts,173,save,"name: 'include-agents',",runtime,declared in command options[]
+cli_option,--include-indexes,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,72,,"name: 'include-indexes',",runtime,declared in command options[]
+cli_option,--include-major,v3/@claude-flow/cli/src/commands/update.ts,139,all,"{ name: 'include-major', description: 'Include major version updates', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--include-memory,v3/@claude-flow/cli/src/commands/session.ts,167,save,"name: 'include-memory',",runtime,declared in command options[]
+cli_option,--include-memory,v3/@claude-flow/cli/src/commands/session.ts,515,export,"name: 'include-memory',",runtime,declared in command options[]
+cli_option,--include-tasks,v3/@claude-flow/cli/src/commands/session.ts,179,save,"name: 'include-tasks',",runtime,declared in command options[]
+cli_option,--include-vectors,v3/@claude-flow/cli/src/commands/memory.ts,1055,export,"name: 'include-vectors',",runtime,declared in command options[]
+cli_option,--index,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,89,benchmark,"name: 'index',",runtime,declared in command options[]
+cli_option,--index,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,58,optimize,"name: 'index',",runtime,declared in command options[]
+cli_option,--index-type,v3/@claude-flow/cli/src/commands/ruvector/init.ts,100,init,"name: 'index-type',",runtime,declared in command options[]
+cli_option,--init,v3/@claude-flow/cli/src/commands/embeddings.ts,1070,neural,"{ name: 'init', type: 'boolean', description: 'Initialize neural substrate with RuVector' },",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/embeddings.ts,913,normalize,"{ name: 'input', short: 'i', type: 'string', description: 'Input embedding (JSON array)' },",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/embeddings.ts,957,hyperbolic,"{ name: 'input', short: 'i', type: 'string', description: 'Input embedding(s) JSON' },",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/memory.ts,1119,import,"name: 'input',",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/neural.ts,665,predict,"{ name: 'input', short: 'i', type: 'string', description: 'Input text to predict routing for', required: true },",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,401,,"name: 'input',",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/ruvector/import.ts,107,import,"name: 'input',",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/security.ts,427,defend,"{ name: 'input', short: 'i', type: 'string', description: 'Input text to scan for threats' },",runtime,declared in command options[]
+cli_option,--input,v3/@claude-flow/cli/src/commands/transfer-store.ts,292,publish,"{ name: 'input', short: 'i', type: 'string', description: 'Input CFP file path', required: true },",runtime,declared in command options[]
+cli_option,--install,v3/@claude-flow/cli/src/commands/doctor.ts,425,doctor,"name: 'install',",runtime,declared in command options[]
+cli_option,--installed,v3/@claude-flow/cli/src/commands/plugins.ts,29,list,"{ name: 'installed', short: 'i', type: 'boolean', description: 'Show only installed plugins' },",runtime,declared in command options[]
+cli_option,--intent,v3/@claude-flow/cli/src/commands/guidance.ts,98,retrieve,"{ name: 'intent', short: 'i', type: 'string', description: 'Override detected intent' },",runtime,declared in command options[]
+cli_option,--interval,v3/@claude-flow/cli/src/commands/process.ts,212,monitor,"name: 'interval',",runtime,declared in command options[]
+cli_option,--interval,v3/@claude-flow/cli/src/commands/progress.ts,179,watch,"name: 'interval',",runtime,declared in command options[]
+cli_option,--interval,v3/@claude-flow/cli/src/commands/status.ts,710,status,"name: 'interval',",runtime,declared in command options[]
+cli_option,--ipfs,v3/@claude-flow/cli/src/commands/neural.ts,930,export,"{ name: 'ipfs', short: 'i', type: 'boolean', description: 'Pin to IPFS (requires Pinata credentials)' },",runtime,declared in command options[]
+cli_option,--issue,v3/@claude-flow/cli/src/commands/issues.ts,99,claim,"name: 'issue',",runtime,declared in command options[]
+cli_option,--issue,v3/@claude-flow/cli/src/commands/issues.ts,164,release,"name: 'issue',",runtime,declared in command options[]
+cli_option,--issue,v3/@claude-flow/cli/src/commands/issues.ts,227,handoff,"{ name: 'issue', short: 'i', type: 'string', description: 'Issue ID' },",runtime,declared in command options[]
+cli_option,--issue,v3/@claude-flow/cli/src/commands/issues.ts,280,status,"{ name: 'issue', short: 'i', type: 'string', description: 'Issue ID' },",runtime,declared in command options[]
+cli_option,--issue,v3/@claude-flow/cli/src/commands/issues.ts,369,steal,"{ name: 'issue', short: 'i', type: 'string', description: 'Issue ID' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/benchmark.ts,21,pretrain,"{ name: 'iterations', short: 'i', type: 'number', description: 'Benchmark iterations', default: '100' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/benchmark.ts,91,neural,"{ name: 'iterations', short: 'i', type: 'number', description: 'Benchmark iterations', default: '100' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/benchmark.ts,277,memory,"{ name: 'iterations', short: 'i', type: 'number', description: 'Benchmark iterations', default: '100' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/benchmark.ts,405,all,"{ name: 'iterations', short: 'i', type: 'number', description: 'Benchmark iterations', default: '50' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/embeddings.ts,1524,benchmark,"{ name: 'iterations', short: 'n', type: 'number', description: 'Number of iterations', default: '10' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/neural.ts,1525,benchmark,"{ name: 'iterations', short: 'i', type: 'number', description: 'Number of iterations', default: '1000' },",runtime,declared in command options[]
+cli_option,--iterations,v3/@claude-flow/cli/src/commands/performance.ts,17,benchmark,"{ name: 'iterations', short: 'i', type: 'number', description: 'Number of iterations', default: '100' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,17,compile,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,99,retrieve,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,195,gates,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,284,status,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,348,optimize,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/guidance.ts,465,ab-test,"{ name: 'json', type: 'boolean', description: 'Output as JSON', default: 'false' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/hooks.ts,3272,statusline,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/route.ts,106,task,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/route.ts,254,list-agents,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/route.ts,313,stats,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/route.ts,621,coverage,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/ruvector/status.ts,50,status,"name: 'json',",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/update.ts,59,check,"{ name: 'json', description: 'Output as JSON', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--json,v3/@claude-flow/cli/src/commands/update.ts,218,history,"{ name: 'json', description: 'Output as JSON', type: 'boolean' },",runtime,declared in command options[]
+cli_option,--k,v3/@claude-flow/cli/src/commands/neural.ts,666,predict,"{ name: 'k', short: 'k', type: 'number', description: 'Number of top predictions', default: '5' },",runtime,declared in command options[]
+cli_option,--k,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,75,benchmark,"name: 'k',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/config.ts,124,get,"name: 'key',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/config.ts,196,set,"name: 'key',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/hive-mind.ts,1170,memory,"{ name: 'key', short: 'k', description: 'Memory key', type: 'string' },",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/memory.ts,25,store,"name: 'key',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/memory.ts,160,retrieve,"name: 'key',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/memory.ts,492,delete,"name: 'key',",runtime,declared in command options[]
+cli_option,--key,v3/@claude-flow/cli/src/commands/providers.ts,57,configure,"{ name: 'key', short: 'k', type: 'string', description: 'API key' },",runtime,declared in command options[]
+cli_option,--keys,v3/@claude-flow/cli/src/commands/neural.ts,1526,benchmark,"{ name: 'keys', short: 'k', type: 'number', description: 'Number of keys for attention', default: '100' },",runtime,declared in command options[]
+cli_option,--language,v3/@claude-flow/cli/src/commands/transfer-store.ts,130,search,"{ name: 'language', short: 'l', type: 'string', description: 'Filter by language' },",runtime,declared in command options[]
+cli_option,--language,v3/@claude-flow/cli/src/commands/transfer-store.ts,299,publish,"{ name: 'language', type: 'string', description: 'Primary language' },",runtime,declared in command options[]
+cli_option,--learn,v3/@claude-flow/cli/src/commands/security.ts,430,defend,"{ name: 'learn', short: 'l', type: 'boolean', description: 'Enable learning mode', default: 'true' },",runtime,declared in command options[]
+cli_option,--learning-rate,v3/@claude-flow/cli/src/commands/neural.ts,20,train,"{ name: 'learning-rate', short: 'l', type: 'number', description: 'Learning rate', default: '0.01' },",runtime,declared in command options[]
+cli_option,--level,v3/@claude-flow/cli/src/commands/agent.ts,776,logs,"name: 'level',",runtime,declared in command options[]
+cli_option,--level,v3/@claude-flow/cli/src/commands/mcp.ts,669,logs,"name: 'level',",runtime,declared in command options[]
+cli_option,--level,v3/@claude-flow/cli/src/commands/memory.ts,876,compress,"name: 'level',",runtime,declared in command options[]
+cli_option,--level,v3/@claude-flow/cli/src/commands/process.ts,572,logs,"name: 'level',",runtime,declared in command options[]
+cli_option,--license,v3/@claude-flow/cli/src/commands/transfer-store.ts,297,publish,"{ name: 'license', short: 'l', type: 'string', description: 'SPDX license', default: 'MIT' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/deployment.ts,166,history,"{ name: 'limit', short: 'l', type: 'number', description: 'Number of entries', default: '10' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/embeddings.ts,117,search,"{ name: 'limit', short: 'l', type: 'number', description: 'Max results', default: '10' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/hooks.ts,2815,coverage-suggest,"name: 'limit',",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/memory.ts,247,search,"name: 'limit',",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/memory.ts,399,list,"name: 'limit',",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/neural.ts,559,patterns,"{ name: 'limit', short: 'l', type: 'number', description: 'Max patterns to return', default: '10' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/plugins.ts,736,search,"{ name: 'limit', short: 'l', type: 'number', description: 'Maximum results', default: 20 },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/security.ts,340,audit,"{ name: 'limit', short: 'l', type: 'number', description: 'Number of entries to show', default: '20' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/session.ts,68,list,"name: 'limit',",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/task.ts,260,list,"name: 'limit',",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/transfer-store.ts,28,list,"{ name: 'limit', short: 'l', type: 'number', description: 'Maximum results', default: 20 },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/transfer-store.ts,135,search,"{ name: 'limit', type: 'number', description: 'Maximum results', default: 20 },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/update.ts,217,history,"{ name: 'limit', short: 'n', description: 'Number of entries', type: 'string', default: '20' },",runtime,declared in command options[]
+cli_option,--limit,v3/@claude-flow/cli/src/commands/workflow.ts,316,list,"name: 'limit',",runtime,declared in command options[]
+cli_option,--lines,v3/@claude-flow/cli/src/commands/deployment.ts,246,logs,"{ name: 'lines', short: 'n', type: 'number', description: 'Number of lines', default: '50' },",runtime,declared in command options[]
+cli_option,--lines,v3/@claude-flow/cli/src/commands/mcp.ts,655,logs,"name: 'lines',",runtime,declared in command options[]
+cli_option,--list,v3/@claude-flow/cli/src/commands/embeddings.ts,1231,models,"{ name: 'list', short: 'l', type: 'boolean', description: 'List available models', default: 'true' },",runtime,declared in command options[]
+cli_option,--list,v3/@claude-flow/cli/src/commands/security.ts,242,cve,"{ name: 'list', short: 'l', type: 'boolean', description: 'List all known CVEs' },",runtime,declared in command options[]
+cli_option,--load-embeddings,v3/@claude-flow/cli/src/commands/memory.ts,1228,init,"name: 'load-embeddings',",runtime,declared in command options[]
+cli_option,--local,v3/@claude-flow/cli/src/commands/guidance.ts,15,compile,"{ name: 'local', short: 'l', type: 'string', description: 'Local guidance overlay file path' },",runtime,declared in command options[]
+cli_option,--local,v3/@claude-flow/cli/src/commands/guidance.ts,96,retrieve,"{ name: 'local', short: 'l', type: 'string', description: 'Local overlay file path' },",runtime,declared in command options[]
+cli_option,--local,v3/@claude-flow/cli/src/commands/guidance.ts,343,optimize,"{ name: 'local', short: 'l', type: 'string', description: 'Local overlay file path' },",runtime,declared in command options[]
+cli_option,--log-file,v3/@claude-flow/cli/src/commands/process.ts,71,daemon,"name: 'log-file',",runtime,declared in command options[]
+cli_option,--logs,v3/@claude-flow/cli/src/commands/task.ts,361,status,"name: 'logs',",runtime,declared in command options[]
+cli_option,--low-quality,v3/@claude-flow/cli/src/commands/memory.ts,754,cleanup,"name: 'low-quality',",runtime,declared in command options[]
+cli_option,--m,v3/@claude-flow/cli/src/commands/embeddings.ts,527,index,"{ name: 'm', type: 'number', description: 'HNSW M parameter', default: '16' },",runtime,declared in command options[]
+cli_option,--max,v3/@claude-flow/cli/src/commands/agent.ts,543,pool,"name: 'max',",runtime,declared in command options[]
+cli_option,--max-agents,v3/@claude-flow/cli/src/commands/hive-mind.ts,390,init,"name: 'max-agents',",runtime,declared in command options[]
+cli_option,--max-agents,v3/@claude-flow/cli/src/commands/swarm.ts,199,init,"name: 'max-agents',",runtime,declared in command options[]
+cli_option,--max-agents,v3/@claude-flow/cli/src/commands/workflow.ts,54,run,"name: 'max-agents',",runtime,declared in command options[]
+cli_option,--max-iterations,v3/@claude-flow/cli/src/commands/guidance.ts,347,optimize,"{ name: 'max-iterations', type: 'number', description: 'Maximum optimization iterations', default: '5' },",runtime,declared in command options[]
+cli_option,--max-shards,v3/@claude-flow/cli/src/commands/guidance.ts,97,retrieve,"{ name: 'max-shards', short: 'n', type: 'number', description: 'Maximum number of shards to retrieve', default: '5' },",runtime,declared in command options[]
+cli_option,--max-size,v3/@claude-flow/cli/src/commands/embeddings.ts,849,chunk,"{ name: 'max-size', short: 's', type: 'number', description: 'Max chunk size in chars', default: '512' },",runtime,declared in command options[]
+cli_option,--memory-backend,v3/@claude-flow/cli/src/commands/hive-mind.ts,404,init,"name: 'memory-backend',",runtime,declared in command options[]
+cli_option,--memory-only,v3/@claude-flow/cli/src/commands/session.ts,288,restore,"name: 'memory-only',",runtime,declared in command options[]
+cli_option,--merge,v3/@claude-flow/cli/src/commands/config.ts,391,import,"name: 'merge',",runtime,declared in command options[]
+cli_option,--merge,v3/@claude-flow/cli/src/commands/memory.ts,1126,import,"name: 'merge',",runtime,declared in command options[]
+cli_option,--merge,v3/@claude-flow/cli/src/commands/neural.ts,1302,import,"{ name: 'merge', type: 'boolean', description: 'Merge with existing patterns (vs replace)', default: 'true' },",runtime,declared in command options[]
+cli_option,--message,v3/@claude-flow/cli/src/commands/hive-mind.ts,1148,broadcast,"{ name: 'message', short: 'm', description: 'Message to broadcast', type: 'string', required: true },",runtime,declared in command options[]
+cli_option,--method,v3/@claude-flow/cli/src/commands/neural.ts,764,optimize,"{ name: 'method', type: 'string', description: 'Method: quantize, analyze, compact', default: 'quantize' },",runtime,declared in command options[]
+cli_option,--metric,v3/@claude-flow/cli/src/commands/embeddings.ts,312,compare,"{ name: 'metric', short: 'm', type: 'string', description: 'Metric: cosine, euclidean, dot', default: 'cosine' },",runtime,declared in command options[]
+cli_option,--metric,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,81,benchmark,"name: 'metric',",runtime,declared in command options[]
+cli_option,--metrics,v3/@claude-flow/cli/src/commands/hooks.ts,183,post-edit,"name: 'metrics',",runtime,declared in command options[]
+cli_option,--min,v3/@claude-flow/cli/src/commands/agent.ts,537,pool,"name: 'min',",runtime,declared in command options[]
+cli_option,--min-confidence,v3/@claude-flow/cli/src/commands/hooks.ts,1221,from-project,"name: 'min-confidence',",runtime,declared in command options[]
+cli_option,--min-confidence,v3/@claude-flow/cli/src/commands/hooks.ts,2505,detect,"{ name: 'min-confidence', short: 'm', type: 'string', description: 'Minimum confidence threshold (0-1)' },",runtime,declared in command options[]
+cli_option,--min-rating,v3/@claude-flow/cli/src/commands/transfer-store.ts,133,search,"{ name: 'min-rating', type: 'number', description: 'Minimum rating (0-5)' },",runtime,declared in command options[]
+cli_option,--min-size,v3/@claude-flow/cli/src/commands/analyze.ts,1524,modules,"name: 'min-size',",runtime,declared in command options[]
+cli_option,--mine,v3/@claude-flow/cli/src/commands/issues.ts,40,list,"name: 'mine',",runtime,declared in command options[]
+cli_option,--minimal,v3/@claude-flow/cli/src/commands/init.ts,617,hooks,"{ name: 'minimal', description: 'Enable only essential hooks', type: 'boolean', default: false },",runtime,declared in command options[]
+cli_option,--minimal,v3/@claude-flow/cli/src/commands/init.ts,815,init,"name: 'minimal',",runtime,declared in command options[]
+cli_option,--mode,v3/@claude-flow/cli/src/commands/hooks.ts,1887,intelligence,"name: 'mode',",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/agent.ts,56,spawn,"name: 'model',",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/embeddings.ts,35,generate,"{ name: 'model', short: 'm', type: 'string', description: 'Model to use' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/embeddings.ts,659,init,"{ name: 'model', short: 'm', type: 'string', description: 'ONNX model ID', default: 'all-MiniLM-L6-v2' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/hooks.ts,4064,model-outcome,"{ name: 'model', short: 'm', type: 'string', description: 'Model that was used (haiku/sonnet/opus)', required: true },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/neural.ts,19,train,"{ name: 'model', short: 'm', type: 'string', description: 'Model ID to train' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/neural.ts,395,status,"{ name: 'model', short: 'm', type: 'string', description: 'Specific model ID to check' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/neural.ts,928,export,"{ name: 'model', short: 'm', type: 'string', description: 'Model ID or category to export' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/providers.ts,58,configure,"{ name: 'model', short: 'm', type: 'string', description: 'Default model' },",runtime,declared in command options[]
+cli_option,--model,v3/@claude-flow/cli/src/commands/security.ts,298,threats,"{ name: 'model', short: 'm', type: 'string', description: 'Threat model: stride, dread, pasta', default: 'stride' },",runtime,declared in command options[]
+cli_option,--moe,v3/@claude-flow/cli/src/commands/neural.ts,25,train,"{ name: 'moe', type: 'boolean', description: 'Enable Mixture of Experts routing', default: 'false' },",runtime,declared in command options[]
+cli_option,--monitor,v3/@claude-flow/cli/src/commands/swarm.ts,370,start,"name: 'monitor',",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/agent.ts,43,spawn,"name: 'name',",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/claims.ts,284,roles,"{ name: 'name', short: 'n', type: 'string', description: 'Role name' },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/claims.ts,340,policies,"{ name: 'name', short: 'n', type: 'string', description: 'Policy name' },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/deployment.ts,208,environments,"{ name: 'name', short: 'n', type: 'string', description: 'Environment name' },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/embeddings.ts,407,collections,"{ name: 'name', short: 'n', type: 'string', description: 'Namespace name' },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/neural.ts,933,export,"{ name: 'name', short: 'n', type: 'string', description: 'Custom name for exported model' },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,206,install,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name or path', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,321,uninstall,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,376,toggle,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,446,info,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,614,create,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,674,upgrade,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/plugins.ts,836,rate,"{ name: 'name', short: 'n', type: 'string', description: 'Plugin name to rate', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/session.ts,155,save,"name: 'name',",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/session.ts,626,import,"name: 'name',",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/transfer-store.ts,210,download,"{ name: 'name', short: 'n', type: 'string', description: 'Pattern name or ID', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/transfer-store.ts,293,publish,"{ name: 'name', short: 'n', type: 'string', description: 'Pattern name', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/transfer-store.ts,376,info,"{ name: 'name', short: 'n', type: 'string', description: 'Pattern name or ID', required: true },",runtime,declared in command options[]
+cli_option,--name,v3/@claude-flow/cli/src/commands/workflow.ts,611,template,"{ name: 'name', short: 'n', description: 'Template name', type: 'string', required: true },",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,38,store,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,166,retrieve,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,241,search,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,387,list,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,498,delete,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,760,cleanup,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,1049,export,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--namespace,v3/@claude-flow/cli/src/commands/memory.ts,1133,import,"name: 'namespace',",runtime,declared in command options[]
+cli_option,--newest,v3/@claude-flow/cli/src/commands/transfer-store.ts,27,list,"{ name: 'newest', short: 'n', type: 'boolean', description: 'Show newest patterns' },",runtime,declared in command options[]
+cli_option,--next-task,v3/@claude-flow/cli/src/commands/route.ts,406,feedback,"name: 'next-task',",runtime,declared in command options[]
+cli_option,--no-auto-permissions,v3/@claude-flow/cli/src/commands/hive-mind.ts,551,spawn,"name: 'no-auto-permissions',",runtime,declared in command options[]
+cli_option,--no-color,v3/@claude-flow/cli/src/commands/hooks.ts,3284,statusline,"name: 'no-color',",runtime,declared in command options[]
+cli_option,--no-ruvector,v3/@claude-flow/cli/src/commands/hooks.ts,2676,coverage-route,"name: 'no-ruvector',",runtime,declared in command options[]
+cli_option,--non-interactive,v3/@claude-flow/cli/src/commands/hive-mind.ts,563,spawn,"name: 'non-interactive',",runtime,declared in command options[]
+cli_option,--note,v3/@claude-flow/cli/src/commands/issues.ts,283,status,"{ name: 'note', short: 'n', type: 'string', description: 'Status note' },",runtime,declared in command options[]
+cli_option,--objective,v3/@claude-flow/cli/src/commands/hive-mind.ts,539,spawn,"name: 'objective',",runtime,declared in command options[]
+cli_option,--objective,v3/@claude-flow/cli/src/commands/swarm.ts,349,start,"name: 'objective',",runtime,declared in command options[]
+cli_option,--official,v3/@claude-flow/cli/src/commands/plugins.ts,33,list,"{ name: 'official', short: 'o', type: 'boolean', description: 'Show only official plugins' },",runtime,declared in command options[]
+cli_option,--older-than,v3/@claude-flow/cli/src/commands/memory.ts,741,cleanup,"name: 'older-than',",runtime,declared in command options[]
+cli_option,--only-claude,v3/@claude-flow/cli/src/commands/init.ts,834,init,"name: 'only-claude',",runtime,declared in command options[]
+cli_option,--operation,v3/@claude-flow/cli/src/commands/hooks.ts,43,pre-edit,"name: 'operation',",runtime,declared in command options[]
+cli_option,--outcome,v3/@claude-flow/cli/src/commands/hooks.ts,177,post-edit,"name: 'outcome',",runtime,declared in command options[]
+cli_option,--outcome,v3/@claude-flow/cli/src/commands/hooks.ts,4065,model-outcome,"{ name: 'outcome', short: 'o', type: 'string', description: 'Outcome (success/failure/escalated)', required: true },",runtime,declared in command options[]
+cli_option,--outdated,v3/@claude-flow/cli/src/commands/analyze.ts,1286,deps,"{ name: 'outdated', short: 'o', type: 'boolean', description: 'Show only outdated dependencies' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,419,ast,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,680,complexity,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,860,symbols,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,1017,imports,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,1342,boundaries,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,1510,modules,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,1665,dependencies,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/analyze.ts,1864,circular,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/benchmark.ts,23,pretrain,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/benchmark.ts,94,neural,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/benchmark.ts,278,memory,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/benchmark.ts,406,all,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/config.ts,343,export,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/embeddings.ts,36,generate,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: json, array, preview', default: 'preview' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/guidance.ts,16,compile,"{ name: 'output', short: 'o', type: 'string', description: 'Output directory for compiled bundle' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/hooks.ts,948,build-agents,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/memory.ts,1034,export,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/neural.ts,929,export,"{ name: 'output', short: 'o', type: 'string', description: 'Output file path (optional)' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/performance.ts,19,benchmark,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json, csv', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/performance.ts,256,profile,"{ name: 'output', short: 'o', type: 'string', description: 'Output file for profile data' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,44,,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/ruvector/import.ts,119,import,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/ruvector/setup.ts,666,setup,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/security.ts,19,scan,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json, sarif', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/security.ts,432,defend,"{ name: 'output', short: 'o', type: 'string', description: 'Output format: text, json', default: 'text' },",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/session.ts,501,export,"name: 'output',",runtime,declared in command options[]
+cli_option,--output,v3/@claude-flow/cli/src/commands/transfer-store.ts,211,download,"{ name: 'output', short: 'o', type: 'string', description: 'Output path' },",runtime,declared in command options[]
+cli_option,--overlap,v3/@claude-flow/cli/src/commands/embeddings.ts,850,chunk,"{ name: 'overlap', short: 'o', type: 'number', description: 'Overlap between chunks', default: '50' },",runtime,declared in command options[]
+cli_option,--package,v3/@claude-flow/cli/src/commands/update.ts,273,rollback,"{ name: 'package', short: 'p', description: 'Specific package to rollback', type: 'string' },",runtime,declared in command options[]
+cli_option,--parallel,v3/@claude-flow/cli/src/commands/swarm.ts,363,start,"name: 'parallel',",runtime,declared in command options[]
+cli_option,--parallel,v3/@claude-flow/cli/src/commands/workflow.ts,47,run,"name: 'parallel',",runtime,declared in command options[]
+cli_option,--params,v3/@claude-flow/cli/src/commands/mcp.ts,535,exec,"name: 'params',",runtime,declared in command options[]
+cli_option,--parent,v3/@claude-flow/cli/src/commands/task.ts,107,create,"name: 'parent',",runtime,declared in command options[]
+cli_option,--partitions,v3/@claude-flow/cli/src/commands/analyze.ts,1335,boundaries,"name: 'partitions',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,104,,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,446,,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,752,backup,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,134,benchmark,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/import.ts,160,import,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/init.ts,69,init,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,239,migrate,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,101,optimize,"name: 'password',",runtime,declared in command options[]
+cli_option,--password,v3/@claude-flow/cli/src/commands/ruvector/status.ts,82,status,"name: 'password',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/analyze.ts,308,code,"{ name: 'path', short: 'p', type: 'string', description: 'Path to analyze', default: '.' },",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/hooks.ts,778,pretrain,"name: 'path',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/hooks.ts,2802,coverage-suggest,"name: 'path',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/memory.ts,660,configure,"name: 'path',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/memory.ts,1203,init,"name: 'path',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/plugins.ts,616,create,"{ name: 'path', short: 'p', type: 'string', description: 'Output path', default: '.' },",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/route.ts,594,coverage,"name: 'path',",runtime,declared in command options[]
+cli_option,--path,v3/@claude-flow/cli/src/commands/security.ts,380,secrets,"{ name: 'path', short: 'p', type: 'string', description: 'Path to scan', default: '.' },",runtime,declared in command options[]
+cli_option,--pattern,v3/@claude-flow/cli/src/commands/neural.ts,16,train,"{ name: 'pattern', short: 'p', type: 'string', description: 'Pattern type: coordination, optimization, prediction, security, testing', default: 'coordination' },",runtime,declared in command options[]
+cli_option,--period,v3/@claude-flow/cli/src/commands/agent.ts,443,metrics,"name: 'period',",runtime,declared in command options[]
+cli_option,--period,v3/@claude-flow/cli/src/commands/hooks.ts,1060,metrics,"name: 'period',",runtime,declared in command options[]
+cli_option,--persist,v3/@claude-flow/cli/src/commands/hive-mind.ts,397,init,"name: 'persist',",runtime,declared in command options[]
+cli_option,--pid-file,v3/@claude-flow/cli/src/commands/process.ts,65,daemon,"name: 'pid-file',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/mcp.ts,56,start,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/process.ts,59,daemon,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,85,,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,427,,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,733,backup,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,116,benchmark,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/import.ts,139,import,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/index.ts,55,ruvector,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/init.ts,48,init,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,220,migrate,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,83,optimize,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/ruvector/status.ts,63,status,"name: 'port',",runtime,declared in command options[]
+cli_option,--port,v3/@claude-flow/cli/src/commands/start.ts,446,start,"name: 'port',",runtime,declared in command options[]
+cli_option,--prefer-cost,v3/@claude-flow/cli/src/commands/hooks.ts,3970,model-route,"{ name: 'prefer-cost', type: 'boolean', description: 'Prefer lower cost models' },",runtime,declared in command options[]
+cli_option,--prefer-quality,v3/@claude-flow/cli/src/commands/hooks.ts,3971,model-route,"{ name: 'prefer-quality', type: 'boolean', description: 'Prefer higher quality models' },",runtime,declared in command options[]
+cli_option,--prefix,v3/@claude-flow/cli/src/commands/hive-mind.ts,525,spawn,"name: 'prefix',",runtime,declared in command options[]
+cli_option,--print,v3/@claude-flow/cli/src/commands/ruvector/setup.ts,673,setup,"name: 'print',",runtime,declared in command options[]
+cli_option,--priority,v3/@claude-flow/cli/src/commands/hive-mind.ts,897,task,"name: 'priority',",runtime,declared in command options[]
+cli_option,--priority,v3/@claude-flow/cli/src/commands/hive-mind.ts,1149,broadcast,"{ name: 'priority', short: 'p', description: 'Message priority', type: 'string', choices: ['low', 'normal', 'high', 'critical'], default: 'normal' },",runtime,declared in command options[]
+cli_option,--priority,v3/@claude-flow/cli/src/commands/hooks.ts,2299,dispatch,"{ name: 'priority', short: 'p', type: 'string', description: 'Priority (low, normal, high, critical)' },",runtime,declared in command options[]
+cli_option,--priority,v3/@claude-flow/cli/src/commands/task.ts,88,create,"name: 'priority',",runtime,declared in command options[]
+cli_option,--priority,v3/@claude-flow/cli/src/commands/task.ts,248,list,"name: 'priority',",runtime,declared in command options[]
+cli_option,--progress,v3/@claude-flow/cli/src/commands/issues.ts,282,status,"{ name: 'progress', short: 'p', type: 'number', description: 'Progress (0-100)' },",runtime,declared in command options[]
+cli_option,--prompt,v3/@claude-flow/cli/src/commands/hooks.ts,2503,detect,"{ name: 'prompt', short: 'p', type: 'string', description: 'Prompt text to analyze', required: true },",runtime,declared in command options[]
+cli_option,--proposal-id,v3/@claude-flow/cli/src/commands/hive-mind.ts,1120,consensus,"{ name: 'proposal-id', short: 'p', description: 'Proposal ID', type: 'string' },",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/agent.ts,49,spawn,"name: 'provider',",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/embeddings.ts,34,generate,"{ name: 'provider', short: 'p', type: 'string', description: 'Provider: openai, transformers, agentic-flow, local', default: 'local' },",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/providers.ts,56,configure,"{ name: 'provider', short: 'p', type: 'string', description: 'Provider name', required: true },",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/providers.ts,101,test,"{ name: 'provider', short: 'p', type: 'string', description: 'Provider to test' },",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/providers.ts,139,models,"{ name: 'provider', short: 'p', type: 'string', description: 'Filter by provider' },",runtime,declared in command options[]
+cli_option,--provider,v3/@claude-flow/cli/src/commands/providers.ts,180,usage,"{ name: 'provider', short: 'p', type: 'string', description: 'Filter by provider' },",runtime,declared in command options[]
+cli_option,--q-learning,v3/@claude-flow/cli/src/commands/route.ts,86,task,"name: 'q-learning',",runtime,declared in command options[]
+cli_option,--q-learning,v3/@claude-flow/cli/src/commands/route.ts,830,route,"name: 'q-learning',",runtime,declared in command options[]
+cli_option,--quality,v3/@claude-flow/cli/src/commands/hooks.ts,1625,post-task,"name: 'quality',",runtime,declared in command options[]
+cli_option,--quality,v3/@claude-flow/cli/src/commands/hooks.ts,4066,model-outcome,"{ name: 'quality', short: 'q', type: 'number', description: 'Quality score 0-1' },",runtime,declared in command options[]
+cli_option,--quantize,v3/@claude-flow/cli/src/commands/memory.ts,892,compress,"name: 'quantize',",runtime,declared in command options[]
+cli_option,--queries,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,68,benchmark,"name: 'queries',",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/embeddings.ts,115,search,"{ name: 'query', short: 'q', type: 'string', description: 'Search query', required: true },",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/hooks.ts,3814,token-optimize,"{ name: 'query', short: 'q', type: 'string', description: 'Query for compact context retrieval' },",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/memory.ts,234,search,"name: 'query',",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/neural.ts,558,patterns,"{ name: 'query', short: 'q', type: 'string', description: 'Pattern query for search' },",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/plugins.ts,732,search,"{ name: 'query', short: 'q', type: 'string', description: 'Search query', required: true },",runtime,declared in command options[]
+cli_option,--query,v3/@claude-flow/cli/src/commands/transfer-store.ts,128,search,"{ name: 'query', short: 'q', type: 'string', description: 'Search query', required: true },",runtime,declared in command options[]
+cli_option,--quick,v3/@claude-flow/cli/src/commands/security.ts,429,defend,"{ name: 'quick', short: 'Q', type: 'boolean', description: 'Quick scan (faster, less detailed)' },",runtime,declared in command options[]
+cli_option,--quiet,v3/@claude-flow/cli/src/commands/daemon.ts,20,start,"{ name: 'quiet', short: 'Q', type: 'boolean', description: 'Suppress output' },",runtime,declared in command options[]
+cli_option,--quiet,v3/@claude-flow/cli/src/commands/daemon.ts,253,stop,"{ name: 'quiet', short: 'Q', type: 'boolean', description: 'Suppress output' },",runtime,declared in command options[]
+cli_option,--rating,v3/@claude-flow/cli/src/commands/plugins.ts,837,rate,"{ name: 'rating', short: 'r', type: 'number', description: 'Rating (1-5)', required: true },",runtime,declared in command options[]
+cli_option,--reason,v3/@claude-flow/cli/src/commands/issues.ts,230,handoff,"{ name: 'reason', short: 'r', type: 'string', description: 'Handoff reason', default: 'Handoff requested' },",runtime,declared in command options[]
+cli_option,--reason,v3/@claude-flow/cli/src/commands/task.ts,524,cancel,"name: 'reason',",runtime,declared in command options[]
+cli_option,--rebuild-index,v3/@claude-flow/cli/src/commands/memory.ts,905,compress,"name: 'rebuild-index',",runtime,declared in command options[]
+cli_option,--registry,v3/@claude-flow/cli/src/commands/plugins.ts,35,list,"{ name: 'registry', short: 'r', type: 'string', description: 'Registry to use (default: claude-flow-official)' },",runtime,declared in command options[]
+cli_option,--registry,v3/@claude-flow/cli/src/commands/plugins.ts,211,install,"{ name: 'registry', short: 'r', type: 'string', description: 'Registry to use' },",runtime,declared in command options[]
+cli_option,--registry,v3/@claude-flow/cli/src/commands/plugins.ts,447,info,"{ name: 'registry', short: 'r', type: 'string', description: 'Registry to use' },",runtime,declared in command options[]
+cli_option,--registry,v3/@claude-flow/cli/src/commands/plugins.ts,737,search,"{ name: 'registry', short: 'r', type: 'string', description: 'Registry to use' },",runtime,declared in command options[]
+cli_option,--registry,v3/@claude-flow/cli/src/commands/transfer-store.ts,23,list,"{ name: 'registry', short: 'r', type: 'string', description: 'Registry name (default: claude-flow-official)' },",runtime,declared in command options[]
+cli_option,--reindex,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,70,optimize,"name: 'reindex',",runtime,declared in command options[]
+cli_option,--remove,v3/@claude-flow/cli/src/commands/config.ts,242,providers,"name: 'remove',",runtime,declared in command options[]
+cli_option,--report,v3/@claude-flow/cli/src/commands/hooks.ts,3816,token-optimize,"{ name: 'report', short: 'r', type: 'boolean', description: 'Generate optimization report' },",runtime,declared in command options[]
+cli_option,--require-consensus,v3/@claude-flow/cli/src/commands/hive-mind.ts,905,task,"name: 'require-consensus',",runtime,declared in command options[]
+cli_option,--reset,v3/@claude-flow/cli/src/commands/hooks.ts,1927,intelligence,"name: 'reset',",runtime,declared in command options[]
+cli_option,--reset-state,v3/@claude-flow/cli/src/commands/task.ts,707,retry,"name: 'reset-state',",runtime,declared in command options[]
+cli_option,--resource,v3/@claude-flow/cli/src/commands/claims.ts,18,list,"{ name: 'resource', type: 'string', description: 'Filter by resource' },",runtime,declared in command options[]
+cli_option,--resource,v3/@claude-flow/cli/src/commands/claims.ts,59,check,"{ name: 'resource', short: 'r', type: 'string', description: 'Resource context' },",runtime,declared in command options[]
+cli_option,--restore-agents,v3/@claude-flow/cli/src/commands/hooks.ts,1800,session-restore,"name: 'restore-agents',",runtime,declared in command options[]
+cli_option,--restore-context,v3/@claude-flow/cli/src/commands/hooks.ts,3772,session-start,"name: 'restore-context',",runtime,declared in command options[]
+cli_option,--restore-tasks,v3/@claude-flow/cli/src/commands/hooks.ts,1807,session-restore,"name: 'restore-tasks',",runtime,declared in command options[]
+cli_option,--reviewers,v3/@claude-flow/cli/src/commands/analyze.ts,63,diff,"name: 'reviewers',",runtime,declared in command options[]
+cli_option,--reward,v3/@claude-flow/cli/src/commands/route.ts,399,feedback,"name: 'reward',",runtime,declared in command options[]
+cli_option,--risk,v3/@claude-flow/cli/src/commands/analyze.ts,49,diff,"name: 'risk',",runtime,declared in command options[]
+cli_option,--role,v3/@claude-flow/cli/src/commands/claims.ts,17,list,"{ name: 'role', short: 'r', type: 'string', description: 'Filter by role' },",runtime,declared in command options[]
+cli_option,--role,v3/@claude-flow/cli/src/commands/claims.ts,203,grant,"{ name: 'role', short: 'r', type: 'string', description: 'Role name' },",runtime,declared in command options[]
+cli_option,--role,v3/@claude-flow/cli/src/commands/claims.ts,252,revoke,"{ name: 'role', short: 'r', type: 'string', description: 'Role name' },",runtime,declared in command options[]
+cli_option,--role,v3/@claude-flow/cli/src/commands/hive-mind.ts,510,spawn,"name: 'role',",runtime,declared in command options[]
+cli_option,--role,v3/@claude-flow/cli/src/commands/hive-mind.ts,1080,join,"{ name: 'role', short: 'r', description: 'Agent role (worker, specialist, scout)', type: 'string', default: 'worker' }",runtime,declared in command options[]
+cli_option,--rollback-on-fail,v3/@claude-flow/cli/src/commands/deployment.ts,20,deploy,"{ name: 'rollback-on-fail', type: 'boolean', description: 'Auto rollback on failure', default: 'true' },",runtime,declared in command options[]
+cli_option,--root,v3/@claude-flow/cli/src/commands/guidance.ts,14,compile,"{ name: 'root', short: 'r', type: 'string', description: 'Root guidance file path', default: './CLAUDE.md' },",runtime,declared in command options[]
+cli_option,--root,v3/@claude-flow/cli/src/commands/guidance.ts,95,retrieve,"{ name: 'root', short: 'r', type: 'string', description: 'Root guidance file path', default: './CLAUDE.md' },",runtime,declared in command options[]
+cli_option,--root,v3/@claude-flow/cli/src/commands/guidance.ts,342,optimize,"{ name: 'root', short: 'r', type: 'string', description: 'Root guidance file path', default: './CLAUDE.md' },",runtime,declared in command options[]
+cli_option,--sandbox,v3/@claude-flow/cli/src/commands/daemon.ts,24,start,"{ name: 'sandbox', type: 'string', description: 'Default sandbox mode for headless workers', choices: ['strict', 'permissive', 'disabled'] },",runtime,declared in command options[]
+cli_option,--save,v3/@claude-flow/cli/src/commands/benchmark.ts,24,pretrain,"{ name: 'save', short: 's', type: 'string', description: 'Save results to file' },",runtime,declared in command options[]
+cli_option,--save,v3/@claude-flow/cli/src/commands/benchmark.ts,407,all,"{ name: 'save', short: 's', type: 'string', description: 'Save results to file' },",runtime,declared in command options[]
+cli_option,--save-state,v3/@claude-flow/cli/src/commands/hive-mind.ts,1210,shutdown,"name: 'save-state',",runtime,declared in command options[]
+cli_option,--save-state,v3/@claude-flow/cli/src/commands/hooks.ts,1712,session-end,"name: 'save-state',",runtime,declared in command options[]
+cli_option,--save-state,v3/@claude-flow/cli/src/commands/swarm.ts,566,stop,"name: 'save-state',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,115,,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,457,,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,763,backup,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,145,benchmark,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/index.ts,74,ruvector,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/init.ts,80,init,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,250,migrate,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,112,optimize,"name: 'schema',",runtime,declared in command options[]
+cli_option,--schema,v3/@claude-flow/cli/src/commands/ruvector/status.ts,93,status,"name: 'schema',",runtime,declared in command options[]
+cli_option,--scope,v3/@claude-flow/cli/src/commands/claims.ts,204,grant,"{ name: 'scope', short: 's', type: 'string', description: 'Scope: global, namespace, resource', default: 'global' },",runtime,declared in command options[]
+cli_option,--scope,v3/@claude-flow/cli/src/commands/security.ts,299,threats,"{ name: 'scope', short: 's', type: 'string', description: 'Analysis scope', default: '.' },",runtime,declared in command options[]
+cli_option,--section,v3/@claude-flow/cli/src/commands/config.ts,308,reset,"name: 'section',",runtime,declared in command options[]
+cli_option,--security,v3/@claude-flow/cli/src/commands/analyze.ts,1287,deps,"{ name: 'security', short: 's', type: 'boolean', description: 'Check for security vulnerabilities' },",runtime,declared in command options[]
+cli_option,--session-id,v3/@claude-flow/cli/src/commands/hooks.ts,1793,session-restore,"name: 'session-id',",runtime,declared in command options[]
+cli_option,--set,v3/@claude-flow/cli/src/commands/issues.ts,281,status,"{ name: 'set', short: 's', type: 'string', description: 'New status', choices: ['active', 'paused', 'blocked', 'completed'] },",runtime,declared in command options[]
+cli_option,--severity,v3/@claude-flow/cli/src/commands/analyze.ts,1878,circular,"name: 'severity',",runtime,declared in command options[]
+cli_option,--severity,v3/@claude-flow/cli/src/commands/security.ts,243,cve,"{ name: 'severity', short: 's', type: 'string', description: 'Filter by severity: critical, high, medium, low' },",runtime,declared in command options[]
+cli_option,--show-modes,v3/@claude-flow/cli/src/commands/daemon.ts,379,status,"{ name: 'show-modes', type: 'boolean', description: 'Show worker execution modes (local/headless) and sandbox settings' },",runtime,declared in command options[]
+cli_option,--sign,v3/@claude-flow/cli/src/commands/neural.ts,931,export,"{ name: 'sign', short: 's', type: 'boolean', description: 'Sign with Ed25519 key', default: 'true' },",runtime,declared in command options[]
+cli_option,--signal,v3/@claude-flow/cli/src/commands/process.ts,497,signals,"name: 'signal',",runtime,declared in command options[]
+cli_option,--since,v3/@claude-flow/cli/src/commands/agent.ts,791,logs,"name: 'since',",runtime,declared in command options[]
+cli_option,--since,v3/@claude-flow/cli/src/commands/process.ts,579,logs,"name: 'since',",runtime,declared in command options[]
+cli_option,--size,v3/@claude-flow/cli/src/commands/agent.ts,531,pool,"name: 'size',",runtime,declared in command options[]
+cli_option,--skip-cache,v3/@claude-flow/cli/src/commands/hooks.ts,793,pretrain,"name: 'skip-cache',",runtime,declared in command options[]
+cli_option,--skip-claude,v3/@claude-flow/cli/src/commands/init.ts,828,init,"name: 'skip-claude',",runtime,declared in command options[]
+cli_option,--skip-mcp,v3/@claude-flow/cli/src/commands/start.ts,460,start,"name: 'skip-mcp',",runtime,declared in command options[]
+cli_option,--source,v3/@claude-flow/cli/src/commands/hooks.ts,1208,from-project,"name: 'source',",runtime,declared in command options[]
+cli_option,--source,v3/@claude-flow/cli/src/commands/process.ts,553,logs,"name: 'source',",runtime,declared in command options[]
+cli_option,--sparc,v3/@claude-flow/cli/src/commands/config.ts,24,init,"name: 'sparc',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,109,,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,451,,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,757,backup,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,139,benchmark,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/init.ts,74,init,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,244,migrate,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,106,optimize,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--ssl,v3/@claude-flow/cli/src/commands/ruvector/status.ts,87,status,"name: 'ssl',",runtime,declared in command options[]
+cli_option,--start-all,v3/@claude-flow/cli/src/commands/init.ts,840,init,"name: 'start-all',",runtime,declared in command options[]
+cli_option,--start-daemon,v3/@claude-flow/cli/src/commands/init.ts,846,init,"name: 'start-daemon',",runtime,declared in command options[]
+cli_option,--stats,v3/@claude-flow/cli/src/commands/hooks.ts,3817,token-optimize,"{ name: 'stats', short: 's', type: 'boolean', description: 'Show token savings statistics' },",runtime,declared in command options[]
+cli_option,--stats,v3/@claude-flow/cli/src/commands/security.ts,431,defend,"{ name: 'stats', short: 's', type: 'boolean', description: 'Show detection statistics' },",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/agent.ts,186,list,"name: 'status',",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/hooks.ts,1913,intelligence,"name: 'status',",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/hooks.ts,2193,list,"{ name: 'status', short: 's', type: 'string', description: 'Filter by status (all, running, completed, pending)' },",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/issues.ts,33,list,"name: 'status',",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/task.ts,235,list,"name: 'status',",runtime,declared in command options[]
+cli_option,--status,v3/@claude-flow/cli/src/commands/workflow.ts,309,list,"name: 'status',",runtime,declared in command options[]
+cli_option,--steps,v3/@claude-flow/cli/src/commands/deployment.ts,116,rollback,"{ name: 'steps', short: 's', type: 'number', description: 'Number of versions to rollback', default: '1' },",runtime,declared in command options[]
+cli_option,--strategy,v3/@claude-flow/cli/src/commands/embeddings.ts,851,chunk,"{ name: 'strategy', type: 'string', description: 'Strategy: character, sentence, paragraph, token', default: 'sentence' },",runtime,declared in command options[]
+cli_option,--strategy,v3/@claude-flow/cli/src/commands/swarm.ts,212,init,"name: 'strategy',",runtime,declared in command options[]
+cli_option,--strategy,v3/@claude-flow/cli/src/commands/swarm.ts,356,start,"name: 'strategy',",runtime,declared in command options[]
+cli_option,--strict,v3/@claude-flow/cli/src/commands/workflow.ts,208,validate,"name: 'strict',",runtime,declared in command options[]
+cli_option,--strip-pii,v3/@claude-flow/cli/src/commands/neural.ts,932,export,"{ name: 'strip-pii', type: 'boolean', description: 'Strip potential PII from export', default: 'true' },",runtime,declared in command options[]
+cli_option,--success,v3/@claude-flow/cli/src/commands/hooks.ts,170,post-edit,"name: 'success',",runtime,declared in command options[]
+cli_option,--success,v3/@claude-flow/cli/src/commands/hooks.ts,406,post-command,"name: 'success',",runtime,declared in command options[]
+cli_option,--success,v3/@claude-flow/cli/src/commands/hooks.ts,1618,post-task,"name: 'success',",runtime,declared in command options[]
+cli_option,--suggest,v3/@claude-flow/cli/src/commands/route.ts,607,coverage,"name: 'suggest',",runtime,declared in command options[]
+cli_option,--suite,v3/@claude-flow/cli/src/commands/performance.ts,16,benchmark,"{ name: 'suite', short: 's', type: 'string', description: 'Benchmark suite: all, wasm, neural, memory, search', default: 'all' },",runtime,declared in command options[]
+cli_option,--summary,v3/@claude-flow/cli/src/commands/hooks.ts,3085,progress,"name: 'summary',",runtime,declared in command options[]
+cli_option,--symbols,v3/@claude-flow/cli/src/commands/analyze.ts,404,ast,"name: 'symbols',",runtime,declared in command options[]
+cli_option,--sync,v3/@claude-flow/cli/src/commands/hooks.ts,2300,dispatch,"{ name: 'sync', short: 's', type: 'boolean', description: 'Wait for completion (synchronous)' },",runtime,declared in command options[]
+cli_option,--sync,v3/@claude-flow/cli/src/commands/hooks.ts,3078,progress,"name: 'sync',",runtime,declared in command options[]
+cli_option,--sync,v3/@claude-flow/cli/src/commands/progress.ts,246,progress,"name: 'sync',",runtime,declared in command options[]
+cli_option,--tables,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,51,,"name: 'tables',",runtime,declared in command options[]
+cli_option,--tags,v3/@claude-flow/cli/src/commands/memory.ts,50,store,"name: 'tags',",runtime,declared in command options[]
+cli_option,--tags,v3/@claude-flow/cli/src/commands/memory.ts,393,list,"name: 'tags',",runtime,declared in command options[]
+cli_option,--tags,v3/@claude-flow/cli/src/commands/task.ts,102,create,"name: 'tags',",runtime,declared in command options[]
+cli_option,--tags,v3/@claude-flow/cli/src/commands/transfer-store.ts,132,search,"{ name: 'tags', short: 't', type: 'string', description: 'Filter by tags (comma-separated)' },",runtime,declared in command options[]
+cli_option,--tags,v3/@claude-flow/cli/src/commands/transfer-store.ts,296,publish,"{ name: 'tags', short: 't', type: 'string', description: 'Tags (comma-separated)', required: true },",runtime,declared in command options[]
+cli_option,--tail,v3/@claude-flow/cli/src/commands/agent.ts,769,logs,"name: 'tail',",runtime,declared in command options[]
+cli_option,--tail,v3/@claude-flow/cli/src/commands/process.ts,560,logs,"name: 'tail',",runtime,declared in command options[]
+cli_option,--target,v3/@claude-flow/cli/src/commands/memory.ts,884,compress,"name: 'target',",runtime,declared in command options[]
+cli_option,--target,v3/@claude-flow/cli/src/commands/migrate.ts,83,run,"name: 'target',",runtime,declared in command options[]
+cli_option,--target,v3/@claude-flow/cli/src/commands/performance.ts,529,optimize,"{ name: 'target', short: 't', type: 'string', description: 'Target: memory, cpu, latency, all', default: 'all' },",runtime,declared in command options[]
+cli_option,--target,v3/@claude-flow/cli/src/commands/process.ts,491,signals,"name: 'target',",runtime,declared in command options[]
+cli_option,--target,v3/@claude-flow/cli/src/commands/security.ts,16,scan,"{ name: 'target', short: 't', type: 'string', description: 'Target path or URL to scan', default: '.' },",runtime,declared in command options[]
+cli_option,--target-score,v3/@claude-flow/cli/src/commands/guidance.ts,346,optimize,"{ name: 'target-score', type: 'number', description: 'Target composite score (0-100)', default: '90' },",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/agent.ts,62,spawn,"name: 'task',",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/guidance.ts,94,retrieve,"{ name: 'task', short: 't', type: 'string', description: 'Task description', required: true },",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/hooks.ts,496,route,"name: 'task',",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/hooks.ts,648,explain,"name: 'task',",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/hooks.ts,2663,coverage-route,"name: 'task',",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/hooks.ts,3968,model-route,"{ name: 'task', short: 't', type: 'string', description: 'Task description to route', required: true },",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/hooks.ts,4063,model-outcome,"{ name: 'task', short: 't', type: 'string', description: 'Task that was executed', required: true },",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/route.ts,385,feedback,"name: 'task',",runtime,declared in command options[]
+cli_option,--task,v3/@claude-flow/cli/src/commands/workflow.ts,42,run,"name: 'task',",runtime,declared in command options[]
+cli_option,--task-id,v3/@claude-flow/cli/src/commands/hooks.ts,1446,pre-task,"name: 'task-id',",runtime,declared in command options[]
+cli_option,--task-id,v3/@claude-flow/cli/src/commands/hooks.ts,1611,post-task,"name: 'task-id',",runtime,declared in command options[]
+cli_option,--tasks,v3/@claude-flow/cli/src/commands/guidance.ts,463,ab-test,"{ name: 'tasks', short: 't', type: 'string', description: 'Path to custom task JSON file (array of ABTask objects)' },",runtime,declared in command options[]
+cli_option,--tasks-only,v3/@claude-flow/cli/src/commands/session.ts,300,restore,"name: 'tasks-only',",runtime,declared in command options[]
+cli_option,--template,v3/@claude-flow/cli/src/commands/plugins.ts,615,create,"{ name: 'template', short: 't', type: 'string', description: 'Template: basic, advanced, hooks', default: 'basic' },",runtime,declared in command options[]
+cli_option,--template,v3/@claude-flow/cli/src/commands/workflow.ts,29,run,"name: 'template',",runtime,declared in command options[]
+cli_option,--test,v3/@claude-flow/cli/src/commands/embeddings.ts,1438,warmup,"{ name: 'test', short: 't', type: 'boolean', description: 'Run test embedding after warmup', default: 'true' },",runtime,declared in command options[]
+cli_option,--text,v3/@claude-flow/cli/src/commands/embeddings.ts,33,generate,"{ name: 'text', short: 't', type: 'string', description: 'Text to embed', required: true },",runtime,declared in command options[]
+cli_option,--text,v3/@claude-flow/cli/src/commands/embeddings.ts,848,chunk,"{ name: 'text', short: 't', type: 'string', description: 'Text to chunk', required: true },",runtime,declared in command options[]
+cli_option,--text1,v3/@claude-flow/cli/src/commands/embeddings.ts,310,compare,"{ name: 'text1', type: 'string', description: 'First text', required: true },",runtime,declared in command options[]
+cli_option,--text2,v3/@claude-flow/cli/src/commands/embeddings.ts,311,compare,"{ name: 'text2', type: 'string', description: 'Second text', required: true },",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/analyze.ts,665,complexity,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/embeddings.ts,118,search,"{ name: 'threshold', short: 't', type: 'number', description: 'Similarity threshold (0-1)', default: '0.5' },",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/hive-mind.ts,1006,optimize-memory,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/hooks.ts,2670,coverage-route,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/hooks.ts,2809,coverage-suggest,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/hooks.ts,2930,coverage-gaps,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/memory.ts,254,search,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--threshold,v3/@claude-flow/cli/src/commands/route.ts,600,coverage,"name: 'threshold',",runtime,declared in command options[]
+cli_option,--timeframe,v3/@claude-flow/cli/src/commands/performance.ts,336,metrics,"{ name: 'timeframe', short: 't', type: 'string', description: 'Timeframe: 1h, 24h, 7d, 30d', default: '24h' },",runtime,declared in command options[]
+cli_option,--timeframe,v3/@claude-flow/cli/src/commands/providers.ts,181,usage,"{ name: 'timeframe', short: 't', type: 'string', description: 'Timeframe: 24h, 7d, 30d', default: '7d' },",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/agent.ts,67,spawn,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/agent.ts,371,stop,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/hive-mind.ts,912,task,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/process.ts,504,signals,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/start.ts,287,stop,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/task.ts,117,create,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--timeout,v3/@claude-flow/cli/src/commands/workflow.ts,61,run,"name: 'timeout',",runtime,declared in command options[]
+cli_option,--to,v3/@claude-flow/cli/src/commands/issues.ts,228,handoff,"{ name: 'to', description: 'Target (agent:type:id or user:id:name)', type: 'string' },",runtime,declared in command options[]
+cli_option,--to,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,196,migrate,"name: 'to',",runtime,declared in command options[]
+cli_option,--tool,v3/@claude-flow/cli/src/commands/guidance.ts,194,gates,"{ name: 'tool', short: 't', type: 'string', description: 'Tool name to check against allowlist' },",runtime,declared in command options[]
+cli_option,--tool,v3/@claude-flow/cli/src/commands/mcp.ts,528,exec,"name: 'tool',",runtime,declared in command options[]
+cli_option,--tools,v3/@claude-flow/cli/src/commands/mcp.ts,78,start,"name: 'tools',",runtime,declared in command options[]
+cli_option,--top-k,v3/@claude-flow/cli/src/commands/hooks.ts,509,route,"name: 'top-k',",runtime,declared in command options[]
+cli_option,--topology,v3/@claude-flow/cli/src/commands/hive-mind.ts,374,init,"name: 'topology',",runtime,declared in command options[]
+cli_option,--topology,v3/@claude-flow/cli/src/commands/start.ts,453,start,"name: 'topology',",runtime,declared in command options[]
+cli_option,--topology,v3/@claude-flow/cli/src/commands/swarm.ts,191,init,"name: 'topology',",runtime,declared in command options[]
+cli_option,--train,v3/@claude-flow/cli/src/commands/hooks.ts,1920,intelligence,"name: 'train',",runtime,declared in command options[]
+cli_option,--transport,v3/@claude-flow/cli/src/commands/mcp.ts,70,start,"name: 'transport',",runtime,declared in command options[]
+cli_option,--trending,v3/@claude-flow/cli/src/commands/transfer-store.ts,26,list,"{ name: 'trending', short: 't', type: 'boolean', description: 'Show trending patterns' },",runtime,declared in command options[]
+cli_option,--trigger,v3/@claude-flow/cli/src/commands/hooks.ts,2297,dispatch,"{ name: 'trigger', short: 't', type: 'string', description: 'Worker type (ultralearn, optimize, audit, map, etc.)', required: true },",runtime,declared in command options[]
+cli_option,--ttl,v3/@claude-flow/cli/src/commands/memory.ts,45,store,"name: 'ttl',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/agent.ts,36,spawn,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/agent.ts,180,list,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/analyze.ts,309,code,"{ name: 'type', short: 't', type: 'string', description: 'Analysis type: quality, complexity, security', default: 'quality' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/analyze.ts,844,symbols,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/embeddings.ts,912,normalize,"{ name: 'type', short: 't', type: 'string', description: 'Type: l2, l1, minmax, zscore', default: 'l2' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/hive-mind.ts,518,spawn,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/hive-mind.ts,1121,consensus,"{ name: 'type', short: 't', description: 'Proposal type', type: 'string' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/hooks.ts,1375,list,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/issues.ts,334,stealable,"{ name: 'type', short: 't', type: 'string', description: 'Filter by agent type' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/memory.ts,260,search,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/performance.ts,254,profile,"{ name: 'type', short: 't', type: 'string', description: 'Profile type: cpu, memory, io, all', default: 'all' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/plugins.ts,32,list,"{ name: 'type', short: 't', type: 'string', description: 'Filter by plugin type' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/plugins.ts,734,search,"{ name: 'type', short: 't', type: 'string', description: 'Filter by plugin type' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/process.ts,387,workers,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/providers.ts,16,list,"{ name: 'type', short: 't', type: 'string', description: 'Filter by type: llm, embedding, image', default: 'all' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/security.ts,18,scan,"{ name: 'type', type: 'string', description: 'Scan type: code, deps, container, all', default: 'all' },",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/swarm.ts,621,scale,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/task.ts,75,create,"name: 'type',",runtime,declared in command options[]
+cli_option,--type,v3/@claude-flow/cli/src/commands/task.ts,242,list,"name: 'type',",runtime,declared in command options[]
+cli_option,--unassign,v3/@claude-flow/cli/src/commands/task.ts,595,assign,"name: 'unassign',",runtime,declared in command options[]
+cli_option,--up,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,184,migrate,"name: 'up',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/claims.ts,16,list,"{ name: 'user', short: 'u', type: 'string', description: 'Filter by user ID' },",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/claims.ts,58,check,"{ name: 'user', short: 'u', type: 'string', description: 'User ID to check' },",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/claims.ts,202,grant,"{ name: 'user', short: 'u', type: 'string', description: 'User ID' },",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/claims.ts,251,revoke,"{ name: 'user', short: 'u', type: 'string', description: 'User ID' },",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/issues.ts,111,claim,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/issues.ts,176,release,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,98,,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,440,,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,746,backup,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,128,benchmark,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/import.ts,153,import,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/index.ts,68,ruvector,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/init.ts,62,init,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,233,migrate,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,95,optimize,"name: 'user',",runtime,declared in command options[]
+cli_option,--user,v3/@claude-flow/cli/src/commands/ruvector/status.ts,76,status,"name: 'user',",runtime,declared in command options[]
+cli_option,--v3,v3/@claude-flow/cli/src/commands/config.ts,30,init,"name: 'v3',",runtime,declared in command options[]
+cli_option,--v3,v3/@claude-flow/cli/src/commands/init.ts,564,skills,"{ name: 'v3', description: 'Install V3 skills', type: 'boolean', default: false },",runtime,declared in command options[]
+cli_option,--v3-dashboard,v3/@claude-flow/cli/src/commands/hooks.ts,1067,metrics,"name: 'v3-dashboard',",runtime,declared in command options[]
+cli_option,--v3-mode,v3/@claude-flow/cli/src/commands/swarm.ts,219,init,"name: 'v3-mode',",runtime,declared in command options[]
+cli_option,--vacuum,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,64,optimize,"name: 'vacuum',",runtime,declared in command options[]
+cli_option,--value,v3/@claude-flow/cli/src/commands/config.ts,203,set,"name: 'value',",runtime,declared in command options[]
+cli_option,--value,v3/@claude-flow/cli/src/commands/hive-mind.ts,1122,consensus,"{ name: 'value', description: 'Proposal value', type: 'string' },",runtime,declared in command options[]
+cli_option,--value,v3/@claude-flow/cli/src/commands/hive-mind.ts,1171,memory,"{ name: 'value', short: 'v', description: 'Value to store', type: 'string' }",runtime,declared in command options[]
+cli_option,--value,v3/@claude-flow/cli/src/commands/memory.ts,32,store,"name: 'value',",runtime,declared in command options[]
+cli_option,--vector,v3/@claude-flow/cli/src/commands/memory.ts,55,store,"name: 'vector',",runtime,declared in command options[]
+cli_option,--vectors,v3/@claude-flow/cli/src/commands/benchmark.ts,93,neural,"{ name: 'vectors', short: 'n', type: 'number', description: 'Number of test vectors', default: '1000' },",runtime,declared in command options[]
+cli_option,--vectors,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,54,benchmark,"name: 'vectors',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/analyze.ts,77,diff,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/analyze.ts,425,ast,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/benchmark.ts,25,pretrain,"{ name: 'verbose', short: 'v', type: 'boolean', description: 'Verbose output', default: 'false' },",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/daemon.ts,378,status,"{ name: 'verbose', short: 'v', type: 'boolean', description: 'Show detailed worker statistics' },",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/doctor.ts,438,doctor,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/hooks.ts,661,explain,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/init.ts,675,upgrade,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/memory.ts,1216,init,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/neural.ts,396,status,"{ name: 'verbose', short: 'v', type: 'boolean', description: 'Show detailed metrics' },",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/neural.ts,765,optimize,"{ name: 'verbose', short: 'v', type: 'boolean', description: 'Show detailed metrics' },",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/ruvector/import.ts,172,import,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verbose,v3/@claude-flow/cli/src/commands/ruvector/status.ts,43,status,"name: 'verbose',",runtime,declared in command options[]
+cli_option,--verified,v3/@claude-flow/cli/src/commands/plugins.ts,735,search,"{ name: 'verified', short: 'v', type: 'boolean', description: 'Show only verified plugins' },",runtime,declared in command options[]
+cli_option,--verified,v3/@claude-flow/cli/src/commands/transfer-store.ts,134,search,"{ name: 'verified', short: 'v', type: 'boolean', description: 'Only verified patterns' },",runtime,declared in command options[]
+cli_option,--verify,v3/@claude-flow/cli/src/commands/memory.ts,1222,init,"name: 'verify',",runtime,declared in command options[]
+cli_option,--verify,v3/@claude-flow/cli/src/commands/neural.ts,1301,import,"{ name: 'verify', short: 'v', type: 'boolean', description: 'Verify Ed25519 signature', default: 'true' },",runtime,declared in command options[]
+cli_option,--verify,v3/@claude-flow/cli/src/commands/plugins.ts,210,install,"{ name: 'verify', type: 'boolean', description: 'Verify checksum (default: true)', default: true },",runtime,declared in command options[]
+cli_option,--verify,v3/@claude-flow/cli/src/commands/transfer-store.ts,212,download,"{ name: 'verify', short: 'v', type: 'boolean', description: 'Verify checksum', default: true },",runtime,declared in command options[]
+cli_option,--version,v3/@claude-flow/cli/src/commands/deployment.ts,17,deploy,"{ name: 'version', short: 'v', type: 'string', description: 'Version to deploy', default: 'latest' },",runtime,declared in command options[]
+cli_option,--version,v3/@claude-flow/cli/src/commands/deployment.ts,115,rollback,"{ name: 'version', short: 'v', type: 'string', description: 'Specific version to rollback to' },",runtime,declared in command options[]
+cli_option,--version,v3/@claude-flow/cli/src/commands/plugins.ts,207,install,"{ name: 'version', short: 'v', type: 'string', description: 'Specific version to install' },",runtime,declared in command options[]
+cli_option,--version,v3/@claude-flow/cli/src/commands/plugins.ts,675,upgrade,"{ name: 'version', short: 'v', type: 'string', description: 'Target version (default: latest)' },",runtime,declared in command options[]
+cli_option,--vote,v3/@claude-flow/cli/src/commands/hive-mind.ts,1123,consensus,"{ name: 'vote', short: 'v', description: 'Vote (yes/no)', type: 'string' },",runtime,declared in command options[]
+cli_option,--voter-id,v3/@claude-flow/cli/src/commands/hive-mind.ts,1124,consensus,"{ name: 'voter-id', description: 'Voter agent ID', type: 'string' }",runtime,declared in command options[]
+cli_option,--warmup,v3/@claude-flow/cli/src/commands/benchmark.ts,22,pretrain,"{ name: 'warmup', short: 'w', type: 'number', description: 'Warmup iterations', default: '10' },",runtime,declared in command options[]
+cli_option,--warmup,v3/@claude-flow/cli/src/commands/performance.ts,18,benchmark,"{ name: 'warmup', short: 'w', type: 'number', description: 'Warmup iterations', default: '10' },",runtime,declared in command options[]
+cli_option,--wasm,v3/@claude-flow/cli/src/commands/neural.ts,23,train,"{ name: 'wasm', short: 'w', type: 'boolean', description: 'Use RuVector WASM acceleration', default: 'true' },",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/agent.ts,640,health,"name: 'watch',",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/deployment.ts,78,status,"{ name: 'watch', short: 'w', type: 'boolean', description: 'Watch for changes' },",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/hive-mind.ts,723,status,"name: 'watch',",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/process.ts,231,monitor,"name: 'watch',",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/progress.ts,253,progress,"name: 'watch',",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/status.ts,703,status,"name: 'watch',",runtime,declared in command options[]
+cli_option,--watch,v3/@claude-flow/cli/src/commands/workflow.ts,389,status,"name: 'watch',",runtime,declared in command options[]
+cli_option,--with-embeddings,v3/@claude-flow/cli/src/commands/hooks.ts,799,pretrain,"name: 'with-embeddings',",runtime,declared in command options[]
+cli_option,--with-embeddings,v3/@claude-flow/cli/src/commands/init.ts,852,init,"name: 'with-embeddings',",runtime,declared in command options[]
+cli_option,--work-dir,v3/@claude-flow/cli/src/commands/guidance.ts,464,ab-test,"{ name: 'work-dir', short: 'w', type: 'string', description: 'Working directory for test execution' },",runtime,declared in command options[]
+cli_option,--worker,v3/@claude-flow/cli/src/commands/daemon.ts,510,trigger,"{ name: 'worker', short: 'w', type: 'string', description: 'Worker type to trigger', required: true },",runtime,declared in command options[]
+cli_option,--worker,v3/@claude-flow/cli/src/commands/daemon.ts,561,enable,"{ name: 'worker', short: 'w', type: 'string', description: 'Worker type', required: true },",runtime,declared in command options[]
+cli_option,--workers,v3/@claude-flow/cli/src/commands/daemon.ts,19,start,"{ name: 'workers', short: 'w', type: 'string', description: 'Comma-separated list of workers to enable (default: map,audit,optimize,consolidate,testgaps)' },",runtime,declared in command options[]
+cli_option,--workflow,v3/@claude-flow/cli/src/commands/workflow.ts,612,template,"{ name: 'workflow', short: 'w', description: 'Workflow ID to save as template', type: 'string' },",runtime,declared in command options[]
+env_var,AGENT_INPUT,v3/@claude-flow/aidefence/README.md,560,,if (!isSafe(process.env.AGENT_INPUT)) {,runtime,read/write via process.env
+env_var,AGENT_INPUT,v3/@claude-flow/cli/README.md,5389,,"""command"": ""node -e \""const { isSafe } = require('@claude-flow/aidefence'); if (!isSafe(process.env.AGENT_INPUT)) { process.exit(1); }\"""",",runtime,read/write via process.env
+env_var,ANCHOR_KEY,v3/@claude-flow/guidance/README.md,550,,const anchors = createTruthAnchorStore({ signingKey: process.env.ANCHOR_KEY });,runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/cli/src/init/statusline-generator.ts,899,,hasApi = !!(process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY);,runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/cli/src/services/container-worker-pool.ts,424,,"ANTHROPIC_API_KEY: process.env.ANTHROPIC_API_KEY || '',",runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/README.md,72,,"apiKey: process.env.ANTHROPIC_API_KEY!,",runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/README.md,188,,"apiKey: process.env.ANTHROPIC_API_KEY!,",runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/README.md,473,,"apiKey: process.env.ANTHROPIC_API_KEY!,",runtime,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,48,,const apiKey = process.env.ANTHROPIC_API_KEY;,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,272,,const anthropicKey = process.env.ANTHROPIC_API_KEY;,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,375,,const apiKey = process.env.ANTHROPIC_API_KEY;,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,415,,const apiKey = process.env.ANTHROPIC_API_KEY;,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,46,,const apiKey = process.env.ANTHROPIC_API_KEY;,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,247,,if (process.env.ANTHROPIC_API_KEY) {,test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,250,,"apiKey: process.env.ANTHROPIC_API_KEY,",test,read/write via process.env
+env_var,ANTHROPIC_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,319,,"console.log('   ANTHROPIC_API_KEY:', process.env.ANTHROPIC_API_KEY ? '✓' : '✗');",test,read/write via process.env
+env_var,API_KEY,v3/@claude-flow/guidance/tests/gates.test.ts,170,,const result = gates.evaluateSecrets('const key = process.env.API_KEY');,test,read/write via process.env
+env_var,APPDATA,v3/@claude-flow/cli/src/init/helpers-generator.ts,507,,"return path.join(process.env.APPDATA || homeDir, 'claude-flow', 'sessions');",runtime,read/write via process.env
+env_var,APPDATA,v3/@claude-flow/cli/src/init/types.ts,240,,"configDir = process.env.APPDATA || path.join(homeDir, 'AppData', 'Roaming');",runtime,read/write via process.env
+env_var,AUTH_KEY,v3/@claude-flow/guidance/README.md,594,,const gate = new AuthorityGate({ signingKey: process.env.AUTH_KEY });,runtime,read/write via process.env
+env_var,CI,v3/@claude-flow/cli/src/update/rate-limiter.ts,67,,if (process.env.CI === 'true' || process.env.CONTINUOUS_INTEGRATION === 'true') {,runtime,read/write via process.env
+env_var,CLAUDE_CODE_HEADLESS,v3/@claude-flow/cli/src/runtime/headless.ts,306,,console.log(`  CLAUDE_CODE_HEADLESS: ${process.env.CLAUDE_CODE_HEADLESS || 'not set'}`);,runtime,read/write via process.env
+env_var,CLAUDE_CODE_PLAN_MODE_REQUIRED,v3/plugins/teammate-plugin/src/teammate-bridge.ts,730,,process.env.CLAUDE_CODE_PLAN_MODE_REQUIRED = 'true';,runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/src/teammate-bridge.ts,727,,process.env.CLAUDE_CODE_TEAM_NAME = sanitizeEnvValue(fullConfig.name);,runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/src/teammate-bridge.ts,976,,const teamName = config.teamName ?? process.env.CLAUDE_CODE_TEAM_NAME;,runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/src/teammate-bridge.ts,1060,,"team_name: config.teamName ?? process.env.CLAUDE_CODE_TEAM_NAME,",runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/src/teammate-bridge.ts,2032,,if (process.env.CLAUDE_CODE_TEAM_NAME === teamName) {,runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/src/teammate-bridge.ts,2033,,delete process.env.CLAUDE_CODE_TEAM_NAME;,runtime,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/tests/teammate-bridge.test.ts,143,,expect(process.env.CLAUDE_CODE_TEAM_NAME).toBe('env-team');,test,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/tests/teammate-bridge.test.ts,624,,process.env.CLAUDE_CODE_TEAM_NAME = 'cleanup-team';,test,read/write via process.env
+env_var,CLAUDE_CODE_TEAM_NAME,v3/plugins/teammate-plugin/tests/teammate-bridge.test.ts,628,,expect(process.env.CLAUDE_CODE_TEAM_NAME).toBeUndefined();,test,read/write via process.env
+env_var,CLAUDE_FLOW_AUTO_UPDATE,v3/@claude-flow/cli/src/update/rate-limiter.ts,72,,if (process.env.CLAUDE_FLOW_AUTO_UPDATE === 'false') {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_DAEMON,v3/@claude-flow/cli/src/commands/daemon.ts,36,,const isDaemonProcess = process.env.CLAUDE_FLOW_DAEMON === '1';,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_DATA_DIR,v3/@claude-flow/shared/src/core/config/loader.ts,77,,if (process.env.CLAUDE_FLOW_DATA_DIR) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_DATA_DIR,v3/@claude-flow/shared/src/core/config/loader.ts,83,,"dataDir: process.env.CLAUDE_FLOW_DATA_DIR,",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_DEBUG,v3/@claude-flow/cli/src/init/executor.ts,414,,if (process.env.DEBUG || process.env.CLAUDE_FLOW_DEBUG) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_DEBUG,v3/@claude-flow/cli/src/init/executor.ts,424,,const debugMode = process.env.DEBUG || process.env.CLAUDE_FLOW_DEBUG;,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_FORCE_UPDATE,v3/@claude-flow/cli/src/commands/update.ts,65,,process.env.CLAUDE_FLOW_FORCE_UPDATE = 'true';,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_FORCE_UPDATE,v3/@claude-flow/cli/src/commands/update.ts,128,,delete process.env.CLAUDE_FLOW_FORCE_UPDATE;,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_FORCE_UPDATE,v3/@claude-flow/cli/src/commands/update.ts,143,,process.env.CLAUDE_FLOW_FORCE_UPDATE = 'true';,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_FORCE_UPDATE,v3/@claude-flow/cli/src/commands/update.ts,207,,delete process.env.CLAUDE_FLOW_FORCE_UPDATE;,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_FORCE_UPDATE,v3/@claude-flow/cli/src/update/rate-limiter.ts,77,,if (process.env.CLAUDE_FLOW_FORCE_UPDATE === 'true') {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_HEADLESS,v3/@claude-flow/cli/src/runtime/headless.ts,305,,console.log(`  CLAUDE_FLOW_HEADLESS: ${process.env.CLAUDE_FLOW_HEADLESS || 'not set'}`);,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_HEADLESS,v3/@claude-flow/cli/src/runtime/headless.ts,315,,process.env.CLAUDE_FLOW_HEADLESS = 'true';,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MAX_AGENTS,v3/@claude-flow/shared/src/core/config/loader.ts,66,,if (process.env.CLAUDE_FLOW_MAX_AGENTS) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MAX_AGENTS,v3/@claude-flow/shared/src/core/config/loader.ts,71,,"maxConcurrentAgents: parseInt(process.env.CLAUDE_FLOW_MAX_AGENTS, 10),",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MCP_PORT,v3/@claude-flow/shared/src/core/config/loader.ts,114,,if (process.env.CLAUDE_FLOW_MCP_PORT) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MCP_PORT,v3/@claude-flow/shared/src/core/config/loader.ts,121,,"port: parseInt(process.env.CLAUDE_FLOW_MCP_PORT, 10),",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MCP_TRANSPORT,v3/@claude-flow/shared/src/core/config/loader.ts,101,,if (process.env.CLAUDE_FLOW_MCP_TRANSPORT) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MCP_TRANSPORT,v3/@claude-flow/shared/src/core/config/loader.ts,102,,const transport = process.env.CLAUDE_FLOW_MCP_TRANSPORT as 'stdio' | 'http' | 'websocket';,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MEMORY_TYPE,v3/@claude-flow/shared/src/core/config/loader.ts,89,,if (process.env.CLAUDE_FLOW_MEMORY_TYPE) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_MEMORY_TYPE,v3/@claude-flow/shared/src/core/config/loader.ts,90,,const memoryType = process.env.CLAUDE_FLOW_MEMORY_TYPE as NonNullable<SystemConfig['memory']>['type'];,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_SHOW_HOOKS_METRICS,v3/@claude-flow/hooks/bin/statusline.js,56,,"showHooksMetrics: process.env.CLAUDE_FLOW_SHOW_HOOKS_METRICS !== 'false',",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_SHOW_PERFORMANCE,v3/@claude-flow/hooks/bin/statusline.js,58,,"showPerformance: process.env.CLAUDE_FLOW_SHOW_PERFORMANCE !== 'false',",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_SHOW_SWARM_ACTIVITY,v3/@claude-flow/hooks/bin/statusline.js,57,,"showSwarmActivity: process.env.CLAUDE_FLOW_SHOW_SWARM_ACTIVITY !== 'false',",runtime,read/write via process.env
+env_var,CLAUDE_FLOW_SWARM_TOPOLOGY,v3/@claude-flow/shared/src/core/config/loader.ts,128,,if (process.env.CLAUDE_FLOW_SWARM_TOPOLOGY) {,runtime,read/write via process.env
+env_var,CLAUDE_FLOW_SWARM_TOPOLOGY,v3/@claude-flow/shared/src/core/config/loader.ts,129,,const topology = process.env.CLAUDE_FLOW_SWARM_TOPOLOGY as NonNullable<SystemConfig['swarm']>['topology'];,runtime,read/write via process.env
+env_var,COHERE_API_KEY,v3/@claude-flow/providers/README.md,514,,"apiKey: process.env.COHERE_API_KEY!,",runtime,read/write via process.env
+env_var,CONTINUOUS_INTEGRATION,v3/@claude-flow/cli/src/update/rate-limiter.ts,67,,if (process.env.CI === 'true' || process.env.CONTINUOUS_INTEGRATION === 'true') {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/__tests__/cli.test.ts,442,,process.env.DEBUG = '1';,test,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/__tests__/cli.test.ts,465,,delete process.env.DEBUG;,test,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/commands/index.ts,97,,if (process.env.DEBUG) {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,672,,if (process.env.DEBUG) {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/index.ts,89,,this.output.setVerbosity(process.env.DEBUG ? 'debug' : 'verbose');,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/index.ts,469,,if (process.env.DEBUG) {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/index.ts,496,,if (process.env.DEBUG) {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/init/executor.ts,414,,if (process.env.DEBUG || process.env.CLAUDE_FLOW_DEBUG) {,runtime,read/write via process.env
+env_var,DEBUG,v3/@claude-flow/cli/src/init/executor.ts,424,,const debugMode = process.env.DEBUG || process.env.CLAUDE_FLOW_DEBUG;,runtime,read/write via process.env
+env_var,FORCE_COLOR,v3/@claude-flow/cli/src/output.ts,100,,if (process.env.FORCE_COLOR !== undefined) return true;,runtime,read/write via process.env
+env_var,GCP_PROJECT,v3/@claude-flow/cli/cloud-functions/publish-registry/index.js,24,,const PROJECT_ID = process.env.GCP_PROJECT || 'claude-flow';,runtime,read/write via process.env
+env_var,GCS_BUCKET,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,40,,const bucket = process.env.GCS_BUCKET || process.env.GOOGLE_CLOUD_BUCKET;,runtime,read/write via process.env
+env_var,GCS_PREFIX,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,47,,"prefix: process.env.GCS_PREFIX || 'claude-flow-patterns',",runtime,read/write via process.env
+env_var,GCS_PROJECT_ID,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,45,,"projectId: process.env.GCS_PROJECT_ID || process.env.GOOGLE_CLOUD_PROJECT,",runtime,read/write via process.env
+env_var,GOOGLE_API_KEY,v3/@claude-flow/providers/README.md,501,,"apiKey: process.env.GOOGLE_API_KEY!,",runtime,read/write via process.env
+env_var,GOOGLE_APPLICATION_CREDENTIALS,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,46,,"keyFile: process.env.GOOGLE_APPLICATION_CREDENTIALS,",runtime,read/write via process.env
+env_var,GOOGLE_CLOUD_BUCKET,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,40,,const bucket = process.env.GCS_BUCKET || process.env.GOOGLE_CLOUD_BUCKET;,runtime,read/write via process.env
+env_var,GOOGLE_CLOUD_PROJECT,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,45,,"projectId: process.env.GCS_PROJECT_ID || process.env.GOOGLE_CLOUD_PROJECT,",runtime,read/write via process.env
+env_var,GOOGLE_GEMINI_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,105,,const apiKey = process.env.GOOGLE_GEMINI_API_KEY;,test,read/write via process.env
+env_var,GOOGLE_GEMINI_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,273,,const googleKey = process.env.GOOGLE_GEMINI_API_KEY;,test,read/write via process.env
+env_var,GOOGLE_GEMINI_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,82,,const apiKey = process.env.GOOGLE_GEMINI_API_KEY;,test,read/write via process.env
+env_var,GOOGLE_GEMINI_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,320,,"console.log('   GOOGLE_GEMINI_API_KEY:', process.env.GOOGLE_GEMINI_API_KEY ? '✓' : '✗');",test,read/write via process.env
+env_var,HMAC_SECRET,v3/@claude-flow/security/README.md,35,,"hmacSecret: process.env.HMAC_SECRET!,",runtime,read/write via process.env
+env_var,HMAC_SECRET,v3/@claude-flow/security/README.md,160,,hmacSecret: process.env.HMAC_SECRET!,runtime,read/write via process.env
+env_var,HMAC_SECRET,v3/@claude-flow/security/src/index.ts,170,,"*   hmacSecret: process.env.HMAC_SECRET!,",runtime,read/write via process.env
+env_var,HOME,v3/@claude-flow/cli/src/commands/claims.ts,95,,"path.resolve(process.env.HOME || '~', '.config/claude-flow/claims.json'),",runtime,read/write via process.env
+env_var,HOME,v3/@claude-flow/cli/src/commands/doctor.ts,178,,"join(process.env.HOME || '', '.claude/claude_desktop_config.json'),",runtime,read/write via process.env
+env_var,HOME,v3/@claude-flow/cli/src/commands/doctor.ts,179,,"join(process.env.HOME || '', '.config/claude/mcp.json'),",runtime,read/write via process.env
+env_var,HOME,v3/@claude-flow/cli/src/commands/doctor.ts,259,,const homeDir = process.env.HOME || process.env.USERPROFILE || '';,runtime,read/write via process.env
+env_var,HOME,v3/@claude-flow/shared/src/core/config/loader.ts,152,,"resolve(process.env.HOME ?? '', '.claude-flow'),",runtime,read/write via process.env
+env_var,IPFS_API_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,220,,const localIPFS = process.env.IPFS_API_URL;,runtime,read/write via process.env
+env_var,IPFS_API_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,423,,const apiUrl = process.env.IPFS_API_URL || 'http://localhost:5001';,runtime,read/write via process.env
+env_var,IPFS_API_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,472,,const apiUrl = process.env.IPFS_API_URL || 'http://localhost:5001';,runtime,read/write via process.env
+env_var,IPFS_API_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,489,,return !!(getWeb3StorageToken() || process.env.PINATA_API_KEY || process.env.IPFS_API_URL);,runtime,read/write via process.env
+env_var,IPFS_API_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,501,,const localIPFS = process.env.IPFS_API_URL;,runtime,read/write via process.env
+env_var,IPFS_GATEWAY_URL,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,454,,const gatewayUrl = process.env.IPFS_GATEWAY_URL || options.gateway || 'https://ipfs.io';,runtime,read/write via process.env
+env_var,IPFS_TOKEN,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,50,,process.env.IPFS_TOKEN;,runtime,read/write via process.env
+env_var,JWT_SECRET,v3/@claude-flow/cli/src/benchmarks/data/pretrain-corpus.json,81,,"""code"": ""export const authMiddleware = async (req: Request, res: Response, next: NextFunction) => {\n  const token = req.headers.authorization?.split(' ')[1];\n  if (!token) return res.status(401).json({ error: 'No token provided' });\n  try {\n    const decoded = jwt.verify(token, process.env.JWT_SECRET!);\n    req.user = decoded as User;\n    next();\n  } catch (e) {\n    return res.status(401).json({ error: 'Invalid token' });\n  }\n};"",",runtime,read/write via process.env
+env_var,NO_COLOR,v3/@claude-flow/cli/src/output.ts,97,,if (process.env.NO_COLOR !== undefined) return false;,runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/cli/src/mcp-tools/system-tools.ts,297,,"env: process.env.NODE_ENV || 'development',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/cli/src/production/error-handler.ts,147,,"includeStack: process.env.NODE_ENV !== 'production',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/cli/src/runtime/headless.ts,307,,console.log(`  NODE_ENV: ${process.env.NODE_ENV || 'development'}`);,runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/shared/src/utils/secure-logger.js,16,,"environment: process.env.NODE_ENV || 'development',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/shared/src/utils/secure-logger.js,18,,"includeStackTrace: process.env.NODE_ENV === 'development',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/shared/src/utils/secure-logger.ts,34,,"environment: (process.env.NODE_ENV as LoggerConfig['environment']) || 'development',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/@claude-flow/shared/src/utils/secure-logger.ts,36,,"includeStackTrace: process.env.NODE_ENV === 'development',",runtime,read/write via process.env
+env_var,NODE_ENV,v3/mcp/__tests__/system-tools.test.ts,375,,process.env.NODE_ENV = 'test';,test,read/write via process.env
+env_var,OLLAMA_URL,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,168,,const ollamaUrl = process.env.OLLAMA_URL || 'http://localhost:11434';,test,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/cli/src/init/statusline-generator.ts,899,,hasApi = !!(process.env.ANTHROPIC_API_KEY || process.env.OPENAI_API_KEY);,runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/embeddings/README.md,43,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/embeddings/README.md,125,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/embeddings/README.md,381,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/embeddings/README.md,606,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/providers/README.md,77,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENAI_API_KEY,v3/@claude-flow/providers/README.md,487,,"apiKey: process.env.OPENAI_API_KEY!,",runtime,read/write via process.env
+env_var,OPENROUTER_API_KEY,v3/@claude-flow/providers/src/__tests__/provider-integration.test.ts,134,,const apiKey = process.env.OPENROUTER_API_KEY;,test,read/write via process.env
+env_var,OPENROUTER_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,118,,const apiKey = process.env.OPENROUTER_API_KEY;,test,read/write via process.env
+env_var,OPENROUTER_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,257,,if (process.env.OPENROUTER_API_KEY) {,test,read/write via process.env
+env_var,OPENROUTER_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,260,,"apiKey: process.env.OPENROUTER_API_KEY,",test,read/write via process.env
+env_var,OPENROUTER_API_KEY,v3/@claude-flow/providers/src/__tests__/quick-test.ts,321,,"console.log('   OPENROUTER_API_KEY:', process.env.OPENROUTER_API_KEY ? '✓' : '✗');",test,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,17,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,17,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/init.ts,25,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,155,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,17,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGDATABASE,v3/@claude-flow/cli/src/commands/ruvector/status.ts,16,,"database: (ctx.flags.database as string) || process.env.PGDATABASE || '',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,15,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,15,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/init.ts,23,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,153,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,15,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGHOST,v3/@claude-flow/cli/src/commands/ruvector/status.ts,14,,"host: (ctx.flags.host as string) || process.env.PGHOST || 'localhost',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,19,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,19,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/init.ts,27,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,157,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,19,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPASSWORD,v3/@claude-flow/cli/src/commands/ruvector/status.ts,18,,"password: (ctx.flags.password as string) || process.env.PGPASSWORD || '',",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,16,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,16,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/init.ts,24,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,154,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,16,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGPORT,v3/@claude-flow/cli/src/commands/ruvector/status.ts,15,,"port: parseInt((ctx.flags.port as string) || process.env.PGPORT || '5432', 10),",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,20,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,20,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/init.ts,28,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,158,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,20,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGSSLMODE,v3/@claude-flow/cli/src/commands/ruvector/status.ts,19,,"ssl: (ctx.flags.ssl as boolean) || process.env.PGSSLMODE === 'require',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/backup.ts,18,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/benchmark.ts,18,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/init.ts,26,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/migrate.ts,156,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/optimize.ts,18,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PGUSER,v3/@claude-flow/cli/src/commands/ruvector/status.ts,17,,"user: (ctx.flags.user as string) || process.env.PGUSER || 'postgres',",runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/commands/neural.ts,1089,,const pinataKey = process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,141,,const apiKey = options.apiKey || process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,222,,const pinataKey = process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,299,,const pinataKey = process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,344,,const pinataKey = process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,489,,return !!(getWeb3StorageToken() || process.env.PINATA_API_KEY || process.env.IPFS_API_URL);,runtime,read/write via process.env
+env_var,PINATA_API_KEY,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,503,,const pinataKey = process.env.PINATA_API_KEY;,runtime,read/write via process.env
+env_var,PINATA_API_SECRET,v3/@claude-flow/cli/src/commands/neural.ts,1090,,const pinataSecret = process.env.PINATA_API_SECRET;,runtime,read/write via process.env
+env_var,PINATA_API_SECRET,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,142,,const apiSecret = options.apiSecret || process.env.PINATA_API_SECRET;,runtime,read/write via process.env
+env_var,PINATA_API_SECRET,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,304,,const pinataSecret = process.env.PINATA_API_SECRET;,runtime,read/write via process.env
+env_var,PINATA_API_SECRET,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,349,,const pinataSecret = process.env.PINATA_API_SECRET;,runtime,read/write via process.env
+env_var,PINATA_JWT,v3/@claude-flow/cli/scripts/publish-registry.ts,268,,const jwt = process.env.PINATA_JWT;,runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts,39,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts,34,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts,37,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts,35,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/quantization.ts,29,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/self-learning.ts,42,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts,30,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts,29,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_DB,v3/@claude-flow/plugins/examples/ruvector/transactions.ts,29,,"database: process.env.POSTGRES_DB || 'vectors',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts,37,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts,32,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts,35,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts,33,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/quantization.ts,27,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/self-learning.ts,40,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts,28,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts,27,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_HOST,v3/@claude-flow/plugins/examples/ruvector/transactions.ts,27,,"host: process.env.POSTGRES_HOST || 'localhost',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts,41,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts,36,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts,39,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts,37,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/quantization.ts,31,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/self-learning.ts,44,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts,32,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts,31,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PASSWORD,v3/@claude-flow/plugins/examples/ruvector/transactions.ts,31,,"password: process.env.POSTGRES_PASSWORD || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts,38,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts,33,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts,36,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts,34,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/quantization.ts,28,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/self-learning.ts,41,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts,29,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts,28,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_PORT,v3/@claude-flow/plugins/examples/ruvector/transactions.ts,28,,"port: parseInt(process.env.POSTGRES_PORT || '5432', 10),",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/attention-patterns.ts,40,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/basic-usage.ts,35,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/gnn-analysis.ts,38,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/hyperbolic-hierarchies.ts,36,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/quantization.ts,30,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/self-learning.ts,43,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/semantic-search.ts,31,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/streaming-large-data.ts,30,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,POSTGRES_USER,v3/@claude-flow/plugins/examples/ruvector/transactions.ts,30,,"user: process.env.POSTGRES_USER || 'postgres',",runtime,read/write via process.env
+env_var,PROOF_KEY,v3/@claude-flow/cli/README.md,1242,,const chain = createProofChain({ signingKey: process.env.PROOF_KEY! });,runtime,read/write via process.env
+env_var,PROOF_KEY,v3/@claude-flow/guidance/README.md,748,,const chain = createProofChain({ signingKey: process.env.PROOF_KEY });,runtime,read/write via process.env
+env_var,PROOF_KEY,v3/@claude-flow/guidance/README.md,769,,const imported = createProofChain({ signingKey: process.env.PROOF_KEY });,runtime,read/write via process.env
+env_var,PSM,v3/@claude-flow/cli/src/init/types.ts,239,,shell = process.env.PSModulePath ? 'powershell' : 'cmd';,runtime,read/write via process.env
+env_var,REGISTRY_PRIVATE_KEY,v3/@claude-flow/cli/scripts/publish-registry.ts,269,,const privateKey = process.env.REGISTRY_PRIVATE_KEY;,runtime,read/write via process.env
+env_var,RUVECTOR_TEST_DATABASE,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,59,,"database: process.env.RUVECTOR_TEST_DATABASE ?? 'ruvector_test',",test,read/write via process.env
+env_var,RUVECTOR_TEST_DB,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,49,,return process.env.RUVECTOR_TEST_DB === 'true';,test,read/write via process.env
+env_var,RUVECTOR_TEST_HOST,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,57,,"host: process.env.RUVECTOR_TEST_HOST ?? 'localhost',",test,read/write via process.env
+env_var,RUVECTOR_TEST_PASSWORD,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,61,,"password: process.env.RUVECTOR_TEST_PASSWORD ?? 'postgres',",test,read/write via process.env
+env_var,RUVECTOR_TEST_PORT,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,58,,"port: parseInt(process.env.RUVECTOR_TEST_PORT ?? '5432', 10),",test,read/write via process.env
+env_var,RUVECTOR_TEST_USER,v3/@claude-flow/plugins/__tests__/utils/ruvector-test-utils.ts,60,,"user: process.env.RUVECTOR_TEST_USER ?? 'postgres',",test,read/write via process.env
+env_var,SHELL,v3/@claude-flow/cli/src/init/types.ts,244,,shell = process.env.SHELL?.includes('zsh') ? 'zsh' : 'bash';,runtime,read/write via process.env
+env_var,SHELL,v3/@claude-flow/cli/src/init/types.ts,249,,shell = process.env.SHELL?.includes('zsh') ? 'zsh' : (process.env.SHELL?.includes('bash') ? 'bash' : 'sh');,runtime,read/write via process.env
+env_var,TEST_URL,v3/@claude-flow/browser/tests/e2e/browser-e2e.test.ts,11,,const TEST_URL = process.env.TEST_URL || 'http://localhost:3000';,test,read/write via process.env
+env_var,TEST_URL,v3/@claude-flow/browser/tests/e2e/browser-e2e.test.ts,42,,const runE2E = process.env.TEST_URL !== undefined;,test,read/write via process.env
+env_var,TMPDIR,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,111,,const tempDir = process.env.TMPDIR || '/tmp';,runtime,read/write via process.env
+env_var,TMPDIR,v3/@claude-flow/cli/src/transfer/storage/gcs.ts,182,,const tempDir = process.env.TMPDIR || '/tmp';,runtime,read/write via process.env
+env_var,USERPROFILE,v3/@claude-flow/cli/src/commands/doctor.ts,259,,const homeDir = process.env.HOME || process.env.USERPROFILE || '';,runtime,read/write via process.env
+env_var,W3_TOKEN,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,49,,process.env.W3_TOKEN ||,runtime,read/write via process.env
+env_var,WEB3_STORAGE_TOKEN,v3/@claude-flow/cli/src/transfer/ipfs/upload.ts,48,,return process.env.WEB3_STORAGE_TOKEN ||,runtime,read/write via process.env
+env_var,XDG_CONFIG_HOME,v3/@claude-flow/cli/src/init/types.ts,250,,"configDir = process.env.XDG_CONFIG_HOME || path.join(homeDir, '.config');",runtime,read/write via process.env

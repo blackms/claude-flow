@@ -1,0 +1,95 @@
+{
+  "main": {
+    "path": "cli.mjs",
+    "exists": false
+  },
+  "bins": [
+    {
+      "name": "claude-flow",
+      "path": "bin/claude-flow.js",
+      "exists": true
+    }
+  ],
+  "files": [
+    {
+      "path": "cli.js",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow.js",
+      "exists": true
+    },
+    {
+      "path": "bin/claude-flow",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-dev",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-pkg.js",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-swarm",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-swarm-background",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-swarm-bg",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-swarm-monitor",
+      "exists": false
+    },
+    {
+      "path": "bin/claude-flow-swarm-ui",
+      "exists": false
+    },
+    {
+      "path": "dist/",
+      "exists": false
+    },
+    {
+      "path": "src/",
+      "exists": true
+    },
+    {
+      "path": ".claude/",
+      "exists": true
+    },
+    {
+      "path": "docs/",
+      "exists": true
+    },
+    {
+      "path": "docker-test/",
+      "exists": true
+    },
+    {
+      "path": "scripts/",
+      "exists": true
+    },
+    {
+      "path": "README.md",
+      "exists": true
+    },
+    {
+      "path": "LICENSE",
+      "exists": true
+    },
+    {
+      "path": "CHANGELOG.md",
+      "exists": true
+    },
+    {
+      "path": "DOCKER_TEST_REPORT.md",
+      "exists": false
+    }
+  ]
+}

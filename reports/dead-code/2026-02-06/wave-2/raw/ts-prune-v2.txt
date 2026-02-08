@@ -1,0 +1,1670 @@
+v2/src/adapters/cliffy-node.ts:13 - colors
+v2/src/adapters/cliffy-node.ts:34 - Input
+v2/src/adapters/cliffy-node.ts:46 - Confirm
+v2/src/adapters/cliffy-node.ts:58 - Select
+v2/src/adapters/cliffy-node.ts:76 - Table (used in module)
+v2/src/agents/agent-loader.ts:29 - AgentDefinition (used in module)
+v2/src/agents/agent-loader.ts:43 - AgentCategory (used in module)
+v2/src/agents/agent-loader.ts:262 - agentLoader (used in module)
+v2/src/agents/agent-loader.ts:266 - getAgent (used in module)
+v2/src/agents/agent-loader.ts:267 - getAllAgents (used in module)
+v2/src/agents/agent-loader.ts:268 - getAgentCategories (used in module)
+v2/src/agents/agent-loader.ts:269 - searchAgents (used in module)
+v2/src/agents/agent-loader.ts:271 - getAgentsByCategory (used in module)
+v2/src/agents/agent-loader.ts:272 - refreshAgents
+v2/src/agents/agent-registry.ts:10 - AgentRegistryEntry (used in module)
+v2/src/agents/agent-registry.ts:18 - AgentQuery (used in module)
+v2/src/agents/agent-registry.ts:28 - AgentStatistics (used in module)
+v2/src/api/auth-service.ts:11 - AuthConfig (used in module)
+v2/src/api/auth-service.ts:22 - User (used in module)
+v2/src/api/auth-service.ts:39 - ApiKey (used in module)
+v2/src/api/auth-service.ts:51 - AuthToken
+v2/src/api/auth-service.ts:61 - AuthSession (used in module)
+v2/src/api/auth-service.ts:76 - UserRole (used in module)
+v2/src/api/auth-service.ts:83 - Permission (used in module)
+v2/src/api/auth-service.ts:128 - AuthService
+v2/src/api/claude-api-errors.ts:144 - ERROR_MESSAGES (used in module)
+v2/src/api/claude-client-enhanced.ts:31 - EnhancedClaudeAPIConfig (used in module)
+v2/src/api/claude-client-enhanced.ts:43 - EnhancedClaudeAPIClient
+v2/src/api/claude-client-v2.5.ts:20 - ClaudeAPIConfig (used in module)
+v2/src/api/claude-client-v2.5.ts:35 - ClaudeModel (used in module)
+v2/src/api/claude-client-v2.5.ts:43 - ClaudeMessage (used in module)
+v2/src/api/claude-client-v2.5.ts:48 - ClaudeRequest (used in module)
+v2/src/api/claude-client-v2.5.ts:63 - ClaudeResponse (used in module)
+v2/src/api/claude-client-v2.5.ts:330 - ClaudeClient
+v2/src/api/database-service.ts:10 - DatabaseConfig (used in module)
+v2/src/api/database-service.ts:23 - SwarmRecord (used in module)
+v2/src/api/database-service.ts:36 - AgentRecord (used in module)
+v2/src/api/database-service.ts:50 - TaskRecord (used in module)
+v2/src/api/database-service.ts:69 - MetricRecord (used in module)
+v2/src/api/database-service.ts:81 - EventRecord (used in module)
+v2/src/api/database-service.ts:95 - DatabaseService
+v2/src/api/swarm-api.ts:18 - SwarmApiConfig (used in module)
+v2/src/api/swarm-api.ts:40 - SwarmCreateRequest (used in module)
+v2/src/api/swarm-api.ts:48 - AgentSpawnRequest (used in module)
+v2/src/api/swarm-api.ts:55 - TaskOrchestrationRequest (used in module)
+v2/src/api/swarm-api.ts:64 - SwarmMetrics
+v2/src/api/swarm-api.ts:78 - SwarmApi
+v2/src/cli/cli-core.ts:298 - Option (used in module)
+v2/src/cli/command-registry.js:52 - registerCoreCommands (used in module)
+v2/src/cli/command-registry.js:1045 - registerCommand
+v2/src/cli/command-registry.js:1060 - getCommand
+v2/src/cli/command-registry.js:49 - commandRegistry (used in module)
+v2/src/cli/commander-fix.ts:6 - default
+v2/src/cli/formatter.ts:35 - formatAgent
+v2/src/cli/formatter.ts:51 - formatTask
+v2/src/cli/formatter.ts:89 - formatMemoryEntry
+v2/src/cli/formatter.ts:151 - createAgentTable
+v2/src/cli/formatter.ts:172 - createTaskTable
+v2/src/cli/formatter.ts:330 - formatSpinner
+v2/src/cli/maestro-cli-bridge.ts:34 - MaestroCLIBridgeConfig (used in module)
+v2/src/cli/maestro-cli-bridge.ts:41 - PerformanceMetrics (used in module)
+v2/src/cli/node-compat.js:20 - readDir
+v2/src/cli/node-compat.js:30 - statFile
+v2/src/cli/node-compat.js:50 - remove
+v2/src/cli/node-compat.js:59 - mkdirSync (used in module)
+v2/src/cli/node-compat.js:69 - pid (used in module)
+v2/src/cli/node-compat.js:71 - kill (used in module)
+v2/src/cli/node-compat.js:79 - execPath (used in module)
+v2/src/cli/node-compat.js:82 - stdin (used in module)
+v2/src/cli/node-compat.js:104 - stdout (used in module)
+v2/src/cli/node-compat.js:115 - stderr (used in module)
+v2/src/cli/node-compat.js:149 - getImportMetaUrl
+v2/src/cli/node-compat.js:154 - getDirname
+v2/src/cli/node-compat.js:159 - getFilename
+v2/src/cli/node-compat.js:164 - isMainModule
+v2/src/cli/node-compat.js:173 - build
+v2/src/cli/node-compat.js:187 - env (used in module)
+v2/src/cli/node-compat.js:196 - Command
+v2/src/cli/node-repl.ts:83 - startNodeREPL
+v2/src/cli/runtime-detector.js:47 - UnifiedTerminalIO (used in module)
+v2/src/cli/runtime-detector.js:169 - RuntimeDetector (used in module)
+v2/src/cli/runtime-detector.js:244 - createCompatibilityLayer (used in module)
+v2/src/cli/runtime-detector.js:286 - runtime (used in module)
+v2/src/cli/runtime-detector.js:286 - isNode (used in module)
+v2/src/cli/runtime-detector.js:286 - isDeno (used in module)
+v2/src/cli/simple-mcp.ts:44 - createMCPCommand
+v2/src/cli/simple-orchestrator.ts:821 - startOrchestrator
+v2/src/cli/simple-orchestrator.ts:901 - getComponentStatus
+v2/src/cli/simple-orchestrator.ts:906 - getStores
+v2/src/cli/utils.js:32 - validateArgs
+v2/src/cli/utils.js:41 - ensureDirectory
+v2/src/cli/utils.js:53 - fileExists
+v2/src/cli/utils.js:63 - readJsonFile
+v2/src/cli/utils.js:72 - writeJsonFile (used in module)
+v2/src/cli/utils.js:77 - formatTimestamp
+v2/src/cli/utils.js:81 - truncateString
+v2/src/cli/utils.js:85 - formatBytes
+v2/src/cli/utils.js:131 - runCommand (used in module)
+v2/src/cli/utils.js:181 - loadConfig
+v2/src/cli/utils.js:207 - saveConfig
+v2/src/cli/utils.js:212 - generateId
+v2/src/cli/utils.js:219 - chunk
+v2/src/cli/utils.js:228 - getEnvVar
+v2/src/cli/utils.js:232 - setEnvVar
+v2/src/cli/utils.js:237 - isValidJson
+v2/src/cli/utils.js:246 - isValidUrl
+v2/src/cli/utils.js:256 - showProgress
+v2/src/cli/utils.js:262 - clearLine
+v2/src/cli/utils.js:267 - sleep (used in module)
+v2/src/cli/utils.js:271 - retry
+v2/src/cli/utils.js:396 - callRuvSwarmDirectNeural (used in module)
+v2/src/cli/validation-helper.ts:8 - ValidationHelper
+v2/src/communication/message-bus.ts:11 - MessageBusConfig (used in module)
+v2/src/communication/message-bus.ts:29 - Message (used in module)
+v2/src/communication/message-bus.ts:42 - MessageMetadata (used in module)
+v2/src/communication/message-bus.ts:58 - MessageChannel (used in module)
+v2/src/communication/message-bus.ts:69 - ChannelConfig (used in module)
+v2/src/communication/message-bus.ts:80 - AccessControlConfig (used in module)
+v2/src/communication/message-bus.ts:89 - ChannelStatistics (used in module)
+v2/src/communication/message-bus.ts:101 - MessageFilter (used in module)
+v2/src/communication/message-bus.ts:110 - FilterCondition (used in module)
+v2/src/communication/message-bus.ts:117 - ChannelMiddleware (used in module)
+v2/src/communication/message-bus.ts:125 - MiddlewareContext (used in module)
+v2/src/communication/message-bus.ts:132 - MessageQueue (used in module)
+v2/src/communication/message-bus.ts:142 - QueueConfig (used in module)
+v2/src/communication/message-bus.ts:152 - QueueSubscriber (used in module)
+v2/src/communication/message-bus.ts:161 - QueueStatistics (used in module)
+v2/src/communication/message-bus.ts:171 - RetryPolicy (used in module)
+v2/src/communication/message-bus.ts:179 - TopicSubscription (used in module)
+v2/src/communication/message-bus.ts:190 - RoutingRule (used in module)
+v2/src/communication/message-bus.ts:199 - RoutingAction (used in module)
+v2/src/communication/message-bus.ts:205 - MessagePriority (used in module)
+v2/src/communication/message-bus.ts:206 - ReliabilityLevel (used in module)
+v2/src/communication/message-bus.ts:207 - ChannelType (used in module)
+v2/src/communication/message-bus.ts:208 - QueueType (used in module)
+v2/src/communication/message-bus.ts:209 - QualityOfService (used in module)
+v2/src/communication/message-bus.ts:214 - MessageBus
+v2/src/config/config-manager.ts:9 - Config (used in module)
+v2/src/config/config-manager.ts:144 - ConfigError (used in module)
+v2/src/config/ruv-swarm-config.ts:16 - RuvSwarmConfig (used in module)
+v2/src/config/ruv-swarm-config.ts:83 - defaultRuvSwarmConfig (used in module)
+v2/src/config/ruv-swarm-config.ts:412 - default
+v2/src/config/ruv-swarm-integration.ts:19 - RuvSwarmIntegration (used in module)
+v2/src/config/ruv-swarm-integration.ts:350 - default
+v2/src/constants/agent-types.ts:25 - getValidAgentTypes (used in module)
+v2/src/constants/agent-types.ts:32 - isValidAgentType (used in module)
+v2/src/constants/agent-types.ts:14 - AgentType
+v2/src/constants/agent-types.ts:17 - LEGACY_AGENT_MAPPING (used in module)
+v2/src/constants/agent-types.ts:39 - resolveLegacyAgentType (used in module)
+v2/src/constants/agent-types.ts:54 - SWARM_STRATEGIES (used in module)
+v2/src/constants/agent-types.ts:65 - SwarmStrategy
+v2/src/constants/agent-types.ts:66 - VALID_SWARM_STRATEGIES
+v2/src/constants/agent-types.ts:69 - ORCHESTRATION_STRATEGIES (used in module)
+v2/src/constants/agent-types.ts:76 - OrchestrationStrategy
+v2/src/constants/agent-types.ts:78 - VALID_ORCHESTRATION_STRATEGIES
+v2/src/core/config.ts:1263 - loadConfig
+v2/src/core/config.ts:1272 - FormatParser (used in module)
+v2/src/core/config.ts:1272 - ConfigChange (used in module)
+v2/src/core/config.ts:1272 - SecurityClassification (used in module)
+v2/src/core/config.ts:1272 - ValidationRule (used in module)
+v2/src/core/config.ts:1274 - SENSITIVE_PATHS (used in module)
+v2/src/core/config.ts:1274 - SECURITY_CLASSIFICATIONS (used in module)
+v2/src/core/ConfigManager.ts:10 - ClaudeFlowConfig (used in module)
+v2/src/core/ConfigManager.ts:47 - MCPServerConfig (used in module)
+v2/src/core/ConfigManager.ts:55 - GitHubConfig (used in module)
+v2/src/core/ConfigManager.ts:63 - NeuralConfig (used in module)
+v2/src/core/ConfigManager.ts:70 - HiveMindConfig (used in module)
+v2/src/core/ConfigManager.ts:77 - EnterpriseConfig (used in module)
+v2/src/core/ConfigManager.ts:84 - PerformanceConfig (used in module)
+v2/src/core/DatabaseManager.ts:14 - NativeModuleError (used in module)
+v2/src/core/HiveMindCore.ts:12 - WorkerPool (used in module)
+v2/src/core/HiveMindCore.ts:25 - HiveMindConfig (used in module)
+v2/src/core/HiveMindCore.ts:33 - HiveMindCore
+v2/src/core/InitController.ts:14 - InitControllerConfig (used in module)
+v2/src/core/InitController.ts:24 - InitController
+v2/src/core/json-persistence.ts:8 - PersistedAgent (used in module)
+v2/src/core/json-persistence.ts:20 - PersistedTask (used in module)
+v2/src/core/MCPIntegrator.ts:6 - MCPTool (used in module)
+v2/src/core/MCPIntegrator.ts:14 - MCPFunction (used in module)
+v2/src/core/MCPIntegrator.ts:21 - MCPCommand (used in module)
+v2/src/core/MCPIntegrator.ts:28 - MCPResult (used in module)
+v2/src/core/MCPIntegrator.ts:39 - MCPIntegrator
+v2/src/core/MetricsCollector.ts:8 - SystemHealth (used in module)
+v2/src/core/MetricsCollector.ts:15 - PerformanceTrend (used in module)
+v2/src/core/MetricsCollector.ts:22 - Benchmark (used in module)
+v2/src/core/orchestrator.ts:31 - ISessionManager (used in module)
+v2/src/core/orchestrator.ts:42 - IOrchestrator (used in module)
+v2/src/core/orchestrator.ts:54 - SessionPersistence (used in module)
+v2/src/core/persistence.ts:9 - PersistedAgent (used in module)
+v2/src/core/persistence.ts:21 - PersistedTask (used in module)
+v2/src/core/persistence.ts:36 - PersistenceManager
+v2/src/core/version.ts:34 - getVersionString (used in module)
+v2/src/core/version.ts:39 - displayVersion
+v2/src/enterprise/analytics-manager.ts:48 - DashboardWidget (used in module)
+v2/src/enterprise/analytics-manager.ts:75 - DashboardLayout (used in module)
+v2/src/enterprise/analytics-manager.ts:82 - DashboardFilter (used in module)
+v2/src/enterprise/analytics-manager.ts:92 - AlertCondition (used in module)
+v2/src/enterprise/analytics-manager.ts:315 - PredictionResult (used in module)
+v2/src/enterprise/analytics-manager.ts:326 - AnalyticsReport (used in module)
+v2/src/enterprise/analytics-manager.ts:347 - ReportSection (used in module)
+v2/src/enterprise/analytics-manager.ts:360 - AnalyticsConfiguration (used in module)
+v2/src/enterprise/audit-manager.ts:75 - ComplianceRequirement (used in module)
+v2/src/enterprise/audit-manager.ts:101 - ComplianceControl (used in module)
+v2/src/enterprise/audit-manager.ts:149 - AuditFinding (used in module)
+v2/src/enterprise/audit-manager.ts:175 - AuditEvidence (used in module)
+v2/src/enterprise/audit-manager.ts:193 - ChainOfCustodyEntry (used in module)
+v2/src/enterprise/audit-manager.ts:201 - AuditRecommendation (used in module)
+v2/src/enterprise/audit-manager.ts:224 - AuditTrail (used in module)
+v2/src/enterprise/audit-manager.ts:267 - TamperEvidence (used in module)
+v2/src/enterprise/cloud-manager.ts:102 - VolumeMount (used in module)
+v2/src/enterprise/cloud-manager.ts:110 - CloudMetric (used in module)
+v2/src/enterprise/cloud-manager.ts:119 - CloudAlert (used in module)
+v2/src/enterprise/cloud-manager.ts:130 - HealthCheck (used in module)
+v2/src/enterprise/cloud-manager.ts:148 - HealthCheckResult (used in module)
+v2/src/enterprise/cloud-manager.ts:155 - AccessControl (used in module)
+v2/src/enterprise/cloud-manager.ts:162 - CloudAuditEntry (used in module)
+v2/src/enterprise/cloud-manager.ts:235 - NetworkTopology (used in module)
+v2/src/enterprise/cloud-manager.ts:243 - LoadBalancer (used in module)
+v2/src/enterprise/cloud-manager.ts:255 - Database (used in module)
+v2/src/enterprise/cloud-manager.ts:269 - Cache (used in module)
+v2/src/enterprise/cloud-manager.ts:280 - Queue (used in module)
+v2/src/enterprise/cloud-manager.ts:291 - DeploymentHistory (used in module)
+v2/src/enterprise/cloud-manager.ts:301 - CostAlert (used in module)
+v2/src/enterprise/cloud-manager.ts:327 - ComplianceRequirement (used in module)
+v2/src/enterprise/deployment-manager.ts:112 - DeploymentCommand (used in module)
+v2/src/enterprise/deployment-manager.ts:127 - DeploymentLog (used in module)
+v2/src/enterprise/deployment-manager.ts:135 - RollbackCondition (used in module)
+v2/src/enterprise/deployment-manager.ts:143 - DeploymentAlert (used in module)
+v2/src/enterprise/deployment-manager.ts:198 - DeploymentApproval (used in module)
+v2/src/enterprise/deployment-manager.ts:212 - DeploymentNotification (used in module)
+v2/src/enterprise/deployment-manager.ts:222 - DeploymentAuditEntry (used in module)
+v2/src/enterprise/index.ts:1 - ProjectManager
+v2/src/enterprise/index.ts:2 - DeploymentManager
+v2/src/enterprise/index.ts:3 - CloudManager
+v2/src/enterprise/index.ts:4 - SecurityManager
+v2/src/enterprise/index.ts:5 - AnalyticsManager
+v2/src/enterprise/index.ts:6 - AuditManager
+v2/src/enterprise/index.ts:9 - Project
+v2/src/enterprise/index.ts:10 - ProjectPhase
+v2/src/enterprise/index.ts:11 - ProjectRisk
+v2/src/enterprise/index.ts:12 - ProjectMilestone
+v2/src/enterprise/index.ts:13 - ProjectResource
+v2/src/enterprise/index.ts:14 - ProjectMetrics
+v2/src/enterprise/index.ts:15 - ProjectReport
+v2/src/enterprise/index.ts:19 - Deployment
+v2/src/enterprise/index.ts:20 - DeploymentEnvironment
+v2/src/enterprise/index.ts:21 - DeploymentStrategy
+v2/src/enterprise/index.ts:22 - DeploymentStage
+v2/src/enterprise/index.ts:23 - DeploymentMetrics
+v2/src/enterprise/index.ts:24 - DeploymentPipeline
+v2/src/enterprise/index.ts:28 - CloudProvider
+v2/src/enterprise/index.ts:29 - CloudResource
+v2/src/enterprise/index.ts:30 - CloudInfrastructure
+v2/src/enterprise/index.ts:31 - CloudMetrics
+v2/src/enterprise/index.ts:32 - CostOptimization
+v2/src/enterprise/index.ts:36 - SecurityScan
+v2/src/enterprise/index.ts:37 - SecurityFinding
+v2/src/enterprise/index.ts:38 - SecurityIncident
+v2/src/enterprise/index.ts:39 - SecurityPolicy
+v2/src/enterprise/index.ts:40 - SecurityMetrics
+v2/src/enterprise/index.ts:41 - ComplianceCheck
+v2/src/enterprise/index.ts:45 - AnalyticsMetric
+v2/src/enterprise/index.ts:46 - AnalyticsDashboard
+v2/src/enterprise/index.ts:47 - AnalyticsInsight
+v2/src/enterprise/index.ts:48 - PerformanceMetrics
+v2/src/enterprise/index.ts:49 - UsageMetrics
+v2/src/enterprise/index.ts:50 - BusinessMetrics
+v2/src/enterprise/index.ts:51 - PredictiveModel
+v2/src/enterprise/index.ts:55 - AuditEntry
+v2/src/enterprise/index.ts:56 - ComplianceFramework
+v2/src/enterprise/index.ts:57 - AuditReport
+v2/src/enterprise/index.ts:58 - AuditMetrics
+v2/src/enterprise/index.ts:59 - AuditConfiguration
+v2/src/enterprise/project-manager.ts:115 - TeamMember (used in module)
+v2/src/enterprise/project-manager.ts:127 - CommunicationChannel (used in module)
+v2/src/enterprise/project-manager.ts:135 - QualityGate (used in module)
+v2/src/enterprise/project-manager.ts:149 - ComplianceRequirement (used in module)
+v2/src/enterprise/project-manager.ts:161 - ProjectAuditEntry (used in module)
+v2/src/enterprise/security-manager.ts:81 - SecuritySeverity (used in module)
+v2/src/enterprise/security-manager.ts:145 - SecurityRecommendation (used in module)
+v2/src/enterprise/security-manager.ts:202 - SecurityRule (used in module)
+v2/src/enterprise/security-manager.ts:279 - SecurityAction (used in module)
+v2/src/enterprise/security-manager.ts:296 - SecurityCommunication (used in module)
+v2/src/enterprise/security-manager.ts:307 - SecurityAuditEntry (used in module)
+v2/src/enterprise/security-manager.ts:318 - VulnerabilityDatabase (used in module)
+v2/src/execution/agent-executor.ts:306 - default
+v2/src/execution/index.ts:13 - createExecutor
+v2/src/execution/index.ts:17 - createProviderManager
+v2/src/execution/index.ts:6 - AgentExecutor (used in module)
+v2/src/execution/index.ts:6 - AgentExecutionOptions
+v2/src/execution/index.ts:6 - AgentExecutionResult
+v2/src/execution/index.ts:7 - ProviderManager (used in module)
+v2/src/execution/index.ts:7 - ProviderConfig
+v2/src/execution/index.ts:7 - ExecutionConfig
+v2/src/execution/provider-manager.ts:187 - default
+v2/src/hive-mind/index.ts:8 - HiveMind (used in module)
+v2/src/hive-mind/index.ts:9 - Queen
+v2/src/hive-mind/index.ts:10 - Agent
+v2/src/hive-mind/index.ts:11 - Memory
+v2/src/hive-mind/index.ts:12 - Communication
+v2/src/hive-mind/index.ts:13 - DatabaseManager
+v2/src/hive-mind/index.ts:16 - MCPToolWrapper
+v2/src/hive-mind/index.ts:17 - SwarmOrchestrator
+v2/src/hive-mind/index.ts:18 - ConsensusEngine
+v2/src/hive-mind/index.ts:24 - default
+v2/src/hive-mind/index.ts:8 - SwarmTopology
+v2/src/hive-mind/index.ts:9 - QueenMode
+v2/src/hive-mind/index.ts:11 - HiveMindConfig
+v2/src/hive-mind/index.ts:27 - AgentType
+v2/src/hive-mind/index.ts:47 - AgentStatus
+v2/src/hive-mind/index.ts:49 - AgentCapability
+v2/src/hive-mind/index.ts:93 - AgentConfig
+v2/src/hive-mind/index.ts:101 - AgentSpawnOptions
+v2/src/hive-mind/index.ts:110 - AgentEnvironment
+v2/src/hive-mind/index.ts:121 - TaskPriority
+v2/src/hive-mind/index.ts:122 - TaskStrategy
+v2/src/hive-mind/index.ts:123 - TaskStatus
+v2/src/hive-mind/index.ts:131 - Task
+v2/src/hive-mind/index.ts:154 - TaskSubmitOptions
+v2/src/hive-mind/index.ts:166 - TaskAssignment
+v2/src/hive-mind/index.ts:176 - MessageType
+v2/src/hive-mind/index.ts:188 - MessagePriority
+v2/src/hive-mind/index.ts:190 - Message
+v2/src/hive-mind/index.ts:202 - CommunicationChannel
+v2/src/hive-mind/index.ts:210 - CommunicationStats
+v2/src/hive-mind/index.ts:219 - MemoryEntry
+v2/src/hive-mind/index.ts:230 - MemoryNamespace
+v2/src/hive-mind/index.ts:240 - MemoryStats
+v2/src/hive-mind/index.ts:256 - MemorySearchOptions
+v2/src/hive-mind/index.ts:265 - MemoryPattern
+v2/src/hive-mind/index.ts:273 - ConsensusProposal
+v2/src/hive-mind/index.ts:284 - ConsensusVote
+v2/src/hive-mind/index.ts:292 - ConsensusResult
+v2/src/hive-mind/index.ts:302 - VotingStrategy
+v2/src/hive-mind/index.ts:317 - ConsensusMetrics
+v2/src/hive-mind/index.ts:326 - ExecutionPlan
+v2/src/hive-mind/index.ts:338 - OrchestrationResult
+v2/src/hive-mind/index.ts:346 - ExecutionResult
+v2/src/hive-mind/index.ts:355 - QueenDecision
+v2/src/hive-mind/index.ts:366 - CoordinationStrategy
+v2/src/hive-mind/index.ts:376 - SwarmStatus
+v2/src/hive-mind/index.ts:421 - NeuralPattern
+v2/src/hive-mind/index.ts:434 - PerformanceMetric
+v2/src/hooks/hook-matchers.ts:445 - createFilePathMatcher
+v2/src/hooks/hook-matchers.ts:460 - createAgentTypeMatcher
+v2/src/hooks/hook-matchers.ts:471 - createOperationMatcher
+v2/src/hooks/hook-matchers.ts:482 - createContextMatcher
+v2/src/hooks/hook-matchers.ts:491 - createCompositePattern
+v2/src/hooks/hook-matchers.ts:21 - MatcherPattern (used in module)
+v2/src/hooks/hook-matchers.ts:27 - CompositePattern (used in module)
+v2/src/hooks/hook-matchers.ts:33 - FilePathMatcher (used in module)
+v2/src/hooks/hook-matchers.ts:39 - AgentTypeMatcher (used in module)
+v2/src/hooks/hook-matchers.ts:45 - OperationMatcher (used in module)
+v2/src/hooks/hook-matchers.ts:51 - ContextMatcher (used in module)
+v2/src/hooks/hook-matchers.ts:60 - HookMatcherRule (used in module)
+v2/src/hooks/hook-matchers.ts:67 - HookMatcherConfig (used in module)
+v2/src/hooks/hook-matchers.ts:74 - MatchResult (used in module)
+v2/src/hooks/hook-matchers.ts:503 - hookMatcher
+v2/src/hooks/index.ts:158 - createHookEngine
+v2/src/hooks/index.ts:170 - setupDefaultHooks
+v2/src/hooks/index.ts:13 - agenticHookManager
+v2/src/hooks/index.ts:14 - initializeAgenticFlowHooks
+v2/src/hooks/index.ts:19 - verificationHookManager
+v2/src/hooks/index.ts:20 - initializeVerificationSystem (used in module)
+v2/src/hooks/index.ts:21 - getVerificationSystemStatus
+v2/src/hooks/index.ts:22 - shutdownVerificationSystem
+v2/src/hooks/index.ts:27 - HookExecutionContext
+v2/src/hooks/index.ts:28 - AgentHook
+v2/src/hooks/index.ts:29 - EventPayload
+v2/src/hooks/index.ts:30 - HookTrigger
+v2/src/hooks/index.ts:31 - HookExecutionResult
+v2/src/hooks/index.ts:35 - QUALITY_HOOKS (used in module)
+v2/src/hooks/index.ts:67 - DEFAULT_HOOK_CONFIG
+v2/src/hooks/index.ts:80 - HOOK_TRIGGERS
+v2/src/hooks/index.ts:94 - AGENT_TYPES
+v2/src/hooks/index.ts:105 - HookUtils
+v2/src/hooks/redaction-hook.ts:10 - validateNoSensitiveData (used in module)
+v2/src/hooks/redaction-hook.ts:89 - runRedactionCheck (used in module)
+v2/src/integration/system-integration.ts:522 - systemIntegration
+v2/src/integration/types.ts:68 - IntegrationEvent
+v2/src/integration/types.ts:83 - ComponentDependency
+v2/src/integration/types.ts:89 - InitializationPhase
+v2/src/integration/types.ts:112 - ComponentInterface
+v2/src/integration/types.ts:119 - WiringConfig
+v2/src/integration/types.ts:126 - FallbackConfig
+v2/src/integration/types.ts:133 - EdgeCaseHandler
+v2/src/maestro/maestro-types.ts:22 - TaskItem
+v2/src/maestro/maestro-types.ts:32 - AgentProfile
+v2/src/maestro/maestro-types.ts:41 - SteeringContext
+v2/src/maestro/maestro-types.ts:67 - KiroEnhancedSpec
+v2/src/maestro/maestro-types.ts:75 - LivingDocumentationConfig (used in module)
+v2/src/maestro/maestro-types.ts:87 - AgentHookConfig (used in module)
+v2/src/maestro/maestro-types.ts:98 - HookTrigger (used in module)
+v2/src/maestro/maestro-types.ts:106 - HookAction (used in module)
+v2/src/maestro/maestro-types.ts:115 - HookCondition (used in module)
+v2/src/maestro/maestro-types.ts:122 - ConsensusRequirements (used in module)
+v2/src/maestro/maestro-types.ts:134 - PatternLearningConfig (used in module)
+v2/src/maestro/maestro-types.ts:148 - SpecMetadata (used in module)
+v2/src/maestro/maestro-types.ts:173 - EnhancedWorkflowPhase
+v2/src/maestro/maestro-types.ts:183 - QualityGate (used in module)
+v2/src/maestro/maestro-types.ts:193 - QualityCriteria (used in module)
+v2/src/maestro/maestro-types.ts:203 - LivingDocumentationState (used in module)
+v2/src/maestro/maestro-types.ts:213 - DocumentationChange (used in module)
+v2/src/maestro/maestro-types.ts:225 - SyncConflict (used in module)
+v2/src/maestro/maestro-types.ts:238 - ConsensusSession (used in module)
+v2/src/maestro/maestro-types.ts:250 - ConsensusParticipant (used in module)
+v2/src/maestro/maestro-types.ts:259 - ConsensusRound (used in module)
+v2/src/maestro/maestro-types.ts:267 - ConsensusVote (used in module)
+v2/src/maestro/maestro-types.ts:276 - ConsensusResult (used in module)
+v2/src/maestro/maestro-types.ts:286 - ConsensusDissent (used in module)
+v2/src/maestro/maestro-types.ts:295 - AgentHookEvent
+v2/src/maestro/maestro-types.ts:305 - HookProcessingResult (used in module)
+v2/src/maestro/maestro-types.ts:317 - PatternLearningData (used in module)
+v2/src/maestro/maestro-types.ts:324 - SpecPattern (used in module)
+v2/src/maestro/maestro-types.ts:334 - DesignPattern (used in module)
+v2/src/maestro/maestro-types.ts:345 - ImplementationPattern (used in module)
+v2/src/maestro/maestro-types.ts:355 - OutcomePattern (used in module)
+v2/src/maestro/maestro-types.ts:367 - KiroEnhancedWorkflowState
+v2/src/maestro/maestro-types.ts:377 - QualityMetrics (used in module)
+v2/src/mcp/auth.ts:26 - TokenValidation (used in module)
+v2/src/mcp/auth.ts:446 - Permission
+v2/src/mcp/client.ts:11 - MCPClientConfig (used in module)
+v2/src/mcp/index.ts:405 - initializeInProcessMCP
+v2/src/mcp/index.ts:420 - getInProcessMCPStatus
+v2/src/mcp/index.ts:7 - InProcessMCPServer
+v2/src/mcp/index.ts:7 - createInProcessServer
+v2/src/mcp/index.ts:8 - InProcessServerConfig
+v2/src/mcp/index.ts:8 - ToolCallMetrics
+v2/src/mcp/index.ts:11 - ClaudeFlowToolRegistry
+v2/src/mcp/index.ts:12 - createToolRegistry
+v2/src/mcp/index.ts:13 - createClaudeFlowSdkServer
+v2/src/mcp/index.ts:15 - ToolRegistryConfig
+v2/src/mcp/index.ts:18 - SDKIntegration
+v2/src/mcp/index.ts:19 - initializeSDKIntegration (used in module)
+v2/src/mcp/index.ts:20 - getSDKIntegration (used in module)
+v2/src/mcp/index.ts:21 - createInProcessQuery
+v2/src/mcp/index.ts:22 - getInProcessServerConfig
+v2/src/mcp/index.ts:23 - measurePerformance
+v2/src/mcp/index.ts:25 - SDKIntegrationConfig
+v2/src/mcp/index.ts:28 - MCPServer (used in module)
+v2/src/mcp/index.ts:28 - IMCPServer
+v2/src/mcp/index.ts:31 - MCP2025Server
+v2/src/mcp/index.ts:31 - MCP2025ServerConfig
+v2/src/mcp/index.ts:33 - MCPServerFactory
+v2/src/mcp/index.ts:34 - createMCPServer
+v2/src/mcp/index.ts:35 - isMCP2025Available
+v2/src/mcp/index.ts:36 - getServerCapabilities
+v2/src/mcp/index.ts:37 - MCPFeatureFlags
+v2/src/mcp/index.ts:38 - ExtendedMCPConfig
+v2/src/mcp/index.ts:43 - VersionNegotiator
+v2/src/mcp/index.ts:44 - BackwardCompatibilityAdapter
+v2/src/mcp/index.ts:45 - MCPHandshake
+v2/src/mcp/index.ts:46 - MCPVersion
+v2/src/mcp/index.ts:47 - MCPCapability
+v2/src/mcp/index.ts:48 - MCP2025NegotiationResult
+v2/src/mcp/index.ts:53 - MCPAsyncJobManager
+v2/src/mcp/index.ts:54 - MCPToolRequest
+v2/src/mcp/index.ts:55 - MCPJobHandle
+v2/src/mcp/index.ts:56 - MCPJobResult
+v2/src/mcp/index.ts:57 - AsyncJob
+v2/src/mcp/index.ts:58 - JobStatus
+v2/src/mcp/index.ts:63 - MCPRegistryClient
+v2/src/mcp/index.ts:64 - RegistryConfig
+v2/src/mcp/index.ts:65 - ServerRegistryEntry
+v2/src/mcp/index.ts:70 - SchemaValidator
+v2/src/mcp/index.ts:71 - upgradeToolSchema
+v2/src/mcp/index.ts:72 - ValidationResult
+v2/src/mcp/index.ts:77 - ProgressiveToolRegistry
+v2/src/mcp/index.ts:78 - createProgressiveToolRegistry
+v2/src/mcp/index.ts:79 - createProgressiveClaudeFlowSdkServer
+v2/src/mcp/index.ts:80 - ProgressiveToolRegistryConfig
+v2/src/mcp/index.ts:85 - DynamicToolLoader
+v2/src/mcp/index.ts:86 - ToolMetadata
+v2/src/mcp/index.ts:87 - ToolSearchQuery
+v2/src/mcp/index.ts:92 - MCPLifecycleManager (used in module)
+v2/src/mcp/index.ts:93 - LifecycleState
+v2/src/mcp/index.ts:94 - LifecycleEvent
+v2/src/mcp/index.ts:95 - HealthCheckResult
+v2/src/mcp/index.ts:96 - LifecycleManagerConfig
+v2/src/mcp/index.ts:101 - ToolRegistry
+v2/src/mcp/index.ts:102 - ToolCapability
+v2/src/mcp/index.ts:103 - ToolMetrics
+v2/src/mcp/index.ts:104 - ToolDiscoveryQuery
+v2/src/mcp/index.ts:109 - MCPProtocolManager (used in module)
+v2/src/mcp/index.ts:110 - ProtocolVersionInfo
+v2/src/mcp/index.ts:111 - CompatibilityResult
+v2/src/mcp/index.ts:112 - NegotiationResult (used in module)
+v2/src/mcp/index.ts:117 - AuthManager
+v2/src/mcp/index.ts:118 - IAuthManager
+v2/src/mcp/index.ts:119 - AuthContext
+v2/src/mcp/index.ts:120 - AuthResult
+v2/src/mcp/index.ts:121 - TokenInfo
+v2/src/mcp/index.ts:122 - TokenGenerationOptions
+v2/src/mcp/index.ts:123 - AuthSession
+v2/src/mcp/index.ts:124 - Permissions
+v2/src/mcp/index.ts:129 - MCPPerformanceMonitor (used in module)
+v2/src/mcp/index.ts:130 - PerformanceMetrics
+v2/src/mcp/index.ts:131 - RequestMetrics
+v2/src/mcp/index.ts:132 - AlertRule
+v2/src/mcp/index.ts:133 - Alert
+v2/src/mcp/index.ts:134 - OptimizationSuggestion
+v2/src/mcp/index.ts:139 - MCPOrchestrationIntegration (used in module)
+v2/src/mcp/index.ts:140 - OrchestrationComponents (used in module)
+v2/src/mcp/index.ts:141 - MCPOrchestrationConfig (used in module)
+v2/src/mcp/index.ts:142 - IntegrationStatus
+v2/src/mcp/index.ts:146 - ITransport
+v2/src/mcp/index.ts:147 - StdioTransport
+v2/src/mcp/index.ts:148 - HttpTransport
+v2/src/mcp/index.ts:151 - RequestRouter
+v2/src/mcp/index.ts:154 - SessionManager
+v2/src/mcp/index.ts:154 - ISessionManager
+v2/src/mcp/index.ts:157 - LoadBalancer
+v2/src/mcp/index.ts:157 - ILoadBalancer
+v2/src/mcp/index.ts:157 - RequestQueue
+v2/src/mcp/index.ts:160 - createClaudeFlowTools
+v2/src/mcp/index.ts:160 - ClaudeFlowToolContext
+v2/src/mcp/index.ts:161 - createSwarmTools
+v2/src/mcp/index.ts:161 - SwarmToolContext
+v2/src/mcp/index.ts:167 - MCPIntegrationFactory
+v2/src/mcp/index.ts:286 - DefaultMCPConfigs
+v2/src/mcp/index.ts:337 - MCPUtils
+v2/src/mcp/integrate-wrapper.ts:63 - injectClaudeCodeClient
+v2/src/mcp/integrate-wrapper.ts:11 - MCPIntegration (used in module)
+v2/src/mcp/load-balancer.ts:9 - RequestMetrics (used in module)
+v2/src/mcp/load-balancer.ts:19 - LoadBalancerMetrics (used in module)
+v2/src/mcp/ruv-swarm-tools.ts:589 - getRuvSwarmCapabilities (used in module)
+v2/src/mcp/ruv-swarm-tools.ts:647 - default (used in module)
+v2/src/mcp/swarm-tools.ts:775 - handleDispatchAgent
+v2/src/mcp/swarm-tools.ts:804 - handleSwarmStatus
+v2/src/mcp/swarm-tools.ts:707 - dispatchAgentTool (used in module)
+v2/src/mcp/swarm-tools.ts:731 - memoryStoreTool (used in module)
+v2/src/mcp/swarm-tools.ts:750 - memoryRetrieveTool (used in module)
+v2/src/mcp/swarm-tools.ts:765 - swarmStatusTool (used in module)
+v2/src/mcp/swarm-tools.ts:829 - swarmTools
+v2/src/mcp/tool-registry-progressive.ts:52 - McpSdkServerConfigWithInstance (used in module)
+v2/src/migration/logger.ts:10 - LogEntry (used in module)
+v2/src/migration/logger.ts:18 - MigrationLogger (used in module)
+v2/src/migration/types.ts:60 - MigrationError (used in module)
+v2/src/migration/types.ts:90 - CommandMigration (used in module)
+v2/src/migration/types.ts:97 - ConfigMigration (used in module)
+v2/src/migration/types.ts:104 - TemplateMigration (used in module)
+v2/src/monitoring/diagnostics.ts:14 - DiagnosticReport (used in module)
+v2/src/monitoring/diagnostics.ts:24 - ComponentDiagnostic (used in module)
+v2/src/monitoring/diagnostics.ts:34 - DiagnosticIssue (used in module)
+v2/src/monitoring/diagnostics.ts:42 - PerformanceDiagnostic (used in module)
+v2/src/monitoring/diagnostics.ts:51 - DiagnosticConfig (used in module)
+v2/src/monitoring/diagnostics.ts:59 - DiagnosticManager
+v2/src/monitoring/health-check.ts:16 - HealthCheckConfig (used in module)
+v2/src/monitoring/health-check.ts:24 - AlertConfig
+v2/src/neural/index.ts:22 - NeuralDomainMapper (used in module)
+v2/src/neural/index.ts:23 - DomainNode (used in module)
+v2/src/neural/index.ts:24 - DomainEdge (used in module)
+v2/src/neural/index.ts:25 - DomainGraph (used in module)
+v2/src/neural/index.ts:26 - CohesionAnalysis
+v2/src/neural/index.ts:27 - DependencyAnalysis
+v2/src/neural/index.ts:28 - BoundaryOptimization
+v2/src/neural/index.ts:29 - GNNLayerConfig
+v2/src/neural/index.ts:30 - TrainingConfig
+v2/src/neural/index.ts:35 - NeuralDomainMapperIntegration (used in module)
+v2/src/neural/index.ts:36 - createDomainMapperIntegration (used in module)
+v2/src/neural/index.ts:37 - DomainMapperIntegrationConfig
+v2/src/neural/index.ts:38 - DomainAnalysisResult (used in module)
+v2/src/neural/index.ts:43 - Pattern
+v2/src/neural/index.ts:44 - TrainingData (used in module)
+v2/src/neural/index.ts:45 - Prediction
+v2/src/neural/index.ts:46 - Adaptation
+v2/src/neural/index.ts:47 - AgenticHookContext
+v2/src/neural/index.ts:48 - NeuralHookPayload
+v2/src/neural/index.ts:54 - NEURAL_MODULE_VERSION (used in module)
+v2/src/neural/index.ts:59 - DEFAULT_CONFIGS (used in module)
+v2/src/neural/index.ts:192 - NeuralUtils (used in module)
+v2/src/neural/index.ts:372 - Examples (used in module)
+v2/src/neural/index.ts:461 - default
+v2/src/permissions/permission-manager.ts:473 - createPermissionManager (used in module)
+v2/src/permissions/permission-manager.ts:22 - PermissionLevel (used in module)
+v2/src/permissions/permission-manager.ts:24 - PermissionRule (used in module)
+v2/src/permissions/permission-manager.ts:34 - PermissionConfig (used in module)
+v2/src/permissions/permission-manager.ts:42 - PermissionQuery (used in module)
+v2/src/permissions/permission-manager.ts:52 - PermissionResolution (used in module)
+v2/src/permissions/permission-manager.ts:70 - PermissionManager (used in module)
+v2/src/permissions/permission-manager.ts:490 - permissionManager
+v2/src/providers/base-provider.ts:29 - BaseProviderOptions (used in module)
+v2/src/providers/index.ts:10 - BaseProvider
+v2/src/providers/index.ts:11 - AnthropicProvider
+v2/src/providers/index.ts:12 - OpenAIProvider
+v2/src/providers/index.ts:13 - GoogleProvider
+v2/src/providers/index.ts:14 - CohereProvider
+v2/src/providers/index.ts:15 - OllamaProvider
+v2/src/providers/index.ts:18 - ProviderManager
+v2/src/providers/index.ts:18 - ProviderManagerConfig
+v2/src/providers/index.ts:21 - createProviderManager
+v2/src/providers/index.ts:21 - getDefaultProviderConfig
+v2/src/providers/index.ts:517 - isLLMResponse
+v2/src/providers/index.ts:521 - isLLMStreamEvent
+v2/src/providers/index.ts:525 - isLLMProviderError
+v2/src/providers/index.ts:529 - isRateLimitError
+v2/src/providers/index.ts:10 - LLMProvider
+v2/src/providers/index.ts:19 - LLMModel
+v2/src/providers/index.ts:54 - LLMProviderConfig
+v2/src/providers/index.ts:88 - LLMMessage
+v2/src/providers/index.ts:98 - LLMRequest
+v2/src/providers/index.ts:124 - LLMFunction
+v2/src/providers/index.ts:134 - LLMResponse
+v2/src/providers/index.ts:169 - LLMStreamEvent
+v2/src/providers/index.ts:185 - ProviderCapabilities
+v2/src/providers/index.ts:224 - LLMProviderError
+v2/src/providers/index.ts:238 - RateLimitError
+v2/src/providers/index.ts:250 - AuthenticationError
+v2/src/providers/index.ts:257 - ModelNotFoundError
+v2/src/providers/index.ts:264 - ProviderUnavailableError
+v2/src/providers/index.ts:273 - ILLMProvider
+v2/src/providers/index.ts:301 - ModelInfo
+v2/src/providers/index.ts:318 - HealthCheckResult
+v2/src/providers/index.ts:326 - ProviderStatus
+v2/src/providers/index.ts:335 - CostEstimate
+v2/src/providers/index.ts:348 - UsageStats
+v2/src/providers/index.ts:374 - UsagePeriod
+v2/src/providers/index.ts:378 - FallbackStrategy
+v2/src/providers/index.ts:385 - FallbackRule
+v2/src/providers/index.ts:394 - RetryStrategy
+v2/src/providers/index.ts:405 - CacheConfig
+v2/src/providers/index.ts:413 - CacheEntry
+v2/src/providers/index.ts:424 - RateLimiter
+v2/src/providers/index.ts:434 - LoadBalancer
+v2/src/providers/index.ts:440 - ProviderMetrics
+v2/src/providers/index.ts:453 - ProviderMonitor
+v2/src/providers/index.ts:460 - Alert
+v2/src/providers/index.ts:473 - CostOptimizer
+v2/src/providers/index.ts:479 - CostConstraints
+v2/src/providers/index.ts:487 - OptimizationResult
+v2/src/providers/index.ts:495 - CostAnalysis
+v2/src/providers/index.ts:507 - OptimizationSuggestion
+v2/src/providers/utils.ts:189 - validateProviderConfig
+v2/src/providers/utils.ts:230 - getModelRecommendations
+v2/src/providers/utils.ts:304 - estimateMonthlyCost
+v2/src/resources/resource-manager.ts:11 - ResourceManagerConfig (used in module)
+v2/src/resources/resource-manager.ts:27 - ResourceLimits (used in module)
+v2/src/resources/resource-manager.ts:36 - PriorityWeights (used in module)
+v2/src/resources/resource-manager.ts:44 - Resource (used in module)
+v2/src/resources/resource-manager.ts:63 - ResourcePool (used in module)
+v2/src/resources/resource-manager.ts:76 - ResourceReservation (used in module)
+v2/src/resources/resource-manager.ts:91 - ResourceAllocation (used in module)
+v2/src/resources/resource-manager.ts:106 - ResourceRequirements (used in module)
+v2/src/resources/resource-manager.ts:117 - ResourceSpec (used in module)
+v2/src/resources/resource-manager.ts:126 - ResourceConstraints (used in module)
+v2/src/resources/resource-manager.ts:136 - ResourcePreferences (used in module)
+v2/src/resources/resource-manager.ts:144 - ResourceUsage (used in module)
+v2/src/resources/resource-manager.ts:155 - ResourceMetadata (used in module)
+v2/src/resources/resource-manager.ts:167 - PerformanceMetrics (used in module)
+v2/src/resources/resource-manager.ts:176 - ReliabilityMetrics (used in module)
+v2/src/resources/resource-manager.ts:184 - CostMetrics (used in module)
+v2/src/resources/resource-manager.ts:192 - FailureRecord (used in module)
+v2/src/resources/resource-manager.ts:200 - QoSConfig (used in module)
+v2/src/resources/resource-manager.ts:206 - QoSGuarantee (used in module)
+v2/src/resources/resource-manager.ts:214 - QoSObjective (used in module)
+v2/src/resources/resource-manager.ts:221 - QoSViolation (used in module)
+v2/src/resources/resource-manager.ts:231 - QoSViolationPolicy (used in module)
+v2/src/resources/resource-manager.ts:238 - ScalingConfig (used in module)
+v2/src/resources/resource-manager.ts:248 - ScalingMetric (used in module)
+v2/src/resources/resource-manager.ts:255 - PoolStatistics (used in module)
+v2/src/resources/resource-manager.ts:267 - NodeAffinity (used in module)
+v2/src/resources/resource-manager.ts:273 - AntiAffinity (used in module)
+v2/src/resources/resource-manager.ts:279 - TimeWindow (used in module)
+v2/src/resources/resource-manager.ts:285 - ResourceFilter (used in module)
+v2/src/resources/resource-manager.ts:293 - FilterCondition (used in module)
+v2/src/resources/resource-manager.ts:299 - ResourceType (used in module)
+v2/src/resources/resource-manager.ts:300 - ResourceStatus (used in module)
+v2/src/resources/resource-manager.ts:307 - ResourcePriority (used in module)
+v2/src/resources/resource-manager.ts:308 - ReservationStatus (used in module)
+v2/src/resources/resource-manager.ts:315 - AllocationStatus (used in module)
+v2/src/resources/resource-manager.ts:316 - PoolStrategy (used in module)
+v2/src/resources/resource-manager.ts:317 - LoadBalancingStrategy (used in module)
+v2/src/resources/resource-manager.ts:322 - BillingModel (used in module)
+v2/src/sdk/checkpoint-manager.ts:18 - Checkpoint (used in module)
+v2/src/sdk/checkpoint-manager.ts:28 - CheckpointManagerOptions (used in module)
+v2/src/sdk/claude-flow-mcp-integration.ts:232 - exampleClaudeFlowMcpWithSdk
+v2/src/sdk/claude-flow-mcp-integration.ts:297 - exampleNpxIntegration
+v2/src/sdk/claude-flow-mcp-integration.ts:27 - ClaudeFlowIntegrationConfig (used in module)
+v2/src/sdk/claude-flow-mcp-integration.ts:56 - IntegratedClaudeFlowSession (used in module)
+v2/src/sdk/compatibility-layer.ts:235 - createCompatibilityLayer
+v2/src/sdk/in-process-mcp.ts:25 - createMathMcpServer (used in module)
+v2/src/sdk/in-process-mcp.ts:80 - createSessionMcpServer (used in module)
+v2/src/sdk/in-process-mcp.ts:206 - createCheckpointMcpServer (used in module)
+v2/src/sdk/in-process-mcp.ts:353 - createQueryControlMcpServer (used in module)
+v2/src/sdk/query-control.ts:16 - QueryControlOptions (used in module)
+v2/src/sdk/query-control.ts:23 - ControlledQuery (used in module)
+v2/src/sdk/query-control.ts:38 - QueryControlCommand (used in module)
+v2/src/sdk/query-control.ts:48 - QueryStatusUpdate (used in module)
+v2/src/sdk/sdk-config.ts:11 - SDKConfiguration (used in module)
+v2/src/sdk/sdk-config.ts:206 - defaultSDKAdapter
+v2/src/sdk/session-forking.ts:23 - ForkedSession (used in module)
+v2/src/sdk/session-forking.ts:35 - ParallelExecutionResult (used in module)
+v2/src/sdk/session-forking.ts:50 - SessionForkOptions (used in module)
+v2/src/sdk/validation-demo.ts:539 - validateSessionForking (used in module)
+v2/src/sdk/validation-demo.ts:540 - validateQueryControl (used in module)
+v2/src/sdk/validation-demo.ts:541 - validateCheckpoints (used in module)
+v2/src/sdk/validation-demo.ts:542 - validateBenefits (used in module)
+v2/src/sdk/validation-demo.ts:543 - validateIntegration (used in module)
+v2/src/swarm/advanced-orchestrator.ts:40 - AdvancedSwarmConfig (used in module)
+v2/src/swarm/advanced-orchestrator.ts:63 - SwarmExecutionContext (used in module)
+v2/src/swarm/advanced-orchestrator.ts:77 - SwarmDeploymentOptions (used in module)
+v2/src/swarm/advanced-orchestrator.ts:1200 - default
+v2/src/swarm/claude-code-interface.ts:33 - ClaudeCodeConfig (used in module)
+v2/src/swarm/claude-code-interface.ts:49 - ClaudeAgent (used in module)
+v2/src/swarm/claude-code-interface.ts:64 - ClaudeAgentMetrics (used in module)
+v2/src/swarm/claude-code-interface.ts:75 - ClaudeTaskExecution (used in module)
+v2/src/swarm/claude-code-interface.ts:91 - ClaudeSpawnOptions (used in module)
+v2/src/swarm/claude-code-interface.ts:105 - ProcessPool (used in module)
+v2/src/swarm/claude-code-interface.ts:116 - ClaudeCodeInterface (used in module)
+v2/src/swarm/claude-code-interface.ts:1268 - default
+v2/src/swarm/claude-flow-executor.ts:12 - ClaudeFlowExecutorConfig (used in module)
+v2/src/swarm/claude-flow-executor.ts:20 - ClaudeFlowExecutor (used in module)
+v2/src/swarm/claude-flow-executor.ts:266 - default
+v2/src/swarm/direct-executor.ts:16 - DirectExecutorConfig (used in module)
+v2/src/swarm/direct-executor.ts:21 - DirectTaskExecutor
+v2/src/swarm/executor-sdk.ts:26 - ExecutionConfig (used in module)
+v2/src/swarm/executor-sdk.ts:34 - ExecutionResult (used in module)
+v2/src/swarm/executor-sdk.ts:47 - TaskExecutorSDK (used in module)
+v2/src/swarm/executor-sdk.ts:407 - TaskExecutor
+v2/src/swarm/executor-v2.ts:26 - ClaudeExecutionOptionsV2 (used in module)
+v2/src/swarm/executor-v2.ts:34 - TaskExecutorV2 (used in module)
+v2/src/swarm/executor-v2.ts:425 - default
+v2/src/swarm/hive-mind-integration.ts:25 - HiveMindConfig (used in module)
+v2/src/swarm/hive-mind-integration.ts:38 - HiveMindSession (used in module)
+v2/src/swarm/hive-mind-integration.ts:51 - CollectiveIntelligence (used in module)
+v2/src/swarm/hive-mind-integration.ts:58 - Pattern (used in module)
+v2/src/swarm/hive-mind-integration.ts:70 - Insight (used in module)
+v2/src/swarm/hive-mind-integration.ts:82 - CollectiveDecision (used in module)
+v2/src/swarm/hive-mind-integration.ts:94 - DecisionOption (used in module)
+v2/src/swarm/hive-mind-integration.ts:104 - Prediction (used in module)
+v2/src/swarm/hive-mind-integration.ts:117 - KnowledgeBase (used in module)
+v2/src/swarm/hive-mind-integration.ts:124 - Fact (used in module)
+v2/src/swarm/hive-mind-integration.ts:135 - Procedure (used in module)
+v2/src/swarm/hive-mind-integration.ts:147 - ProcedureStep (used in module)
+v2/src/swarm/hive-mind-integration.ts:155 - BestPractice (used in module)
+v2/src/swarm/hive-mind-integration.ts:168 - Lesson (used in module)
+v2/src/swarm/hive-mind-integration.ts:181 - DistributedLearning (used in module)
+v2/src/swarm/hive-mind-integration.ts:188 - LearningModel (used in module)
+v2/src/swarm/hive-mind-integration.ts:199 - ModelPerformance (used in module)
+v2/src/swarm/hive-mind-integration.ts:208 - Experience (used in module)
+v2/src/swarm/hive-mind-integration.ts:220 - Adaptation (used in module)
+v2/src/swarm/hive-mind-integration.ts:231 - PerformanceTrends (used in module)
+v2/src/swarm/hive-mind-integration.ts:239 - TrendAnalysis (used in module)
+v2/src/swarm/hive-mind-integration.ts:248 - HiveMindIntegration (used in module)
+v2/src/swarm/hive-mind-integration.ts:1127 - default
+v2/src/swarm/index.ts:21 - getSwarmComponents
+v2/src/swarm/index.ts:33 - SwarmCoordinator
+v2/src/swarm/index.ts:21 - ExecutionContext
+v2/src/swarm/index.ts:31 - ExecutionResources
+v2/src/swarm/index.ts:40 - ExecutionResult
+v2/src/swarm/index.ts:51 - ResourceUsage
+v2/src/swarm/index.ts:59 - ExecutionConfig
+v2/src/swarm/index.ts:71 - TaskExecutor
+v2/src/swarm/index.ts:1019 - ClaudeExecutionOptions
+v2/src/swarm/index.ts:1030 - ClaudeCommand
+v2/src/swarm/index.ts:1036 - ExecutionMetrics
+v2/src/swarm/index.ts:1086 - isAgentId
+v2/src/swarm/index.ts:1090 - isTaskId
+v2/src/swarm/index.ts:1094 - isSwarmEvent
+v2/src/swarm/index.ts:1098 - isTaskDefinition
+v2/src/swarm/index.ts:1102 - isAgentState
+v2/src/swarm/index.ts:9 - SwarmId
+v2/src/swarm/index.ts:15 - AgentId
+v2/src/swarm/index.ts:22 - TaskId
+v2/src/swarm/index.ts:31 - AgentType
+v2/src/swarm/index.ts:51 - AgentStatus
+v2/src/swarm/index.ts:61 - AgentCapabilities
+v2/src/swarm/index.ts:93 - AgentMetrics
+v2/src/swarm/index.ts:118 - AgentState
+v2/src/swarm/index.ts:149 - AgentConfig
+v2/src/swarm/index.ts:173 - AgentEnvironment
+v2/src/swarm/index.ts:192 - AgentError
+v2/src/swarm/index.ts:204 - TaskType
+v2/src/swarm/index.ts:263 - TaskStatus
+v2/src/swarm/index.ts:276 - TaskPriority
+v2/src/swarm/index.ts:283 - TaskRequirements
+v2/src/swarm/index.ts:306 - TaskConstraints
+v2/src/swarm/index.ts:329 - TaskResult
+v2/src/swarm/index.ts:353 - TaskDefinition
+v2/src/swarm/index.ts:394 - TaskAttempt
+v2/src/swarm/index.ts:405 - TaskStatusChange
+v2/src/swarm/index.ts:413 - TaskError
+v2/src/swarm/index.ts:425 - SwarmMode
+v2/src/swarm/index.ts:432 - SwarmStrategy
+v2/src/swarm/index.ts:442 - SwarmObjective
+v2/src/swarm/index.ts:474 - SwarmRequirements
+v2/src/swarm/index.ts:496 - SwarmConstraints
+v2/src/swarm/index.ts:515 - SwarmMilestone
+v2/src/swarm/index.ts:526 - TimeWindow
+v2/src/swarm/index.ts:533 - SwarmStatus
+v2/src/swarm/index.ts:544 - SwarmProgress
+v2/src/swarm/index.ts:571 - SwarmResults
+v2/src/swarm/index.ts:595 - SwarmMetrics
+v2/src/swarm/index.ts:623 - TaskDependency
+v2/src/swarm/index.ts:630 - DependencyType
+v2/src/swarm/index.ts:639 - CoordinationStrategy
+v2/src/swarm/index.ts:659 - AgentSelectionStrategy
+v2/src/swarm/index.ts:669 - TaskSchedulingStrategy
+v2/src/swarm/index.ts:678 - LoadBalancingStrategy
+v2/src/swarm/index.ts:686 - FaultToleranceStrategy
+v2/src/swarm/index.ts:695 - CommunicationStrategy
+v2/src/swarm/index.ts:706 - SwarmMemory
+v2/src/swarm/index.ts:727 - MemoryPartition
+v2/src/swarm/index.ts:748 - MemoryType
+v2/src/swarm/index.ts:758 - MemoryEntry
+v2/src/swarm/index.ts:785 - AccessLevel
+v2/src/swarm/index.ts:792 - MemoryPermissions
+v2/src/swarm/index.ts:799 - ConsistencyLevel
+v2/src/swarm/index.ts:807 - MonitoringConfig
+v2/src/swarm/index.ts:833 - SystemMetrics
+v2/src/swarm/index.ts:860 - Alert
+v2/src/swarm/index.ts:881 - AlertLevel
+v2/src/swarm/index.ts:887 - AlertType
+v2/src/swarm/index.ts:899 - SwarmEvent
+v2/src/swarm/index.ts:921 - EventType
+v2/src/swarm/index.ts:966 - SwarmEventEmitter
+v2/src/swarm/index.ts:984 - SwarmConfig
+v2/src/swarm/index.ts:1020 - SecurityConfig
+v2/src/swarm/index.ts:1038 - PerformanceConfig
+v2/src/swarm/index.ts:1059 - ValidationResult
+v2/src/swarm/index.ts:1070 - ValidationError
+v2/src/swarm/index.ts:1077 - ValidationWarning
+v2/src/swarm/index.ts:1108 - SWARM_CONSTANTS
+v2/src/swarm/index.ts:5 - StrategyMetrics
+v2/src/swarm/index.ts:24 - TaskPattern
+v2/src/swarm/index.ts:33 - DecompositionResult
+v2/src/swarm/index.ts:55 - TaskBatch
+v2/src/swarm/index.ts:63 - AgentAllocation
+v2/src/swarm/index.ts:70 - BaseStrategy
+v2/src/swarm/index.ts:2 - ExtendedTaskType
+v2/src/swarm/index.ts:85 - AutoStrategy
+v2/src/swarm/index.ts:92 - ResearchStrategy
+v2/src/swarm/index.ts:24 - MemoryQuery
+v2/src/swarm/index.ts:41 - MemorySearchOptions
+v2/src/swarm/index.ts:50 - MemoryStatistics
+v2/src/swarm/index.ts:62 - MemoryBackup
+v2/src/swarm/index.ts:71 - MemoryConfig
+v2/src/swarm/index.ts:92 - SwarmMemoryManager
+v2/src/swarm/index.ts:491 - copyPrompts
+v2/src/swarm/index.ts:8 - CopyOptions
+v2/src/swarm/index.ts:24 - CopyProgress
+v2/src/swarm/index.ts:33 - CopyResult
+v2/src/swarm/index.ts:44 - CopyError
+v2/src/swarm/index.ts:50 - FileInfo
+v2/src/swarm/index.ts:58 - PromptCopier
+v2/src/swarm/index.ts:239 - copyPromptsEnhanced
+v2/src/swarm/index.ts:17 - EnhancedPromptCopier
+v2/src/swarm/index.ts:293 - createProgressBar
+v2/src/swarm/index.ts:315 - formatFileSize
+v2/src/swarm/index.ts:329 - formatDuration
+v2/src/swarm/index.ts:5 - PromptConfig
+v2/src/swarm/index.ts:20 - DEFAULT_CONFIG
+v2/src/swarm/index.ts:57 - PromptConfigManager
+v2/src/swarm/index.ts:123 - PromptPathResolver
+v2/src/swarm/index.ts:211 - PromptValidator
+v2/src/swarm/index.ts:403 - createPromptManager
+v2/src/swarm/index.ts:410 - getDefaultPromptManager
+v2/src/swarm/index.ts:14 - PromptManagerOptions
+v2/src/swarm/index.ts:21 - SyncOptions
+v2/src/swarm/index.ts:28 - ValidationReport
+v2/src/swarm/index.ts:39 - PromptManager
+v2/src/swarm/index.ts:299 - program
+v2/src/swarm/index.ts:6 - ClaudeConnectionPool
+v2/src/swarm/index.ts:7 - PoolConfig
+v2/src/swarm/index.ts:7 - PooledConnection
+v2/src/swarm/index.ts:9 - AsyncFileManager
+v2/src/swarm/index.ts:10 - FileOperationResult
+v2/src/swarm/index.ts:12 - CircularBuffer
+v2/src/swarm/index.ts:14 - TTLMap
+v2/src/swarm/index.ts:15 - TTLMapOptions
+v2/src/swarm/index.ts:17 - OptimizedExecutor
+v2/src/swarm/index.ts:18 - ExecutorConfig
+v2/src/swarm/index.ts:21 - createOptimizedSwarmStack
+v2/src/swarm/json-output-aggregator.ts:21 - SwarmOutputAggregate (used in module)
+v2/src/swarm/json-output-aggregator.ts:52 - AgentOutputData (used in module)
+v2/src/swarm/json-output-aggregator.ts:70 - TaskOutputData (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:25 - MCPToolExecutionResult (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:41 - MCPToolRegistry (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:48 - MCPExecutionContext (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:58 - MCPIntegrationConfig (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:73 - MCPIntegrationWrapper (used in module)
+v2/src/swarm/mcp-integration-wrapper.ts:860 - default
+v2/src/swarm/result-aggregator.ts:26 - AggregationConfig (used in module)
+v2/src/swarm/result-aggregator.ts:39 - QualityMetrics (used in module)
+v2/src/swarm/result-aggregator.ts:50 - AggregatedResult (used in module)
+v2/src/swarm/result-aggregator.ts:78 - Insight (used in module)
+v2/src/swarm/result-aggregator.ts:93 - Recommendation (used in module)
+v2/src/swarm/result-aggregator.ts:107 - ResultReport (used in module)
+v2/src/swarm/result-aggregator.ts:125 - ExecutionSummary (used in module)
+v2/src/swarm/result-aggregator.ts:137 - QualityAnalysis (used in module)
+v2/src/swarm/result-aggregator.ts:150 - PerformanceAnalysis (used in module)
+v2/src/swarm/result-aggregator.ts:159 - ReportAppendix (used in module)
+v2/src/swarm/result-aggregator.ts:166 - SwarmResultAggregator (used in module)
+v2/src/swarm/result-aggregator.ts:1046 - default
+v2/src/swarm/sparc-executor.ts:11 - SparcPhase (used in module)
+v2/src/swarm/sparc-executor.ts:17 - SparcExecutorConfig (used in module)
+v2/src/swarm/sparc-executor.ts:24 - SparcTaskExecutor
+v2/src/task/index.ts:43 - initializeTaskManagement (used in module)
+v2/src/task/index.ts:100 - createTaskTodos (used in module)
+v2/src/task/index.ts:126 - launchParallelAgents (used in module)
+v2/src/task/index.ts:152 - storeCoordinationData (used in module)
+v2/src/task/index.ts:172 - retrieveCoordinationData (used in module)
+v2/src/task/index.ts:8 - TaskEngine (used in module)
+v2/src/task/index.ts:9 - WorkflowTask
+v2/src/task/index.ts:10 - TaskDependency
+v2/src/task/index.ts:11 - ResourceRequirement
+v2/src/task/index.ts:12 - TaskSchedule
+v2/src/task/index.ts:13 - TaskExecution
+v2/src/task/index.ts:14 - TaskMetrics
+v2/src/task/index.ts:15 - TaskLog
+v2/src/task/index.ts:16 - Workflow
+v2/src/task/index.ts:17 - TaskFilter
+v2/src/task/index.ts:18 - TaskSort
+v2/src/task/index.ts:19 - TaskCheckpoint
+v2/src/task/index.ts:23 - createTaskCreateCommand (used in module)
+v2/src/task/index.ts:24 - createTaskListCommand (used in module)
+v2/src/task/index.ts:25 - createTaskStatusCommand (used in module)
+v2/src/task/index.ts:26 - createTaskCancelCommand (used in module)
+v2/src/task/index.ts:27 - createTaskWorkflowCommand (used in module)
+v2/src/task/index.ts:31 - TaskCommandContext
+v2/src/task/index.ts:32 - TodoItem
+v2/src/task/index.ts:33 - MemoryEntry
+v2/src/task/index.ts:34 - CoordinationContext
+v2/src/task/index.ts:35 - TaskMetadata
+v2/src/task/index.ts:38 - TaskCoordinator (used in module)
+v2/src/task/index.ts:187 - USAGE_EXAMPLES (used in module)
+v2/src/task/index.ts:312 - CLI_EXAMPLES (used in module)
+v2/src/task/index.ts:379 - default
+v2/src/types/index.ts:10 - MemoryEntry
+v2/src/types/index.ts:22 - TaskId
+v2/src/types/index.ts:23 - TaskStatus
+v2/src/types/index.ts:26 - ComponentStatus
+v2/src/types/index.ts:34 - AlertData
+v2/src/types/index.ts:1086 - isAgentId
+v2/src/types/index.ts:1090 - isTaskId
+v2/src/types/index.ts:1094 - isSwarmEvent
+v2/src/types/index.ts:1098 - isTaskDefinition
+v2/src/types/index.ts:1102 - isAgentState
+v2/src/types/index.ts:9 - SwarmId
+v2/src/types/index.ts:15 - AgentId
+v2/src/types/index.ts:31 - AgentType
+v2/src/types/index.ts:51 - AgentStatus
+v2/src/types/index.ts:61 - AgentCapabilities
+v2/src/types/index.ts:93 - AgentMetrics
+v2/src/types/index.ts:118 - AgentState
+v2/src/types/index.ts:149 - AgentConfig
+v2/src/types/index.ts:173 - AgentEnvironment
+v2/src/types/index.ts:192 - AgentError
+v2/src/types/index.ts:204 - TaskType
+v2/src/types/index.ts:276 - TaskPriority
+v2/src/types/index.ts:283 - TaskRequirements
+v2/src/types/index.ts:306 - TaskConstraints
+v2/src/types/index.ts:329 - TaskResult
+v2/src/types/index.ts:353 - TaskDefinition
+v2/src/types/index.ts:394 - TaskAttempt
+v2/src/types/index.ts:405 - TaskStatusChange
+v2/src/types/index.ts:413 - TaskError
+v2/src/types/index.ts:425 - SwarmMode
+v2/src/types/index.ts:432 - SwarmStrategy
+v2/src/types/index.ts:442 - SwarmObjective
+v2/src/types/index.ts:474 - SwarmRequirements
+v2/src/types/index.ts:496 - SwarmConstraints
+v2/src/types/index.ts:515 - SwarmMilestone
+v2/src/types/index.ts:526 - TimeWindow
+v2/src/types/index.ts:533 - SwarmStatus
+v2/src/types/index.ts:544 - SwarmProgress
+v2/src/types/index.ts:571 - SwarmResults
+v2/src/types/index.ts:595 - SwarmMetrics
+v2/src/types/index.ts:623 - TaskDependency
+v2/src/types/index.ts:630 - DependencyType
+v2/src/types/index.ts:639 - CoordinationStrategy
+v2/src/types/index.ts:659 - AgentSelectionStrategy
+v2/src/types/index.ts:669 - TaskSchedulingStrategy
+v2/src/types/index.ts:678 - LoadBalancingStrategy
+v2/src/types/index.ts:686 - FaultToleranceStrategy
+v2/src/types/index.ts:695 - CommunicationStrategy
+v2/src/types/index.ts:706 - SwarmMemory
+v2/src/types/index.ts:727 - MemoryPartition
+v2/src/types/index.ts:748 - MemoryType
+v2/src/types/index.ts:785 - AccessLevel
+v2/src/types/index.ts:792 - MemoryPermissions
+v2/src/types/index.ts:799 - ConsistencyLevel
+v2/src/types/index.ts:807 - MonitoringConfig
+v2/src/types/index.ts:833 - SystemMetrics
+v2/src/types/index.ts:860 - Alert
+v2/src/types/index.ts:881 - AlertLevel
+v2/src/types/index.ts:887 - AlertType
+v2/src/types/index.ts:899 - SwarmEvent
+v2/src/types/index.ts:921 - EventType
+v2/src/types/index.ts:966 - SwarmEventEmitter
+v2/src/types/index.ts:984 - SwarmConfig
+v2/src/types/index.ts:1020 - SecurityConfig
+v2/src/types/index.ts:1038 - PerformanceConfig
+v2/src/types/index.ts:1059 - ValidationResult
+v2/src/types/index.ts:1070 - ValidationError
+v2/src/types/index.ts:1077 - ValidationWarning
+v2/src/types/index.ts:1108 - SWARM_CONSTANTS
+v2/src/types/interfaces.ts:121 - TopologyChange (used in module)
+v2/src/types/interfaces.ts:172 - ResourceAllocation (used in module)
+v2/src/types/interfaces.ts:200 - SystemMetrics (used in module)
+v2/src/types/interfaces.ts:232 - Goal (used in module)
+v2/src/types/interfaces.ts:239 - Constraint (used in module)
+v2/src/types/interfaces.ts:253 - StrategyPhase (used in module)
+v2/src/types/interfaces.ts:261 - Risk (used in module)
+v2/src/utils/error-handler.ts:28 - handleError
+v2/src/utils/error-handler.ts:24 - isError (used in module)
+v2/src/utils/error-handler.ts:26 - getErrorStack (used in module)
+v2/src/utils/error-recovery.ts:28 - isNpmCacheError (used in module)
+v2/src/utils/error-recovery.ts:85 - isWSL (used in module)
+v2/src/utils/error-recovery.ts:101 - cleanNpmCache (used in module)
+v2/src/utils/error-recovery.ts:155 - retryWithRecovery (used in module)
+v2/src/utils/error-recovery.ts:222 - recoverWSLErrors (used in module)
+v2/src/utils/error-recovery.ts:267 - verifyBetterSqlite3 (used in module)
+v2/src/utils/error-recovery.ts:279 - installBetterSqlite3WithRecovery (used in module)
+v2/src/utils/error-recovery.ts:315 - recoverInitErrors (used in module)
+v2/src/utils/error-recovery.ts:11 - RecoveryResult (used in module)
+v2/src/utils/error-recovery.ts:18 - RetryOptions (used in module)
+v2/src/utils/errors.ts:218 - isClaudeFlowError (used in module)
+v2/src/utils/errors.ts:222 - formatError
+v2/src/utils/errors.ts:229 - getErrorDetails
+v2/src/utils/errors.ts:59 - MemoryError (used in module)
+v2/src/utils/errors.ts:66 - MemoryBackendError
+v2/src/utils/errors.ts:74 - MemoryConflictError
+v2/src/utils/errors.ts:85 - CoordinationError (used in module)
+v2/src/utils/errors.ts:92 - DeadlockError
+v2/src/utils/errors.ts:104 - ResourceLockError
+v2/src/utils/errors.ts:159 - TaskError (used in module)
+v2/src/utils/errors.ts:166 - TaskTimeoutError
+v2/src/utils/errors.ts:174 - TaskDependencyError
+v2/src/utils/formatters.ts:27 - formatNumber
+v2/src/utils/formatters.ts:31 - formatRelativeTime
+v2/src/utils/formatters.ts:41 - formatUptime
+v2/src/utils/formatters.ts:46 - formatRate
+v2/src/utils/formatters.ts:52 - truncate
+v2/src/utils/formatters.ts:57 - formatStatus
+v2/src/utils/formatters.ts:61 - formatHealth
+v2/src/utils/formatters.ts:71 - formatMetric
+v2/src/utils/helpers.ts:18 - add (used in module)
+v2/src/utils/helpers.ts:25 - helloWorld
+v2/src/utils/helpers.ts:124 - debounce
+v2/src/utils/helpers.ts:145 - throttle
+v2/src/utils/helpers.ts:173 - deepClone (used in module)
+v2/src/utils/helpers.ts:320 - parseDuration
+v2/src/utils/helpers.ts:348 - ensureArray
+v2/src/utils/helpers.ts:355 - groupBy
+v2/src/utils/helpers.ts:432 - calculator
+v2/src/utils/helpers.ts:528 - greeting
+v2/src/utils/helpers.ts:405 - CircuitBreakerState (used in module)
+v2/src/utils/helpers.ts:414 - CircuitBreakerOptions (used in module)
+v2/src/utils/key-redactor.ts:6 - RedactionConfig
+v2/src/utils/key-redactor.ts:184 - redactor
+v2/src/utils/npx-isolated-cache.js:31 - createIsolatedCache (used in module)
+v2/src/utils/npx-isolated-cache.js:135 - cleanupAllCaches (used in module)
+v2/src/utils/paths.ts:44 - resolveProjectPath
+v2/src/utils/type-guards.ts:8 - isObject (used in module)
+v2/src/utils/type-guards.ts:22 - hasMessage (used in module)
+v2/src/utils/type-guards.ts:29 - hasStack (used in module)
+v2/src/utils/type-guards.ts:36 - isErrorLike
+v2/src/utils/type-guards.ts:43 - hasCode
+v2/src/utils/type-guards.ts:54 - hasAgentId
+v2/src/utils/type-guards.ts:67 - hasPid
+v2/src/utils/type-guards.ts:103 - isString
+v2/src/utils/type-guards.ts:110 - isNumber
+v2/src/utils/type-guards.ts:117 - isBoolean
+v2/src/utils/type-guards.ts:124 - isArray (used in module)
+v2/src/utils/type-guards.ts:131 - isFunction
+v2/src/utils/type-guards.ts:138 - isNullOrUndefined
+v2/src/utils/type-guards.ts:145 - isDefined
+v2/src/utils/type-guards.ts:152 - hasAgentLoad
+v2/src/utils/type-guards.ts:167 - hasAgentTask
+v2/src/utils/type-guards.ts:181 - hasWorkStealingData
+v2/src/utils/types.ts:169 - MemoryQuery
+v2/src/utils/types.ts:265 - OrchestratorConfig (used in module)
+v2/src/utils/types.ts:297 - CoordinationConfig (used in module)
+v2/src/utils/types.ts:345 - Message (used in module)
+v2/src/utils/types.ts:415 - MCPPrompt
+v2/src/utils/types.ts:425 - MCPResource
+v2/src/utils/types.ts:458 - MCPToolCall
+v2/src/utils/types.ts:463 - MCPToolResult
+v2/src/utils/types.ts:473 - MCPLogEntry
+v2/src/utils/types.ts:533 - ILogger (used in module)
+v2/src/utils/types.ts:541 - IEventBus
+v2/src/utils/types.ts:549 - Terminal
+v2/src/utils/types.ts:556 - TerminalCommand
+v2/src/utils/types.ts:571 - CredentialsConfig (used in module)
+v2/src/utils/types.ts:579 - SecurityConfig (used in module)
+v2/src/verification/agent-scorer.ts:20 - AgentScoringConfig (used in module)
+v2/src/verification/agent-scorer.ts:48 - AgentPerformanceData (used in module)
+v2/src/verification/agent-scorer.ts:56 - TaskPerformance (used in module)
+v2/src/verification/agent-scorer.ts:68 - ErrorAnalysis (used in module)
+v2/src/verification/agent-scorer.ts:78 - TrendAnalysis
+v2/src/verification/agent-scorer.ts:92 - AgentTruthScorer
+v2/src/verification/alert-manager.ts:20 - AlertRule (used in module)
+v2/src/verification/alert-manager.ts:53 - AlertCondition (used in module)
+v2/src/verification/alert-manager.ts:60 - AlertSuppression (used in module)
+v2/src/verification/alert-manager.ts:69 - AlertChannel (used in module)
+v2/src/verification/alert-manager.ts:79 - AlertFilter (used in module)
+v2/src/verification/alert-manager.ts:86 - RateLimit (used in module)
+v2/src/verification/alert-manager.ts:93 - AlertHistory (used in module)
+v2/src/verification/alert-manager.ts:101 - AlertStatistics (used in module)
+v2/src/verification/alert-manager.ts:113 - ThresholdGroup (used in module)
+v2/src/verification/alert-manager.ts:120 - TruthAlertManager
+v2/src/verification/cli-integration.ts:420 - initializeVerificationCLI
+v2/src/verification/cli-integration.ts:446 - createVerificationCommand
+v2/src/verification/cli-integration.ts:461 - integrateWithClaudeFlowCLI (used in module)
+v2/src/verification/cli-integration.ts:531 - executeVerificationFromCLI
+v2/src/verification/cli-integration.ts:20 - VerificationCommand (used in module)
+v2/src/verification/cli-integration.ts:27 - CommandOption (used in module)
+v2/src/verification/cli-integration.ts:38 - VerificationCLICommands (used in module)
+v2/src/verification/dashboard-exporter.ts:25 - DashboardConfiguration (used in module)
+v2/src/verification/dashboard-exporter.ts:39 - DashboardPanel (used in module)
+v2/src/verification/dashboard-exporter.ts:51 - PanelConfiguration (used in module)
+v2/src/verification/dashboard-exporter.ts:80 - DrillDownConfig (used in module)
+v2/src/verification/dashboard-exporter.ts:86 - DashboardFilter (used in module)
+v2/src/verification/dashboard-exporter.ts:96 - DashboardLayout (used in module)
+v2/src/verification/dashboard-exporter.ts:103 - DashboardStyling (used in module)
+v2/src/verification/dashboard-exporter.ts:118 - ExportFormat (used in module)
+v2/src/verification/dashboard-exporter.ts:130 - ReportTemplate (used in module)
+v2/src/verification/dashboard-exporter.ts:146 - ReportSection (used in module)
+v2/src/verification/dashboard-exporter.ts:154 - VisualizationData (used in module)
+v2/src/verification/dashboard-exporter.ts:160 - DataSeries (used in module)
+v2/src/verification/dashboard-exporter.ts:174 - Annotation (used in module)
+v2/src/verification/dashboard-exporter.ts:185 - VisualizationMetadata (used in module)
+v2/src/verification/dashboard-exporter.ts:196 - DashboardExporter
+v2/src/verification/examples.ts:16 - BasicSecurityIntegration (used in module)
+v2/src/verification/examples.ts:113 - AdvancedSecurityIntegration (used in module)
+v2/src/verification/examples.ts:197 - ClaudeFlowAgentSecurityWrapper (used in module)
+v2/src/verification/examples.ts:296 - SecurityTestingExample (used in module)
+v2/src/verification/examples.ts:393 - ProductionDeploymentExample (used in module)
+v2/src/verification/hooks.ts:56 - PreTaskChecker (used in module)
+v2/src/verification/hooks.ts:64 - PostTaskValidator (used in module)
+v2/src/verification/hooks.ts:72 - IntegrationTestSuite (used in module)
+v2/src/verification/hooks.ts:80 - IntegrationTest (used in module)
+v2/src/verification/hooks.ts:88 - TruthValidator (used in module)
+v2/src/verification/hooks.ts:95 - RollbackTrigger (used in module)
+v2/src/verification/hooks.ts:103 - VerificationContext (used in module)
+v2/src/verification/hooks.ts:113 - VerificationState (used in module)
+v2/src/verification/hooks.ts:123 - StateSnapshot (used in module)
+v2/src/verification/hooks.ts:131 - VerificationMetrics (used in module)
+v2/src/verification/hooks.ts:140 - VerificationResult (used in module)
+v2/src/verification/hooks.ts:148 - ValidationResult (used in module)
+v2/src/verification/hooks.ts:157 - TestResult (used in module)
+v2/src/verification/hooks.ts:165 - TruthResult (used in module)
+v2/src/verification/hooks.ts:173 - VerificationError (used in module)
+v2/src/verification/hooks.ts:181 - RollbackAction (used in module)
+v2/src/verification/hooks.ts:190 - DEFAULT_VERIFICATION_CONFIG (used in module)
+v2/src/verification/hooks.ts:220 - VerificationHookManager (used in module)
+v2/src/verification/hooks.ts:1124 - DEFAULT_PRE_TASK_CHECKERS (used in module)
+v2/src/verification/hooks.ts:1173 - DEFAULT_POST_TASK_VALIDATORS (used in module)
+v2/src/verification/hooks.ts:1199 - DEFAULT_TRUTH_VALIDATORS (used in module)
+v2/src/verification/hooks.ts:1221 - DEFAULT_ROLLBACK_TRIGGERS (used in module)
+v2/src/verification/interfaces.ts:7 - VerificationConfig
+v2/src/verification/interfaces.ts:18 - VerificationWeights (used in module)
+v2/src/verification/interfaces.ts:27 - EnforcementConfig (used in module)
+v2/src/verification/interfaces.ts:45 - IntegrationConfig (used in module)
+v2/src/verification/interfaces.ts:52 - ReportingConfig (used in module)
+v2/src/verification/interfaces.ts:97 - TruthScore (used in module)
+v2/src/verification/interfaces.ts:109 - Discrepancy (used in module)
+v2/src/verification/interfaces.ts:118 - EvidenceQuality (used in module)
+v2/src/verification/interfaces.ts:126 - AgentClaims (used in module)
+v2/src/verification/interfaces.ts:137 - TestClaims (used in module)
+v2/src/verification/interfaces.ts:144 - QualityClaims (used in module)
+v2/src/verification/interfaces.ts:151 - BuildClaims (used in module)
+v2/src/verification/interfaces.ts:158 - PerformanceClaims (used in module)
+v2/src/verification/interfaces.ts:165 - IntegrationClaims (used in module)
+v2/src/verification/interfaces.ts:173 - Evidence (used in module)
+v2/src/verification/interfaces.ts:182 - TestResults (used in module)
+v2/src/verification/interfaces.ts:190 - TestExecution (used in module)
+v2/src/verification/interfaces.ts:200 - TestFailure (used in module)
+v2/src/verification/interfaces.ts:207 - CodeQuality (used in module)
+v2/src/verification/interfaces.ts:214 - LintResults (used in module)
+v2/src/verification/interfaces.ts:221 - LintIssue (used in module)
+v2/src/verification/interfaces.ts:230 - TypeResults (used in module)
+v2/src/verification/interfaces.ts:237 - TypeIssue (used in module)
+v2/src/verification/interfaces.ts:245 - ComplexityMetrics (used in module)
+v2/src/verification/interfaces.ts:252 - SecurityResults (used in module)
+v2/src/verification/interfaces.ts:263 - SystemHealth (used in module)
+v2/src/verification/interfaces.ts:270 - BuildResults (used in module)
+v2/src/verification/interfaces.ts:278 - DeploymentStatus (used in module)
+v2/src/verification/interfaces.ts:285 - PerformanceMetrics (used in module)
+v2/src/verification/interfaces.ts:293 - ResourceMetrics (used in module)
+v2/src/verification/interfaces.ts:301 - AgentCoordination (used in module)
+v2/src/verification/interfaces.ts:307 - CommunicationLogs (used in module)
+v2/src/verification/interfaces.ts:315 - StateValidation (used in module)
+v2/src/verification/interfaces.ts:321 - StateInconsistency (used in module)
+v2/src/verification/interfaces.ts:328 - DependencyValidation (used in module)
+v2/src/verification/interfaces.ts:335 - VersionConflict (used in module)
+v2/src/verification/interfaces.ts:376 - AgentMemory (used in module)
+v2/src/verification/interfaces.ts:383 - AgentConfig (used in module)
+v2/src/verification/interfaces.ts:401 - SystemConfig (used in module)
+v2/src/verification/interfaces.ts:474 - CrossAgentTest
+v2/src/verification/interfaces.ts:487 - TestScenario (used in module)
+v2/src/verification/interfaces.ts:495 - SetupStep (used in module)
+v2/src/verification/interfaces.ts:503 - AgentInteraction (used in module)
+v2/src/verification/interfaces.ts:513 - CleanupStep (used in module)
+v2/src/verification/interfaces.ts:520 - ExpectedOutcome (used in module)
+v2/src/verification/interfaces.ts:528 - ValidationRule (used in module)
+v2/src/verification/interfaces.ts:536 - CrossAgentTestResult
+v2/src/verification/interfaces.ts:545 - TestExecutionDetails (used in module)
+v2/src/verification/interfaces.ts:552 - SetupResult (used in module)
+v2/src/verification/interfaces.ts:560 - InteractionResult (used in module)
+v2/src/verification/interfaces.ts:570 - CleanupResult (used in module)
+v2/src/verification/interfaces.ts:577 - ValidationResult (used in module)
+v2/src/verification/interfaces.ts:585 - TestEvidence (used in module)
+v2/src/verification/interfaces.ts:592 - CommunicationTrace (used in module)
+v2/src/verification/interfaces.ts:603 - ReliabilityReport (used in module)
+v2/src/verification/interfaces.ts:630 - RepairSuggestion (used in module)
+v2/src/verification/interfaces.ts:638 - VerificationReport
+v2/src/verification/interfaces.ts:653 - ReportSummary (used in module)
+v2/src/verification/interfaces.ts:661 - AgentPerformanceReport (used in module)
+v2/src/verification/interfaces.ts:671 - SystemHealthReport (used in module)
+v2/src/verification/interfaces.ts:679 - Issue (used in module)
+v2/src/verification/interfaces.ts:690 - UptimeStatistics (used in module)
+v2/src/verification/interfaces.ts:698 - TrendAnalysis (used in module)
+v2/src/verification/interfaces.ts:705 - TrendData (used in module)
+v2/src/verification/interfaces.ts:712 - Recommendation (used in module)
+v2/src/verification/interfaces.ts:724 - VerificationManager
+v2/src/verification/interfaces.ts:749 - AgentVerificationInterface
+v2/src/verification/interfaces.ts:775 - CapabilityValidation (used in module)
+v2/src/verification/interfaces.ts:782 - TaskClaims (used in module)
+v2/src/verification/interfaces.ts:789 - AgentMessage (used in module)
+v2/src/verification/interfaces.ts:799 - MessageValidation (used in module)
+v2/src/verification/interfaces.ts:805 - MessageIssue (used in module)
+v2/src/verification/interfaces.ts:812 - CommunicationMetrics (used in module)
+v2/src/verification/interfaces.ts:820 - MetricsExport (used in module)
+v2/src/verification/interfaces.ts:828 - ExportMetadata (used in module)
+v2/src/verification/middleware.ts:14 - SecurityMiddlewareManager (used in module)
+v2/src/verification/middleware.ts:89 - ThreatIntelligenceMiddleware (used in module)
+v2/src/verification/middleware.ts:267 - IPFilterMiddleware (used in module)
+v2/src/verification/middleware.ts:341 - SecurityLoggingMiddleware (used in module)
+v2/src/verification/middleware.ts:438 - PerformanceMonitoringMiddleware (used in module)
+v2/src/verification/middleware.ts:561 - ComplianceMonitoringMiddleware (used in module)
+v2/src/verification/rollback-engine.ts:26 - RollbackEngine
+v2/src/verification/rollback.ts:31 - SystemSnapshot (used in module)
+v2/src/verification/rollback.ts:55 - ProcessState (used in module)
+v2/src/verification/rollback.ts:64 - FileSnapshot (used in module)
+v2/src/verification/rollback.ts:75 - GitState (used in module)
+v2/src/verification/rollback.ts:84 - RollbackTriggerConfig (used in module)
+v2/src/verification/rollback.ts:106 - RecoveryStrategy (used in module)
+v2/src/verification/rollback.ts:116 - SystemMetrics (used in module)
+v2/src/verification/rollback.ts:136 - HealthCheck (used in module)
+v2/src/verification/rollback.ts:143 - RecoveryContext (used in module)
+v2/src/verification/rollback.ts:150 - RecoveryAttempt (used in module)
+v2/src/verification/rollback.ts:158 - RollbackHistoryEntry (used in module)
+v2/src/verification/rollback.ts:184 - StateManager (used in module)
+v2/src/verification/rollback.ts:515 - RollbackTrigger (used in module)
+v2/src/verification/rollback.ts:803 - AutomatedRecovery (used in module)
+v2/src/verification/rollback.ts:1173 - RollbackHistory (used in module)
+v2/src/verification/rollback.ts:1454 - GitRollbackManager (used in module)
+v2/src/verification/rollback.ts:1804 - RollbackManager (used in module)
+v2/src/verification/rollback.ts:2120 - default
+v2/src/verification/security-bypass-test.ts:13 - SecurityBypassPreventionTest (used in module)
+v2/src/verification/security-bypass-test.ts:744 - default
+v2/src/verification/security.ts:14 - AgentIdentity (used in module)
+v2/src/verification/security.ts:24 - VerificationRequest (used in module)
+v2/src/verification/security.ts:33 - VerificationResult (used in module)
+v2/src/verification/security.ts:46 - AuditEntry (used in module)
+v2/src/verification/security.ts:56 - SecurityMetrics (used in module)
+v2/src/verification/security.ts:1039 - SecurityEnforcementSystem (used in module)
+v2/src/verification/security.ts:1416 - AgentAuthenticationSystem (used in module)
+v2/src/verification/security.ts:1417 - AdvancedRateLimiter (used in module)
+v2/src/verification/security.ts:1418 - AuditTrailSystem (used in module)
+v2/src/verification/security.ts:1419 - ByzantineFaultToleranceSystem (used in module)
+v2/src/verification/security.ts:1420 - ThresholdSignatureSystem (used in module)
+v2/src/verification/security.ts:1421 - ZeroKnowledgeProofSystem (used in module)
+v2/src/verification/security.ts:1422 - CryptographicCore (used in module)
+v2/src/verification/security.ts:1426 - default
+v2/src/verification/simple-hooks.ts:24 - SimpleVerificationConfig (used in module)
+v2/src/verification/simple-hooks.ts:29 - SimpleVerificationResult (used in module)
+v2/src/verification/simple-hooks.ts:37 - SimpleVerificationHookManager (used in module)
+v2/src/verification/simple-hooks.ts:218 - simpleVerificationHookManager
+v2/src/verification/system-tracker.ts:16 - SystemHealthIndicators (used in module)
+v2/src/verification/system-tracker.ts:40 - SystemTrend (used in module)
+v2/src/verification/system-tracker.ts:55 - DistributionAnalysis (used in module)
+v2/src/verification/system-tracker.ts:78 - SystemPrediction (used in module)
+v2/src/verification/system-tracker.ts:90 - PredictionFactor (used in module)
+v2/src/verification/system-tracker.ts:97 - SystemAlert
+v2/src/verification/system-tracker.ts:111 - SystemTruthTracker
+v2/src/verification/telemetry.ts:32 - TruthContext (used in module)
+v2/src/verification/telemetry.ts:43 - ValidationResult (used in module)
+v2/src/verification/telemetry.ts:54 - ValidationError (used in module)
+v2/src/verification/telemetry.ts:63 - ValidationWarning (used in module)
+v2/src/verification/telemetry.ts:70 - ValidationSuggestion (used in module)
+v2/src/verification/telemetry.ts:77 - AutomatedCheck (used in module)
+v2/src/verification/telemetry.ts:85 - HumanReview (used in module)
+v2/src/verification/telemetry.ts:295 - TruthMetricType (used in module)
+v2/src/verification/telemetry.ts:363 - TruthTelemetryEngine (used in module)
+v2/src/verification/telemetry.ts:1200 - TruthMetricsCollector (used in module)
+v2/src/verification/telemetry.ts:1247 - AgentTruthScorer (used in module)
+v2/src/verification/telemetry.ts:1291 - SystemTruthTracker (used in module)
+v2/src/verification/telemetry.ts:1310 - TruthAlertManager (used in module)
+v2/src/verification/telemetry.ts:1338 - DashboardExporter (used in module)
+v2/src/verification/telemetry.ts:1385 - AutomatedValidator (used in module)
+v2/src/verification/telemetry.ts:1421 - default
+v2/src/verification/test-verification.ts:7 - testVerificationSystem (used in module)
+v2/src/verification/tests.ts:15 - SecurityTestUtils (used in module)
+v2/src/verification/tests.ts:147 - PenetrationTestingSuite (used in module)
+v2/src/verification/tests.ts:445 - LoadTestingSuite (used in module)
+v2/src/verification/tests.ts:607 - SecurityValidationSuite (used in module)
+v2/src/verification/truth-scorer.ts:24 - TruthScorerOptions (used in module)
+v2/src/verification/truth-scorer.ts:746 - default
+v2/src/verification/types.ts:1015 - isTruthScore (used in module)
+v2/src/verification/types.ts:1025 - isVerificationResult (used in module)
+v2/src/verification/types.ts:1035 - isAgentClaim (used in module)
+v2/src/verification/types.ts:1045 - isStateSnapshot (used in module)
+v2/src/verification/types.ts:10 - VerificationLevel (used in module)
+v2/src/verification/types.ts:12 - CheckpointType (used in module)
+v2/src/verification/types.ts:13 - ClaimType (used in module)
+v2/src/verification/types.ts:169 - NotificationConfig (used in module)
+v2/src/verification/types.ts:220 - ValidatorResult (used in module)
+v2/src/verification/types.ts:299 - ClaimMetrics (used in module)
+v2/src/verification/types.ts:316 - ClaimEvidence (used in module)
+v2/src/verification/types.ts:325 - ClaimValidationConfig
+v2/src/verification/types.ts:342 - ClaimValidationMethod (used in module)
+v2/src/verification/types.ts:350 - ClaimValidationResult (used in module)
+v2/src/verification/types.ts:368 - MethodValidationResult (used in module)
+v2/src/verification/types.ts:379 - IntegrationTestConfig
+v2/src/verification/types.ts:405 - TestScenario (used in module)
+v2/src/verification/types.ts:427 - TestStep (used in module)
+v2/src/verification/types.ts:446 - TestValidator (used in module)
+v2/src/verification/types.ts:453 - TestAssertion (used in module)
+v2/src/verification/types.ts:462 - ExpectedResult (used in module)
+v2/src/verification/types.ts:469 - ResourceRequirements (used in module)
+v2/src/verification/types.ts:478 - TestEnvironment (used in module)
+v2/src/verification/types.ts:485 - ServiceConfig (used in module)
+v2/src/verification/types.ts:492 - HealthCheck (used in module)
+v2/src/verification/types.ts:500 - EnvironmentConstraint (used in module)
+v2/src/verification/types.ts:506 - ValidationCriteria (used in module)
+v2/src/verification/types.ts:524 - IntegrationTestResult (used in module)
+v2/src/verification/types.ts:559 - ScenarioResult (used in module)
+v2/src/verification/types.ts:576 - StepResult (used in module)
+v2/src/verification/types.ts:589 - AssertionResult (used in module)
+v2/src/verification/types.ts:599 - ValidationResult (used in module)
+v2/src/verification/types.ts:607 - TestCoverage (used in module)
+v2/src/verification/types.ts:616 - TestLog (used in module)
+v2/src/verification/types.ts:624 - TestAnalysis (used in module)
+v2/src/verification/types.ts:631 - PerformanceBottleneck (used in module)
+v2/src/verification/types.ts:639 - TestPattern (used in module)
+v2/src/verification/types.ts:647 - TestInsight (used in module)
+v2/src/verification/types.ts:655 - TestTrend (used in module)
+v2/src/verification/types.ts:665 - StateSnapshotConfig
+v2/src/verification/types.ts:687 - SnapshotScope (used in module)
+v2/src/verification/types.ts:712 - AgentFilter (used in module)
+v2/src/verification/types.ts:719 - TaskFilter (used in module)
+v2/src/verification/types.ts:726 - SwarmFilter (used in module)
+v2/src/verification/types.ts:733 - SnapshotStorageConfig (used in module)
+v2/src/verification/types.ts:741 - SnapshotRetentionConfig (used in module)
+v2/src/verification/types.ts:749 - SnapshotCompressionConfig (used in module)
+v2/src/verification/types.ts:756 - SnapshotEncryptionConfig (used in module)
+v2/src/verification/types.ts:763 - StateSnapshot (used in module)
+v2/src/verification/types.ts:795 - SwarmState (used in module)
+v2/src/verification/types.ts:804 - SystemState (used in module)
+v2/src/verification/types.ts:814 - ServiceState (used in module)
+v2/src/verification/types.ts:823 - HealthState (used in module)
+v2/src/verification/types.ts:830 - HealthCheckResult (used in module)
+v2/src/verification/types.ts:838 - MemoryState (used in module)
+v2/src/verification/types.ts:845 - MemoryPartitionState (used in module)
+v2/src/verification/types.ts:854 - MemoryStatistics (used in module)
+v2/src/verification/types.ts:862 - MemoryIntegrity (used in module)
+v2/src/verification/types.ts:869 - SnapshotStatistics (used in module)
+v2/src/verification/types.ts:878 - SnapshotStorageInfo (used in module)
+v2/src/verification/types.ts:888 - SnapshotValidation (used in module)
+v2/src/verification/types.ts:898 - RollbackConfig
+v2/src/verification/types.ts:917 - RollbackScope (used in module)
+v2/src/verification/types.ts:933 - RollbackStrategy (used in module)
+v2/src/verification/types.ts:942 - RollbackSafetyConfig (used in module)
+v2/src/verification/types.ts:951 - RollbackResult (used in module)
+v2/src/verification/types.ts:987 - ComponentRollbackResult (used in module)
+v2/src/verification/types.ts:996 - RollbackValidation (used in module)
+v2/src/verification/types.ts:1008 - ClaimValidationCallback
+v2/src/verification/types.ts:1009 - TestCompletionCallback
+v2/src/verification/types.ts:1010 - SnapshotCallback
+v2/src/verification/types.ts:1011 - RollbackCallback
+v2/src/verification/types.ts:1093 - default
+v2/src/verification/verification-pipeline.ts:31 - PipelineOptions (used in module)
+v2/src/verification/verification-pipeline.ts:41 - VerificationPipeline (used in module)
+v2/src/verification/verification-pipeline.ts:1080 - default
+v2/src/services/agentic-flow-hooks/hook-manager.ts:33 - AgenticHookManager (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:171 - shutdownAgenticFlowHooks
+v2/src/services/agentic-flow-hooks/index.ts:200 - getHookSystemStatus
+v2/src/services/agentic-flow-hooks/index.ts:223 - createHookContext
+v2/src/services/agentic-flow-hooks/index.ts:12 - AgenticHookContext (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:22 - MemoryContext
+v2/src/services/agentic-flow-hooks/index.ts:29 - NeuralContext
+v2/src/services/agentic-flow-hooks/index.ts:35 - PerformanceContext
+v2/src/services/agentic-flow-hooks/index.ts:43 - LLMHookType
+v2/src/services/agentic-flow-hooks/index.ts:52 - LLMHookPayload
+v2/src/services/agentic-flow-hooks/index.ts:62 - LLMRequest
+v2/src/services/agentic-flow-hooks/index.ts:86 - LLMResponse
+v2/src/services/agentic-flow-hooks/index.ts:110 - LLMMetrics
+v2/src/services/agentic-flow-hooks/index.ts:121 - MemoryHookType
+v2/src/services/agentic-flow-hooks/index.ts:130 - MemoryHookPayload
+v2/src/services/agentic-flow-hooks/index.ts:143 - NeuralHookType
+v2/src/services/agentic-flow-hooks/index.ts:150 - NeuralHookPayload
+v2/src/services/agentic-flow-hooks/index.ts:160 - Pattern (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:168 - TrainingData
+v2/src/services/agentic-flow-hooks/index.ts:177 - Prediction
+v2/src/services/agentic-flow-hooks/index.ts:187 - Adaptation
+v2/src/services/agentic-flow-hooks/index.ts:198 - PerformanceHookType
+v2/src/services/agentic-flow-hooks/index.ts:204 - PerformanceHookPayload
+v2/src/services/agentic-flow-hooks/index.ts:214 - PerformanceMetric (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:222 - BottleneckAnalysis
+v2/src/services/agentic-flow-hooks/index.ts:229 - OptimizationSuggestion
+v2/src/services/agentic-flow-hooks/index.ts:237 - BottleneckInfo
+v2/src/services/agentic-flow-hooks/index.ts:244 - OptimizationInfo
+v2/src/services/agentic-flow-hooks/index.ts:253 - WorkflowHookType
+v2/src/services/agentic-flow-hooks/index.ts:260 - WorkflowHookPayload
+v2/src/services/agentic-flow-hooks/index.ts:269 - WorkflowDecision
+v2/src/services/agentic-flow-hooks/index.ts:278 - Learning
+v2/src/services/agentic-flow-hooks/index.ts:285 - WorkflowMetrics
+v2/src/services/agentic-flow-hooks/index.ts:296 - HookRegistration
+v2/src/services/agentic-flow-hooks/index.ts:305 - AgenticHookType
+v2/src/services/agentic-flow-hooks/index.ts:313 - HookHandler
+v2/src/services/agentic-flow-hooks/index.ts:318 - HookPayload
+v2/src/services/agentic-flow-hooks/index.ts:325 - HookHandlerResult
+v2/src/services/agentic-flow-hooks/index.ts:333 - SideEffect
+v2/src/services/agentic-flow-hooks/index.ts:339 - HookFilter
+v2/src/services/agentic-flow-hooks/index.ts:352 - HookOptions
+v2/src/services/agentic-flow-hooks/index.ts:367 - HookPipeline
+v2/src/services/agentic-flow-hooks/index.ts:375 - PipelineStage
+v2/src/services/agentic-flow-hooks/index.ts:383 - PipelineMetrics
+v2/src/services/agentic-flow-hooks/index.ts:392 - ProviderHookConfig
+v2/src/services/agentic-flow-hooks/index.ts:419 - SelfImprovementConfig
+v2/src/services/agentic-flow-hooks/index.ts:426 - ImprovementStrategy
+v2/src/services/agentic-flow-hooks/index.ts:433 - EvaluationConfig
+v2/src/services/agentic-flow-hooks/index.ts:440 - AdaptationConfig
+v2/src/services/agentic-flow-hooks/index.ts:449 - HookContextBuilder (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:460 - HookRegistry
+v2/src/services/agentic-flow-hooks/index.ts:475 - PatternStore (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:487 - TrainingState
+v2/src/services/agentic-flow-hooks/index.ts:498 - Checkpoint
+v2/src/services/agentic-flow-hooks/index.ts:552 - registerLLMHooks (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:20 - preLLMCallHook
+v2/src/services/agentic-flow-hooks/index.ts:104 - postLLMCallHook
+v2/src/services/agentic-flow-hooks/index.ts:201 - llmErrorHook
+v2/src/services/agentic-flow-hooks/index.ts:280 - llmRetryHook
+v2/src/services/agentic-flow-hooks/index.ts:703 - registerMemoryHooks (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:18 - preMemoryStoreHook
+v2/src/services/agentic-flow-hooks/index.ts:96 - postMemoryStoreHook
+v2/src/services/agentic-flow-hooks/index.ts:160 - preMemoryRetrieveHook
+v2/src/services/agentic-flow-hooks/index.ts:212 - postMemoryRetrieveHook
+v2/src/services/agentic-flow-hooks/index.ts:270 - memorySyncHook
+v2/src/services/agentic-flow-hooks/index.ts:368 - memoryPersistHook
+v2/src/services/agentic-flow-hooks/index.ts:752 - registerNeuralHooks (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:22 - preNeuralTrainHook
+v2/src/services/agentic-flow-hooks/index.ts:101 - postNeuralTrainHook
+v2/src/services/agentic-flow-hooks/index.ts:168 - neuralPatternDetectedHook
+v2/src/services/agentic-flow-hooks/index.ts:243 - neuralPredictionHook
+v2/src/services/agentic-flow-hooks/index.ts:325 - neuralAdaptationHook
+v2/src/services/agentic-flow-hooks/index.ts:822 - registerPerformanceHooks (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:21 - performanceMetricHook
+v2/src/services/agentic-flow-hooks/index.ts:111 - performanceBottleneckHook
+v2/src/services/agentic-flow-hooks/index.ts:208 - performanceOptimizationHook
+v2/src/services/agentic-flow-hooks/index.ts:298 - performanceThresholdHook
+v2/src/services/agentic-flow-hooks/index.ts:1020 - registerWorkflowHooks (used in module)
+v2/src/services/agentic-flow-hooks/index.ts:21 - workflowStartHook
+v2/src/services/agentic-flow-hooks/index.ts:86 - workflowStepHook
+v2/src/services/agentic-flow-hooks/index.ts:164 - workflowDecisionHook
+v2/src/services/agentic-flow-hooks/index.ts:266 - workflowCompleteHook
+v2/src/services/agentic-flow-hooks/index.ts:382 - workflowErrorHook
+v2/src/cli/agents/hive-agents.ts:9 - HiveAgentConfig (used in module)
+v2/src/cli/agents/hive-agents.ts:19 - QueenAgent (used in module)
+v2/src/cli/agents/hive-agents.ts:131 - WorkerAgent (used in module)
+v2/src/cli/agents/hive-agents.ts:247 - ScoutAgent (used in module)
+v2/src/cli/agents/hive-agents.ts:359 - GuardianAgent (used in module)
+v2/src/cli/agents/hive-agents.ts:472 - ArchitectAgent (used in module)
+v2/src/cli/agents/hive-agents.ts:585 - HiveAgentFactory
+v2/src/cli/agents/index.ts:264 - createAgentFactory
+v2/src/cli/agents/index.ts:6 - BaseAgent (used in module)
+v2/src/cli/agents/index.ts:7 - ResearcherAgent
+v2/src/cli/agents/index.ts:7 - createResearcherAgent (used in module)
+v2/src/cli/agents/index.ts:8 - CoderAgent
+v2/src/cli/agents/index.ts:8 - createCoderAgent (used in module)
+v2/src/cli/agents/index.ts:9 - AnalystAgent
+v2/src/cli/agents/index.ts:9 - createAnalystAgent (used in module)
+v2/src/cli/agents/index.ts:10 - ArchitectAgent
+v2/src/cli/agents/index.ts:10 - createArchitectAgent (used in module)
+v2/src/cli/agents/index.ts:11 - TesterAgent
+v2/src/cli/agents/index.ts:11 - createTesterAgent (used in module)
+v2/src/cli/agents/index.ts:12 - CoordinatorAgent
+v2/src/cli/agents/index.ts:12 - createCoordinatorAgent (used in module)
+v2/src/cli/agents/index.ts:15 - AgentCapabilitySystem
+v2/src/cli/agents/index.ts:16 - AgentManager
+v2/src/cli/agents/index.ts:17 - AgentRegistry
+v2/src/cli/agents/index.ts:20 - AgentState
+v2/src/cli/agents/index.ts:21 - CapabilityMatch
+v2/src/cli/agents/index.ts:21 - TaskRequirements
+v2/src/cli/agents/index.ts:21 - CapabilityRegistry
+v2/src/cli/agents/index.ts:37 - AgentFactoryConfig (used in module)
+v2/src/cli/agents/index.ts:46 - AgentFactory (used in module)
+v2/src/cli/agents/index.ts:275 - AgentLifecycle
+v2/src/cli/commands/advanced-memory-commands.ts:76 - advancedMemoryCommand
+v2/src/cli/commands/agent-simple.ts:87 - agentCommands (used in module)
+v2/src/cli/commands/agent-simple.ts:456 - spawnAgent
+v2/src/cli/commands/agent-simple.ts:457 - listAgents
+v2/src/cli/commands/agent-simple.ts:458 - agentInfo
+v2/src/cli/commands/agent-simple.ts:459 - terminateAgent
+v2/src/cli/commands/agent-simple.ts:460 - startAgent (used in module)
+v2/src/cli/commands/agent-simple.ts:461 - restartAgent (used in module)
+v2/src/cli/commands/agent-simple.ts:462 - agentHealth
+v2/src/cli/commands/checkpoint.ts:13 - checkpointCommand (used in module)
+v2/src/cli/commands/claude-api.ts:13 - claudeApiCommand (used in module)
+v2/src/cli/commands/claude.ts:11 - claudeCommand (used in module)
+v2/src/cli/commands/config-integration.ts:20 - configIntegrationAction (used in module)
+v2/src/cli/commands/config-integration.ts:499 - default
+v2/src/cli/commands/config.ts:96 - default
+v2/src/cli/commands/goal-init.ts:16 - GoalInitCommand (used in module)
+v2/src/cli/commands/goal-init.ts:297 - default
+v2/src/cli/commands/help-new.ts:9 - helpCommand
+v2/src/cli/commands/hook-types.ts:5 - BaseHookOptions (used in module)
+v2/src/cli/commands/hook-validator.ts:16 - validateHookParams
+v2/src/cli/commands/hook-validator.ts:170 - sanitizeHookParams
+v2/src/cli/commands/hook-validator.ts:7 - ValidationResult (used in module)
+v2/src/cli/commands/hook.ts:206 - hookCommand
+v2/src/cli/commands/hook.ts:333 - hookSubcommands
+v2/src/cli/commands/maestro.ts:5 - maestroCommand (used in module)
+v2/src/cli/commands/memory.ts:35 - UnifiedMemoryManager (used in module)
+v2/src/cli/commands/neural-init.ts:16 - NeuralInitCommand (used in module)
+v2/src/cli/commands/neural-init.ts:245 - default
+v2/src/cli/commands/ruv-swarm.ts:21 - ruvSwarmAction (used in module)
+v2/src/cli/commands/ruv-swarm.ts:638 - default
+v2/src/cli/commands/swarm-spawn.ts:24 - initializeSwarm
+v2/src/cli/commands/swarm-spawn.ts:33 - spawnSwarmAgent
+v2/src/cli/commands/swarm-spawn.ts:60 - monitorSwarm
+v2/src/cli/commands/swarm-spawn.ts:90 - getSwarmState
+v2/src/cli/commands/verification.ts:25 - verificationCommand (used in module)
+v2/src/cli/commands/verification.ts:200 - hookCommand (used in module)
+v2/src/cli/commands/verification.ts:311 - registerVerificationCommands (used in module)
+v2/src/cli/commands/verification.ts:242 - VERIFICATION_COMMANDS (used in module)
+v2/src/cli/commands/verification.ts:346 - default
+v2/src/cli/init/index.ts:15 - initCommand
+v2/src/cli/init/utils.ts:2 - printSuccess
+v2/src/cli/init/utils.ts:6 - printError
+v2/src/cli/init/utils.ts:10 - printWarning
+v2/src/cli/init/utils.ts:14 - printInfo
+v2/src/cli/simple-commands/agent.ts:11 - createAgentCommand
+v2/src/cli/simple-commands/config.ts:10 - createConfigCommand
+v2/src/cli/simple-commands/goal.js:146 - default
+v2/src/cli/simple-commands/hive-mind-optimize.js:71 - hiveMindOptimizeCommand (used in module)
+v2/src/cli/simple-commands/hive-mind.js:3281 - showHiveMindHelp (used in module)
+v2/src/cli/simple-commands/hive-mind.js:3281 - initHiveMind (used in module)
+v2/src/cli/simple-commands/hive-mind.js:3281 - spawnSwarm (used in module)
+v2/src/cli/simple-commands/hive-mind.js:3281 - showStatus (used in module)
+v2/src/cli/simple-commands/hook-safety.js:642 - addSafetyFlags (used in module)
+v2/src/cli/simple-commands/hook-safety.js:87 - HookContextManager (used in module)
+v2/src/cli/simple-commands/hook-safety.js:134 - HookCommandValidator (used in module)
+v2/src/cli/simple-commands/hook-safety.js:224 - HookCircuitBreaker (used in module)
+v2/src/cli/simple-commands/hook-safety.js:278 - HookConfigValidator (used in module)
+v2/src/cli/simple-commands/hook-safety.js:409 - SafeHookExecutor (used in module)
+v2/src/cli/simple-commands/hook-safety.js:663 - default
+v2/src/cli/simple-commands/hooks.js:1553 - default
+v2/src/cli/simple-commands/memory-consolidation.js:26 - MemoryConsolidator (used in module)
+v2/src/cli/simple-commands/monitor.js:402 - showMonitorHelp
+v2/src/cli/simple-commands/neural.js:147 - default
+v2/src/cli/simple-commands/performance-hooks.js:32 - onTaskStart (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:41 - onTaskEnd (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:61 - onAgentSpawn (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:73 - onAgentActionStart (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:84 - onAgentAction (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:112 - onNeuralEvent (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:117 - wrapTaskExecution (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:131 - wrapAgentAction (used in module)
+v2/src/cli/simple-commands/performance-hooks.js:146 - trackCommand
+v2/src/cli/simple-commands/performance-hooks.js:166 - performanceTracker
+v2/src/cli/simple-commands/performance-metrics.js:235 - trackMemoryOperation
+v2/src/cli/simple-commands/performance-metrics.js:316 - trackModeSelection
+v2/src/cli/simple-commands/performance-metrics.js:329 - trackReasoningBankOperation
+v2/src/cli/simple-commands/performance-metrics.js:363 - updateStorageStats
+v2/src/cli/simple-commands/performance-metrics.js:384 - getMemoryPerformanceSummary
+v2/src/cli/simple-commands/performance-metrics.js:640 - stopSystemMonitoring (used in module)
+v2/src/cli/simple-commands/performance-metrics.js:698 - cleanup
+v2/src/cli/simple-commands/swarm-metrics-integration.js:15 - getUnifiedSwarmMetrics (used in module)
+v2/src/cli/simple-commands/swarm-webui-integration.js:8 - SwarmWebUIIntegration (used in module)
+v2/src/cli/simple-commands/token-tracker.js:38 - loadTokenData (used in module)
+v2/src/cli/simple-commands/token-tracker.js:51 - saveTokenData (used in module)
+v2/src/cli/simple-commands/token-tracker.js:356 - resetTokenTracking
+v2/src/cli/ui/index.ts:26 - launchBestUI
+v2/src/cli/ui/index.ts:7 - CompatibleUI
+v2/src/cli/ui/index.ts:8 - createCompatibleUI
+v2/src/cli/ui/index.ts:9 - isRawModeSupported
+v2/src/cli/ui/index.ts:10 - launchUI (used in module)
+v2/src/cli/ui/index.ts:11 - UIProcess
+v2/src/cli/ui/index.ts:12 - UISystemStats
+v2/src/cli/ui/index.ts:16 - handleRawModeError (used in module)
+v2/src/cli/ui/index.ts:17 - withRawModeFallback
+v2/src/cli/ui/index.ts:18 - checkUISupport (used in module)
+v2/src/cli/ui/index.ts:19 - showUISupport
+v2/src/cli/ui/index.ts:20 - FallbackOptions
+v2/src/cli/utils/environment-detector.ts:270 - getEnvironmentDescription (used in module)
+v2/src/cli/utils/environment-detector.ts:298 - shouldUseNonInteractiveMode (used in module)
+v2/src/cli/utils/environment-detector.ts:8 - ExecutionEnvironment (used in module)
+v2/src/cli/utils/environment-detector.ts:26 - EnvironmentOptions (used in module)
+v2/src/cli/utils/environment-detector.ts:330 - default
+v2/src/cli/utils/interactive-detector.js:76 - handleNonInteractive
+v2/src/cli/utils/prompt-defaults.ts:294 - getPromptDefaultsManager (used in module)
+v2/src/cli/utils/prompt-defaults.ts:302 - getPromptDefault
+v2/src/cli/utils/prompt-defaults.ts:307 - applyNonInteractiveDefaults (used in module)
+v2/src/cli/utils/prompt-defaults.ts:12 - PromptDefault (used in module)
+v2/src/cli/utils/prompt-defaults.ts:20 - PromptDefaultsConfig (used in module)
+v2/src/cli/utils/prompt-defaults.ts:30 - PromptDefaultsManager (used in module)
+v2/src/cli/utils/safe-interactive.js:100 - nonInteractivePrompt
+v2/src/mcp/async/job-manager-mcp25.ts:93 - JobPersistence (used in module)
+v2/src/mcp/async/job-manager-mcp25.ts:103 - MemoryJobPersistence (used in module)
+v2/src/mcp/protocol/version-negotiation.ts:55 - VersionNegotiationError
+v2/src/mcp/recovery/index.ts:6 - RecoveryStatus
+v2/src/mcp/recovery/index.ts:8 - ConnectionHealthMonitor
+v2/src/mcp/recovery/index.ts:9 - HealthStatus
+v2/src/mcp/recovery/index.ts:10 - HealthMonitorConfig
+v2/src/mcp/recovery/index.ts:13 - ReconnectionManager
+v2/src/mcp/recovery/index.ts:14 - ReconnectionConfig
+v2/src/mcp/recovery/index.ts:15 - ReconnectionState
+v2/src/mcp/recovery/index.ts:18 - FallbackCoordinator
+v2/src/mcp/recovery/index.ts:19 - FallbackOperation
+v2/src/mcp/recovery/index.ts:20 - FallbackConfig
+v2/src/mcp/recovery/index.ts:21 - FallbackState
+v2/src/mcp/recovery/index.ts:24 - ConnectionStateManager
+v2/src/mcp/recovery/index.ts:25 - ConnectionState
+v2/src/mcp/recovery/index.ts:26 - ConnectionEvent
+v2/src/mcp/recovery/index.ts:27 - ConnectionMetrics
+v2/src/mcp/recovery/index.ts:28 - StateManagerConfig
+v2/src/mcp/registry/mcp-registry-client-2025.ts:14 - MCPRegistryEntry (used in module)
+v2/src/mcp/registry/mcp-registry-client-2025.ts:39 - RegistrySearchQuery (used in module)
+v2/src/mcp/tools/_template.ts:59 - createToolTemplateTool
+v2/src/mcp/tools/_template.ts:168 - toolMetadata
+v2/src/swarm/optimizations/connection-pool.ts:9 - ClaudeAPI (used in module)
+v2/src/terminal/adapters/base.ts:24 - TerminalEvents
+v2/src/cli/commands/hive-mind/optimize-memory.ts:14 - createOptimizeMemoryCommand
+v2/src/cli/commands/start/index.ts:7 - ProcessManager
+v2/src/cli/commands/start/index.ts:8 - ProcessUI
+v2/src/cli/commands/start/index.ts:9 - SystemMonitor
+v2/src/cli/commands/start/index.ts:10 - ProcessInfo
+v2/src/cli/commands/start/index.ts:10 - ProcessStatus
+v2/src/cli/commands/start/index.ts:10 - SystemStats
+v2/src/cli/commands/start/types.ts:66 - UIAction
+v2/src/cli/simple-commands/hive-mind/auto-save-middleware.js:8 - AutoSaveMiddleware (used in module)
+v2/src/cli/simple-commands/hive-mind/auto-save-middleware.js:311 - default
+v2/src/cli/simple-commands/hive-mind/db-optimizer.js:868 - default
+v2/src/cli/simple-commands/hive-mind/performance-optimizer.js:618 - default
+v2/src/cli/simple-commands/hive-mind/session-manager.js:1186 - default
+v2/src/cli/simple-commands/init/batch-init.js:597 - parseBatchConfig (used in module)
+v2/src/cli/simple-commands/init/copy-revised-templates.js:129 - copyRevisedTemplatesByCategory
+v2/src/cli/simple-commands/init/gitignore-updater.js:135 - getGitignorePatterns
+v2/src/cli/simple-commands/init/hive-mind-init.js:262 - createHiveMindDirectories (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:293 - initializeCollectiveMemoryDatabase (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:422 - createDefaultConfigurations (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:576 - createHiveMindConfig (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:597 - createHiveMindDocumentation (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:14 - DEFAULT_HIVE_CONFIG (used in module)
+v2/src/cli/simple-commands/init/hive-mind-init.js:124 - HIVE_DB_SCHEMA (used in module)
+v2/src/cli/simple-commands/sparc-modes/index.js:49 - getModeOrchestration (used in module)
+v2/src/cli/simple-commands/sparc-modes/swarm.js:86 - prompt (used in module)
+v2/src/cli/simple-commands/sparc-modes/swarm.js:432 - default
+v2/src/mcp/tools/system/search.ts:270 - toolMetadata
+v2/src/mcp/tools/system/status.ts:44 - createSystemStatusTool
+v2/src/mcp/tools/system/status.ts:201 - toolMetadata
+v2/src/verification/api/types/index.ts:6 - VerificationStatus (used in module)
+v2/src/verification/api/types/index.ts:16 - TruthMonitoringEvent (used in module)
+v2/src/verification/api/types/index.ts:24 - VerificationQuery
+v2/src/verification/api/types/index.ts:37 - VerificationMetrics
+v2/src/verification/api/types/index.ts:53 - AgentVerificationConfig
+v2/src/verification/api/types/index.ts:65 - VerificationRule
+v2/src/verification/api/types/index.ts:77 - APIResponse
+v2/src/verification/api/types/index.ts:92 - WebSocketMessage
+v2/src/verification/api/types/index.ts:98 - SubscriptionFilter
+v2/src/verification/api/types/index.ts:105 - GraphQLContext
+v2/src/verification/api/types/index.ts:112 - VerificationBatch
+v2/src/verification/api/types/index.ts:121 - VerificationRequest (used in module)
+v2/src/verification/api/types/index.ts:129 - HealthStatus
+v2/src/verification/api/types/index.ts:147 - ServiceHealth (used in module)
+v2/src/cli/simple-commands/init/rollback/index.js:345 - AtomicOperation (used in module)

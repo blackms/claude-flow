@@ -1,0 +1,10 @@
+Processed 316 files (1.6s) (37 warnings)
+
+1) ../hive-mind/core/HiveMind.ts > ../hive-mind/integration/SwarmOrchestrator.ts
+2) cli-core.ts > commands/index.ts
+3) cli-core.ts > commands/index.ts > commands/enterprise.ts
+4) cli-core.ts > commands/index.ts > commands/sparc.ts
+5) cli-core.ts > commands/index.ts > commands/swarm.ts
+6) simple-commands/init/batch-init.js > simple-commands/init/index.js
+7) init/claude-config.ts > init/index.ts
+

@@ -1,0 +1,18 @@
+Processed 241 files (1.7s) (5 warnings)
+
+index.ts
+infrastructure/in-memory-repositories.ts
+mcp-tools/index.ts
+plugins/tests/demo-plugin-store.ts
+plugins/tests/standalone-test.ts
+plugins/tests/test-plugin-store.ts
+production/index.ts
+runtime/headless.ts
+ruvector/vector-db.ts
+services/index.ts
+transfer/deploy-seraphine.ts
+transfer/storage/index.ts
+transfer/store/tests/standalone-test.ts
+transfer/test-seraphine.ts
+transfer/tests/test-store.ts
+
